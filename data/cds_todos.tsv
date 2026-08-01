@@ -1,0 +1,1216 @@
+BARBAKC583_RS00005	213	986	+	Bax inhibitor-1/YccA family protein
+BARBAKC583_RS00010	1105	2004	+	endonuclease/exonuclease/phosphatase family protein
+BARBAKC583_RS00015	1970	4876	-	DNA polymerase I
+BARBAKC583_RS00030	5177	5881	-	DNA polymerase III subunit epsilon
+BARBAKC583_RS00035	5886	6488	-	dephospho-CoA kinase
+BARBAKC583_RS00040	6485	7360	-	shikimate dehydrogenase
+BARBAKC583_RS00045	7353	7949	-	Maf family nucleotide pyrophosphatase
+BARBAKC583_RS00050	7946	8785	-	pyruvate%2C water dikinase regulatory protein
+BARBAKC583_RS00055	9401	10666	+	transcription termination factor Rho
+BARBAKC583_RS00060	10700	12007	+	tRNA uridine-5-carboxymethylaminomethyl(34) synthesis GTPase MnmE
+BARBAKC583_RS00065	12116	13984	+	tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG
+BARBAKC583_RS00070	13984	14631	+	16S rRNA (guanine(527)-N(7))-methyltransferase RsmG
+BARBAKC583_RS00075	14637	15434	+	ParA family protein
+BARBAKC583_RS00080	15486	16397	+	ParB/RepB/Spo0J family partition protein
+BARBAKC583_RS00085	16398	16877	-	hypothetical protein
+BARBAKC583_RS00090	17303	17968	-	septation protein A
+BARBAKC583_RS00095	17965	19128	-	signal recognition particle-docking protein FtsY
+BARBAKC583_RS00100	19143	20426	-	tRNA (N(6)-L-threonylcarbamoyladenosine(37)-C(2))-methylthiotransferase MtaB
+BARBAKC583_RS00105	20426	21274	-	diaminopimelate epimerase
+BARBAKC583_RS00110	21533	22066	+	AprI/Inh family metalloprotease inhibitor
+BARBAKC583_RS00115	22159	23370	+	cell division protein ZapE
+BARBAKC583_RS00120	23638	24603	+	malate dehydrogenase
+BARBAKC583_RS00125	24684	25880	+	ADP-forming succinate--CoA ligase subunit beta
+BARBAKC583_RS00130	25884	26786	+	succinate--CoA ligase subunit alpha
+BARBAKC583_RS00135	26939	29938	+	2-oxoglutarate dehydrogenase E1 component
+BARBAKC583_RS00140	29972	31177	+	2-oxoglutarate dehydrogenase complex dihydrolipoyllysine-residue succinyltransferase
+BARBAKC583_RS00145	31210	32616	+	dihydrolipoyl dehydrogenase
+BARBAKC583_RS00150	32755	33993	-	saccharopine dehydrogenase family protein
+BARBAKC583_RS00155	34049	35146	-	carboxynorspermidine decarboxylase
+BARBAKC583_RS00160	35897	38818	+	monovalent cation/H+ antiporter subunit A
+BARBAKC583_RS00165	38818	39156	+	Na+/H+ antiporter subunit C
+BARBAKC583_RS00170	39159	40781	+	monovalent cation/H+ antiporter subunit D
+BARBAKC583_RS00175	40778	41263	+	Na+/H+ antiporter subunit E
+BARBAKC583_RS00180	41260	41541	+	K+/H+ antiporter subunit F
+BARBAKC583_RS00185	41538	41930	+	monovalent cation/H(+) antiporter subunit G
+BARBAKC583_RS00190	41962	42354	-	MliC family protein
+BARBAKC583_RS00195	42771	43904	-	3-dehydroquinate synthase
+BARBAKC583_RS00200	43873	44499	-	shikimate kinase
+BARBAKC583_RS00205	44758	45696	+	site-specific tyrosine recombinase XerD
+BARBAKC583_RS00210	45772	46728	+	acetyl-CoA carboxylase carboxyltransferase subunit alpha
+BARBAKC583_RS00215	46764	47507	+	L%2CD-transpeptidase family protein
+BARBAKC583_RS00220	48142	49230	-	D-alanyl-D-alanine carboxypeptidase family protein
+BARBAKC583_RS00225	49321	50127	-	lysophospholipid acyltransferase family protein
+BARBAKC583_RS00240	51060	52037	+	ABC transporter substrate-binding protein
+BARBAKC583_RS00245	52089	52982	+	ABC transporter permease
+BARBAKC583_RS00250	52979	53773	+	ABC transporter ATP-binding protein
+BARBAKC583_RS00255	53777	54820	+	DNA polymerase III subunit delta
+BARBAKC583_RS00260	54956	55813	+	YihY/virulence factor BrkB family protein
+BARBAKC583_RS00265	55832	56329	+	YaiI/YqxD family protein
+BARBAKC583_RS00270	56331	57029	-	TlpA disulfide reductase family protein
+BARBAKC583_RS00275	57063	58463	+	argininosuccinate lyase
+BARBAKC583_RS00280	58522	58701	+	lipoprotein
+BARBAKC583_RS00285	58710	59984	+	diaminopimelate decarboxylase
+BARBAKC583_RS00290	60099	62516	+	TIGR02302 family protein
+BARBAKC583_RS00295	62798	63532	+	class I SAM-dependent methyltransferase
+BARBAKC583_RS00300	63674	64360	-	response regulator transcription factor
+BARBAKC583_RS00305	64505	64999	+	L%2CD-transpeptidase family protein
+BARBAKC583_RS00310	64996	65424	-	EVE domain-containing protein
+BARBAKC583_RS00315	65516	66610	-	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit TsaD
+BARBAKC583_RS00320	66994	68352	+	COG4223 family protein
+BARBAKC583_RS00325	68364	69959	+	heme biosynthesis protein HemY
+BARBAKC583_RS00330	70042	70809	+	glutamine amidotransferase
+BARBAKC583_RS00335	71085	75794	-	NAD-glutamate dehydrogenase
+BARBAKC583_RS00340	76074	76730	+	carbonic anhydrase
+BARBAKC583_RS00345	76976	78523	+	signal recognition particle protein
+BARBAKC583_RS00350	78953	79315	+	30S ribosomal protein S16
+BARBAKC583_RS00355	79464	79670	-	DUF1674 domain-containing protein
+BARBAKC583_RS00360	79755	80786	+	zinc metalloprotease HtpX
+BARBAKC583_RS00365	80897	82267	+	RsmB/NOP family class I SAM-dependent RNA methyltransferase
+BARBAKC583_RS00370	82335	84044	+	heparinase II/III family protein
+BARBAKC583_RS00375	84215	85831	+	bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase
+BARBAKC583_RS00380	86488	87294	-	SURF1 family protein
+BARBAKC583_RS00385	87569	87865	+	50S ribosomal protein L28
+BARBAKC583_RS00390	87990	88652	+	VUT family protein
+BARBAKC583_RS00395	88851	90746	-	cobaltochelatase subunit CobT
+BARBAKC583_RS00400	90761	91747	-	cobaltochelatase subunit CobS
+BARBAKC583_RS00405	92015	92635	-	J domain-containing protein
+BARBAKC583_RS00410	92751	93029	+	BolA family protein
+BARBAKC583_RS00415	93072	94040	-	tyrosine recombinase XerC
+BARBAKC583_RS00420	94043	94864	-	SapC family protein
+BARBAKC583_RS00425	94994	95569	+	ribosome maturation factor RimM
+BARBAKC583_RS00430	95619	96317	+	tRNA (guanosine(37)-N1)-methyltransferase TrmD
+BARBAKC583_RS00435	96523	96963	+	50S ribosomal protein L19
+BARBAKC583_RS00450	97559	97960	+	succinate dehydrogenase%2C cytochrome b556 subunit
+BARBAKC583_RS00455	97979	98365	+	succinate dehydrogenase%2C hydrophobic membrane anchor protein
+BARBAKC583_RS00460	98370	100217	+	succinate dehydrogenase flavoprotein subunit
+BARBAKC583_RS00465	100233	101012	+	succinate dehydrogenase iron-sulfur subunit
+BARBAKC583_RS00470	101601	102845	-	ubiquinone biosynthesis hydroxylase
+BARBAKC583_RS00475	103019	105439	+	DNA translocase FtsK
+BARBAKC583_RS00480	105736	106368	+	LolA family protein
+BARBAKC583_RS00485	106374	107189	+	exodeoxyribonuclease III
+BARBAKC583_RS00490	107648	108847	+	efflux RND transporter periplasmic adaptor subunit
+BARBAKC583_RS00495	108876	110882	+	MacB family efflux pump subunit
+BARBAKC583_RS00500	111411	112019	-	YdcF family protein
+BARBAKC583_RS00505	112169	113143	-	cell division protein FtsX
+BARBAKC583_RS00510	113136	113795	-	cell division ATP-binding protein FtsE
+BARBAKC583_RS00515	113949	115907	-	acetate--CoA ligase
+BARBAKC583_RS00520	116070	116750	-	YggS family pyridoxal phosphate-dependent enzyme
+BARBAKC583_RS00525	117102	119729	+	leucine--tRNA ligase
+BARBAKC583_RS00530	119716	120294	+	LPS assembly lipoprotein LptE
+BARBAKC583_RS00535	120668	121321	-	fructose-6-phosphate aldolase
+BARBAKC583_RS00540	121855	124092	+	primosomal protein N'
+BARBAKC583_RS00545	124223	124855	+	hypothetical protein
+BARBAKC583_RS00555	125149	125733	+	F0F1 ATP synthase subunit delta
+BARBAKC583_RS00560	125733	127268	+	F0F1 ATP synthase subunit alpha
+BARBAKC583_RS00565	127285	128193	+	F0F1 ATP synthase subunit gamma
+BARBAKC583_RS00570	128216	129829	+	F0F1 ATP synthase subunit beta
+BARBAKC583_RS00575	129877	130293	+	ATP synthase F1 subunit epsilon
+BARBAKC583_RS00580	130318	131937	+	MFS transporter
+BARBAKC583_RS00585	131954	132955	+	HlyD family secretion protein
+BARBAKC583_RS00590	133498	134754	+	flavodoxin-dependent (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase
+BARBAKC583_RS00595	135152	136054	-	polyprenyl synthetase family protein
+BARBAKC583_RS00600	136049	136849	+	monofunctional biosynthetic peptidoglycan transglycosylase
+BARBAKC583_RS00605	137075	137260	+	50S ribosomal protein L32
+BARBAKC583_RS00610	137770	138348	-	CarD family transcriptional regulator
+BARBAKC583_RS00615	138644	138982	-	ferredoxin FdxA
+BARBAKC583_RS00620	139004	140584	-	hypothetical protein
+BARBAKC583_RS00625	141073	141984	+	RNA polymerase factor sigma-32
+BARBAKC583_RS00630	142085	143515	-	M48 family metalloprotease
+BARBAKC583_RS00635	143768	144403	+	thiamine diphosphokinase
+BARBAKC583_RS00640	144855	145235	+	glycine zipper domain-containing protein
+BARBAKC583_RS00645	145302	147134	+	ABC-F family ATP-binding cassette domain-containing protein
+BARBAKC583_RS00655	147131	147388	-	DUF2312 domain-containing protein
+BARBAKC583_RS00660	147710	148258	+	DUF1036 domain-containing protein
+BARBAKC583_RS00665	148633	149016	-	cell division protein ZapA
+BARBAKC583_RS00670	149030	149305	-	DUF4164 domain-containing protein
+BARBAKC583_RS00675	149603	151603	+	transketolase
+BARBAKC583_RS00680	151605	152612	+	type I glyceraldehyde-3-phosphate dehydrogenase
+BARBAKC583_RS00690	152911	154113	+	phosphoglycerate kinase
+BARBAKC583_RS00695	154252	155280	+	class I fructose-bisphosphate aldolase
+BARBAKC583_RS00705	156268	157587	-	Tol-Pal system beta propeller repeat protein TolB
+BARBAKC583_RS00715	157638	159155	-	hypothetical protein
+BARBAKC583_RS00720	159281	159733	-	ExbD/TolR family protein
+BARBAKC583_RS00725	159746	160453	-	protein TolQ
+BARBAKC583_RS00735	160943	161383	-	tol-pal system-associated acyl-CoA thioesterase
+BARBAKC583_RS00740	161376	162485	-	Holliday junction branch migration DNA helicase RuvB
+BARBAKC583_RS00745	162493	163146	-	Holliday junction branch migration protein RuvA
+BARBAKC583_RS00750	163151	163654	-	crossover junction endodeoxyribonuclease RuvC
+BARBAKC583_RS00755	164316	164834	-	DUF1465 family protein
+BARBAKC583_RS00760	165212	166318	-	OpgC family protein
+BARBAKC583_RS00765	166422	167099	+	thiamine phosphate synthase
+BARBAKC583_RS00770	167096	168199	+	tetratricopeptide repeat protein
+BARBAKC583_RS00775	168871	169443	+	elongation factor P
+BARBAKC583_RS00780	169447	170238	+	inositol monophosphatase family protein
+BARBAKC583_RS00785	170500	172320	-	ABC transporter transmembrane domain-containing protein
+BARBAKC583_RS00800	172494	172715	+	50S ribosomal protein L31
+BARBAKC583_RS00805	173273	174019	-	YebC/PmpR family DNA-binding transcriptional regulator
+BARBAKC583_RS00810	174562	175263	+	DUF1013 domain-containing protein
+BARBAKC583_RS00815	175581	176105	+	peptidoglycan-associated lipoprotein Pal
+BARBAKC583_RS00835	179267	181561	+	ATP-dependent zinc metalloprotease FtsH
+BARBAKC583_RS00845	182309	183661	+	phosphoglucosamine mutase
+BARBAKC583_RS00855	184498	185469	+	MotA/TolQ/ExbB proton channel family protein
+BARBAKC583_RS00860	185469	185927	+	biopolymer transporter ExbD
+BARBAKC583_RS00875	187140	187694	-	dUTP diphosphatase
+BARBAKC583_RS00885	188775	189578	-	VIT1/CCC1 transporter family protein
+BARBAKC583_RS00890	190035	190607	-	disulfide bond formation protein B
+BARBAKC583_RS00895	190620	191240	-	YqaA family protein
+BARBAKC583_RS00910	192958	193590	-	hypothetical protein
+BARBAKC583_RS00915	193655	196021	-	toprim domain-containing protein
+BARBAKC583_RS00920	196797	197813	-	YdaU family protein
+BARBAKC583_RS00925	197896	198225	+	hypothetical protein
+BARBAKC583_RS00930	198720	199034	+	hypothetical protein
+BARBAKC583_RS00935	199345	199758	+	hypothetical protein
+BARBAKC583_RS00945	199764	199952	+	hypothetical protein
+BARBAKC583_RS00950	199958	200158	+	hypothetical protein
+BARBAKC583_RS00965	200567	201226	+	lambda exonuclease family protein
+BARBAKC583_RS00975	202726	204021	+	UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+BARBAKC583_RS00980	204599	205447	-	TIGR00282 family metallophosphoesterase
+BARBAKC583_RS00985	205450	206088	-	5-formyltetrahydrofolate cyclo-ligase
+BARBAKC583_RS00990	207002	207853	-	tetratricopeptide repeat protein
+BARBAKC583_RS01015	209516	210667	-	5-(carboxyamino)imidazole ribonucleotide synthase
+BARBAKC583_RS01020	210676	211173	-	5-(carboxyamino)imidazole ribonucleotide mutase
+BARBAKC583_RS01045	212182	212400	+	translation initiation factor IF-1
+BARBAKC583_RS01050	212877	213539	+	Maf family protein
+BARBAKC583_RS01055	213698	213880	+	DNA gyrase inhibitor YacG
+BARBAKC583_RS01060	214858	217458	+	ATP-dependent chaperone ClpB
+BARBAKC583_RS01065	217705	217902	+	hypothetical protein
+BARBAKC583_RS01070	218734	218949	+	hypothetical protein
+BARBAKC583_RS01085	219843	220043	+	hypothetical protein
+BARBAKC583_RS01090	223488	223844	+	hypothetical protein
+BARBAKC583_RS01095	224891	226216	+	PBSX family phage terminase large subunit
+BARBAKC583_RS01105	226952	228838	+	portal protein
+BARBAKC583_RS01110	229424	230368	+	hypothetical protein
+BARBAKC583_RS01115	230650	231825	+	N4-gp56 family major capsid protein
+BARBAKC583_RS01140	233396	234859	+	hypothetical protein
+BARBAKC583_RS01155	235887	237065	+	tail fiber domain-containing protein
+BARBAKC583_RS01160	237065	237259	+	hypothetical protein
+BARBAKC583_RS01165	237259	237453	+	hypothetical protein
+BARBAKC583_RS01175	237453	238424	+	phage tail protein
+BARBAKC583_RS01180	238814	239101	+	hypothetical protein
+BARBAKC583_RS01185	239158	239820	+	lysozyme
+BARBAKC583_RS01190	239817	240068	+	hypothetical protein
+BARBAKC583_RS01195	240712	241098	+	hypothetical protein
+BARBAKC583_RS01215	242345	242995	+	DUF4167 domain-containing protein
+BARBAKC583_RS01220	243152	243667	-	hypothetical protein
+BARBAKC583_RS01225	243884	244891	-	sensor histidine kinase
+BARBAKC583_RS01230	244912	245706	-	response regulator
+BARBAKC583_RS01235	245912	246151	+	NepR family anti-sigma factor
+BARBAKC583_RS01245	247061	248503	+	sensor histidine kinase
+BARBAKC583_RS01250	248644	250584	-	M23 family metallopeptidase
+BARBAKC583_RS01255	250713	250865	-	transcriptional repressor
+BARBAKC583_RS01295	258644	259111	+	hypothetical protein
+BARBAKC583_RS01300	259768	260124	-	helix-turn-helix domain-containing protein
+BARBAKC583_RS01305	260121	260396	-	type II toxin-antitoxin system HigB family toxin
+BARBAKC583_RS01315	261267	262427	+	phosphoserine transaminase
+BARBAKC583_RS01325	263748	264416	-	recombinase family protein
+BARBAKC583_RS01330	264605	264856	+	AbrB/MazE/SpoVT family DNA-binding domain-containing protein
+BARBAKC583_RS01335	264853	265251	+	type II toxin-antitoxin system VapC family toxin
+BARBAKC583_RS01340	265664	265966	-	helix-turn-helix domain-containing transcriptional regulator
+BARBAKC583_RS01345	265997	266320	-	type II toxin-antitoxin system RelE/ParE family toxin
+BARBAKC583_RS01350	266629	266934	+	hypothetical protein
+BARBAKC583_RS01355	266982	267236	+	hypothetical protein
+BARBAKC583_RS01360	267431	267664	+	hypothetical protein
+BARBAKC583_RS01365	267730	268002	-	hypothetical protein
+BARBAKC583_RS01370	268002	268688	-	ParA family protein
+BARBAKC583_RS01375	269035	269274	-	hypothetical protein
+BARBAKC583_RS01380	269682	270971	+	adenylosuccinate synthase
+BARBAKC583_RS01385	271223	272722	+	hypothetical protein
+BARBAKC583_RS01390	272773	273684	-	RNA polymerase sigma factor RpoH
+BARBAKC583_RS01395	273827	274837	-	RluA family pseudouridine synthase
+BARBAKC583_RS01400	274875	276305	-	aldehyde dehydrogenase family protein
+BARBAKC583_RS01405	276712	279321	+	DNA translocase FtsK
+BARBAKC583_RS01410	279902	280318	-	large conductance mechanosensitive channel protein MscL
+BARBAKC583_RS01415	280866	281954	+	quinone-dependent dihydroorotate dehydrogenase
+BARBAKC583_RS01425	282333	283760	+	glutamine synthetase family protein
+BARBAKC583_RS01430	283772	285055	+	NAD(P)/FAD-dependent oxidoreductase
+BARBAKC583_RS01435	285306	286205	-	bifunctional methylenetetrahydrofolate dehydrogenase/methenyltetrahydrofolate cyclohydrolase FolD
+BARBAKC583_RS01440	286511	288391	+	AsmA family protein
+BARBAKC583_RS01445	288857	289600	+	16S rRNA (uracil(1498)-N(3))-methyltransferase
+BARBAKC583_RS01450	289667	291040	+	glutamate--cysteine ligase
+BARBAKC583_RS01455	291509	291742	-	30S ribosomal protein S21
+BARBAKC583_RS01465	292600	293736	+	efflux RND transporter periplasmic adaptor subunit
+BARBAKC583_RS01470	293733	296867	+	efflux RND transporter permease subunit
+BARBAKC583_RS01475	297059	298708	+	glucose-6-phosphate isomerase
+BARBAKC583_RS01485	299126	299599	+	50S ribosomal protein L21
+BARBAKC583_RS01490	299612	299881	+	50S ribosomal protein L27
+BARBAKC583_RS01500	302541	303122	+	invasion associated locus B family protein
+BARBAKC583_RS01505	304277	307984	+	Vomp family autotransporter
+BARBAKC583_RS01510	308017	308562	+	invasion associated locus B family protein
+BARBAKC583_RS01520	309236	309955	+	RlmE family RNA methyltransferase
+BARBAKC583_RS01525	310141	311160	+	GTPase ObgE
+BARBAKC583_RS01530	311166	312305	+	glutamate 5-kinase
+BARBAKC583_RS01535	312366	313604	+	glutamate-5-semialdehyde dehydrogenase
+BARBAKC583_RS01540	313634	314218	+	nicotinate-nucleotide adenylyltransferase
+BARBAKC583_RS01545	314324	314716	+	ribosome silencing factor
+BARBAKC583_RS01550	314717	315199	+	23S rRNA (pseudouridine(1915)-N(3))-methyltransferase RlmH
+BARBAKC583_RS01555	315353	316564	+	murein hydrolase activator EnvC family protein
+BARBAKC583_RS01560	316554	317858	+	S41 family peptidase
+BARBAKC583_RS01565	317927	318439	+	RNA pyrophosphohydrolase
+BARBAKC583_RS01570	318556	319116	+	invasion associated locus B family protein
+BARBAKC583_RS01575	319442	319735	+	YggT family protein
+BARBAKC583_RS01580	319766	320089	+	DUF167 domain-containing protein
+BARBAKC583_RS01585	320139	320672	-	inorganic diphosphatase
+BARBAKC583_RS01590	320734	322560	-	translational GTPase TypA
+BARBAKC583_RS01595	322845	324221	-	magnesium transporter
+BARBAKC583_RS01600	324569	326593	+	M3 family metallopeptidase
+BARBAKC583_RS01605	326785	328041	-	lytic murein transglycosylase
+BARBAKC583_RS01610	328310	329194	+	UTP--glucose-1-phosphate uridylyltransferase GalU
+BARBAKC583_RS01615	329234	330226	+	KpsF/GutQ family sugar-phosphate isomerase
+BARBAKC583_RS01620	330466	330840	-	outer membrane lipoprotein Omp10
+BARBAKC583_RS01625	331097	332482	+	sigma-54-dependent transcriptional regulator
+BARBAKC583_RS01630	332875	334445	+	phospholipase D-like domain-containing protein
+BARBAKC583_RS01635	334582	336081	+	IMP dehydrogenase
+BARBAKC583_RS01640	336418	337278	-	universal stress protein
+BARBAKC583_RS01645	337522	338808	+	RsmB/NOP family class I SAM-dependent RNA methyltransferase
+BARBAKC583_RS01650	338944	340500	+	glutamine-hydrolyzing GMP synthase
+BARBAKC583_RS01655	340681	341403	+	glycerophosphodiester phosphodiesterase
+BARBAKC583_RS01660	341520	342557	-	sn-glycerol-3-phosphate import ATP-binding protein UgpC
+BARBAKC583_RS01665	342560	343411	-	sn-glycerol-3-phosphate ABC transporter permease UgpE
+BARBAKC583_RS01670	343422	344306	-	sn-glycerol-3-phosphate ABC transporter permease UgpA
+BARBAKC583_RS01675	344404	345729	-	sn-glycerol-3-phosphate ABC transporter substrate-binding protein UgpB
+BARBAKC583_RS01680	346116	347063	-	metal ABC transporter solute-binding protein%2C Zn/Mn family
+BARBAKC583_RS01685	347074	347946	-	metal ABC transporter permease
+BARBAKC583_RS01690	347972	348697	-	ABC transporter ATP-binding protein
+BARBAKC583_RS01695	349418	349642	+	glutaredoxin-like protein NrdH
+BARBAKC583_RS01700	349642	350034	+	class Ib ribonucleoside-diphosphate reductase assembly flavoprotein NrdI
+BARBAKC583_RS01705	350022	352172	+	class 1b ribonucleoside-diphosphate reductase subunit alpha
+BARBAKC583_RS01710	352185	353159	+	class 1b ribonucleoside-diphosphate reductase subunit beta
+BARBAKC583_RS01715	353156	354022	-	peptide chain release factor N(5)-glutamine methyltransferase
+BARBAKC583_RS01720	354019	355098	-	peptide chain release factor 1
+BARBAKC583_RS01725	355283	355699	-	Fur family transcriptional regulator
+BARBAKC583_RS01730	355713	358445	-	preprotein translocase subunit SecA
+BARBAKC583_RS01735	358846	359793	+	peptidylprolyl isomerase
+BARBAKC583_RS01740	359895	361133	+	bifunctional glutamate N-acetyltransferase/amino-acid acetyltransferase ArgJ
+BARBAKC583_RS01745	361255	361668	+	8-oxo-dGTP diphosphatase MutT
+BARBAKC583_RS01750	362009	363364	+	L-cystine transporter
+BARBAKC583_RS01755	363387	364265	-	methyltransferase domain-containing protein
+BARBAKC583_RS01760	364495	365250	+	ComF family protein
+BARBAKC583_RS01765	365290	365547	+	glutaredoxin 3
+BARBAKC583_RS01770	365565	366311	-	bifunctional 2-polyprenyl-6-hydroxyphenol methylase/3-demethylubiquinol 3-O-methyltransferase UbiG
+BARBAKC583_RS01775	366495	367748	+	aspartate kinase
+BARBAKC583_RS01780	368168	369526	-	Na+/H+ antiporter NhaA
+BARBAKC583_RS01785	369647	371350	-	hypothetical protein
+BARBAKC583_RS01790	371869	372540	+	DUF2659 family protein
+BARBAKC583_RS01795	372545	373966	+	ribosome biogenesis GTPase Der
+BARBAKC583_RS01800	374282	374719	+	AtpZ/AtpI family protein
+BARBAKC583_RS01805	374721	375479	+	F0F1 ATP synthase subunit A
+BARBAKC583_RS01810	375534	375764	+	F0F1 ATP synthase subunit C
+BARBAKC583_RS01815	375891	376457	+	F0F1 ATP synthase subunit B
+BARBAKC583_RS01820	376469	376948	+	F0F1 ATP synthase subunit B
+BARBAKC583_RS01825	377343	379565	-	glycine--tRNA ligase subunit beta
+BARBAKC583_RS01830	379558	380508	-	glycine--tRNA ligase subunit alpha
+BARBAKC583_RS01835	380574	382304	-	tetratricopeptide repeat protein
+BARBAKC583_RS01840	382394	383443	-	polyprenyl synthetase family protein
+BARBAKC583_RS01845	383672	384463	+	tRNA1(Val) (adenine(37)-N6)-methyltransferase
+BARBAKC583_RS01850	384566	385417	+	S49 family peptidase
+BARBAKC583_RS01855	385496	385684	+	hypothetical protein
+BARBAKC583_RS01860	385681	386595	+	4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase
+BARBAKC583_RS01865	386884	387552	+	ribonuclease HII
+BARBAKC583_RS01870	387549	388511	+	L-threonylcarbamoyladenylate synthase
+BARBAKC583_RS01875	388514	389923	+	FAD-binding oxidoreductase
+BARBAKC583_RS01880	390075	390593	+	DUF6101 family protein
+BARBAKC583_RS01885	390863	392137	-	phosphoribosylamine--glycine ligase
+BARBAKC583_RS01890	392230	393234	+	4-hydroxybenzoate octaprenyltransferase
+BARBAKC583_RS01895	393315	393938	-	pyridoxamine 5'-phosphate oxidase
+BARBAKC583_RS01900	394256	395155	+	DnaJ C-terminal domain-containing protein
+BARBAKC583_RS01905	395293	396111	+	enoyl-ACP reductase FabI
+BARBAKC583_RS01910	396240	397334	+	chorismate synthase
+BARBAKC583_RS01915	397345	398457	+	3%2C4-dihydroxy-2-butanone-4-phosphate synthase
+BARBAKC583_RS01920	398465	398719	+	exodeoxyribonuclease VII small subunit
+BARBAKC583_RS01925	398917	400833	+	1-deoxy-D-xylulose-5-phosphate synthase
+BARBAKC583_RS01935	400841	401593	+	TlyA family RNA methyltransferase
+BARBAKC583_RS01940	401583	402836	+	class I SAM-dependent RNA methyltransferase
+BARBAKC583_RS01945	402896	404314	-	metalloprotease TldD
+BARBAKC583_RS01950	404424	404963	-	invasion associated locus B family protein
+BARBAKC583_RS01955	405361	406296	+	heme o synthase
+BARBAKC583_RS01960	406484	407533	+	4-hydroxy-3-methylbut-2-enyl diphosphate reductase
+BARBAKC583_RS01965	407962	408429	+	ribonuclease HI
+BARBAKC583_RS01970	408419	409324	-	protein-disulfide reductase DsbD domain-containing protein
+BARBAKC583_RS01975	410045	412921	-	EAL domain-containing protein
+BARBAKC583_RS01980	413366	414634	-	M16 family metallopeptidase
+BARBAKC583_RS01985	415015	415707	-	HAD family hydrolase
+BARBAKC583_RS01990	416018	417154	+	site-specific DNA-methyltransferase
+BARBAKC583_RS01995	417244	418293	-	A/G-specific adenine glycosylase
+BARBAKC583_RS02000	418517	419011	+	DUF721 domain-containing protein
+BARBAKC583_RS02005	419106	419756	+	DsbA family protein
+BARBAKC583_RS02010	419941	422628	+	pyruvate%2C phosphate dikinase
+BARBAKC583_RS02020	423656	424252	+	superoxide dismutase
+BARBAKC583_RS02025	424345	426435	-	S9 family peptidase
+BARBAKC583_RS02030	427263	427694	+	Ros/MucR family transcriptional regulator
+BARBAKC583_RS02035	427808	428215	-	SufE family protein
+BARBAKC583_RS02040	428340	428702	-	DUF5330 domain-containing protein
+BARBAKC583_RS02050	429266	430111	+	peptidoglycan-binding domain-containing protein
+BARBAKC583_RS02055	430277	430513	+	hypothetical protein
+BARBAKC583_RS02060	430531	431196	+	response regulator transcription factor
+BARBAKC583_RS02065	431193	432614	+	sensor histidine kinase
+BARBAKC583_RS02070	432728	433564	+	tetratricopeptide repeat protein
+BARBAKC583_RS02075	433763	434239	+	cytochrome c maturation protein CcmE
+BARBAKC583_RS02080	434255	436234	+	heme lyase CcmF/NrfE family subunit
+BARBAKC583_RS02085	436237	436680	+	cytochrome c-type biogenesis protein
+BARBAKC583_RS02095	436882	438399	+	Do family serine endopeptidase
+BARBAKC583_RS02100	438476	439162	+	response regulator transcription factor
+BARBAKC583_RS02105	439159	440541	+	sensor histidine kinase
+BARBAKC583_RS02110	440857	443178	-	sensor histidine kinase
+BARBAKC583_RS02115	443458	446085	-	aminopeptidase N
+BARBAKC583_RS02120	446164	446991	-	uracil-DNA glycosylase
+BARBAKC583_RS02125	447202	447960	-	hydroxymethylpyrimidine/phosphomethylpyrimidine kinase
+BARBAKC583_RS02130	447951	448556	-	thiamine phosphate synthase
+BARBAKC583_RS02135	448553	449326	-	thiazole synthase
+BARBAKC583_RS02140	449331	449528	-	sulfur carrier protein ThiS
+BARBAKC583_RS02145	449532	450482	-	FAD-dependent oxidoreductase
+BARBAKC583_RS02150	450479	452314	-	phosphomethylpyrimidine synthase ThiC
+BARBAKC583_RS02155	453146	454366	-	porin
+BARBAKC583_RS02175	455883	456107	+	hypothetical protein
+BARBAKC583_RS02185	456477	458420	-	DUF1561 family protein
+BARBAKC583_RS02190	459089	459862	+	N-acetylmuramoyl-L-alanine amidase
+BARBAKC583_RS02200	460068	460862	-	heme ABC transporter ATP-binding protein
+BARBAKC583_RS02205	460855	461955	-	FecCD family ABC transporter permease
+BARBAKC583_RS02210	461952	462863	-	heme/hemin ABC transporter substrate-binding protein
+BARBAKC583_RS02215	462881	463924	-	hemin-degrading factor
+BARBAKC583_RS02220	464173	466368	-	TonB-dependent hemoglobin/transferrin/lactoferrin family receptor
+BARBAKC583_RS02230	467633	469597	-	lytic transglycosylase domain-containing protein
+BARBAKC583_RS02235	469973	470857	+	4-hydroxy-tetrahydrodipicolinate synthase
+BARBAKC583_RS02240	470876	471352	+	SsrA-binding protein SmpB
+BARBAKC583_RS02245	471387	472043	-	uracil-DNA glycosylase
+BARBAKC583_RS02250	472472	472870	+	DNA-directed RNA polymerase subunit omega
+BARBAKC583_RS02255	472998	475226	+	RelA/SpoT family protein
+BARBAKC583_RS02260	475242	475820	+	orotate phosphoribosyltransferase
+BARBAKC583_RS02265	475914	476516	+	DUF2062 domain-containing protein
+BARBAKC583_RS02270	476513	476914	+	holo-ACP synthase
+BARBAKC583_RS02275	476982	477764	+	signal peptidase I
+BARBAKC583_RS02280	477775	478482	+	ribonuclease III
+BARBAKC583_RS02285	478475	479380	+	GTPase Era
+BARBAKC583_RS02290	479383	480120	+	DNA repair protein RecO
+BARBAKC583_RS02295	480157	481002	+	pantoate--beta-alanine ligase
+BARBAKC583_RS02300	481014	481829	+	3-methyl-2-oxobutanoate hydroxymethyltransferase
+BARBAKC583_RS02305	482190	482807	-	HD domain-containing protein
+BARBAKC583_RS02310	482811	483671	-	CAF17-like 4Fe-4S cluster assembly/insertion protein YgfZ
+BARBAKC583_RS02315	483735	485060	+	dihydroorotase
+BARBAKC583_RS02320	485478	486980	+	cysteine--tRNA ligase
+BARBAKC583_RS02325	487389	489272	+	ABCB family ABC transporter ATP-binding protein/permease
+BARBAKC583_RS02330	489384	490082	+	phosphatidylserine decarboxylase
+BARBAKC583_RS02335	490091	490930	+	CDP-diacylglycerol--serine O-phosphatidyltransferase
+BARBAKC583_RS02340	491013	491762	-	SDR family NAD(P)-dependent oxidoreductase
+BARBAKC583_RS02345	491765	493255	-	amidophosphoribosyltransferase
+BARBAKC583_RS02350	493343	493906	-	CvpA family protein
+BARBAKC583_RS02355	494201	494668	-	CvpA family protein
+BARBAKC583_RS02360	494823	496196	-	DNA repair protein RadA
+BARBAKC583_RS02365	496209	497711	-	replicative DNA helicase
+BARBAKC583_RS02370	498165	498704	-	50S ribosomal protein L9
+BARBAKC583_RS02375	498730	499710	-	hypothetical protein
+BARBAKC583_RS02380	499866	500114	-	30S ribosomal protein S18
+BARBAKC583_RS02385	500114	500524	-	30S ribosomal protein S6
+BARBAKC583_RS02390	500881	501468	+	undecaprenyl-diphosphatase
+BARBAKC583_RS02395	501535	502479	+	ACP S-malonyltransferase
+BARBAKC583_RS02400	502498	503235	+	3-oxoacyl-[acyl-carrier-protein] reductase
+BARBAKC583_RS02405	503494	503730	+	acyl carrier protein
+BARBAKC583_RS02410	503840	505102	+	beta-ketoacyl-ACP synthase II
+BARBAKC583_RS02415	505211	506320	+	endolytic transglycosylase MltG
+BARBAKC583_RS02420	506402	507067	+	guanylate kinase
+BARBAKC583_RS02425	507118	507948	-	16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase RsmA
+BARBAKC583_RS02430	507939	508949	-	4-hydroxythreonine-4-phosphate dehydrogenase PdxA
+BARBAKC583_RS02435	508949	509926	-	SurA N-terminal domain-containing protein
+BARBAKC583_RS02440	510034	512409	-	LPS-assembly protein LptD
+BARBAKC583_RS02445	512422	513513	-	LPS export ABC transporter permease LptG
+BARBAKC583_RS02450	513510	514700	-	LPS export ABC transporter permease LptF
+BARBAKC583_RS02455	515077	515526	+	DNA polymerase III subunit chi
+BARBAKC583_RS02460	515526	515705	+	hypothetical protein
+BARBAKC583_RS02465	515698	515961	+	hypothetical protein
+BARBAKC583_RS02470	516533	518980	+	autotransporter outer membrane beta-barrel domain-containing protein
+BARBAKC583_RS02475	519417	521819	+	BafA family autotransporter
+BARBAKC583_RS02485	522543	522965	+	nucleoside-diphosphate kinase
+BARBAKC583_RS02490	523436	524020	-	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
+BARBAKC583_RS02495	524104	526080	-	excinuclease ABC subunit UvrC
+BARBAKC583_RS02500	526474	527340	-	23S rRNA (adenine(2030)-N(6))-methyltransferase RlmJ
+BARBAKC583_RS02505	528351	529628	+	serine--tRNA ligase
+BARBAKC583_RS02510	529763	530422	+	protein-L-isoaspartate(D-aspartate) O-methyltransferase
+BARBAKC583_RS02515	530587	531780	+	peptidoglycan DD-metalloendopeptidase family protein
+BARBAKC583_RS02520	532537	533001	+	preprotein translocase subunit YajC
+BARBAKC583_RS02525	533391	533777	+	Mth938-like domain-containing protein
+BARBAKC583_RS02530	533774	534634	+	phytoene/squalene synthase family protein
+BARBAKC583_RS02535	534886	536775	-	peptidyl-prolyl cis-trans isomerase
+BARBAKC583_RS02540	536964	537728	+	triose-phosphate isomerase
+BARBAKC583_RS02545	537827	538276	+	preprotein translocase subunit SecG
+BARBAKC583_RS02550	538394	540022	+	CTP synthase
+BARBAKC583_RS02555	540059	540907	+	3-deoxy-8-phosphooctulonate synthase
+BARBAKC583_RS02560	540998	542269	+	phosphopyruvate hydratase
+BARBAKC583_RS02565	542600	542929	+	FtsB family cell division protein
+BARBAKC583_RS02570	543060	544112	+	pyruvate dehydrogenase (acetyl-transferring) E1 component subunit alpha
+BARBAKC583_RS02575	544129	545493	+	pyruvate dehydrogenase complex E1 component subunit beta
+BARBAKC583_RS02580	545508	546833	+	pyruvate dehydrogenase complex dihydrolipoamide acetyltransferase
+BARBAKC583_RS02585	547049	548509	+	dihydrolipoyl dehydrogenase
+BARBAKC583_RS02590	548586	549539	+	lipoyl synthase
+BARBAKC583_RS02595	549551	550012	+	type II toxin-antitoxin system RatA family toxin
+BARBAKC583_RS02600	550103	551296	-	bifunctional 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase/2-C-methyl-D-erythritol 2%2C4-cyclodiphosphate synthase
+BARBAKC583_RS02605	551962	554190	+	sensor histidine kinase NtrY-like
+BARBAKC583_RS02610	554218	555576	+	nitrogen assimilation response regulator NtrX
+BARBAKC583_RS02620	555580	556956	+	Trk system potassium transporter TrkA
+BARBAKC583_RS02625	556961	557768	+	hypothetical protein
+BARBAKC583_RS02630	557915	558547	+	ATP-dependent Clp endopeptidase proteolytic subunit ClpP
+BARBAKC583_RS02635	558755	560029	+	ATP-dependent Clp protease ATP-binding subunit ClpX
+BARBAKC583_RS02640	560206	562629	+	endopeptidase La
+BARBAKC583_RS02645	562832	563134	+	HU family DNA-binding protein
+BARBAKC583_RS02650	563823	565217	-	methylenetetrahydrofolate--tRNA-(uracil(54)-C(5))-methyltransferase (FADH(2)-oxidizing) TrmFO
+BARBAKC583_RS02660	565640	567064	+	trigger factor
+BARBAKC583_RS02665	567236	568735	+	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatB
+BARBAKC583_RS02670	568930	569328	+	NADH:ubiquinone oxidoreductase subunit NDUFA12
+BARBAKC583_RS02680	569416	569814	+	DUF2155 domain-containing protein
+BARBAKC583_RS02685	569986	570492	+	hypothetical protein
+BARBAKC583_RS02690	570600	571322	+	rhomboid family intramembrane serine protease
+BARBAKC583_RS02695	571312	572142	-	TrmH family RNA methyltransferase
+BARBAKC583_RS02710	572688	573863	+	elongation factor Tu
+BARBAKC583_RS02720	574217	574420	+	preprotein translocase subunit SecE
+BARBAKC583_RS02725	574441	574971	+	transcription termination/antitermination protein NusG
+BARBAKC583_RS02730	575124	575552	+	50S ribosomal protein L11
+BARBAKC583_RS02735	575557	576255	+	50S ribosomal protein L1
+BARBAKC583_RS02740	576612	577130	+	50S ribosomal protein L10
+BARBAKC583_RS02745	577236	577607	+	50S ribosomal protein L7/L12
+BARBAKC583_RS02750	577891	582042	+	DNA-directed RNA polymerase subunit beta
+BARBAKC583_RS02755	582204	586415	+	DNA-directed RNA polymerase subunit beta'
+BARBAKC583_RS02760	586776	587462	+	nitroreductase
+BARBAKC583_RS02770	589946	591292	-	D-alanyl-D-alanine carboxypeptidase
+BARBAKC583_RS02775	591613	591897	+	ATP-dependent Clp protease adapter ClpS
+BARBAKC583_RS02780	591904	594270	+	ATP-dependent Clp protease ATP-binding subunit ClpA
+BARBAKC583_RS02785	594267	594689	-	HIT family protein
+BARBAKC583_RS02790	594775	595239	-	RidA family protein
+BARBAKC583_RS02795	595376	596191	+	EipB family protein
+BARBAKC583_RS02800	596350	597165	+	30S ribosomal protein S2
+BARBAKC583_RS02805	597285	598208	+	translation elongation factor Ts
+BARBAKC583_RS02810	598348	599067	+	UMP kinase
+BARBAKC583_RS02815	599104	599664	+	ribosome recycling factor
+BARBAKC583_RS02820	600413	601231	+	phosphatidate cytidylyltransferase
+BARBAKC583_RS02825	601318	602381	+	RIP metalloprotease RseP
+BARBAKC583_RS02830	602564	604960	+	outer membrane protein assembly factor BamA
+BARBAKC583_RS02835	605030	606076	+	UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltransferase
+BARBAKC583_RS02840	606078	606542	+	3-hydroxyacyl-ACP dehydratase FabZ
+BARBAKC583_RS02845	606568	607392	+	acyl-ACP--UDP-N-acetylglucosamine O-acyltransferase
+BARBAKC583_RS02850	607395	608267	+	LpxI family protein
+BARBAKC583_RS02855	608257	609441	+	lipid-A-disaccharide synthase
+BARBAKC583_RS02865	609473	610252	-	amino acid ABC transporter ATP-binding protein
+BARBAKC583_RS02870	610332	611039	-	ABC transporter permease
+BARBAKC583_RS02875	611036	611758	-	ABC transporter permease
+BARBAKC583_RS02880	611817	612584	-	transporter substrate-binding domain-containing protein
+BARBAKC583_RS02885	612955	614247	-	citrate synthase
+BARBAKC583_RS02890	614495	615925	-	glutamate--tRNA ligase
+BARBAKC583_RS02895	616042	618315	+	ComEC/Rec2 family competence protein
+BARBAKC583_RS02900	618674	619375	+	ribose-5-phosphate isomerase RpiA
+BARBAKC583_RS02910	619437	619979	+	DUF2059 domain-containing protein
+BARBAKC583_RS02915	620178	621566	+	glutathione-disulfide reductase
+BARBAKC583_RS02920	621641	623005	+	class II 3-deoxy-7-phosphoheptulonate synthase
+BARBAKC583_RS02925	623123	624799	+	NAD+ synthase
+BARBAKC583_RS02930	624810	626180	+	glutamate--tRNA ligase
+BARBAKC583_RS02935	626256	627644	-	DEAD/DEAH box helicase
+BARBAKC583_RS02940	627797	628570	-	NAD kinase
+BARBAKC583_RS02955	629441	629803	-	cell cycle two-component system response regulator CpdR
+BARBAKC583_RS02960	630537	631001	+	Hsp20 family protein
+BARBAKC583_RS02970	631806	632165	+	iron-sulfur cluster assembly accessory protein
+BARBAKC583_RS02975	632257	633189	-	lipid A biosynthesis lauroyl acyltransferase
+BARBAKC583_RS02980	633193	634221	-	zinc-binding dehydrogenase
+BARBAKC583_RS02985	634249	635544	-	beta-ketoacyl-ACP synthase
+BARBAKC583_RS02990	635563	636132	-	hypothetical protein
+BARBAKC583_RS02995	636143	636427	-	acyl carrier protein
+BARBAKC583_RS03000	636621	638954	-	NADP-dependent malic enzyme
+BARBAKC583_RS03005	639489	644120	-	coiled-coil domain-containing protein
+BARBAKC583_RS03010	644989	645228	+	RNA chaperone Hfq
+BARBAKC583_RS03015	645283	646659	+	GTPase HflX
+BARBAKC583_RS03030	647530	648606	+	COX15/CtaA family protein
+BARBAKC583_RS03035	648627	649562	-	N-acetyl-gamma-glutamyl-phosphate reductase
+BARBAKC583_RS03040	649870	651168	+	serine hydroxymethyltransferase
+BARBAKC583_RS03045	651194	651676	+	transcriptional regulator NrdR
+BARBAKC583_RS03050	651669	652793	+	bifunctional diaminohydroxyphosphoribosylaminopyrimidine deaminase/5-amino-6-(5-phosphoribosylamino)uracil reductase RibD
+BARBAKC583_RS03055	652775	653392	+	riboflavin synthase
+BARBAKC583_RS03060	653477	653935	+	6%2C7-dimethyl-8-ribityllumazine synthase
+BARBAKC583_RS03065	653939	654403	+	transcription antitermination factor NusB
+BARBAKC583_RS03070	654480	654947	-	outer membrane protein assembly factor BamE
+BARBAKC583_RS03075	655163	655720	+	YceD family protein
+BARBAKC583_RS03080	655867	656937	+	phosphate acyltransferase PlsX
+BARBAKC583_RS03085	656987	657961	+	beta-ketoacyl-ACP synthase III
+BARBAKC583_RS03090	658038	658349	+	integration host factor subunit alpha
+BARBAKC583_RS03095	658534	659040	+	MerR family transcriptional regulator
+BARBAKC583_RS03100	659071	661047	-	threonine--tRNA ligase
+BARBAKC583_RS03105	661172	661525	-	membrane protein insertion efficiency factor YidD
+BARBAKC583_RS03110	661518	661955	-	iron-sulfur cluster assembly scaffold protein
+BARBAKC583_RS03115	662083	662703	+	GTP cyclohydrolase I FolE
+BARBAKC583_RS03125	663087	664298	+	alpha/beta hydrolase
+BARBAKC583_RS03130	664431	664955	+	hypothetical protein
+BARBAKC583_RS03135	665209	667128	-	DUF1561 family protein
+BARBAKC583_RS03150	668413	669087	+	protein-L-isoaspartate O-methyltransferase family protein
+BARBAKC583_RS03155	669141	670427	+	TolC family outer membrane protein
+BARBAKC583_RS03160	670610	671185	+	DUF2497 domain-containing protein
+BARBAKC583_RS03165	671349	674075	+	valine--tRNA ligase
+BARBAKC583_RS03170	674643	675389	-	amino acid ABC transporter ATP-binding protein
+BARBAKC583_RS03175	675401	676117	-	amino acid ABC transporter permease
+BARBAKC583_RS03180	676119	676871	-	amino acid ABC transporter permease
+BARBAKC583_RS03190	678545	679453	-	transporter substrate-binding domain-containing protein
+BARBAKC583_RS03195	679571	680362	-	exodeoxyribonuclease III
+BARBAKC583_RS03200	680844	681215	+	30S ribosomal protein S12
+BARBAKC583_RS03205	681247	681717	+	30S ribosomal protein S7
+BARBAKC583_RS03210	681747	683831	+	elongation factor G
+BARBAKC583_RS03215	683896	685071	+	elongation factor Tu
+BARBAKC583_RS03220	685140	685448	+	30S ribosomal protein S10
+BARBAKC583_RS03225	685476	686216	+	50S ribosomal protein L3
+BARBAKC583_RS03230	686216	686836	+	50S ribosomal protein L4
+BARBAKC583_RS03235	686833	687126	+	50S ribosomal protein L23
+BARBAKC583_RS03240	687141	687974	+	50S ribosomal protein L2
+BARBAKC583_RS03245	687990	688268	+	30S ribosomal protein S19
+BARBAKC583_RS03250	688271	688660	+	50S ribosomal protein L22
+BARBAKC583_RS03255	688660	689370	+	30S ribosomal protein S3
+BARBAKC583_RS03260	689407	689820	+	50S ribosomal protein L16
+BARBAKC583_RS03265	689833	690033	+	50S ribosomal protein L29
+BARBAKC583_RS03270	690045	690287	+	30S ribosomal protein S17
+BARBAKC583_RS03275	690436	690804	+	50S ribosomal protein L14
+BARBAKC583_RS03280	690817	691131	+	50S ribosomal protein L24
+BARBAKC583_RS03285	691124	691501	+	large ribosomal subunit protein uL5
+BARBAKC583_RS03290	691500	692051	+	alpha/beta hydrolase
+BARBAKC583_RS03295	692184	692708	+	hypothetical protein
+BARBAKC583_RS03300	692962	694881	-	DUF1561 family protein
+BARBAKC583_RS03315	696166	696840	+	protein-L-isoaspartate O-methyltransferase family protein
+BARBAKC583_RS03320	696894	698111	+	TolC family protein
+BARBAKC583_RS03325	698294	698869	+	DUF2497 domain-containing protein
+BARBAKC583_RS03330	699033	701759	+	valine--tRNA ligase
+BARBAKC583_RS03335	702327	703073	-	amino acid ABC transporter ATP-binding protein
+BARBAKC583_RS03340	703085	703801	-	amino acid ABC transporter permease
+BARBAKC583_RS03345	703803	704555	-	amino acid ABC transporter permease
+BARBAKC583_RS03350	704701	705609	-	transporter substrate-binding domain-containing protein
+BARBAKC583_RS03355	705727	706518	-	exodeoxyribonuclease III
+BARBAKC583_RS03360	707000	707371	+	30S ribosomal protein S12
+BARBAKC583_RS03365	707403	707873	+	30S ribosomal protein S7
+BARBAKC583_RS03370	707903	709987	+	elongation factor G
+BARBAKC583_RS03375	710052	711227	+	elongation factor Tu
+BARBAKC583_RS03380	711296	711604	+	30S ribosomal protein S10
+BARBAKC583_RS03385	711632	712372	+	50S ribosomal protein L3
+BARBAKC583_RS03390	712372	712992	+	50S ribosomal protein L4
+BARBAKC583_RS03400	712989	713282	+	50S ribosomal protein L23
+BARBAKC583_RS03405	713297	714130	+	50S ribosomal protein L2
+BARBAKC583_RS03410	714146	714424	+	30S ribosomal protein S19
+BARBAKC583_RS03415	714427	714816	+	50S ribosomal protein L22
+BARBAKC583_RS03420	714816	715526	+	30S ribosomal protein S3
+BARBAKC583_RS03425	715563	715976	+	50S ribosomal protein L16
+BARBAKC583_RS03430	715989	716189	+	50S ribosomal protein L29
+BARBAKC583_RS03435	716201	716443	+	30S ribosomal protein S17
+BARBAKC583_RS03440	716592	716960	+	50S ribosomal protein L14
+BARBAKC583_RS03445	716973	717287	+	50S ribosomal protein L24
+BARBAKC583_RS03450	717280	717837	+	50S ribosomal protein L5
+BARBAKC583_RS03455	717862	718167	+	30S ribosomal protein S14
+BARBAKC583_RS03460	718182	718580	+	30S ribosomal protein S8
+BARBAKC583_RS03465	718619	719152	+	50S ribosomal protein L6
+BARBAKC583_RS03470	719165	719527	+	50S ribosomal protein L18
+BARBAKC583_RS03475	719639	720208	+	30S ribosomal protein S5
+BARBAKC583_RS03480	720241	720447	+	50S ribosomal protein L30
+BARBAKC583_RS03485	720475	720939	+	50S ribosomal protein L15
+BARBAKC583_RS03490	721068	722414	+	preprotein translocase subunit SecY
+BARBAKC583_RS03495	722411	722989	+	adenylate kinase
+BARBAKC583_RS03500	723176	723544	+	30S ribosomal protein S13
+BARBAKC583_RS03505	723667	724056	+	30S ribosomal protein S11
+BARBAKC583_RS03510	724147	725160	+	DNA-directed RNA polymerase subunit alpha
+BARBAKC583_RS03515	725185	725610	+	50S ribosomal protein L17
+BARBAKC583_RS03520	725791	727185	+	DegQ family serine endoprotease
+BARBAKC583_RS03525	727195	728514	+	replication-associated recombination protein A
+BARBAKC583_RS03530	728971	730014	+	recombinase RecA
+BARBAKC583_RS03535	730206	732866	+	alanine--tRNA ligase
+BARBAKC583_RS03540	732964	734751	-	glucan ABC transporter ATP-binding protein/ permease
+BARBAKC583_RS03545	734949	735932	+	RluA family pseudouridine synthase
+BARBAKC583_RS03550	736321	737106	+	ATP12 family chaperone protein
+BARBAKC583_RS03555	737136	737681	-	hypothetical protein
+BARBAKC583_RS03560	737835	739244	-	type I glutamate--ammonia ligase
+BARBAKC583_RS03565	739304	739640	-	P-II family nitrogen regulator
+BARBAKC583_RS03570	739902	742796	-	excinuclease ABC subunit UvrA
+BARBAKC583_RS03575	742995	743528	+	single-stranded DNA-binding protein
+BARBAKC583_RS03585	744012	746798	+	DNA gyrase subunit A
+BARBAKC583_RS03590	746816	747310	+	pantetheine-phosphate adenylyltransferase
+BARBAKC583_RS03595	747325	747900	+	peptidylprolyl isomerase
+BARBAKC583_RS03600	747917	748429	+	peptidylprolyl isomerase
+BARBAKC583_RS03605	748730	749863	+	tRNA guanosine(34) transglycosylase Tgt
+BARBAKC583_RS03610	750669	752093	-	MFS transporter
+BARBAKC583_RS03615	752211	753425	-	NADP-dependent isocitrate dehydrogenase
+BARBAKC583_RS03620	753707	754348	+	hypothetical protein
+BARBAKC583_RS03630	755316	756305	+	class II fructose-bisphosphatase
+BARBAKC583_RS03635	756404	757510	-	branched-chain amino acid aminotransferase
+BARBAKC583_RS03640	758037	760544	-	SPOR domain-containing protein
+BARBAKC583_RS03645	760680	762437	-	arginine--tRNA ligase
+BARBAKC583_RS03650	762468	763664	-	deoxyguanosinetriphosphate triphosphohydrolase
+BARBAKC583_RS03655	763771	764094	+	HesB/IscA family protein
+BARBAKC583_RS03660	764155	765117	+	hypothetical protein
+BARBAKC583_RS03665	765167	765919	+	cytochrome c biogenesis CcdA family protein
+BARBAKC583_RS03670	765970	767319	+	bifunctional UDP-N-acetylglucosamine diphosphorylase/glucosamine-1-phosphate N-acetyltransferase GlmU
+BARBAKC583_RS03675	767497	769320	+	glutamine--fructose-6-phosphate transaminase (isomerizing)
+BARBAKC583_RS03680	769544	771652	-	ATP-dependent DNA helicase RecG
+BARBAKC583_RS03685	771789	773549	-	GNAT family N-acetyltransferase
+BARBAKC583_RS03690	773945	775867	-	DUF1561 family protein
+BARBAKC583_RS03700	776689	778029	-	acetyl-CoA carboxylase biotin carboxylase subunit
+BARBAKC583_RS03705	778044	778526	-	acetyl-CoA carboxylase biotin carboxyl carrier protein
+BARBAKC583_RS03715	778743	779600	-	DsbA family protein
+BARBAKC583_RS03725	779961	780572	-	phosphoribosylglycinamide formyltransferase
+BARBAKC583_RS03730	780569	781654	-	phosphoribosylformylglycinamidine cyclo-ligase
+BARBAKC583_RS03740	781822	783036	+	AI-2E family transporter
+BARBAKC583_RS03745	783033	783722	+	DnaA regulatory inactivator HdaA
+BARBAKC583_RS03755	784228	784533	+	ETC complex I subunit
+BARBAKC583_RS03770	785717	785925	+	hypothetical protein
+BARBAKC583_RS03780	786307	788241	-	DUF1561 family protein
+BARBAKC583_RS03795	789462	789827	+	NADH-quinone oxidoreductase subunit A
+BARBAKC583_RS03800	789818	790399	+	NuoB/complex I 20 kDa subunit family protein
+BARBAKC583_RS03805	790409	791026	+	NADH-quinone oxidoreductase subunit C
+BARBAKC583_RS03810	791112	792302	+	NADH-quinone oxidoreductase subunit D
+BARBAKC583_RS03815	792302	792979	+	NADH-quinone oxidoreductase subunit NuoE
+BARBAKC583_RS03820	793123	794430	+	NADH-quinone oxidoreductase subunit NuoF
+BARBAKC583_RS03825	794495	796564	+	NADH-quinone oxidoreductase subunit NuoG
+BARBAKC583_RS03830	796589	797635	+	NADH-quinone oxidoreductase subunit NuoH
+BARBAKC583_RS03835	797649	798140	+	NADH-quinone oxidoreductase subunit NuoI
+BARBAKC583_RS03840	798237	798857	+	NADH-quinone oxidoreductase subunit J
+BARBAKC583_RS03845	798871	799179	+	NADH-quinone oxidoreductase subunit NuoK
+BARBAKC583_RS03850	799186	801150	+	NADH-quinone oxidoreductase subunit L
+BARBAKC583_RS03855	801150	802619	+	NADH-quinone oxidoreductase subunit M
+BARBAKC583_RS03860	802638	804095	+	NADH-quinone oxidoreductase subunit NuoN
+BARBAKC583_RS03865	804099	804902	+	biotin--[acetyl-CoA-carboxylase] ligase
+BARBAKC583_RS03870	804952	806628	+	ribonuclease J
+BARBAKC583_RS03875	806863	808188	+	proline--tRNA ligase
+BARBAKC583_RS03880	808200	809468	+	lipoprotein-releasing ABC transporter permease subunit
+BARBAKC583_RS03885	809468	810148	+	ABC transporter ATP-binding protein
+BARBAKC583_RS03890	810225	810518	+	FAD assembly factor SdhE
+BARBAKC583_RS03895	810524	814015	+	transcription-repair coupling factor
+BARBAKC583_RS03905	816192	816806	+	invasion associated locus B family protein
+BARBAKC583_RS03910	816906	819442	-	Rne/Rng family ribonuclease
+BARBAKC583_RS03915	820035	821273	+	N-acetylmuramoyl-L-alanine amidase
+BARBAKC583_RS03920	821436	823907	+	penicillin-binding protein 1A
+BARBAKC583_RS03925	824125	824193	+	peptide chain release factor 2
+BARBAKC583_RS03930	825372	825845	-	peroxiredoxin
+BARBAKC583_RS03935	825929	827182	-	tyrosine--tRNA ligase
+BARBAKC583_RS03945	827553	828260	-	alpha/beta hydrolase
+BARBAKC583_RS03950	828438	829586	+	cysteine desulfurase family protein
+BARBAKC583_RS03955	829744	831255	+	Fe-S cluster assembly protein SufB
+BARBAKC583_RS03960	831314	832069	+	Fe-S cluster assembly ATPase SufC
+BARBAKC583_RS03965	832081	833352	+	Fe-S cluster assembly protein SufD
+BARBAKC583_RS03970	833362	834606	+	cysteine desulfurase
+BARBAKC583_RS03975	834599	835000	+	SUF system Fe-S cluster assembly protein
+BARBAKC583_RS03985	835542	836756	-	UbiH/UbiF family hydroxylase
+BARBAKC583_RS03990	836940	837701	+	phosphatidylcholine synthase
+BARBAKC583_RS03995	837809	838624	-	MBL fold metallo-hydrolase
+BARBAKC583_RS04000	838635	839408	-	TatD family hydrolase
+BARBAKC583_RS04005	839398	840957	-	methionine--tRNA ligase
+BARBAKC583_RS04010	841031	842074	-	DNA polymerase III subunit delta'
+BARBAKC583_RS04015	842071	842715	-	dTMP kinase
+BARBAKC583_RS04020	842986	843831	-	septal ring lytic transglycosylase RlpA family protein
+BARBAKC583_RS04030	844700	845536	-	tRNA 2-thiocytidine(32) synthetase TtcA
+BARBAKC583_RS04035	845801	846418	-	30S ribosomal protein S4
+BARBAKC583_RS04040	846598	847413	-	glutamate racemase
+BARBAKC583_RS04045	847413	848240	-	RNA methyltransferase
+BARBAKC583_RS04050	848590	849420	+	type I methionyl aminopeptidase
+BARBAKC583_RS04055	849438	850235	+	RadC family protein
+BARBAKC583_RS04060	850283	850495	-	DUF3126 family protein
+BARBAKC583_RS04065	850662	851435	-	alpha/beta fold hydrolase
+BARBAKC583_RS04070	851439	851936	-	DUF192 domain-containing protein
+BARBAKC583_RS04075	852038	852613	-	cold-shock protein
+BARBAKC583_RS04080	853164	854648	-	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatA
+BARBAKC583_RS04085	854679	854966	-	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatC
+BARBAKC583_RS04090	855133	855618	+	Holliday junction resolvase RuvX
+BARBAKC583_RS04095	855603	857228	-	acyl-CoA dehydrogenase family protein
+BARBAKC583_RS04100	857353	858318	+	aspartate carbamoyltransferase catalytic subunit
+BARBAKC583_RS04105	858315	859610	+	dihydroorotase
+BARBAKC583_RS04110	859628	860263	+	glycerol-3-phosphate 1-O-acyltransferase PlsY
+BARBAKC583_RS04125	860256	861446	+	DNA-processing protein DprA
+BARBAKC583_RS04130	861827	864436	+	type I DNA topoisomerase
+BARBAKC583_RS04135	864433	866664	+	ribonuclease R
+BARBAKC583_RS04140	866941	867144	+	hypothetical protein
+BARBAKC583_RS04150	868208	868375	+	50S ribosomal protein L33
+BARBAKC583_RS04155	868907	869461	+	thermonuclease family protein
+BARBAKC583_RS04160	869508	870143	+	uracil-DNA glycosylase family protein
+BARBAKC583_RS04165	870164	870643	+	Lrp/AsnC family transcriptional regulator
+BARBAKC583_RS04170	870687	871691	-	nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase
+BARBAKC583_RS04175	872024	873004	-	tRNA dihydrouridine(20/20a) synthase DusA
+BARBAKC583_RS04180	873371	875908	-	response regulator
+BARBAKC583_RS04185	876134	876655	+	flagellar biosynthetic protein FliO
+BARBAKC583_RS04190	877063	877596	-	flavin reductase family protein
+BARBAKC583_RS04195	877742	878434	+	ribulose-phosphate 3-epimerase
+BARBAKC583_RS04200	878431	879735	+	adenylosuccinate lyase
+BARBAKC583_RS04205	879814	880362	+	RBBP9/YdeN family alpha/beta hydrolase
+BARBAKC583_RS04210	880548	881312	+	phosphoribosylaminoimidazolesuccinocarboxamide synthase
+BARBAKC583_RS04215	881386	881625	+	phosphoribosylformylglycinamidine synthase subunit PurS
+BARBAKC583_RS04220	881638	882306	+	phosphoribosylformylglycinamidine synthase subunit PurQ
+BARBAKC583_RS04225	882527	884740	+	phosphoribosylformylglycinamidine synthase subunit PurL
+BARBAKC583_RS04230	884807	885040	+	BolA/IbaG family iron-sulfur metabolism protein
+BARBAKC583_RS04235	885139	885471	+	Grx4 family monothiol glutaredoxin
+BARBAKC583_RS04245	885545	886798	+	multidrug effflux MFS transporter
+BARBAKC583_RS04250	886907	889144	-	DNA topoisomerase IV subunit A
+BARBAKC583_RS04255	889349	891139	-	aspartate--tRNA ligase
+BARBAKC583_RS04260	891275	892453	+	ribonuclease D
+BARBAKC583_RS04265	892864	893112	+	zinc-finger domain-containing protein
+BARBAKC583_RS04270	893145	894413	+	FAD-binding protein
+BARBAKC583_RS04275	894474	897959	-	DNA polymerase III subunit alpha
+BARBAKC583_RS04280	898839	900755	+	DUF1561 family protein
+BARBAKC583_RS04285	901154	902569	-	DEAD/DEAH box helicase
+BARBAKC583_RS04290	902722	903240	-	hypothetical protein
+BARBAKC583_RS04305	904896	907400	+	protein translocase subunit SecD
+BARBAKC583_RS04310	908112	909065	+	lysylphosphatidylglycerol synthase transmembrane domain-containing protein
+BARBAKC583_RS04315	909304	910887	-	TerC family protein
+BARBAKC583_RS04335	913970	915907	+	DUF1561 family protein
+BARBAKC583_RS04340	916272	918221	+	DUF1561 family protein
+BARBAKC583_RS04345	918392	919630	-	DUF2087 domain-containing protein
+BARBAKC583_RS04350	919649	920335	-	hypothetical protein
+BARBAKC583_RS04355	920779	921966	+	hypothetical protein
+BARBAKC583_RS04360	921960	923168	+	MFS transporter
+BARBAKC583_RS04365	923603	924247	+	LemA family protein
+BARBAKC583_RS04370	924247	925101	+	TPM domain-containing protein
+BARBAKC583_RS04375	925323	926048	+	lipoyl(octanoyl) transferase LipB
+BARBAKC583_RS04380	926128	928206	+	DNA topoisomerase IV subunit B
+BARBAKC583_RS04385	928224	930008	-	single-stranded-DNA-specific exonuclease RecJ
+BARBAKC583_RS04390	930296	930760	+	50S ribosomal protein L13
+BARBAKC583_RS04395	930763	931248	+	30S ribosomal protein S9
+BARBAKC583_RS04400	931408	931773	-	response regulator
+BARBAKC583_RS04405	932336	933100	-	N-acetylmuramoyl-L-alanine amidase
+BARBAKC583_RS04410	933899	934180	-	hypothetical protein
+BARBAKC583_RS04425	936236	940015	-	Vomp family autotransporter
+BARBAKC583_RS04430	941025	942425	+	D-serine/D-alanine/glycine transporter
+BARBAKC583_RS04435	942499	943518	-	ketol-acid reductoisomerase
+BARBAKC583_RS04440	944210	944944	-	pyridoxine 5'-phosphate synthase
+BARBAKC583_RS04445	945025	946146	-	ATP-dependent DNA helicase
+BARBAKC583_RS04450	946452	947323	-	tRNA (adenosine(37)-N6)-dimethylallyltransferase MiaA
+BARBAKC583_RS04455	947452	947712	+	hypothetical protein
+BARBAKC583_RS04460	947859	949349	-	Do family serine endopeptidase
+BARBAKC583_RS04465	949572	950444	-	protease modulator HflC
+BARBAKC583_RS04470	950447	951589	-	FtsH protease activity modulator HflK
+BARBAKC583_RS04475	951709	952218	-	dihydrofolate reductase
+BARBAKC583_RS04480	952215	953009	-	thymidylate synthase
+BARBAKC583_RS04485	953222	954529	+	MFS family transporter
+BARBAKC583_RS04490	954621	954926	-	DUF2853 family protein
+BARBAKC583_RS04495	955540	956073	+	SspB family protein
+BARBAKC583_RS04500	956084	956266	+	DUF4169 family protein
+BARBAKC583_RS04505	956624	959074	+	ATP-dependent helicase
+BARBAKC583_RS04510	959137	959766	-	DapH/DapD/GlmU-related protein
+BARBAKC583_RS04515	959998	960576	+	SCO family protein
+BARBAKC583_RS04520	960603	961478	+	50S ribosomal protein L11 methyltransferase
+BARBAKC583_RS04525	961496	963319	+	aminopeptidase P family protein
+BARBAKC583_RS04530	963536	965689	-	NAD-dependent DNA ligase LigA
+BARBAKC583_RS04535	965805	967472	-	DNA repair protein RecN
+BARBAKC583_RS04545	967479	968372	-	outer membrane protein assembly factor BamD
+BARBAKC583_RS04550	968542	969408	-	UDP-3-O-acyl-N-acetylglucosamine deacetylase
+BARBAKC583_RS04555	969629	971407	-	cell division protein FtsZ
+BARBAKC583_RS04560	971477	972775	-	cell division protein FtsA
+BARBAKC583_RS04565	972775	973701	-	cell division protein FtsQ/DivIB
+BARBAKC583_RS04570	973668	974588	-	D-alanine--D-alanine ligase
+BARBAKC583_RS04575	974816	975793	-	UDP-N-acetylmuramate dehydrogenase
+BARBAKC583_RS04580	975771	977198	-	UDP-N-acetylmuramate--L-alanine ligase
+BARBAKC583_RS04585	977182	978318	-	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase
+BARBAKC583_RS04590	978308	979465	-	FtsW/RodA/SpoVE family cell cycle protein
+BARBAKC583_RS04595	979588	980994	-	UDP-N-acetylmuramoyl-L-alanine--D-glutamate ligase
+BARBAKC583_RS04600	980999	982069	-	phospho-N-acetylmuramoyl-pentapeptide-transferase
+BARBAKC583_RS04605	982091	983509	-	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase
+BARBAKC583_RS04610	983506	984957	-	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2%2C6-diaminopimelate ligase
+BARBAKC583_RS04615	984991	986709	-	peptidoglycan D%2CD-transpeptidase FtsI family protein
+BARBAKC583_RS04620	986709	987113	-	cell division protein FtsL
+BARBAKC583_RS04625	987113	988108	-	16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH
+BARBAKC583_RS04630	989206	989565	-	hypothetical protein
+BARBAKC583_RS04635	990532	992181	-	energy-dependent translational throttle protein EttA
+BARBAKC583_RS04640	992741	993349	+	bifunctional nicotinamidase/pyrazinamidase
+BARBAKC583_RS04645	993395	994447	-	DUF475 domain-containing protein
+BARBAKC583_RS04650	994765	995304	+	helix-turn-helix domain-containing protein
+BARBAKC583_RS04655	995669	995848	+	YegP family protein
+BARBAKC583_RS04665	996262	997002	+	SIMPL domain-containing protein
+BARBAKC583_RS04670	997353	999353	-	RNA polymerase sigma factor RpoD
+BARBAKC583_RS04675	999691	1001628	-	DNA primase
+BARBAKC583_RS04680	1001761	1002972	+	mechanosensitive ion channel family protein
+BARBAKC583_RS04685	1003044	1004732	+	Na/Pi cotransporter family protein
+BARBAKC583_RS04690	1004873	1005124	+	GlsB/YeaQ/YmgE family stress response membrane protein
+BARBAKC583_RS04695	1005474	1005992	+	chorismate lyase
+BARBAKC583_RS04700	1006764	1007963	+	glutamine-hydrolyzing carbamoyl-phosphate synthase small subunit
+BARBAKC583_RS04705	1008129	1009349	-	tetracycline resistance MFS efflux pump
+BARBAKC583_RS04715	1010350	1013835	+	carbamoyl-phosphate synthase large subunit
+BARBAKC583_RS04720	1014087	1014296	+	cold-shock protein
+BARBAKC583_RS04725	1014729	1015931	+	pyridoxal phosphate-dependent aminotransferase
+BARBAKC583_RS04730	1016669	1017574	-	LysR family transcriptional regulator
+BARBAKC583_RS04735	1017626	1018579	-	thioredoxin-disulfide reductase
+BARBAKC583_RS04740	1018884	1020272	+	TrkH family potassium uptake protein
+BARBAKC583_RS04745	1020472	1021530	-	glycosyltransferase family 4 protein
+BARBAKC583_RS04755	1021537	1022010	-	transcription elongation factor GreA
+BARBAKC583_RS04760	1022355	1022594	+	SH3 domain-containing protein
+BARBAKC583_RS04765	1022885	1025227	+	excinuclease ABC subunit UvrB
+BARBAKC583_RS04775	1025694	1026212	+	BA14K family protein
+BARBAKC583_RS04780	1026261	1026905	-	MBL fold metallo-hydrolase
+BARBAKC583_RS04785	1027055	1027759	+	response regulator
+BARBAKC583_RS04790	1027767	1029107	+	ATP-binding protein
+BARBAKC583_RS04795	1029160	1029660	-	type III secretion system chaperone family protein
+BARBAKC583_RS04800	1030041	1030307	-	accessory factor UbiK family protein
+BARBAKC583_RS04805	1030572	1031429	+	prolipoprotein diacylglyceryl transferase
+BARBAKC583_RS04810	1031429	1032529	+	class I SAM-dependent methyltransferase
+BARBAKC583_RS04815	1032588	1033379	+	peptidoglycan editing factor PgeF
+BARBAKC583_RS04820	1033743	1034675	+	ribose-phosphate pyrophosphokinase
+BARBAKC583_RS04825	1035111	1035728	+	50S ribosomal protein L25/general stress protein Ctc
+BARBAKC583_RS04830	1035808	1036389	+	aminoacyl-tRNA hydrolase
+BARBAKC583_RS04835	1036557	1037255	-	L%2CD-transpeptidase
+BARBAKC583_RS04840	1037508	1038611	+	redox-regulated ATPase YchF
+BARBAKC583_RS04845	1038766	1039209	-	PRC-barrel domain-containing protein
+BARBAKC583_RS04850	1039663	1040130	+	tRNA (cytidine(34)-2'-O)-methyltransferase
+BARBAKC583_RS04855	1040148	1041401	-	CCA tRNA nucleotidyltransferase
+BARBAKC583_RS04860	1041651	1042682	+	AAA family ATPase
+BARBAKC583_RS04865	1042682	1043593	+	DUF58 domain-containing protein
+BARBAKC583_RS04870	1043590	1046388	+	DUF4159 domain-containing protein
+BARBAKC583_RS04875	1046388	1048485	+	glutamine amidotransferase
+BARBAKC583_RS04880	1048542	1049099	-	GNAT family N-acetyltransferase
+BARBAKC583_RS04885	1049359	1050255	+	metallophosphoesterase family protein
+BARBAKC583_RS04890	1050443	1051351	-	cation diffusion facilitator family transporter
+BARBAKC583_RS04895	1052206	1053021	+	TrmH family RNA methyltransferase
+BARBAKC583_RS04900	1053119	1054294	-	tRNA 2-thiouridine(34) synthase MnmA
+BARBAKC583_RS04910	1054547	1054822	+	CtrA inhibitor SciP
+BARBAKC583_RS04920	1054953	1055339	-	hypothetical protein
+BARBAKC583_RS04935	1055898	1056599	+	response regulator transcription factor CtrA
+BARBAKC583_RS04940	1056794	1057432	-	histidine phosphotransferase ChpT
+BARBAKC583_RS04950	1057627	1058220	+	DUF1134 domain-containing protein
+BARBAKC583_RS04955	1058301	1058585	+	hypothetical protein
+BARBAKC583_RS04960	1058779	1059897	-	DegT/DnrJ/EryC1/StrS family aminotransferase
+BARBAKC583_RS04965	1059948	1060901	-	Gfo/Idh/MocA family protein
+BARBAKC583_RS04980	1061750	1062532	-	ABC transporter ATP-binding protein
+BARBAKC583_RS04985	1062529	1063404	-	ABC transporter ATP-binding protein
+BARBAKC583_RS04990	1063397	1064326	-	ABC transporter permease
+BARBAKC583_RS04995	1064329	1065402	-	ABC transporter permease
+BARBAKC583_RS05000	1065522	1067126	-	ABC transporter substrate-binding protein
+BARBAKC583_RS05005	1067540	1069164	-	ABC transporter substrate-binding protein
+BARBAKC583_RS05010	1069409	1070035	-	DNA-3-methyladenine glycosylase I
+BARBAKC583_RS05015	1070013	1071443	-	exodeoxyribonuclease VII large subunit
+BARBAKC583_RS05020	1071809	1072084	+	DUF6460 domain-containing protein
+BARBAKC583_RS05025	1072301	1072900	-	hypothetical protein
+BARBAKC583_RS05030	1073177	1073929	+	electron transfer flavoprotein subunit beta/FixA family protein
+BARBAKC583_RS05035	1073976	1074905	+	electron transfer flavoprotein subunit alpha/FixB family protein
+BARBAKC583_RS05040	1074909	1076570	+	electron transfer flavoprotein-ubiquinone oxidoreductase
+BARBAKC583_RS05045	1076957	1078099	-	flagellin N-terminal helical domain-containing protein
+BARBAKC583_RS05055	1078241	1079020	-	pyrroline-5-carboxylate reductase
+BARBAKC583_RS05060	1079209	1079577	-	YraN family protein
+BARBAKC583_RS05065	1079584	1080471	-	16S rRNA (cytidine(1402)-2'-O)-methyltransferase
+BARBAKC583_RS05070	1080529	1081227	-	orotidine-5'-phosphate decarboxylase
+BARBAKC583_RS05075	1081288	1082382	-	Mrp/NBP35 family ATP-binding protein
+BARBAKC583_RS05080	1082926	1083060	+	50S ribosomal protein L34
+BARBAKC583_RS05085	1083190	1083555	+	ribonuclease P protein component
+BARBAKC583_RS05090	1083572	1085410	+	membrane protein insertase YidC
+BARBAKC583_RS05095	1085407	1086054	+	ribosome biogenesis GTP-binding protein YihA/YsxC
+BARBAKC583_RS05100	1086191	1086883	+	glutathione S-transferase family protein
+BARBAKC583_RS05105	1087330	1088136	+	4-hydroxy-tetrahydrodipicolinate reductase
+BARBAKC583_RS05110	1088162	1088782	+	2%2C3-bisphosphoglycerate-dependent phosphoglycerate mutase
+BARBAKC583_RS05120	1089585	1091438	+	DUF1561 family protein
+BARBAKC583_RS05125	1092027	1092689	-	lysozyme
+BARBAKC583_RS05130	1093479	1093908	+	type II toxin-antitoxin system HicB family antitoxin
+BARBAKC583_RS05135	1093977	1094252	-	hypothetical protein
+BARBAKC583_RS05140	1094584	1094916	-	hypothetical protein
+BARBAKC583_RS05145	1095109	1095651	-	hypothetical protein
+BARBAKC583_RS05160	1096229	1096504	-	hypothetical protein
+BARBAKC583_RS05170	1097122	1097433	+	helix-turn-helix domain-containing protein
+BARBAKC583_RS05175	1097676	1097999	+	hypothetical protein
+BARBAKC583_RS05180	1098065	1098808	+	phage antirepressor Ant
+BARBAKC583_RS05190	1099722	1100301	+	lambda exonuclease family protein
+BARBAKC583_RS05210	1100420	1100629	+	hypothetical protein
+BARBAKC583_RS05215	1100640	1101688	+	tyrosine-type recombinase/integrase
+BARBAKC583_RS05230	1101973	1103895	+	DUF1561 family protein
+BARBAKC583_RS05235	1104356	1106290	+	DUF1561 family protein
+BARBAKC583_RS05240	1106662	1107006	-	hypothetical protein
+BARBAKC583_RS05275	1114927	1115313	+	Fur family transcriptional regulator
+BARBAKC583_RS05280	1115432	1116538	+	HlyD family secretion protein
+BARBAKC583_RS05285	1116549	1118126	+	DHA2 family efflux MFS transporter permease subunit
+BARBAKC583_RS05290	1118676	1119809	-	type III PLP-dependent enzyme
+BARBAKC583_RS05295	1120463	1121380	-	oxygen-dependent tRNA uridine(34) hydroxylase TrhO
+BARBAKC583_RS05300	1121666	1122496	-	ferredoxin--NADP reductase
+BARBAKC583_RS05310	1123120	1124241	+	alanine racemase
+BARBAKC583_RS05315	1124711	1127506	-	aminomethyl-transferring glycine dehydrogenase
+BARBAKC583_RS05320	1127512	1127880	-	glycine cleavage system protein GcvH
+BARBAKC583_RS05325	1127887	1129008	-	glycine cleavage system aminomethyltransferase GcvT
+BARBAKC583_RS05330	1129814	1130476	+	LON peptidase substrate-binding domain-containing protein
+BARBAKC583_RS05335	1132422	1132708	+	LON peptidase substrate-binding domain-containing protein
+BARBAKC583_RS05340	1135604	1136635	+	aspartate-semialdehyde dehydrogenase
+BARBAKC583_RS05345	1137343	1138161	+	MetQ/NlpA family ABC transporter substrate-binding protein
+BARBAKC583_RS05350	1138168	1139202	+	methionine ABC transporter ATP-binding protein
+BARBAKC583_RS05355	1139195	1139854	+	methionine ABC transporter permease
+BARBAKC583_RS05360	1139860	1140339	-	MaoC family dehydratase
+BARBAKC583_RS05365	1140509	1141834	+	NAD(P)H-dependent oxidoreductase
+BARBAKC583_RS05370	1142137	1142880	+	creatininase family protein
+BARBAKC583_RS05375	1143225	1146806	-	autotransporter outer membrane beta-barrel domain-containing protein
+BARBAKC583_RS05385	1146935	1148845	-	hypothetical protein
+BARBAKC583_RS05395	1150050	1150970	+	siderophore ABC transporter substrate-binding protein
+BARBAKC583_RS05400	1151069	1152025	+	ABC transporter permease
+BARBAKC583_RS05405	1152018	1152968	+	iron chelate uptake ABC transporter family permease subunit
+BARBAKC583_RS05410	1152965	1153723	+	iron ABC transporter ATP-binding protein
+BARBAKC583_RS05420	1154995	1155261	-	flagellar biosynthesis protein FliQ
+BARBAKC583_RS05425	1155258	1155830	-	flagellar hook assembly protein FlgD
+BARBAKC583_RS05430	1155848	1156264	-	flagellar biosynthesis repressor FlbT
+BARBAKC583_RS05435	1156311	1156679	-	flagellar biosynthesis regulator FlaF
+BARBAKC583_RS05445	1156699	1157781	-	flagellar hook-associated family protein
+BARBAKC583_RS05465	1157789	1159159	-	flagellar hook-associated protein FlgK
+BARBAKC583_RS05470	1159187	1160401	-	flagellar hook protein FlgE
+BARBAKC583_RS05475	1160642	1161328	-	response regulator transcription factor
+BARBAKC583_RS05480	1161608	1162180	-	transglycosylase SLT domain-containing protein
+BARBAKC583_RS05485	1162143	1163438	-	flagellar hook-length control protein FliK
+BARBAKC583_RS05490	1163435	1164799	-	chemotaxis protein MotC
+BARBAKC583_RS05495	1164887	1165960	-	flagellar motor protein MotB
+BARBAKC583_RS05500	1165957	1166700	-	hypothetical protein
+BARBAKC583_RS05510	1166740	1168401	-	flagellar basal-body MS-ring/collar protein FliF
+BARBAKC583_RS05525	1170770	1171663	+	autotransporter outer membrane beta-barrel domain-containing protein
+BARBAKC583_RS05530	1171893	1174370	+	autotransporter outer membrane beta-barrel domain-containing protein
+BARBAKC583_RS05535	1174509	1177685	+	autotransporter outer membrane beta-barrel domain-containing protein
+BARBAKC583_RS05540	1177769	1178821	-	hypothetical protein
+BARBAKC583_RS05550	1179074	1179826	-	flagellar type III secretion system pore protein FliP
+BARBAKC583_RS05555	1179823	1180320	-	flagellar basal body-associated FliL family protein
+BARBAKC583_RS05560	1180414	1181106	-	flagellar basal body L-ring protein FlgH
+BARBAKC583_RS05570	1182004	1183242	-	flagellar basal body P-ring protein FlgI
+BARBAKC583_RS05575	1183242	1183700	-	flagellar basal body P-ring formation chaperone FlgA
+BARBAKC583_RS05580	1183706	1184494	-	flagellar basal-body rod protein FlgG
+BARBAKC583_RS05585	1184552	1184884	-	flagellar hook-basal body complex protein FliE
+BARBAKC583_RS05590	1184961	1185374	-	flagellar basal body rod protein FlgC
+BARBAKC583_RS05595	1185377	1185763	-	flagellar basal body rod protein FlgB
+BARBAKC583_RS05600	1186171	1187784	-	flagellar protein export ATPase FliI
+BARBAKC583_RS05605	1187848	1188582	-	flagellar basal-body rod protein FlgF
+BARBAKC583_RS05610	1188641	1189435	-	DUF1217 domain-containing protein
+BARBAKC583_RS05615	1189729	1190604	+	flagellar motor stator protein MotA
+BARBAKC583_RS05620	1190607	1191578	+	FliM/FliN family flagellar motor switch protein
+BARBAKC583_RS05625	1191559	1192101	+	BAB2_0123 family type IV secretion system effector
+BARBAKC583_RS05635	1192737	1193825	+	flagellar motor switch protein FliG
+BARBAKC583_RS05640	1193988	1195058	+	flagellar biosynthesis protein FlhB
+BARBAKC583_RS05645	1195165	1195647	+	hypothetical protein
+BARBAKC583_RS05650	1196147	1196617	-	hypothetical protein
+BARBAKC583_RS05655	1196614	1197057	-	hypothetical protein
+BARBAKC583_RS05675	1197169	1197750	-	rod-binding protein
+BARBAKC583_RS05680	1198208	1198594	-	hypothetical protein
+BARBAKC583_RS05685	1198598	1199395	-	flagellar biosynthesis protein FliR
+BARBAKC583_RS05690	1199410	1201494	-	flagellar biosynthesis protein FlhA
+BARBAKC583_RS05695	1202354	1202683	+	protein tyrosine phosphatase family protein
+BARBAKC583_RS05700	1202927	1203919	-	bifunctional riboflavin kinase/FAD synthetase
+BARBAKC583_RS05705	1203919	1204764	-	TIGR01459 family HAD-type hydrolase
+BARBAKC583_RS05710	1205531	1207093	+	murein biosynthesis integral membrane protein MurJ
+BARBAKC583_RS05715	1207175	1208245	+	tryptophan--tRNA ligase
+BARBAKC583_RS05720	1209280	1209804	-	hypothetical protein
+BARBAKC583_RS05725	1210533	1211111	+	NifU family protein
+BARBAKC583_RS05735	1211789	1213423	-	chaperonin GroEL
+BARBAKC583_RS05740	1213479	1213775	-	co-chaperone GroES
+BARBAKC583_RS05745	1214058	1215446	+	class II fumarate hydratase
+BARBAKC583_RS05750	1215491	1217119	-	alpha-D-glucose phosphate-specific phosphoglucomutase
+BARBAKC583_RS05755	1217317	1217844	+	peroxiredoxin
+BARBAKC583_RS05760	1218053	1219543	-	histidine--tRNA ligase
+BARBAKC583_RS05765	1220076	1222010	+	DUF1561 family protein
+BARBAKC583_RS05770	1222382	1222888	-	hypothetical protein
+BARBAKC583_RS05775	1223631	1225553	+	DUF1561 family protein
+BARBAKC583_RS05780	1226260	1226926	-	lysozyme
+BARBAKC583_RS05785	1227258	1227530	-	hypothetical protein
+BARBAKC583_RS05805	1230210	1232144	+	DUF1561 family protein
+BARBAKC583_RS05810	1232586	1233521	+	NAD(P)H-dependent glycerol-3-phosphate dehydrogenase
+BARBAKC583_RS05815	1234097	1235524	-	amino acid permease
+BARBAKC583_RS05820	1236145	1236699	-	biotin transporter BioY
+BARBAKC583_RS05825	1236696	1237349	-	energy-coupling factor transporter transmembrane component T family protein
+BARBAKC583_RS05830	1237346	1238026	-	energy-coupling factor ABC transporter ATP-binding protein
+BARBAKC583_RS05835	1238072	1239499	-	amino acid permease
+BARBAKC583_RS05845	1240302	1241440	-	FMN-dependent L-lactate dehydrogenase LldD
+BARBAKC583_RS05850	1241514	1242602	-	2'-deoxycytidine 5'-triphosphate deaminase
+BARBAKC583_RS05855	1242933	1244768	+	DNA mismatch repair endonuclease MutL
+BARBAKC583_RS05860	1244890	1245123	+	DUF2093 domain-containing protein
+BARBAKC583_RS05865	1245173	1246192	-	tetraacyldisaccharide 4'-kinase
+BARBAKC583_RS05870	1246196	1247506	-	lipid IV(A) 3-deoxy-D-manno-octulosonic acid transferase
+BARBAKC583_RS05875	1247520	1248275	-	lysophospholipid acyltransferase family protein
+BARBAKC583_RS05880	1248358	1248591	-	DUF4170 domain-containing protein
+BARBAKC583_RS05885	1248637	1249439	-	3'(2')%2C5'-bisphosphate nucleotidase CysQ
+BARBAKC583_RS05890	1249426	1250757	-	TldD/PmbA family protein
+BARBAKC583_RS05895	1251214	1251771	-	16S rRNA (guanine(966)-N(2))-methyltransferase RsmD
+BARBAKC583_RS05900	1251752	1253251	-	pseudouridine synthase
+BARBAKC583_RS05905	1253413	1253859	+	nucleoside deaminase
+BARBAKC583_RS05910	1254328	1257243	-	isoleucine--tRNA ligase
+BARBAKC583_RS05915	1257486	1258340	-	outer membrane protein
+BARBAKC583_RS05920	1258483	1259385	-	outer membrane protein
+BARBAKC583_RS05925	1259526	1260371	-	outer membrane protein
+BARBAKC583_RS05930	1260812	1261138	-	hypothetical protein
+BARBAKC583_RS05935	1261996	1263909	+	DUF1561 family protein
+BARBAKC583_RS05940	1264067	1264684	-	ribonuclease D
+BARBAKC583_RS05945	1264659	1266074	-	dipeptidase
+BARBAKC583_RS05950	1266148	1267023	-	bifunctional DNA-formamidopyrimidine glycosylase/DNA-(apurinic or apyrimidinic site) lyase
+BARBAKC583_RS05955	1267071	1268321	-	aminopeptidase
+BARBAKC583_RS05960	1268349	1269203	-	cell wall hydrolase
+BARBAKC583_RS05965	1269493	1270215	-	phosphate signaling complex protein PhoU
+BARBAKC583_RS05970	1270238	1270996	-	phosphate ABC transporter ATP-binding protein PstB
+BARBAKC583_RS05975	1271037	1272329	-	phosphate ABC transporter permease PstA
+BARBAKC583_RS05980	1272326	1273786	-	phosphate ABC transporter permease subunit PstC
+BARBAKC583_RS05985	1273849	1274895	-	PstS family phosphate ABC transporter substrate-binding protein
+BARBAKC583_RS05990	1275042	1275980	-	glutathione synthase
+BARBAKC583_RS05995	1276069	1276857	+	molybdopterin-synthase adenylyltransferase MoeB
+BARBAKC583_RS06000	1276821	1277564	-	ATP-binding cassette domain-containing protein
+BARBAKC583_RS06010	1278126	1279248	-	microcin C ABC transporter permease YejB
+BARBAKC583_RS06015	1279398	1279955	-	c-type cytochrome
+BARBAKC583_RS06020	1280060	1280791	+	3-deoxy-manno-octulosonate cytidylyltransferase
+BARBAKC583_RS06025	1281527	1283440	+	DNA polymerase III subunit gamma/tau
+BARBAKC583_RS06030	1283455	1283781	+	YbaB/EbfC family nucleoid-associated protein
+BARBAKC583_RS06035	1283819	1284424	+	recombination mediator RecR
+BARBAKC583_RS06040	1284661	1285368	+	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex dimerization subunit type 1 TsaB
+BARBAKC583_RS06045	1285361	1285852	+	ribosomal protein S18-alanine N-acetyltransferase
+BARBAKC583_RS06050	1285884	1287260	+	tRNA (N6-isopentenyl adenosine(37)-C2)-methylthiotransferase MiaB
+BARBAKC583_RS06055	1287417	1288529	+	PhoH family protein
+BARBAKC583_RS06060	1288537	1289013	+	rRNA maturation RNase YbeY
+BARBAKC583_RS06065	1289116	1290138	+	hemolysin family protein
+BARBAKC583_RS06070	1290101	1291726	+	apolipoprotein N-acyltransferase
+BARBAKC583_RS06075	1291877	1292290	+	helix-turn-helix domain-containing protein
+BARBAKC583_RS06080	1292414	1293694	+	methionine adenosyltransferase
+BARBAKC583_RS06085	1293681	1294382	+	tRNA (guanine(46)-N(7))-methyltransferase TrmB
+BARBAKC583_RS06090	1294526	1295155	+	ribosome maturation factor RimP
+BARBAKC583_RS06095	1295204	1296817	+	transcription termination factor NusA
+BARBAKC583_RS06100	1296819	1297454	+	RNA-binding protein
+BARBAKC583_RS06105	1297451	1299997	+	translation initiation factor IF-2
+BARBAKC583_RS06110	1300121	1300525	+	30S ribosome-binding factor RbfA
+BARBAKC583_RS06115	1300529	1301491	+	tRNA pseudouridine(55) synthase TruB
+BARBAKC583_RS06120	1301958	1302227	+	30S ribosomal protein S15
+BARBAKC583_RS06125	1302482	1304683	+	polyribonucleotide nucleotidyltransferase
+BARBAKC583_RS06130	1304756	1305754	+	class I SAM-dependent methyltransferase
+BARBAKC583_RS06140	1305772	1307082	-	ATP-dependent protease ATPase subunit HslU
+BARBAKC583_RS06145	1307083	1307664	-	ATP-dependent protease subunit HslV
+BARBAKC583_RS06150	1307865	1308854	+	asparaginase
+BARBAKC583_RS06155	1309034	1309978	+	type I pantothenate kinase
+BARBAKC583_RS06160	1309992	1311389	+	leucyl aminopeptidase family protein
+BARBAKC583_RS06165	1311517	1312371	+	C40 family peptidase
+BARBAKC583_RS06170	1312752	1313309	+	SH3 domain-containing protein
+BARBAKC583_RS06175	1313362	1313820	-	Fur family transcriptional regulator Irr
+BARBAKC583_RS06180	1314115	1314624	+	3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabA
+BARBAKC583_RS06185	1314680	1315900	+	beta-ketoacyl-ACP synthase I
+BARBAKC583_RS06190	1315948	1316766	+	enoyl-ACP reductase FabI
+BARBAKC583_RS06195	1317110	1317481	-	cytochrome o ubiquinol oxidase subunit IV
+BARBAKC583_RS06200	1317481	1318146	-	cytochrome (ubi)quinol oxidase subunit III
+BARBAKC583_RS06205	1318143	1320161	-	cytochrome o ubiquinol oxidase subunit I
+BARBAKC583_RS06215	1320256	1321227	-	ubiquinol oxidase subunit II
+BARBAKC583_RS06220	1321332	1321808	-	type II 3-dehydroquinate dehydratase
+BARBAKC583_RS06225	1321846	1323003	-	DNA replication/repair protein RecF
+BARBAKC583_RS06230	1323016	1324137	-	DNA polymerase III subunit beta
+BARBAKC583_RS06235	1324320	1325894	-	chromosomal replication initiator protein DnaA
+BARBAKC583_RS06240	1326576	1326842	-	30S ribosomal protein S20
+BARBAKC583_RS06245	1327051	1329738	-	aconitate hydratase AcnA
+BARBAKC583_RS06250	1330032	1330658	+	heme ABC exporter ATP-binding protein CcmA
+BARBAKC583_RS06255	1330655	1331320	+	heme exporter protein CcmB
+BARBAKC583_RS06260	1331364	1332143	+	heme ABC transporter permease
+BARBAKC583_RS06265	1332131	1332382	+	heme exporter protein CcmD
+BARBAKC583_RS06270	1332357	1332983	+	DsbE family thiol:disulfide interchange protein
+BARBAKC583_RS06275	1333243	1333782	-	GcrA family cell cycle regulator
+BARBAKC583_RS06280	1334214	1335419	+	aspartate aminotransferase family protein
+BARBAKC583_RS06285	1335425	1336357	+	ornithine carbamoyltransferase
+BARBAKC583_RS06290	1336388	1337377	+	Hsp33 family molecular chaperone
+BARBAKC583_RS06295	1337802	1338377	-	Smr/MutS family protein
+BARBAKC583_RS06300	1338435	1339127	-	Tim44/TimA family putative adaptor protein
+BARBAKC583_RS06305	1339339	1339872	+	FxsA family protein
+BARBAKC583_RS06310	1339975	1340454	+	protein-export chaperone SecB
+BARBAKC583_RS06315	1340982	1342295	-	malic enzyme-like NAD(P)-binding protein
+BARBAKC583_RS06320	1342493	1345237	+	DNA mismatch repair protein MutS
+BARBAKC583_RS06330	1345536	1345913	-	TIGR02300 family protein
+BARBAKC583_RS06335	1346099	1347424	+	3-phosphoshikimate 1-carboxyvinyltransferase
+BARBAKC583_RS06345	1347421	1348068	+	(d)CMP kinase
+BARBAKC583_RS06350	1348203	1349903	+	30S ribosomal protein S1
+BARBAKC583_RS06355	1350122	1358719	+	GH36-type glycosyl hydrolase domain-containing protein
+BARBAKC583_RS06360	1358856	1360130	+	nicotinate phosphoribosyltransferase
+BARBAKC583_RS06365	1360723	1361628	-	metal ABC transporter permease
+BARBAKC583_RS06370	1361633	1362490	-	metal ABC transporter permease
+BARBAKC583_RS06375	1362487	1363329	-	manganese/iron ABC transporter ATP-binding protein
+BARBAKC583_RS06380	1363326	1364234	-	metal ABC transporter substrate-binding protein
+BARBAKC583_RS06385	1364506	1366917	-	phenylalanine--tRNA ligase subunit beta
+BARBAKC583_RS06390	1366949	1368034	-	phenylalanine--tRNA ligase subunit alpha
+BARBAKC583_RS06395	1368127	1368528	-	50S ribosomal protein L20
+BARBAKC583_RS06400	1368562	1368765	-	50S ribosomal protein L35
+BARBAKC583_RS06405	1368896	1369654	-	endonuclease III
+BARBAKC583_RS06410	1369830	1370417	-	transglycosylase SLT domain-containing protein
+BARBAKC583_RS06415	1370518	1371642	-	DNA recombination protein RmuC
+BARBAKC583_RS06420	1371794	1372342	+	peptide deformylase
+BARBAKC583_RS06425	1372343	1373272	+	methionyl-tRNA formyltransferase
+BARBAKC583_RS06430	1373274	1374017	+	tRNA pseudouridine(38-40) synthase TruA
+BARBAKC583_RS06435	1374050	1374868	-	LOG family protein
+BARBAKC583_RS06440	1375002	1375850	+	2%2C3%2C4%2C5-tetrahydropyridine-2%2C6-dicarboxylate N-succinyltransferase
+BARBAKC583_RS06445	1375934	1377739	-	translation elongation factor 4
+BARBAKC583_RS06450	1377951	1378865	-	DMT family transporter
+BARBAKC583_RS06455	1378900	1379805	-	acetylglutamate kinase
+BARBAKC583_RS06460	1380271	1381416	-	molecular chaperone DnaJ
+BARBAKC583_RS06465	1381574	1383469	-	molecular chaperone DnaK
+BARBAKC583_RS06470	1384252	1384770	+	copper chaperone PCu(A)C
+BARBAKC583_RS06475	1385384	1386106	+	response regulator transcription factor
+BARBAKC583_RS06480	1386146	1387969	+	sensor histidine kinase
+BARBAKC583_RS06485	1388134	1388802	-	nucleotide exchange factor GrpE
+BARBAKC583_RS06490	1388927	1390005	-	HrcA family transcriptional regulator
+BARBAKC583_RS06495	1390591	1391238	+	non-canonical purine NTP pyrophosphatase
+BARBAKC583_RS06500	1391235	1392413	+	radical SAM family heme chaperone HemW
+BARBAKC583_RS06505	1392461	1393633	-	succinyl-diaminopimelate desuccinylase
+BARBAKC583_RS06510	1393752	1394483	-	M48 family metallopeptidase
+BARBAKC583_RS06515	1394539	1395318	-	alpha/beta hydrolase
+BARBAKC583_RS06520	1395509	1396030	+	translation initiation factor IF-3
+BARBAKC583_RS06525	1396249	1398015	+	ABC transporter ATP-binding protein
+BARBAKC583_RS06530	1398041	1402693	-	translocation/assembly module TamB domain-containing protein
+BARBAKC583_RS06535	1402693	1404654	-	autotransporter assembly complex protein TamA
+BARBAKC583_RS06540	1405064	1406596	+	YifB family Mg chelatase-like AAA ATPase
+BARBAKC583_RS06545	1406996	1409425	+	DNA topoisomerase (ATP-hydrolyzing) subunit B
+BARBAKC583_RS06550	1409543	1410325	+	bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-polyprenyl-1%2C4-benzoquinol methylase UbiE
+BARBAKC583_RS06555	1410329	1411918	+	2-polyprenylphenol 6-hydroxylase
+BARBAKC583_RS06560	1412072	1413391	+	bifunctional phosphopantothenoylcysteine decarboxylase/phosphopantothenate--cysteine ligase CoaBC
+BARBAKC583_RS06570	1413786	1414505	+	sulfate transporter family protein
+BARBAKC583_RS06575	1414777	1415697	+	acetyl-CoA carboxylase%2C carboxyltransferase subunit beta
+BARBAKC583_RS06580	1415701	1417023	+	bifunctional folylpolyglutamate synthase/dihydrofolate synthase
+BARBAKC583_RS06585	1417067	1418065	+	complex I NDUFA9 subunit family protein
+BARBAKC583_RS06590	1418610	1421084	+	sensor histidine kinase
+BARBAKC583_RS06595	1421150	1422643	+	bifunctional tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex ATPase subunit type 1 TsaE/phosphotransferase
+BARBAKC583_RS06600	1422818	1425961	+	double-strand break repair protein AddB
+BARBAKC583_RS06605	1425958	1429425	+	double-strand break repair helicase AddA
+BARBAKC583_RS06610	1429536	1429859	+	thioredoxin
+BARBAKC583_RS06615	1429941	1431518	-	peptide chain release factor 3
+BARBAKC583_RS06620	1431518	1433179	-	lysine--tRNA ligase
+BARBAKC583_RS06625	1433381	1434604	-	argininosuccinate synthase
+BARBAKC583_RS06630	1434789	1435430	+	LysE family translocator
+BARBAKC583_RS06635	1435427	1436671	-	dual-specificity RNA methyltransferase RlmN
+BARBAKC583_RS06640	1436699	1437202	-	invasion associated locus B family protein
+BARBAKC583_RS06645	1437735	1438199	-	PTS IIA-like nitrogen regulatory protein PtsN
+BARBAKC583_RS06650	1438345	1438650	-	hypothetical protein
+BARBAKC583_RS06655	1439376	1440170	-	LPS export ABC transporter ATP-binding protein
+BARBAKC583_RS06660	1440177	1440779	-	LptA/OstA family protein
+BARBAKC583_RS06665	1440847	1441491	-	LPS export ABC transporter periplasmic protein LptC
+BARBAKC583_RS06670	1441680	1441958	+	integration host factor subunit beta
+BARBAKC583_RS06675	1441967	1442218	+	LapA family protein
+BARBAKC583_RS06680	1442430	1443362	+	class I SAM-dependent rRNA methyltransferase
+BARBAKC583_RS06685	1443365	1444189	+	TrmH family RNA methyltransferase
+BARBAKC583_RS06690	1444216	1444713	+	signal peptidase II
+BARBAKC583_RS06725	85996	86148	+	DUF1127 domain-containing protein
+BARBAKC583_RS06735	192709	192927	-	hypothetical protein
+BARBAKC583_RS06745	208027	208152	-	type B 50S ribosomal protein L36
+BARBAKC583_RS06765	219198	219532	+	AAA family ATPase
+BARBAKC583_RS06785	409459	409985	+	YqgE/AlgH family protein
+BARBAKC583_RS06800	527618	528290	+	twin-arginine translocase subunit TatC
+BARBAKC583_RS06815	784722	785194	-	tyrosine-type recombinase/integrase
+BARBAKC583_RS06865	1130490	1130666	+	Trm112 family protein
+BARBAKC583_RS06935	202405	202575	+	hypothetical protein
+BARBAKC583_RS06940	220943	221089	+	hypothetical protein
+BARBAKC583_RS06945	240061	240201	+	hypothetical protein
+BARBAKC583_RS06950	288488	288631	-	hypothetical protein
+BARBAKC583_RS06955	677017	677886	-	transporter substrate-binding domain-containing protein
+BARBAKC583_RS06960	911815	912060	-	late control protein
+BARBAKC583_RS06970	920434	920595	+	hypothetical protein
+BARBAKC583_RS06975	1091808	1092030	-	hypothetical protein
+BARBAKC583_RS06985	1132722	1132895	+	Trm112 family protein
+BARBAKC583_RS06990	1181171	1181935	-	MotE family protein
+BARBAKC583_RS06995	1202776	1202943	+	hypothetical protein
+BARBAKC583_RS07000	1226031	1226254	-	hypothetical protein
+BARBAKC583_RS07005	232907	233227	+	hypothetical protein
+BARBAKC583_RS07035	466635	467135	+	hypothetical protein
+BARBAKC583_RS07040	467181	467435	+	energy transducer TonB family protein
+BARBAKC583_RS07045	469596	469760	+	hypothetical protein
+BARBAKC583_RS07055	588283	588474	+	hypothetical protein
+BARBAKC583_RS07060	588471	588674	+	hypothetical protein
+BARBAKC583_RS07065	588825	589195	+	L-serine ammonia-lyase%2C iron-sulfur-dependent%2C subunit alpha
+BARBAKC583_RS07070	589635	589913	-	hypothetical protein
+BARBAKC583_RS07075	646890	647380	+	P-loop NTPase family protein
+BARBAKC583_RS07080	677863	678399	-	amino acid ABC transporter permease
+BARBAKC583_RS07085	785520	785720	+	lysozyme
+BARBAKC583_RS07095	814414	814878	-	ABC transporter substrate-binding protein
+BARBAKC583_RS07100	815217	815606	-	ABC transporter substrate-binding protein
+BARBAKC583_RS07105	934853	934972	+	lambda exonuclease family protein
+BARBAKC583_RS07115	1092786	1092902	-	hypothetical protein
+BARBAKC583_RS07120	1098920	1099171	+	hypothetical protein
+BARBAKC583_RS07125	1099249	1099665	+	ERF family protein
+BARBAKC583_RS07130	1168936	1170768	+	autotransporter outer membrane beta-barrel domain-containing protein
+BARBAKC583_RS07135	1227550	1228280	-	antA/AntB antirepressor family protein
+BARBAKC583_RS07145	300854	302509	+	YadA-like family protein
+BARBAKC583_RS07150	588632	588811	+	L-serine ammonia-lyase%2C iron-sulfur-dependent%2C subunit alpha
+BARBAKC583_RS07155	815123	815290	-	ABC transporter substrate-binding protein
+BARBAKC583_RS07170	234856	235890	+	hypothetical protein
+BARBAKC583_RS07180	587866	588132	+	serine dehydratase beta chain
+BARBAKC583_RS07185	588089	588271	+	hypothetical protein
+BARBAKC583_RS07190	861376	861582	-	hypothetical protein
+BARBAKC583_RS07195	1225675	1225806	-	hypothetical protein
+BARBAKC583_RS07200	177440	179143	+	tRNA lysidine(34) synthetase
+BARBAKC583_RS07205	218284	218487	+	hypothetical protein
+BARBAKC583_RS07210	220414	220515	+	hypothetical protein
+BARBAKC583_RS07215	262691	262858	+	helix-turn-helix domain-containing transcriptional regulator
+BARBAKC583_RS07220	848289	848586	+	DNA/RNA nuclease SfsA
+BARBAKC583_RS07225	912086	912342	+	YqaJ viral recombinase family protein
+BARBAKC583_RS07230	912486	912671	+	DUF1561 family protein
+BARBAKC583_RS07235	935013	935222	-	hypothetical protein
+BARBAKC583_RS07240	935131	935325	+	site-specific integrase
+BARBAKC583_RS07245	1192288	1192707	+	flagellar motor switch protein FliN
+BARBAKC583_RS07250	1277539	1278129	-	ABC transporter permease family protein

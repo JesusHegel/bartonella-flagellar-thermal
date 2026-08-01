@@ -1,0 +1,10 @@
+*.zip
+*.fastq
+*.fastq.gz
+*.bam
+*.sam
+ref/
+genero/GCF_*/
+che/GCF_*/
+.Rhistory
+.RData
