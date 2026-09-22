@@ -1,7 +1,7 @@
 # Cifras confirmadas
 
 Regeneración completa del análisis el 22 de septiembre de 2026, en carpeta
-limpia (`v2/`), con comparación contra la versión anterior.
+limpia, con comparación contra la versión anterior.
 **Este archivo es la única fuente válida. Cualquier cifra que no esté aquí
 no debe usarse.**
 
@@ -237,15 +237,19 @@ con control post-transcripcional. Compatible, no demostrado.
 
 ## 12. Reproducibilidad
 
-Todas las cifras de este documento se regeneran con los scripts de `v2/`:
+Todas las cifras de este documento se regeneran con los scripts de `scripts/`,
+ejecutados en ese orden:
 
 | Script | Produce |
 |---|---|
-| `s01_anotacion.sh` | secciones 2 |
-| `s02_deseq.R` | secciones 3, 4 |
-| `s03_enriquecimiento.R` | sección 6 |
-| `s04_robustez.R` | secciones 5, 7, 8 |
-| `s05_pca_mapeo.R` | sección 4 |
+| `01_anotacion.sh` | sección 2 |
+| `02_deseq.R` | secciones 3 y 4 |
+| `03_enriquecimiento.R` | sección 6 |
+| `04_robustez.R` | secciones 5, 7 y 8 |
+| `05_pca_mapeo.R` | sección 4 |
+| `06_figuras.R` | las cinco figuras de `figures/` |
+| `07_panel_genero_ortologia.sh` | sección 9 (panel de género y ortología) |
+| `08_quimiotaxis_utr.sh` | secciones 9 (quimiotaxis) y 10 |
 
 ## 13. Versiones de programas
 

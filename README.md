@@ -48,7 +48,7 @@ en la cepa peruana USM-LMMB07.
 
 ## El conjunto flagelar se define antes del análisis
 
-`scripts/s01_anotacion.sh` extrae los 31 genes por patrón sobre el campo
+`scripts/01_anotacion.sh` extrae los 31 genes por patrón sobre el campo
 `product` del archivo de anotación del genoma. **Ese script no consulta ningún
 dato de expresión.** Es la evidencia de que el conjunto se estableció a priori y
 no a partir de los resultados. Los 31 son la totalidad de los que tienen
@@ -69,14 +69,14 @@ anotación flagelar, no una selección.
 
 | Script | Produce |
 |---|---|
-| `s01_anotacion.sh` | Anotación, conjunto flagelar a priori, duplicados |
-| `s02_deseq.R` | Objeto DESeq2, PCA, cinco contrastes |
-| `s03_enriquecimiento.R` | Enriquecimiento por dos métodos |
-| `s04_robustez.R` | Conteos, sensibilidad, particiones, curva térmica, especificidad |
-| `s05_pca_mapeo.R` | PC1 frente a tasa de mapeo |
-| `s06_figuras.R` | Las cinco figuras |
-| `s07_panel_genero_ortologia.sh` | Panel de género y ortología con la cepa peruana |
-| `s08_quimiotaxis_utr.sh` | Homología del sistema Che y estructura del 5'UTR |
+| `01_anotacion.sh` | Anotación, conjunto flagelar a priori, duplicados |
+| `02_deseq.R` | Objeto DESeq2, PCA, cinco contrastes |
+| `03_enriquecimiento.R` | Enriquecimiento por dos métodos |
+| `04_robustez.R` | Conteos, sensibilidad, particiones, curva térmica, especificidad |
+| `05_pca_mapeo.R` | PC1 frente a tasa de mapeo |
+| `06_figuras.R` | Las cinco figuras |
+| `07_panel_genero_ortologia.sh` | Panel de género y ortología con la cepa peruana |
+| `08_quimiotaxis_utr.sh` | Homología del sistema Che y estructura del 5'UTR |
 
 ---
 

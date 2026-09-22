@@ -1,14 +1,14 @@
 #!/bin/bash
 # Panel de genero y ortologia con la cepa peruana USM-LMMB07.
 # Requiere NCBI datasets y BLAST+. Se ejecuta desde ~/bbrna.
-# Depende de s01_anotacion.sh (usa v2/flag_gff.tsv y v2/lt2prot.tsv).
+# Depende de s01_anotacion.sh (usa salida/flag_gff.tsv y salida/lt2prot.tsv).
 set -u
 cd ~/bbrna
 DATASETS=$(ls $HOME/miniforge3/envs/*/bin/datasets $HOME/miniforge3/bin/datasets 2>/dev/null | head -1)
 BLASTP=$(ls $HOME/miniforge3/envs/*/bin/blastp 2>/dev/null | head -1)
 MAKEDB=$(ls $HOME/miniforge3/envs/*/bin/makeblastdb 2>/dev/null | head -1)
 
-mkdir -p v2/faa && cd v2/faa
+mkdir -p salida/faa && cd salida/faa
 for A in GCF_000015445.1 GCF_000253015.1 GCF_039555305.1 GCF_001281405.1 \
          GCF_000196435.1 GCF_009936175.1 GCF_019930925.1 GCF_001624625.1; do
   [ -d $A ] || { $DATASETS download genome accession $A --include protein --filename $A.zip \

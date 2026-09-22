@@ -1,10 +1,10 @@
 suppressMessages({library(fgsea)})
 setwd("~/bbrna")
 
-b   <- read.csv("v2/res_rY.csv", row.names=1); wp <- b$wp
-cds <- read.delim("v2/cds_todos.tsv", header=FALSE, stringsAsFactors=FALSE)
+b   <- read.csv("salida/res_rY.csv", row.names=1); wp <- b$wp
+cds <- read.delim("salida/cds_todos.tsv", header=FALSE, stringsAsFactors=FALSE)
 names(cds) <- c("lt","ini","fin","hebra","prod")
-map <- read.delim("v2/lt2prot.tsv", header=FALSE, stringsAsFactors=FALSE)
+map <- read.delim("salida/lt2prot.tsv", header=FALSE, stringsAsFactors=FALSE)
 names(map) <- c("lt","prot")
 cds$wp <- map$prot[match(cds$lt, map$lt)]
 
@@ -13,7 +13,7 @@ u$i <- match(u$wp, wp)
 u <- u[!is.na(u$i) & !is.na(b$padj[u$i]), ]
 N <- nrow(u)
 
-fl  <- read.delim("v2/flag_gff.tsv", header=FALSE)[,1]
+fl  <- read.delim("salida/flag_gff.tsv", header=FALSE)[,1]
 lfc <- b$log2FoldChange[u$i]; pad <- b$padj[u$i]
 sig <- !is.na(pad) & pad < 0.05
 ind <- sig & lfc > 0; rep <- sig & lfc < 0
@@ -37,13 +37,13 @@ hy <- do.call(rbind, lapply(names(vias), function(v){
              p_rep=phyper(kr-1,K,N-K,sum(rep),lower.tail=FALSE))}))
 hy$q_ind <- p.adjust(hy$p_ind,"BH"); hy$q_rep <- p.adjust(hy$p_rep,"BH")
 cat("--- HIPERGEOMETRICO ---\n"); print(hy)
-write.csv(hy, "v2/chk_categorias.csv", row.names=FALSE)
+write.csv(hy, "salida/chk_categorias.csv", row.names=FALSE)
 
 rk <- lfc; names(rk) <- u$lt; rk <- sort(rk[!is.na(rk)], decreasing=TRUE)
 set.seed(42)
 fg <- fgsea(pathways=vias, stats=rk, minSize=3, nPermSimple=100000)
 fg <- as.data.frame(fg[order(fg$pval), c("pathway","size","NES","pval","padj")])
 cat("\n--- FGSEA (semilla 42, 100000 permutaciones) ---\n"); print(fg)
-write.csv(fg, "v2/chk_fgsea.csv", row.names=FALSE)
+write.csv(fg, "salida/chk_fgsea.csv", row.names=FALSE)
 write.csv(data.frame(universo=N, inducidos=sum(ind), reprimidos=sum(rep)),
-          "v2/chk_universo.csv", row.names=FALSE)
+          "salida/chk_universo.csv", row.names=FALSE)

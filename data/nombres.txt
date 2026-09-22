@@ -1,7 +1,0 @@
-GCF_000015445.1 bacilliformis
-GCF_000253015.1 clarridgeiae
-GCF_039555305.1 schoenbuchensis
-GCF_001281405.1 ancashensis
-GCF_000196435.1 tribocorum
-GCF_009936175.1 quintana
-GCF_019930925.1 henselae
