@@ -1,0 +1,16 @@
+
+--- Fig5: medianas por grupo ---
+                    grupo temp        lfc
+1 Aparato flagelar (n=31)   25  0.0000000
+2       Chaperonas (n=15)   25  0.0000000
+3 Aparato flagelar (n=31)   30 -1.7900191
+4       Chaperonas (n=15)   30  0.4745698
+5 Aparato flagelar (n=31)   37 -1.4530719
+6       Chaperonas (n=15)   37  0.7331285
+using ntop=500 top features by variance
+
+Figuras escritas:
+ [1] "Fig1_PCA.pdf"         "Fig1_PCA.png"         "Fig2_volcano.pdf"    
+ [4] "Fig2_volcano.png"     "Fig3_heatmap.pdf"     "Fig3_heatmap.png"    
+ [7] "Fig4_genero.pdf"      "Fig4_genero.png"      "Fig5_disociacion.pdf"
+[10] "Fig5_disociacion.png"
