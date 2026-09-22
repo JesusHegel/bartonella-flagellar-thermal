@@ -1,3 +1,5 @@
-"modelo","n"
-"global",216
-"yale",207
+"definicion","genoma_padj05","genoma_padj05_lfc1","flag_padj05","flag_padj05_lfc1"
+"global 37vs25",538,214,30,22
+"restringido 37vs25",488,207,31,21
+"restringido 30vs25",423,146,30,25
+"restringido pH06vspH08",375,74,6,1

@@ -1,32 +1,32 @@
-"locus","L30v25","p30v25","L37v25","p37v25","L37v30","p37v30","pct30"
-"RS05635",-2.47,3e-10,-2.4,3.9e-10,0.04,0.9,103
-"RS05620",-1.94,3.3e-10,-2.19,3.7e-13,-0.11,0.69,89
-"RS05615",-2.21,1.3e-09,-2.11,2.9e-09,0.05,0.88,105
-"RS05420",-1.61,2e-05,-2.04,3e-08,-0.15,0.58,79
-"RS05045",-1.59,4.1e-07,-2,1e-10,-0.19,0.46,80
-"RS05575",-2.2,3.2e-07,-1.81,9.2e-06,0.14,0.6,122
-"RS07245",-2.43,4.9e-09,-1.71,1.1e-05,0.3,0.27,142
-"RS05600",-1.92,7.9e-17,-1.65,6.8e-14,0.16,0.5,116
-"RS05640",-1.25,8.9e-07,-1.59,1.6e-10,-0.18,0.46,79
-"RS05555",-1.76,9.4e-07,-1.49,1.1e-05,0.12,0.67,118
-"RS05560",-1.52,4.5e-06,-1.41,1.1e-05,0.06,0.85,108
-"RS05570",-1.69,1.3e-08,-1.37,1.9e-06,0.16,0.53,123
-"RS05465",-1.94,2.5e-10,-1.36,5e-06,0.32,0.21,143
-"RS05580",-2.19,6.9e-12,-1.36,1e-05,0.51,0.056,161
-"RS05425",-1.49,1e-09,-1.31,3.5e-08,0.11,0.68,114
-"RS05605",-1.76,2.3e-08,-1.29,2.3e-05,0.24,0.35,136
-"RS05595",-1.65,6.6e-09,-1.28,3e-06,0.2,0.44,129
-"RS05690",-1.39,2.1e-08,-1.27,1.4e-07,0.08,0.78,109
-"RS05550",-1.76,3.5e-05,-1.26,0.0018,0.19,0.49,140
-"RS05585",-1.6,4.9e-09,-1.22,3.7e-06,0.21,0.4,131
-"RS05590",-1.87,4.5e-12,-1.19,3e-06,0.45,0.063,157
-"RS05430",-1.36,9.8e-05,-0.99,0.0036,0.18,0.5,137
-"RS05495",-0.84,0.00013,-0.99,4.8e-06,-0.08,0.76,85
-"RS05510",-1.74,4.2e-11,-0.9,0.00052,0.64,0.01,193
-"RS05435",-1.23,4.1e-06,-0.88,0.00058,0.21,0.4,140
-"RS05445",-1.46,2.3e-06,-0.86,0.0051,0.35,0.16,170
-"RS05470",-0.89,0.00024,-0.7,0.0047,0.13,0.6,127
-"RS05490",-0.99,0.00016,-0.69,0.0085,0.19,0.45,143
-"RS05685",-0.49,0.11,-0.67,0.037,-0.06,0.83,73
-"RS05485",-0.62,0.0078,-0.65,0.0048,0,0.99,95
-"RS04185",0.73,0.0062,0.88,0.0012,0.06,0.84,83
+"locus","producto","L30v25","p30v25","L37v25","p37v25","L37v30","p37v30"
+"BARBAKC583_RS05635","flagellar motor switch protein FliG",-2.47,2.5e-10,-2.4,3.1e-10,0.04,0.91
+"BARBAKC583_RS05620","FliM/FliN family flagellar motor switch protein",-1.94,2.9e-10,-2.19,2.3e-13,-0.11,0.67
+"BARBAKC583_RS05615","flagellar motor stator protein MotA",-2.21,1.1e-09,-2.11,2.4e-09,0.04,0.89
+"BARBAKC583_RS05420","flagellar biosynthesis protein FliQ",-1.59,3.1e-05,-2.04,5.2e-08,-0.15,0.57
+"BARBAKC583_RS05045","flagellin N-terminal helical domain-containing protein",-1.59,4e-07,-2.01,8.7e-11,-0.2,0.45
+"BARBAKC583_RS05575","flagellar basal body P-ring formation chaperone FlgA",-2.2,3.2e-07,-1.81,9.1e-06,0.14,0.6
+"BARBAKC583_RS07245","flagellar motor switch protein FliN",-2.43,5.6e-09,-1.72,1.1e-05,0.3,0.28
+"BARBAKC583_RS05600","flagellar protein export ATPase FliI",-1.92,5.5e-17,-1.66,4.1e-14,0.16,0.51
+"BARBAKC583_RS05640","flagellar biosynthesis protein FlhB",-1.25,7.4e-07,-1.6,8.7e-11,-0.19,0.45
+"BARBAKC583_RS05555","flagellar basal body-associated FliL family protein",-1.75,1.1e-06,-1.5,1.2e-05,0.11,0.68
+"BARBAKC583_RS05560","flagellar basal body L-ring protein FlgH",-1.51,4.7e-06,-1.41,9.9e-06,0.05,0.85
+"BARBAKC583_RS05570","flagellar basal body P-ring protein FlgI",-1.68,1.3e-08,-1.37,1.6e-06,0.16,0.54
+"BARBAKC583_RS05465","flagellar hook-associated protein FlgK",-1.94,2.2e-10,-1.36,4.5e-06,0.32,0.21
+"BARBAKC583_RS05580","flagellar basal-body rod protein FlgG",-2.19,7.6e-12,-1.36,9.6e-06,0.5,0.06
+"BARBAKC583_RS05425","flagellar hook assembly protein FlgD",-1.49,1.3e-09,-1.32,3.7e-08,0.1,0.69
+"BARBAKC583_RS05595","flagellar basal body rod protein FlgB",-1.65,1.4e-08,-1.29,4.1e-06,0.19,0.45
+"BARBAKC583_RS05605","flagellar basal-body rod protein FlgF",-1.76,2.2e-08,-1.29,2e-05,0.24,0.36
+"BARBAKC583_RS05690","flagellar biosynthesis protein FlhA",-1.39,2.3e-08,-1.28,1.3e-07,0.07,0.8
+"BARBAKC583_RS05550","flagellar type III secretion system pore protein FliP",-1.76,3.4e-05,-1.27,0.0017,0.19,0.49
+"BARBAKC583_RS05585","flagellar hook-basal body complex protein FliE",-1.59,1.5e-08,-1.23,6.4e-06,0.21,0.42
+"BARBAKC583_RS05590","flagellar basal body rod protein FlgC",-1.87,7.6e-12,-1.2,3.5e-06,0.44,0.072
+"BARBAKC583_RS05495","flagellar motor protein MotB",-0.84,0.00012,-1,3.7e-06,-0.08,0.74
+"BARBAKC583_RS05430","flagellar biosynthesis repressor FlbT",-1.35,0.00012,-0.99,0.0038,0.18,0.52
+"BARBAKC583_RS05510","flagellar basal-body MS-ring/collar protein FliF",-1.74,5.4e-11,-0.9,0.00053,0.62,0.012
+"BARBAKC583_RS05435","flagellar biosynthesis regulator FlaF",-1.22,7e-06,-0.89,0.00069,0.2,0.42
+"BARBAKC583_RS05445","flagellar hook-associated family protein",-1.46,2.3e-06,-0.86,0.0048,0.35,0.17
+"BARBAKC583_RS05470","flagellar hook protein FlgE",-0.89,0.00026,-0.7,0.0045,0.13,0.6
+"BARBAKC583_RS05490","chemotaxis protein MotC",-0.99,0.00014,-0.7,0.0074,0.19,0.45
+"BARBAKC583_RS05685","flagellar biosynthesis protein FliR",-0.49,0.12,-0.67,0.036,-0.07,0.82
+"BARBAKC583_RS05485","flagellar hook-length control protein FliK",-0.62,0.0079,-0.66,0.0044,-0.01,0.97
+"BARBAKC583_RS04185","flagellar biosynthetic protein FliO",0.73,0.0065,0.87,0.0014,0.06,0.84
