@@ -60,13 +60,13 @@ p5 <- ggplot(d5, aes(temp, lfc, group=gen, colour=grupo)) +
   annotate("text", x=27.5, y=yr[1]*0.96, hjust=.5, size=3.9, fontface="italic",
            colour=ROJO, label="El flagelo se apaga aquí") +
   annotate("text", x=33.5, y=yr[2]*0.90, hjust=.5, size=3.9, fontface="italic",
-           colour=AZUL, label="El choque térmico ocurre aquí") +
+           colour=AZUL, label="Las chaperonas siguen subiendo") +
   scale_colour_manual(values=setNames(c(ROJO,AZUL), c(GF,GC))) +
   scale_x_continuous(breaks=c(25,30,37), labels=c("25 °C","30 °C","37 °C"),
                      expand=expansion(mult=c(.05,.20))) +
   coord_cartesian(clip="off") +
   labs(title="Dos programas térmicos independientes",
-       subtitle=w("Cada línea fina es un gen; la línea gruesa es la mediana del grupo. La represión flagelar ocurre entre 25 y 30 °C; la respuesta de choque térmico, entre 30 y 37 °C."),
+       subtitle=w("Cada línea fina es un gen; la línea gruesa es la mediana del grupo. La represión flagelar se completa a 30 °C y no avanza más allá; la respuesta de chaperonas sigue aumentando hasta 37 °C."),
        x="Temperatura de cultivo",
        y=expression(bold(log[2]~"(conteo / conteo a 25 °C)")),
        caption="Conteos normalizados por DESeq2, indexados a 25 °C. PRJNA647605, modelo restringido (12 muestras).") +
