@@ -52,8 +52,16 @@ Tasa de mapeo por matriz biológica (media):
 | Sangre humana | HB37, HBBG | 4,6 % | −23,2 |
 | Células endoteliales | HUVE | **0,3 %** | −13,8 |
 
-Las muestras en sangre y en células son mayoritariamente ARN humano: solo
-0,2–6 % de sus lecturas son bacterianas.
+Entre el 0,2 y el 6 % de las lecturas de sangre y de células endoteliales se
+asignaron a secuencias codificantes bacterianas, frente al 38 % en cultivo puro.
+Esa diferencia de profundidad efectiva es la que impide medir cambios de
+expresión en esas muestras.
+
+El índice de salmon (`idx_kc583`) es un gentrome: las CDS como objetivo y el
+cromosoma como señuelo. Por tanto `percent_mapped` mide **asignación a CDS**, no
+contenido bacteriano total. En sangre, un 56-66 % adicional de los fragmentos cae
+en el señuelo; no está caracterizado de qué procede y **no debe interpretarse como
+fracción humana**.
 
 | Transcritos | Valor |
 |---|---|
@@ -250,6 +258,18 @@ ejecutados en ese orden:
 | `06_figuras.R` | las cinco figuras de `figures/` |
 | `07_panel_genero_ortologia.sh` | sección 9 (panel de género y ortología) |
 | `08_quimiotaxis_utr.sh` | secciones 9 (quimiotaxis) y 10 |
+
+## 12b. Verificación de reproducibilidad (25 de septiembre de 2026)
+
+La cadena publicada se ejecutó de principio a fin en una carpeta `salida/` vacía,
+partiendo de `quants/` y de la referencia. Los scripts 01 a 05 regeneraron los
+doce archivos de `results/` de forma **idéntica byte a byte** a los publicados.
+
+Corrección aplicada en esa verificación: el script 05 requería `mapeo.tsv`, que
+ningún script generaba. Ahora lo construye a partir de los informes
+`quants/*/aux_info/meta_info.json` de salmon.
+
+Pendientes de reverificar: secciones 9 y 10 (BLASTp y RNAfold).
 
 ## 13. Versiones de programas
 
