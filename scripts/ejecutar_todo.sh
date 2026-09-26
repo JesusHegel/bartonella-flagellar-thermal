@@ -45,7 +45,7 @@ correr 10_descargar_string.sh
 correr 11_analisis_string.R
 correr 12_figuras.R
 
-Rscript -e 'suppressMessages({library(tximport); library(DESeq2); library(ashr); library(fgsea); library(ggplot2)}); sessionInfo()' > "$DIR_REG/versiones_R.txt" 2>&1
+Rscript -e 'suppressMessages({library(tximport); library(DESeq2); library(ashr); library(fgsea); library(ggplot2); library(igraph); library(ggrepel)}); sessionInfo()' > "$DIR_REG/versiones_R.txt" 2>&1
 { salmon --version; prefetch --version; blastp -version | head -1; RNAfold --version; datasets --version; python3 --version; } \
   > "$DIR_REG/versiones_programas.txt" 2>&1
 echo "== Terminado ($(date +%H:%M:%S)) =="

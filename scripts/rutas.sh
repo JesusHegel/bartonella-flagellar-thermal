@@ -4,7 +4,7 @@
 
 [ -f CIFRAS_CONFIRMADAS.md ] || { echo "ERROR: ejecuta los scripts desde la carpeta raiz del repositorio."; exit 1; }
 
-export LC_ALL=C                              # mismo orden de 'sort' en cualquier computadora
+export LC_ALL=C.UTF-8                        # mismo orden de 'sort' en cualquier computadora y acentos correctos
 DIR_CUANT=${DIR_CUANT:-cuantificacion}       # cuantificaciones de salmon (entrada)
 DIR_RES=${DIR_RES:-resultados}               # tablas de resultados
 DIR_INT=${DIR_INT:-intermedios}              # objetos intermedios (no se suben a git)
