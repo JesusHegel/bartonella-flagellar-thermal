@@ -1,0 +1,109 @@
+STRING 12 descargado el 2026-09-26 
+Universo: 1138 proteinas; 1115 con identificador STRING
+Reprimidos: 275  Inducidos: 197 
+
+--- Terminos con q < 0,05 en genes reprimidos ---
+ categoria    termino
+   Keyword    KW-0282
+   Keyword    KW-0966
+   Keyword    KW-0969
+      KEGG   bbk02040
+ Component GO:0009288
+ Component GO:0042995
+ Component GO:0009425
+   Keyword    KW-0975
+   Process GO:0001539
+   Process GO:0048870
+   Process GO:0097588
+   Process GO:0071973
+   Process GO:0006810
+   Process GO:0051179
+   Process GO:0051234
+      KEGG   bbk00190
+   Process GO:0030030
+   Process GO:0044781
+   Keyword    KW-1278
+   Process GO:0006996
+ Component GO:0030694
+ Component GO:0033178
+ Component GO:0045261
+ Component GO:0071944
+ Component GO:0016020
+                                                     descripcion genes_universo
+                                                       Flagellum             26
+                                                 Cell projection             26
+                                                          Cilium             26
+                                              Flagellar assembly             25
+                                        Bacterial-type flagellum             19
+                                                 Cell projection             19
+                             Bacterial-type flagellum basal body             16
+                                             Bacterial flagellum             14
+                     Cilium or flagellum-dependent cell motility             12
+                                                   Cell motility             12
+    Archaeal or bacterial-type flagellum-dependent cell motility             12
+                Bacterial-type flagellum-dependent cell motility             11
+                                                       Transport            131
+                                                    Localization            133
+                                   Establishment of localization            133
+                                       Oxidative phosphorylation             34
+                                    Cell projection organization             10
+                           Bacterial-type flagellum organization             10
+                                                     Translocase             19
+                                          Organelle organization             28
+                        Bacterial-type flagellum basal body, rod              5
+ Proton-transporting two-sector ATPase complex, catalytic domain              5
+   Proton-transporting ATP synthase complex, catalytic core F(1)              5
+                                                  Cell periphery            149
+                                                        Membrane            279
+ genes_conjunto esperados            q
+             26       6.4 3.256142e-15
+             26       6.4 3.256142e-15
+             26       6.4 3.256142e-15
+             25       6.2 1.940826e-14
+             19       4.7 5.818348e-11
+             19       4.7 5.818348e-11
+             16       3.9 2.989940e-09
+             14       3.5 9.437831e-08
+             12       3.0 8.176678e-06
+             12       3.0 8.176678e-06
+             12       3.0 8.176678e-06
+             11       2.7 2.564504e-05
+             55      32.3 2.858846e-04
+             55      32.8 3.661175e-04
+             55      32.8 3.661175e-04
+             20       8.4 6.053035e-04
+              9       2.5 1.548368e-03
+              9       2.5 1.548368e-03
+             13       4.7 1.934695e-03
+             17       6.9 2.500084e-03
+              5       1.2 7.909025e-03
+              5       1.2 7.909025e-03
+              5       1.2 7.909025e-03
+             53      36.7 7.909025e-03
+             89      68.8 7.909025e-03
+
+--- Terminos con q < 0,05 en genes inducidos ---
+[1] categoria      termino        descripcion    genes_universo genes_conjunto
+[6] esperados      q             
+<0 rows> (or 0-length row.names)
+
+--- Conjunto flagelar frente a KEGG bbk02040 ---
+                 [,1]                                 
+termino_kegg     "bbk02040"                           
+genes_kegg       "25"                                 
+genes_flagelares "31"                                 
+en_ambos         "25"                                 
+solo_kegg        ""                                   
+solo_flagelares  "RS04185;RS05555;flaF;flbT;fliK;motC"
+
+--- Modulo flagelar en la red ---
+                           [,1]
+genes_flagelares     3.1000e+01
+aristas_observadas   4.0000e+02
+aristas_azar_media   1.3800e+01
+aristas_azar_max     6.1000e+01
+p_empirico           9.9990e-05
+aristas_red_universo 1.8388e+04
+proteinas_universo   1.1150e+03
+
+Red de genes con cambio > 2 veces: 195 genes, 697 aristas; 32 genes sin ninguna arista

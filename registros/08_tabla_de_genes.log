@@ -1,0 +1,142 @@
+reading in files with read.delim (install 'readr' package for speed up)
+1 2 3 4 5 6 7 8 9 10 11 12 
+CDS en el genoma                 : 1216 
+  pseudogenes                    : 50 
+  con copia de secuencia identica: 54 
+En la cuantificacion de salmon   : 1189 
+Analizables en DESeq2            : 1186 
+Universo del enriquecimiento     : 1138 
+Con nombre de gen                : 480 
+Con locus antiguo                : 1148 
+
+--- 20 mas inducidos (37 C frente a 25 C) ---
+ posicion              locus   gen
+        1 BARBAKC583_RS01330  <NA>
+        2 BARBAKC583_RS01335  <NA>
+        3 BARBAKC583_RS01060  clpB
+        4 BARBAKC583_RS01340  <NA>
+        5 BARBAKC583_RS01085  <NA>
+        6 BARBAKC583_RS05720  <NA>
+        7 BARBAKC583_RS02960  <NA>
+        8 BARBAKC583_RS04775  <NA>
+        9 BARBAKC583_RS00190  <NA>
+       10 BARBAKC583_RS06475  <NA>
+       11 BARBAKC583_RS01070  <NA>
+       12 BARBAKC583_RS05740 groES
+       13 BARBAKC583_RS01090  <NA>
+       14 BARBAKC583_RS06865  <NA>
+       15 BARBAKC583_RS00360  htpX
+       16 BARBAKC583_RS05735  groL
+       17 BARBAKC583_RS06185  fabB
+       18 BARBAKC583_RS06190  fabI
+       19 BARBAKC583_RS02060  <NA>
+       20 BARBAKC583_RS05100  <NA>
+                                                     producto log2FC_37vs25
+ AbrB/MazE/SpoVT family DNA-binding domain-containing protein         3.810
+             type II toxin-antitoxin system VapC family toxin         3.531
+                                 ATP-dependent chaperone ClpB         3.305
+ helix-turn-helix domain-containing transcriptional regulator         2.941
+                                         hypothetical protein         2.750
+                                         hypothetical protein         2.586
+                                         Hsp20 family protein         2.550
+                                         BA14K family protein         2.325
+                                          MliC family protein         2.289
+                      response regulator transcription factor         2.273
+                                         hypothetical protein         2.215
+                                           co-chaperone GroES         2.207
+                                         hypothetical protein         2.176
+                                        Trm112 family protein         2.147
+                                    zinc metalloprotease HtpX         2.125
+                                             chaperonin GroEL         2.057
+                                 beta-ketoacyl-ACP synthase I         1.999
+                                     enoyl-ACP reductase FabI         1.955
+                      response regulator transcription factor         1.949
+                     glutathione S-transferase family protein         1.904
+ padj_37vs25
+    7.20e-20
+    1.16e-31
+    4.75e-25
+    4.00e-18
+    1.83e-17
+    6.38e-14
+    1.60e-19
+    1.53e-08
+    1.06e-14
+    1.77e-21
+    3.25e-06
+    3.11e-10
+    1.02e-18
+    4.25e-12
+    7.45e-10
+    3.11e-10
+    3.94e-33
+    1.62e-21
+    6.01e-21
+    1.15e-19
+
+--- 20 mas reprimidos ---
+ posicion              locus  gen
+        1 BARBAKC583_RS01115 <NA>
+        2 BARBAKC583_RS05635 <NA>
+        3 BARBAKC583_RS02995 <NA>
+        4 BARBAKC583_RS05625 <NA>
+        5 BARBAKC583_RS01110 <NA>
+        6 BARBAKC583_RS05620 <NA>
+        7 BARBAKC583_RS05615 motA
+        8 BARBAKC583_RS00915 <NA>
+        9 BARBAKC583_RS06725 <NA>
+       10 BARBAKC583_RS02990 <NA>
+       11 BARBAKC583_RS05420 fliQ
+       12 BARBAKC583_RS05045 <NA>
+       13 BARBAKC583_RS02150 thiC
+       14 BARBAKC583_RS01140 <NA>
+       15 BARBAKC583_RS05285 <NA>
+       16 BARBAKC583_RS07170 <NA>
+       17 BARBAKC583_RS01105 <NA>
+       18 BARBAKC583_RS05575 flgA
+       19 BARBAKC583_RS00920 <NA>
+       20 BARBAKC583_RS07070 <NA>
+                                               producto log2FC_37vs25
+                    N4-gp56 family major capsid protein        -2.658
+                    flagellar motor switch protein FliG        -2.405
+                                   acyl carrier protein        -2.378
+     BAB2_0123 family type IV secretion system effector        -2.343
+                                   hypothetical protein        -2.248
+        FliM/FliN family flagellar motor switch protein        -2.194
+                    flagellar motor stator protein MotA        -2.111
+                       toprim domain-containing protein        -2.110
+                      DUF1127 domain-containing protein        -2.108
+                                   hypothetical protein        -2.043
+                    flagellar biosynthesis protein FliQ        -2.039
+ flagellin N-terminal helical domain-containing protein        -2.007
+                  phosphomethylpyrimidine synthase ThiC        -1.990
+                                   hypothetical protein        -1.931
+    DHA2 family efflux MFS transporter permease subunit        -1.899
+                                   hypothetical protein        -1.858
+                                         portal protein        -1.818
+   flagellar basal body P-ring formation chaperone FlgA        -1.815
+                                    YdaU family protein        -1.806
+                                   hypothetical protein        -1.802
+ padj_37vs25
+    9.38e-13
+    3.11e-10
+    3.16e-11
+    1.16e-20
+    6.86e-11
+    2.27e-13
+    2.45e-09
+    1.39e-09
+    1.47e-08
+    4.35e-09
+    5.17e-08
+    8.72e-11
+    1.50e-24
+    2.33e-07
+    3.68e-10
+    9.79e-05
+    4.46e-06
+    9.06e-06
+    5.85e-07
+    8.94e-20
+
+Flagelares entre los 20 mas reprimidos: 6 

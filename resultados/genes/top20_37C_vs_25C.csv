@@ -1,0 +1,41 @@
+"direccion","posicion","locus","gen","producto","categoria","baseMean","log2FC_37vs25","padj_37vs25","Pl25_SRR12653236","Pl25_SRR12653240","Pl30_SRR12653239","Pl30_SRR12653245","Pl37_SRR12653253","Pl37_SRR12653254"
+"inducido",1,"BARBAKC583_RS01330",NA,"AbrB/MazE/SpoVT family DNA-binding domain-containing protein","",213.9,3.81,7.2e-20,49,21,297,275,542,725
+"inducido",2,"BARBAKC583_RS01335",NA,"type II toxin-antitoxin system VapC family toxin","",327.1,3.531,1.16e-31,95,59,390,338,993,1024
+"inducido",3,"BARBAKC583_RS01060","clpB","ATP-dependent chaperone ClpB","Chaperona",4965.1,3.305,4.75e-25,1429,1200,1302,2352,16445,13917
+"inducido",4,"BARBAKC583_RS01340",NA,"helix-turn-helix domain-containing transcriptional regulator","",792.4,2.941,4e-18,318,135,1227,1076,1775,2349
+"inducido",5,"BARBAKC583_RS01085",NA,"hypothetical protein","Hipotetica",61.7,2.75,1.83e-17,19,21,64,59,166,156
+"inducido",6,"BARBAKC583_RS05720",NA,"hypothetical protein","Hipotetica",40.6,2.586,6.38e-14,14,16,80,57,116,104
+"inducido",7,"BARBAKC583_RS02960",NA,"Hsp20 family protein","",16246.2,2.55,1.6e-19,7816,5545,24583,16896,40787,47148
+"inducido",8,"BARBAKC583_RS04775",NA,"BA14K family protein","",23588.4,2.325,1.53e-08,12464,4418,28363,39744,41559,69930
+"inducido",9,"BARBAKC583_RS00190",NA,"MliC family protein","",1550,2.289,1.06e-14,549,685,1647,1759,2693,4163
+"inducido",10,"BARBAKC583_RS06475",NA,"response regulator transcription factor","",1195.1,2.273,1.77e-21,625,392,958,1208,2692,2607
+"inducido",11,"BARBAKC583_RS01070",NA,"hypothetical protein","Hipotetica",57,2.215,3.25e-06,15,4,32,19,50,67
+"inducido",12,"BARBAKC583_RS05740","groES","co-chaperone GroES","Chaperona",8716.8,2.207,3.11e-10,2633,6122,5930,7329,23876,24839
+"inducido",13,"BARBAKC583_RS01090",NA,"hypothetical protein","Hipotetica",5675,2.176,1.02e-18,2536,1877,7906,7255,9386,12330
+"inducido",14,"BARBAKC583_RS06865",NA,"Trm112 family protein","",147.3,2.147,4.25e-12,57,39,141,150,202,275
+"inducido",15,"BARBAKC583_RS00360","htpX","zinc metalloprotease HtpX","Chaperona",2870.3,2.125,7.45e-10,1574,1013,2203,2511,8099,5386
+"inducido",16,"BARBAKC583_RS05735","groL","chaperonin GroEL","Chaperona",86627.6,2.057,3.11e-10,26538,55466,37472,49061,202649,196522
+"inducido",17,"BARBAKC583_RS06185","fabB","beta-ketoacyl-ACP synthase I","",5852.2,1.999,3.94e-33,2954,3172,5554,5448,12263,13146
+"inducido",18,"BARBAKC583_RS06190","fabI","enoyl-ACP reductase FabI","",1513.6,1.955,1.62e-21,719,1021,1243,1234,3411,3751
+"inducido",19,"BARBAKC583_RS02060",NA,"response regulator transcription factor","",758,1.949,6.01e-21,445,416,772,741,1509,2012
+"inducido",20,"BARBAKC583_RS05100",NA,"glutathione S-transferase family protein","",411.9,1.904,1.15e-19,263,220,256,347,904,1004
+"reprimido",1,"BARBAKC583_RS01115",NA,"N4-gp56 family major capsid protein","",2727.5,-2.658,9.38e-13,1653,705,153,133,185,115
+"reprimido",2,"BARBAKC583_RS05635",NA,"flagellar motor switch protein FliG","Flagelar",464.2,-2.405,3.11e-10,378,875,79,94,127,61
+"reprimido",3,"BARBAKC583_RS02995",NA,"acyl carrier protein","",94.2,-2.378,3.16e-11,159,321,72,67,39,38
+"reprimido",4,"BARBAKC583_RS05625",NA,"BAB2_0123 family type IV secretion system effector","",599.3,-2.343,1.16e-20,486,721,111,126,126,91
+"reprimido",5,"BARBAKC583_RS01110",NA,"hypothetical protein","Hipotetica",379.1,-2.248,6.86e-11,406,180,59,70,56,46
+"reprimido",6,"BARBAKC583_RS05620",NA,"FliM/FliN family flagellar motor switch protein","Flagelar",407.5,-2.194,2.27e-13,462,819,123,167,139,107
+"reprimido",7,"BARBAKC583_RS05615","motA","flagellar motor stator protein MotA","Flagelar",625.1,-2.111,2.45e-09,608,1128,123,182,219,114
+"reprimido",8,"BARBAKC583_RS00915",NA,"toprim domain-containing protein","",406.9,-2.11,1.39e-09,338,191,36,28,62,39
+"reprimido",9,"BARBAKC583_RS06725",NA,"DUF1127 domain-containing protein","",221.8,-2.108,1.47e-08,94,222,67,43,28,32
+"reprimido",10,"BARBAKC583_RS02990",NA,"hypothetical protein","Hipotetica",178.6,-2.043,4.35e-09,291,603,139,145,101,80
+"reprimido",11,"BARBAKC583_RS05420","fliQ","flagellar biosynthesis protein FliQ","Flagelar",92.8,-2.039,5.17e-08,67,140,35,23,25,16
+"reprimido",12,"BARBAKC583_RS05045",NA,"flagellin N-terminal helical domain-containing protein","Flagelar",73531,-2.007,8.72e-11,40109,75699,16077,17515,13754,11353
+"reprimido",13,"BARBAKC583_RS02150","thiC","phosphomethylpyrimidine synthase ThiC","",1236.5,-1.99,1.5e-24,2155,2005,575,804,489,506
+"reprimido",14,"BARBAKC583_RS01140",NA,"hypothetical protein","Hipotetica",464.8,-1.931,2.33e-07,374,138,49,51,59,48
+"reprimido",15,"BARBAKC583_RS05285",NA,"DHA2 family efflux MFS transporter permease subunit","",1640.2,-1.899,3.68e-10,2028,1167,1083,1036,469,281
+"reprimido",16,"BARBAKC583_RS07170",NA,"hypothetical protein","Hipotetica",157.4,-1.858,9.79e-05,96,21,16,14,12,8
+"reprimido",17,"BARBAKC583_RS01105",NA,"portal protein","",1938.9,-1.818,4.46e-06,1714,481,249,244,259,225
+"reprimido",18,"BARBAKC583_RS05575","flgA","flagellar basal body P-ring formation chaperone FlgA","Flagelar;Chaperona",159.7,-1.815,9.06e-06,219,191,39,27,66,22
+"reprimido",19,"BARBAKC583_RS00920",NA,"YdaU family protein","",161.6,-1.806,5.85e-07,162,72,12,18,25,30
+"reprimido",20,"BARBAKC583_RS07070",NA,"hypothetical protein","Hipotetica",280,-1.802,8.94e-20,433,413,166,211,107,123

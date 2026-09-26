@@ -18,7 +18,7 @@ D=datos/string
 ESPECIE=360095
 QUIEN=bartonella_unmsm_reanalisis
 
-if [ -f "$D/version.tsv" ] && [ "${FORZAR_DESCARGA_STRING:-0}" != 1 ]; then
+if [ -f "$D/fecha_descarga.txt" ] && [ "${FORZAR_DESCARGA_STRING:-0}" != 1 ]; then
   echo "STRING ya descargado el $(cat "$D/fecha_descarga.txt"); se usa la copia guardada:"
   cat "$D/version.tsv"
   exit 0

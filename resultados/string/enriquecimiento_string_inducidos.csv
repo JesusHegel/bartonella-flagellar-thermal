@@ -1,0 +1,1483 @@
+"categoria","termino","descripcion","genes_universo","genes_conjunto","esperados","p","genes","q"
+"Process","GO:0006355","Regulation of transcription, DNA-templated",34,14,6,0.000937546045080358,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;greA;rpoH;yacG",0.0921659201491187
+"Process","GO:0051252","Regulation of RNA metabolic process",34,14,6,0.000937546045080358,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;greA;rpoH;yacG",0.0921659201491187
+"Process","GO:1903506","Regulation of nucleic acid-templated transcription",34,14,6,0.000937546045080358,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;greA;rpoH;yacG",0.0921659201491187
+"Process","GO:2001141","Regulation of RNA biosynthetic process",34,14,6,0.000937546045080358,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;greA;rpoH;yacG",0.0921659201491187
+"Process","GO:0009266","Response to temperature stimulus",4,4,0.7,0.000950164125248647,"clpB;dnaJ;lon;rpoH",0.0921659201491187
+"Process","GO:0009408","Response to heat",4,4,0.7,0.000950164125248647,"clpB;dnaJ;lon;rpoH",0.0921659201491187
+"Process","GO:0050794","Regulation of cellular process",66,22,11.7,0.00112709926453622,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS02065;RS02110;RS03090;RS03095;RS04400;RS04785;RS06475;RS06480;RS06670;efp;greA;lpdA;phoU;rpoH;tsf;yacG",0.0937102531371539
+"Process","GO:0019219","Regulation of nucleobase-containing compound metabolic process",35,14,6.2,0.00132113795551377,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;greA;rpoH;yacG",0.0961127862636269
+"Process","GO:0006090","Pyruvate metabolic process",15,8,2.7,0.00172449120362951,"RS00690;RS00695;RS02575;RS02580;RS05110;pdhA;tpiA;ubiC",0.111517097834708
+"Process","GO:0050789","Regulation of biological process",87,26,15.4,0.00249220389411024,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS02065;RS02110;RS03090;RS03095;RS04400;RS04590;RS04605;RS04785;RS06475;RS06480;RS06670;efp;greA;lpdA;murA;murD;phoU;rpoH;tsf;yacG",0.113746829788311
+"Process","GO:0006096","Glycolytic process",7,5,1.2,0.00254073674784886,"RS00690;RS00695;RS02580;RS05110;tpiA",0.113746829788311
+"Process","GO:0006757","ATP generation from ADP",7,5,1.2,0.00254073674784886,"RS00690;RS00695;RS02580;RS05110;tpiA",0.113746829788311
+"Process","GO:0046031","ADP metabolic process",7,5,1.2,0.00254073674784886,"RS00690;RS00695;RS02580;RS05110;tpiA",0.113746829788311
+"Process","GO:0065007","Biological regulation",93,27,16.4,0.0032782668647006,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS02065;RS02110;RS03090;RS03095;RS04400;RS04590;RS04605;RS04785;RS06475;RS06480;RS06670;efp;greA;lpdA;murA;murD;nhaA;phoU;rpoH;tsf;yacG",0.120698257085695
+"Process","GO:0000160","Phosphorelay signal transduction system",20,9,3.5,0.00393932490311584,"RS00300;RS01625;RS02060;RS02065;RS02110;RS04400;RS04785;RS06475;RS06480",0.120698257085695
+"Process","GO:0007165","Signal transduction",20,9,3.5,0.00393932490311584,"RS00300;RS01625;RS02060;RS02065;RS02110;RS04400;RS04785;RS06475;RS06480",0.120698257085695
+"Process","GO:0023052","Signaling",20,9,3.5,0.00393932490311584,"RS00300;RS01625;RS02060;RS02065;RS02110;RS04400;RS04785;RS06475;RS06480",0.120698257085695
+"Process","GO:0035556","Intracellular signal transduction",20,9,3.5,0.00393932490311584,"RS00300;RS01625;RS02060;RS02065;RS02110;RS04400;RS04785;RS06475;RS06480",0.120698257085695
+"Process","GO:0009628","Response to abiotic stimulus",5,4,0.9,0.00409058056801465,"clpB;dnaJ;lon;rpoH",0.120698257085695
+"Process","GO:0031323","Regulation of cellular metabolic process",51,17,9,0.00423196033274277,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;phoU;rpoH;tsf;yacG",0.120698257085695
+"Process","GO:0006086","acetyl-CoA biosynthetic process from pyruvate",3,3,0.5,0.00544630158389946,"RS02575;RS02580;pdhA",0.120698257085695
+"Process","GO:0006457","Protein folding",14,7,2.5,0.00545192309678126,"RS01900;clpB;dnaJ;dnaK;groES;groL;grpE",0.120698257085695
+"Process","GO:0006165","Nucleoside diphosphate phosphorylation",8,5,1.4,0.00580678900068635,"RS00690;RS00695;RS02580;RS05110;tpiA",0.120698257085695
+"Process","GO:0009135","Purine nucleoside diphosphate metabolic process",8,5,1.4,0.00580678900068635,"RS00690;RS00695;RS02580;RS05110;tpiA",0.120698257085695
+"Process","GO:0009179","Purine ribonucleoside diphosphate metabolic process",8,5,1.4,0.00580678900068635,"RS00690;RS00695;RS02580;RS05110;tpiA",0.120698257085695
+"Process","GO:0009185","Ribonucleoside diphosphate metabolic process",8,5,1.4,0.00580678900068635,"RS00690;RS00695;RS02580;RS05110;tpiA",0.120698257085695
+"Process","GO:0016052","Carbohydrate catabolic process",8,5,1.4,0.00580678900068635,"RS00690;RS00695;RS02580;RS05110;tpiA",0.120698257085695
+"Process","GO:0046939","Nucleotide phosphorylation",8,5,1.4,0.00580678900068635,"RS00690;RS00695;RS02580;RS05110;tpiA",0.120698257085695
+"Process","GO:0009889","Regulation of biosynthetic process",49,16,8.7,0.00691217587002183,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;rpoH;tsf;yacG",0.129770527624281
+"Process","GO:0010556","Regulation of macromolecule biosynthetic process",49,16,8.7,0.00691217587002183,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;rpoH;tsf;yacG",0.129770527624281
+"Process","GO:0031326","Regulation of cellular biosynthetic process",49,16,8.7,0.00691217587002183,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;rpoH;tsf;yacG",0.129770527624281
+"Keyword","KW-0670","Pyruvate",7,5,1.2,0.00254073674784886,"RS02575;RS02580;murA;pdhA;ubiC",0.170161757246469
+"Keyword","KW-0346","Stress response",13,7,2.3,0.00319950678813137,"RS02960;clpB;dnaJ;dnaK;grpE;lon;rpoH",0.170161757246469
+"Keyword","KW-0805","Transcription regulation",23,10,4.1,0.00323091944138866,"RS00300;RS00805;RS01625;RS02060;RS03090;RS04785;RS06475;RS06670;greA;rpoH",0.170161757246469
+"Process","GO:0010468","Regulation of gene expression",51,16,9,0.010587674475531,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;rpoH;tsf;yacG",0.19256332952372
+"Keyword","KW-0804","Transcription",28,11,4.9,0.00521834938645674,"RS00300;RS00805;RS01625;RS02060;RS03090;RS04785;RS06475;RS06670;greA;rpoH;rpoZ",0.206124800765041
+"Process","GO:0019222","Regulation of metabolic process",56,17,9.9,0.0121067732260014,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;phoU;rpoH;tsf;yacG",0.213519455076752
+"Process","GO:0051171","Regulation of nitrogen compound metabolic process",53,16,9.4,0.0156655263988508,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;rpoH;tsf;yacG",0.25567143439241
+"Process","GO:0080090","Regulation of primary metabolic process",53,16,9.4,0.0156655263988508,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;rpoH;tsf;yacG",0.25567143439241
+"Process","GO:0032787","Monocarboxylic acid metabolic process",36,12,6.4,0.0158147279005614,"RS00690;RS00695;RS02575;RS02580;RS05110;fabA;fabB;fabI;fabI;pdhA;tpiA;ubiC",0.25567143439241
+"Function","GO:0005515","Protein binding",11,7,1.9,0.000848744550876055,"RS01900;RS05340;dnaJ;dnaK;greA;groL;grpE",0.261413321669825
+"Process","GO:0006085","acetyl-CoA biosynthetic process",4,3,0.7,0.0189347139598519,"RS02575;RS02580;pdhA",0.294634956172918
+"Process","GO:0009132","Nucleoside diphosphate metabolic process",10,5,1.8,0.0192373339081974,"RS00690;RS00695;RS02580;RS05110;tpiA",0.294634956172918
+"Process","GO:0051301","Cell division",25,9,4.4,0.0212358041139866,"RS02535;RS04400;RS04590;RS04605;murA;murD;tolB;tolQ;yihA",0.316903538316415
+"Process","GO:0060255","Regulation of macromolecule metabolic process",55,16,9.7,0.022460666308125,"RS00300;RS00365;RS00805;RS01625;RS02030;RS02060;RS03090;RS03095;RS04785;RS06475;RS06670;efp;greA;rpoH;tsf;yacG",0.326802694783219
+"KEGG","bbk00010","Glycolysis / Gluconeogenesis",17,8,3,0.00470869396917672,"RS00690;RS00695;RS02575;RS02580;RS05110;lpdA;pdhA;tpiA",0.339025965780724
+"Keyword","KW-0902","Two-component regulatory system",9,5,1.6,0.0112059539715017,"RS00300;RS02060;RS04785;RS06475;RS06480",0.34787246250522
+"Keyword","KW-0143","Chaperone",16,7,2.8,0.0132103466774134,"clpB;dnaJ;dnaK;groES;groL;grpE;rimM",0.34787246250522
+"Keyword","KW-0690","Ribosome biogenesis",7,4,1.2,0.0212909227382319,"rimM;rimP;ruvX;ybeY",0.480566541805807
+"Process","GO:0007154","Cell communication",27,9,4.8,0.0352700077887285,"RS00300;RS01625;RS02060;RS02065;RS02110;RS04400;RS04785;RS06475;RS06480",0.500662061781463
+"Keyword","KW-0597","Phosphoprotein",18,7,3.2,0.0267672377877046,"RS00300;RS01625;RS02060;RS04400;RS04785;RS06475;dnaK",0.528652946307165
+"Process","GO:0006084","acetyl-CoA metabolic process",5,3,0.9,0.0412009140476078,"RS02575;RS02580;pdhA",0.570926951802565
+"KEGG","bbk02020","Two-component system",28,10,4.9,0.0163086417188711,"RS01425;RS02110;RS03030;RS03155;RS04400;RS04785;RS06015;RS06475;RS06480;chpT",0.587111101879359
+"Keyword","KW-0324","Glycolysis",5,3,0.9,0.0412009140476078,"RS00690;RS05110;tpiA",0.660419388253463
+"Keyword","KW-0489","Methyltransferase",32,10,5.7,0.04179869545908,"RS00365;RS01645;RS04045;RS04480;RS06130;RS06680;RS06685;rsmH;trmD;ubiG",0.660419388253463
+"Keyword","KW-0238","DNA-binding",56,15,9.9,0.0538914336756219,"RS00300;RS00805;RS01330;RS01625;RS02060;RS02365;RS03090;RS04785;RS06030;RS06075;RS06475;RS06670;dnaN;greA;rpoH",0.706238469485771
+"Keyword","KW-0131","Cell cycle",25,8,4.4,0.0581082285019938,"RS04400;RS04590;RS04605;murA;murD;tolB;tolQ;yihA",0.706238469485771
+"Keyword","KW-0132","Cell division",25,8,4.4,0.0581082285019938,"RS04400;RS04590;RS04605;murA;murD;tolB;tolQ;yihA",0.706238469485771
+"Keyword","KW-0963","Cytoplasm",188,41,33.2,0.0655153785609299,"RS00690;RS00805;RS01050;RS01315;RS01920;RS04045;RS04480;RS04605;RS06020;RS06030;RS06680;clpB;cysS;dapA;dapF;dnaJ;dnaN;efp;fabA;frr;fsa;gltX;groES;groL;grpE;lon;murA;murD;phoU;rimM;rimP;rpoH;rsmH;ruvX;serS;smpB;tpiA;trmD;tsf;ubiC;ybeY",0.739387843759066
+"Keyword","KW-0312","Gluconeogenesis",3,2,0.5,0.0823648377995872,"RS05110;tpiA",0.813352773270924
+"Keyword","KW-0704","Schiff base",3,2,0.5,0.0823648377995872,"dapA;fsa",0.813352773270924
+"KEGG","bbk00130","Ubiquinone and other terpenoid-quinone biosynthesis",6,3,1.1,0.0718252973514882,"RS00470;ubiC;ubiG",0.920980148476933
+"KEGG","bbk00051","Fructose and mannose metabolism",3,2,0.5,0.0823648377995872,"RS00695;tpiA",0.920980148476933
+"KEGG","bbk01120","Microbial metabolism in diverse environments",60,15,10.6,0.0909771903540963,"RS00690;RS00695;RS01315;RS01425;RS02575;RS02580;RS05110;RS05340;dapA;dapF;fsa;gltX;lpdA;pdhA;tpiA",0.920980148476933
+"KEGG","bbk00260","Glycine, serine and threonine metabolism",11,4,1.9,0.112422934216687,"RS01315;RS05110;RS05340;lpdA",0.920980148476933
+"KEGG","bbk01230","Biosynthesis of amino acids",48,12,8.5,0.123336124717205,"RS00690;RS00695;RS01315;RS01425;RS05110;RS05340;aroC;dapA;dapF;fsa;ilvC;tpiA",0.920980148476933
+"KEGG","bbk01110","Biosynthesis of secondary metabolites",129,28,22.8,0.125019602173429,"RS00470;RS00690;RS00695;RS01015;RS01315;RS02575;RS02580;RS02820;RS03030;RS05110;RS05290;RS05340;aroC;dapA;dapF;fabI;fabI;fsa;gltX;guaB;ilvC;lpdA;pdhA;purE;ribB;tpiA;ubiC;ubiG",0.920980148476933
+"KEGG","bbk00261","Monobactam biosynthesis",4,2,0.7,0.145794961639323,"RS05340;dapA",0.920980148476933
+"KEGG","bbk00300","Lysine biosynthesis",12,4,2.1,0.146307264230431,"RS04605;RS05340;dapA;dapF",0.920980148476933
+"KEGG","bbk00680","Methane metabolism",8,3,1.4,0.153496691412822,"RS00695;RS01315;RS05110",0.920980148476933
+"KEGG","bbk00780","Biotin metabolism",8,3,1.4,0.153496691412822,"fabB;fabI;fabI",0.920980148476933
+"Pfam","PF01168","Alanine racemase, N-terminal domain",4,3,0.7,0.0189347139598519,"RS00520;RS05290;alr",0.927800984032743
+"Keyword","KW-0456","Lyase",28,8,4.9,0.104063174512351,"RS00695;RS01015;aroC;dapA;fabA;purE;ribB;ubiC",0.948508611844542
+"Keyword","KW-0457","Lysine biosynthesis",7,3,1.2,0.10972607831143,"RS05340;dapA;dapF",0.948508611844542
+"Keyword","KW-0949","S-adenosyl-L-methionine",24,7,4.2,0.114061162183837,"RS00365;RS01645;RS04045;RS06680;rsmH;trmD;ubiG",0.948508611844542
+"Process","GO:0007049","Cell cycle",22,7,3.9,0.0766175024276108,"RS02535;RS04605;murA;murD;tolB;tolQ;yihA",0.998673658319995
+"Process","GO:0006549","Isoleucine metabolic process",3,2,0.5,0.0823648377995872,"RS05340;ilvC",0.998673658319995
+"Process","GO:0009081","Branched-chain amino acid metabolic process",3,2,0.5,0.0823648377995872,"RS05340;ilvC",0.998673658319995
+"Process","GO:0009082","Branched-chain amino acid biosynthetic process",3,2,0.5,0.0823648377995872,"RS05340;ilvC",0.998673658319995
+"Process","GO:0009097","Isoleucine biosynthetic process",3,2,0.5,0.0823648377995872,"RS05340;ilvC",0.998673658319995
+"Process","GO:0009226","Nucleotide-sugar biosynthetic process",3,2,0.5,0.0823648377995872,"RS06020;murA",0.998673658319995
+"Function","GO:0016830","Carbon-carbon lyase activity",12,6,2.1,0.0101971465001431,"RS00695;RS01015;RS05290;fsa;ribB;ubiC",1
+"Function","GO:0004222","Metalloendopeptidase activity",6,4,1.1,0.0105765307437273,"RS01600;RS01980;htpX;ybeY",1
+"InterPro","IPR001789","Signal transduction response regulator, receiver domain",13,6,2.3,0.0161951233961532,"RS00300;RS01625;RS02060;RS04400;RS04785;RS06475",1
+"InterPro","IPR011006","CheY-like superfamily",13,6,2.3,0.0161951233961532,"RS00300;RS01625;RS02060;RS04400;RS04785;RS06475",1
+"Function","GO:0044183","Protein folding chaperone",4,3,0.7,0.0189347139598519,"dnaK;groES;groL",1
+"Function","GO:0140662","ATP-dependent protein folding chaperone",4,3,0.7,0.0189347139598519,"dnaK;groES;groL",1
+"InterPro","IPR016032","Signal transduction response regulator, C-terminal effector",4,3,0.7,0.0189347139598519,"RS00300;RS02060;RS04785",1
+"Function","GO:0051082","Unfolded protein binding",7,4,1.2,0.0212909227382319,"RS01900;dnaJ;dnaK;groL",1
+"InterPro","IPR001867","OmpR/PhoB-type DNA-binding domain",7,4,1.2,0.0212909227382319,"RS00300;RS02060;RS04785;RS06475",1
+"InterPro","IPR039420","Transcriptional regulatory protein WalR-like",7,4,1.2,0.0212909227382319,"RS00300;RS02060;RS04785;RS06475",1
+"Function","GO:0008237","Metallopeptidase activity",14,6,2.5,0.0242525236206822,"RS01600;RS01980;RS05890;htpX;tldD;ybeY",1
+"Function","GO:0016829","Lyase activity",31,10,5.5,0.0338012560313721,"RS00695;RS01015;RS05290;aroC;dapA;fabA;fsa;purE;ribB;ubiC",1
+"Function","GO:0003677","DNA binding",86,22,15.2,0.0357447452158782,"RS00300;RS00805;RS01325;RS01330;RS01625;RS02030;RS02060;RS02365;RS02455;RS03090;RS03095;RS04785;RS05180;RS06030;RS06075;RS06475;RS06670;dnaN;greA;lon;rpoH;rpoZ",1
+"Function","GO:0008270","Zinc ion binding",24,8,4.2,0.0463090526978316,"RS02030;RS05905;cysS;dnaJ;gltX;htpX;yacG;ybeY",1
+"Function","GO:0016853","Isomerase activity",29,9,5.1,0.0546513094050126,"RS01395;RS02535;RS05110;alr;dapF;fabA;groL;purE;tpiA",1
+"Function","GO:0004312","Fatty acid synthase activity",9,4,1.6,0.0572303384791981,"fabA;fabB;fabI;fabI",1
+"InterPro","IPR029066","PLP-binding barrel",6,3,1.1,0.0718252973514882,"RS00520;RS05290;alr",1
+"Function","GO:0016624","Oxidoreductase activity, acting on the aldehyde or oxo group of donors, disulfide as acceptor",3,2,0.5,0.0823648377995872,"RS02575;pdhA",1
+"Function","GO:0016628","Oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor",3,2,0.5,0.0823648377995872,"fabI;fabI",1
+"Function","GO:0016705","Oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen",3,2,0.5,0.0823648377995872,"RS00470;trhO",1
+"Function","GO:0016855","Racemase and epimerase activity, acting on amino acids and derivatives",3,2,0.5,0.0823648377995872,"alr;dapF",1
+"Function","GO:0030527","Structural constituent of chromatin",3,2,0.5,0.0823648377995872,"RS03090;RS06670",1
+"Function","GO:0036361","Racemase activity, acting on amino acids and derivatives",3,2,0.5,0.0823648377995872,"alr;dapF",1
+"Function","GO:0047661","Amino-acid racemase activity",3,2,0.5,0.0823648377995872,"alr;dapF",1
+"Function","GO:0098772","Molecular function regulator activity",3,2,0.5,0.0823648377995872,"grpE;yacG",1
+"InterPro","IPR000119","Histone-like DNA-binding protein",3,2,0.5,0.0823648377995872,"RS03090;RS06670",1
+"InterPro","IPR001623","DnaJ domain",3,2,0.5,0.0823648377995872,"RS01900;dnaJ",1
+"InterPro","IPR010992","Integration host factor (IHF)-like DNA-binding domain superfamily",3,2,0.5,0.0823648377995872,"RS03090;RS06670",1
+"InterPro","IPR036869","Chaperone J-domain superfamily",3,2,0.5,0.0823648377995872,"RS01900;dnaJ",1
+"Process","GO:0032259","Methylation",36,10,6.4,0.0863581572057002,"RS00365;RS01645;RS04045;RS04480;RS06130;RS06680;RS06685;rsmH;trmD;ubiG",1
+"Function","GO:0008168","Methyltransferase activity",36,10,6.4,0.0863581572057002,"RS00365;RS01645;RS04045;RS04480;RS06130;RS06680;RS06685;rsmH;trmD;ubiG",1
+"Process","GO:0046394","Carboxylic acid biosynthetic process",56,14,9.9,0.100598376080161,"RS01315;RS01425;RS05340;alr;aroC;dapA;dapF;fabA;fabB;fabI;fabI;ilvC;serS;ubiC",1
+"Process","GO:0006414","Translational elongation",7,3,1.2,0.10972607831143,"efp;smpB;tsf",1
+"Process","GO:0035384","Thioester biosynthetic process",7,3,1.2,0.10972607831143,"RS02575;RS02580;pdhA",1
+"Process","GO:0042592","Homeostatic process",7,3,1.2,0.10972607831143,"lpdA;nhaA;phoU",1
+"Process","GO:0071616","acyl-CoA biosynthetic process",7,3,1.2,0.10972607831143,"RS02575;RS02580;pdhA",1
+"Process","GO:0016053","Organic acid biosynthetic process",57,14,10.1,0.113177464330359,"RS01315;RS01425;RS05340;alr;aroC;dapA;dapF;fabA;fabB;fabI;fabI;ilvC;serS;ubiC",1
+"Process","GO:0009141","Nucleoside triphosphate metabolic process",24,7,4.2,0.114061162183837,"RS00690;RS00695;RS02550;RS02580;RS04480;RS05110;tpiA",1
+"Process","GO:1901607","Alpha-amino acid biosynthetic process",29,8,5.1,0.12288674217229,"RS01315;RS01425;RS05340;alr;dapA;dapF;ilvC;serS",1
+"Process","GO:0001510","RNA methylation",20,6,3.5,0.124735829257937,"RS00365;RS01645;RS04045;RS06685;rsmH;trmD",1
+"Process","GO:0009199","Ribonucleoside triphosphate metabolic process",20,6,3.5,0.124735829257937,"RS00690;RS00695;RS02550;RS02580;RS05110;tpiA",1
+"Function","GO:0016810","Hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds",20,6,3.5,0.124735829257937,"RS02550;RS04405;RS05370;RS05850;RS05905;def",1
+"Component","GO:0005737","Cytoplasm",214,44,37.8,0.128965230269718,"RS00690;RS00805;RS01050;RS01920;RS02580;RS04045;RS04480;RS04605;RS06020;RS06030;RS06685;clpB;cysS;dapA;dapF;dnaJ;dnaN;efp;fabA;frr;fsa;gltX;groES;groL;grpE;lon;murA;murD;phoU;rimM;rimP;rpoH;rpsO;rsmH;ruvX;serS;smpB;tpiA;trmD;trxB;tsf;ubiC;ubiG;ybeY",1
+"Process","GO:0006094","Gluconeogenesis",4,2,0.7,0.145794961639323,"RS05110;tpiA",1
+"Process","GO:0009070","Serine family amino acid biosynthetic process",4,2,0.7,0.145794961639323,"RS01315;serS",1
+"Process","GO:0009225","Nucleotide-sugar metabolic process",4,2,0.7,0.145794961639323,"RS06020;murA",1
+"Process","GO:0009394","2-deoxyribonucleotide metabolic process",4,2,0.7,0.145794961639323,"RS04480;RS05850",1
+"Process","GO:0019319","Hexose biosynthetic process",4,2,0.7,0.145794961639323,"RS05110;tpiA",1
+"Process","GO:0019692","Deoxyribose phosphate metabolic process",4,2,0.7,0.145794961639323,"RS04480;RS05850",1
+"Process","GO:0042274","Ribosomal small subunit biogenesis",4,2,0.7,0.145794961639323,"rimM;rimP",1
+"Function","GO:0016854","Racemase and epimerase activity",4,2,0.7,0.145794961639323,"alr;dapF",1
+"Function","GO:0016860","Intramolecular oxidoreductase activity",4,2,0.7,0.145794961639323,"fabA;tpiA",1
+"Function","GO:0019239","Deaminase activity",4,2,0.7,0.145794961639323,"RS05850;RS05905",1
+"Function","GO:0046983","Protein dimerization activity",4,2,0.7,0.145794961639323,"RS05340;grpE",1
+"Function","GO:0070567","Cytidylyltransferase activity",4,2,0.7,0.145794961639323,"RS02820;RS06020",1
+"Keyword","KW-0450","Lipoyl",4,2,0.7,0.145794961639323,"RS02575;RS02580",1
+"Keyword","KW-0786","Thiamine pyrophosphate",4,2,0.7,0.145794961639323,"RS02575;pdhA",1
+"Keyword","KW-0810","Translation regulation",4,2,0.7,0.145794961639323,"RS03090;RS06670",1
+"InterPro","IPR002347","Short-chain dehydrogenase/reductase SDR",4,2,0.7,0.145794961639323,"fabI;fabI",1
+"InterPro","IPR003016","2-oxo acid dehydrogenase, lipoyl-binding site",4,2,0.7,0.145794961639323,"RS02575;RS02580",1
+"InterPro","IPR004101","Mur ligase, C-terminal",4,2,0.7,0.145794961639323,"RS04605;murD",1
+"InterPro","IPR014722","Ribosomal protein L2, domain 2",4,2,0.7,0.145794961639323,"efp;rplX",1
+"InterPro","IPR023753","FAD/NAD(P)-binding domain",4,2,0.7,0.145794961639323,"lpdA;trxB",1
+"Pfam","PF02875","Mur ligase family, glutamate ligase domain",4,2,0.7,0.145794961639323,"RS04605;murD",1
+"Process","GO:0008652","Cellular amino acid biosynthetic process",35,9,6.2,0.148549690698391,"RS01315;RS01425;RS05340;alr;aroC;dapA;dapF;ilvC;serS",1
+"Process","GO:0044283","Small molecule biosynthetic process",85,19,15,0.151518408938131,"RS00470;RS01315;RS01425;RS05110;RS05340;alr;aroC;dapA;dapF;fabA;fabB;fabI;fabI;ilvC;ribB;serS;tpiA;ubiC;ubiG",1
+"Process","GO:0000041","Transition metal ion transport",8,3,1.4,0.153496691412822,"RS02220;RS05395;ccmA",1
+"Process","GO:0006637","acyl-CoA metabolic process",8,3,1.4,0.153496691412822,"RS02575;RS02580;pdhA",1
+"Process","GO:0006743","Ubiquinone metabolic process",8,3,1.4,0.153496691412822,"RS00470;ubiC;ubiG",1
+"Process","GO:0006744","Ubiquinone biosynthetic process",8,3,1.4,0.153496691412822,"RS00470;ubiC;ubiG",1
+"Process","GO:0006826","Iron ion transport",8,3,1.4,0.153496691412822,"RS02220;RS05395;ccmA",1
+"Process","GO:0009085","Lysine biosynthetic process",8,3,1.4,0.153496691412822,"RS05340;dapA;dapF",1
+"Process","GO:0009089","Lysine biosynthetic process via diaminopimelate",8,3,1.4,0.153496691412822,"RS05340;dapA;dapF",1
+"Process","GO:0035383","Thioester metabolic process",8,3,1.4,0.153496691412822,"RS02575;RS02580;pdhA",1
+"Process","GO:0042180","Cellular ketone metabolic process",8,3,1.4,0.153496691412822,"RS00470;ubiC;ubiG",1
+"Process","GO:0042181","Ketone biosynthetic process",8,3,1.4,0.153496691412822,"RS00470;ubiC;ubiG",1
+"Process","GO:0046451","Diaminopimelate metabolic process",8,3,1.4,0.153496691412822,"RS05340;dapA;dapF",1
+"Process","GO:1901661","Quinone metabolic process",8,3,1.4,0.153496691412822,"RS00470;ubiC;ubiG",1
+"Process","GO:1901663","Quinone biosynthetic process",8,3,1.4,0.153496691412822,"RS00470;ubiC;ubiG",1
+"Function","GO:0000155","Phosphorelay sensor kinase activity",8,3,1.4,0.153496691412822,"RS02065;RS02110;RS06480",1
+"Function","GO:0016903","Oxidoreductase activity, acting on the aldehyde or oxo group of donors",8,3,1.4,0.153496691412822,"RS02575;RS05340;pdhA",1
+"InterPro","IPR004358","Signal transduction histidine kinase-related protein, C-terminal",8,3,1.4,0.153496691412822,"RS02065;RS02110;RS06480",1
+"InterPro","IPR029026","tRNA (guanine-N1-)-methyltransferase, N-terminal",8,3,1.4,0.153496691412822,"RS04045;RS06685;trmD",1
+"InterPro","IPR029028","Alpha/beta knot methyltransferases",8,3,1.4,0.153496691412822,"RS04045;RS06685;trmD",1
+"InterPro","IPR036097","Signal transduction histidine kinase, dimerisation/phosphoacceptor domain superfamily",8,3,1.4,0.153496691412822,"RS02065;RS02110;RS06480",1
+"Keyword","KW-0413","Isomerase",26,7,4.6,0.159460818417399,"RS01395;RS05110;alr;dapF;fabA;purE;tpiA",1
+"Process","GO:0046034","ATP metabolic process",17,5,3,0.166157374432496,"RS00690;RS00695;RS02580;RS05110;tpiA",1
+"Function","GO:0004175","Endopeptidase activity",17,5,3,0.166157374432496,"RS01600;RS01980;htpX;lon;ybeY",1
+"InterPro","IPR013785","Aldolase-type TIM barrel",17,5,3,0.166157374432496,"RS00695;dapA;fsa;guaB;tpiA",1
+"Process","GO:0033865","Nucleoside bisphosphate metabolic process",13,4,2.3,0.183581051250686,"RS02255;RS02575;RS02580;pdhA",1
+"Process","GO:0033875","Ribonucleoside bisphosphate metabolic process",13,4,2.3,0.183581051250686,"RS02255;RS02575;RS02580;pdhA",1
+"Process","GO:0034032","Purine nucleoside bisphosphate metabolic process",13,4,2.3,0.183581051250686,"RS02255;RS02575;RS02580;pdhA",1
+"Keyword","KW-0698","rRNA processing",13,4,2.3,0.183581051250686,"RS06130;RS06680;rsmH;ybeY",1
+"InterPro","IPR036890","Histidine kinase/HSP90-like ATPase superfamily",13,4,2.3,0.183581051250686,"RS02065;RS02110;RS06480;chpT",1
+"Function","GO:0140096","Catalytic activity, acting on a protein",67,15,11.8,0.187424978993483,"RS01600;RS01980;RS02065;RS02110;RS02535;RS02580;RS05330;RS05890;RS05995;RS06480;htpX;lon;tldD;trxB;ybeY",1
+"Process","GO:0009056","Catabolic process",32,8,5.7,0.188999586938008,"RS00690;RS00695;RS01920;RS02580;RS04405;RS05110;lon;tpiA",1
+"Process","GO:1901575","Organic substance catabolic process",32,8,5.7,0.188999586938008,"RS00690;RS00695;RS01920;RS02580;RS04405;RS05110;lon;tpiA",1
+"Process","GO:0006082","Organic acid metabolic process",114,24,20.1,0.190497540146588,"RS00690;RS00695;RS01315;RS01425;RS02550;RS02575;RS02580;RS05110;RS05340;alr;aroC;cysS;dapA;dapF;fabA;fabB;fabI;fabI;gltX;ilvC;pdhA;serS;tpiA;ubiC",1
+"Process","GO:0019752","Carboxylic acid metabolic process",114,24,20.1,0.190497540146588,"RS00690;RS00695;RS01315;RS01425;RS02550;RS02575;RS02580;RS05110;RS05340;alr;aroC;cysS;dapA;dapF;fabA;fabB;fabI;fabI;gltX;ilvC;pdhA;serS;tpiA;ubiC",1
+"Process","GO:0043436","Oxoacid metabolic process",114,24,20.1,0.190497540146588,"RS00690;RS00695;RS01315;RS01425;RS02550;RS02575;RS02580;RS05110;RS05340;alr;aroC;cysS;dapA;dapF;fabA;fabB;fabI;fabI;gltX;ilvC;pdhA;serS;tpiA;ubiC",1
+"Process","GO:0009150","Purine ribonucleotide metabolic process",47,11,8.3,0.192363884702592,"RS00690;RS00695;RS01015;RS02255;RS02575;RS02580;RS05110;guaB;pdhA;purE;tpiA",1
+"Process","GO:0006364","rRNA processing",18,5,3.2,0.198932071775012,"RS01395;rimM;rsmH;ruvX;ybeY",1
+"Process","GO:0009205","Purine ribonucleoside triphosphate metabolic process",18,5,3.2,0.198932071775012,"RS00690;RS00695;RS02580;RS05110;tpiA",1
+"Process","GO:0016072","rRNA metabolic process",18,5,3.2,0.198932071775012,"RS01395;rimM;rsmH;ruvX;ybeY",1
+"Process","GO:0006553","Lysine metabolic process",9,3,1.6,0.201629867879634,"RS05340;dapA;dapF",1
+"Process","GO:0009067","Aspartate family amino acid biosynthetic process",9,3,1.6,0.201629867879634,"RS05340;dapA;dapF",1
+"Process","GO:0018106","Peptidyl-histidine phosphorylation",9,3,1.6,0.201629867879634,"RS02065;RS02110;RS06480",1
+"Process","GO:0018202","Peptidyl-histidine modification",9,3,1.6,0.201629867879634,"RS02065;RS02110;RS06480",1
+"Function","GO:0004673","Protein histidine kinase activity",9,3,1.6,0.201629867879634,"RS02065;RS02110;RS06480",1
+"Function","GO:0016775","Phosphotransferase activity, nitrogenous group as acceptor",9,3,1.6,0.201629867879634,"RS02065;RS02110;RS06480",1
+"Function","GO:0016866","Intramolecular transferase activity",9,3,1.6,0.201629867879634,"RS01395;RS05110;purE",1
+"InterPro","IPR005467","Histidine kinase domain",9,3,1.6,0.201629867879634,"RS02065;RS02110;RS06480",1
+"Process","GO:0006163","Purine nucleotide metabolic process",48,11,8.5,0.212885651184733,"RS00690;RS00695;RS01015;RS02255;RS02575;RS02580;RS05110;guaB;pdhA;purE;tpiA",1
+"Process","GO:0072521","Purine-containing compound metabolic process",48,11,8.5,0.212885651184733,"RS00690;RS00695;RS01015;RS02255;RS02575;RS02580;RS05110;guaB;pdhA;purE;tpiA",1
+"Process","GO:0055086","Nucleobase-containing small molecule metabolic process",79,17,14,0.214963450596398,"RS00690;RS00695;RS01015;RS01050;RS02255;RS02550;RS02575;RS02580;RS04480;RS05110;RS05850;RS06020;guaB;murA;pdhA;purE;tpiA",1
+"Process","GO:0006006","Glucose metabolic process",5,2,0.9,0.215524326700466,"RS05110;tpiA",1
+"Process","GO:0009148","Pyrimidine nucleoside triphosphate biosynthetic process",5,2,0.9,0.215524326700466,"RS02550;RS04480",1
+"Process","GO:0009262","Deoxyribonucleotide metabolic process",5,2,0.9,0.215524326700466,"RS04480;RS05850",1
+"Process","GO:0019318","Hexose metabolic process",5,2,0.9,0.215524326700466,"RS05110;tpiA",1
+"Process","GO:0019877","Diaminopimelate biosynthetic process",5,2,0.9,0.215524326700466,"RS05340;dapA",1
+"Process","GO:0046364","Monosaccharide biosynthetic process",5,2,0.9,0.215524326700466,"RS05110;tpiA",1
+"Process","GO:0090502","RNA phosphodiester bond hydrolysis, endonucleolytic",5,2,0.9,0.215524326700466,"rnpA;ybeY",1
+"Function","GO:0004521","Endoribonuclease activity",5,2,0.9,0.215524326700466,"rnpA;ybeY",1
+"Function","GO:0015232","Heme transmembrane transporter activity",5,2,0.9,0.215524326700466,"RS02220;ccmA",1
+"Function","GO:0016668","Oxidoreductase activity, acting on a sulfur group of donors, NAD(P) as acceptor",5,2,0.9,0.215524326700466,"lpdA;trxB",1
+"Keyword","KW-0129","CBS domain",5,2,0.9,0.215524326700466,"RS04315;guaB",1
+"Keyword","KW-0220","Diaminopimelate biosynthesis",5,2,0.9,0.215524326700466,"RS05340;dapA",1
+"Keyword","KW-0251","Elongation factor",5,2,0.9,0.215524326700466,"efp;tsf",1
+"Keyword","KW-0482","Metalloprotease",5,2,0.9,0.215524326700466,"RS01600;htpX",1
+"Keyword","KW-0831","Ubiquinone biosynthesis",5,2,0.9,0.215524326700466,"ubiC;ubiG",1
+"KEGG","bbk01502","Vancomycin resistance",5,2,0.9,0.215524326700466,"RS04605;alr",1
+"InterPro","IPR000089","Biotin/lipoyl attachment",5,2,0.9,0.215524326700466,"RS02575;RS02580",1
+"InterPro","IPR000644","CBS domain",5,2,0.9,0.215524326700466,"RS04315;guaB",1
+"InterPro","IPR001537","tRNA/rRNA methyltransferase, SpoU type",5,2,0.9,0.215524326700466,"RS04045;RS06685",1
+"InterPro","IPR008991","Translation protein SH3-like domain superfamily",5,2,0.9,0.215524326700466,"efp;rplX",1
+"InterPro","IPR009006","Alanine racemase/group IV decarboxylase, C-terminal",5,2,0.9,0.215524326700466,"RS05290;alr",1
+"InterPro","IPR011053","Single hybrid motif",5,2,0.9,0.215524326700466,"RS02575;RS02580",1
+"InterPro","IPR013221","Mur ligase, central",5,2,0.9,0.215524326700466,"RS04605;murD",1
+"InterPro","IPR015947","PUA-like superfamily",5,2,0.9,0.215524326700466,"RS05330;lon",1
+"InterPro","IPR029061","Thiamin diphosphate-binding fold",5,2,0.9,0.215524326700466,"RS02575;pdhA",1
+"InterPro","IPR036565","Mur-like, catalytic domain superfamily",5,2,0.9,0.215524326700466,"RS04605;murD",1
+"InterPro","IPR036615","Mur ligase, C-terminal domain superfamily",5,2,0.9,0.215524326700466,"RS04605;murD",1
+"InterPro","IPR046342","CBS domain superfamily",5,2,0.9,0.215524326700466,"RS04315;guaB",1
+"Pfam","PF00588","SpoU rRNA Methylase family",5,2,0.9,0.215524326700466,"RS04045;RS06685",1
+"Pfam","PF00890","FAD binding domain",5,2,0.9,0.215524326700466,"lpdA;trxB",1
+"Pfam","PF08245","Mur ligase middle domain",5,2,0.9,0.215524326700466,"RS04605;murD",1
+"KEGG","bbk00061","Fatty acid biosynthesis",14,4,2.5,0.223550592196091,"fabA;fabB;fabI;fabI",1
+"KEGG","bbk01212","Fatty acid metabolism",14,4,2.5,0.223550592196091,"fabA;fabB;fabI;fabI",1
+"Process","GO:0009144","Purine nucleoside triphosphate metabolic process",19,5,3.4,0.233695701134927,"RS00690;RS00695;RS02580;RS05110;tpiA",1
+"Process","GO:0072330","Monocarboxylic acid biosynthetic process",19,5,3.4,0.233695701134927,"fabA;fabB;fabI;fabI;ubiC",1
+"Process","GO:0034470","ncRNA processing",44,10,7.8,0.236753011718618,"RS01395;RS04045;RS05905;rimM;rnpA;rsmH;ruvX;trhO;trmD;ybeY",1
+"KEGG","bbk01200","Carbon metabolism",44,10,7.8,0.236753011718618,"RS00690;RS00695;RS01315;RS02575;RS02580;RS05110;fsa;lpdA;pdhA;tpiA",1
+"Process","GO:0016310","Phosphorylation",39,9,6.9,0.238713672067169,"RS00690;RS00695;RS02065;RS02110;RS02255;RS02580;RS05110;RS06480;tpiA",1
+"Process","GO:0016070","RNA metabolic process",91,19,16.1,0.239489640851672,"RS00365;RS01395;RS01645;RS02365;RS04045;RS05905;RS06685;cysS;gltX;rimM;rnpA;rpoH;rpoZ;rsmH;ruvX;serS;trhO;trmD;ybeY",1
+"Function","GO:0046914","Transition metal ion binding",34,8,6,0.23993316848357,"RS02030;RS05905;cysS;dnaJ;gltX;htpX;yacG;ybeY",1
+"Process","GO:0005975","Carbohydrate metabolic process",29,7,5.1,0.24002967651152,"RS00690;RS00695;RS02580;RS05110;RS06020;fsa;tpiA",1
+"Process","GO:0006468","Protein phosphorylation",10,3,1.8,0.252660236316678,"RS02065;RS02110;RS06480",1
+"Function","GO:0004672","Protein kinase activity",10,3,1.8,0.252660236316678,"RS02065;RS02110;RS06480",1
+"Function","GO:0016811","Hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides",10,3,1.8,0.252660236316678,"RS02550;RS04405;def",1
+"Process","GO:0006396","RNA processing",50,11,8.8,0.256488483836011,"RS01395;RS04045;RS05905;RS06685;rimM;rnpA;rsmH;ruvX;trhO;trmD;ybeY",1
+"Process","GO:0009451","RNA modification",40,9,7.1,0.263881035394303,"RS00365;RS01395;RS01645;RS04045;RS05905;RS06685;rsmH;trhO;trmD",1
+"Process","GO:0030001","Metal ion transport",15,4,2.7,0.26550359397117,"RS02220;RS05395;ccmA;nhaA",1
+"Function","GO:0008233","Peptidase activity",35,8,6.2,0.267009754493994,"RS01600;RS01980;RS05330;RS05890;htpX;lon;tldD;ybeY",1
+"Process","GO:0006508","Proteolysis",30,7,5.3,0.269444380818336,"RS01600;RS01980;RS05330;RS05890;htpX;lon;tldD",1
+"Process","GO:0006790","Sulfur compound metabolic process",30,7,5.3,0.269444380818336,"RS02575;RS02580;RS02970;RS03655;RS05100;RS05340;pdhA",1
+"Process","GO:0022613","Ribonucleoprotein complex biogenesis",25,6,4.4,0.27073057569246,"RS01395;rimM;rimP;rsmH;ruvX;ybeY",1
+"Process","GO:0042254","Ribosome biogenesis",25,6,4.4,0.27073057569246,"RS01395;rimM;rimP;rsmH;ruvX;ybeY",1
+"Process","GO:0043414","Macromolecule methylation",25,6,4.4,0.27073057569246,"RS00365;RS01645;RS04045;RS06685;rsmH;trmD",1
+"InterPro","IPR029063","S-adenosyl-L-methionine-dependent methyltransferase superfamily",25,6,4.4,0.27073057569246,"RS00365;RS01645;RS06130;RS06680;rsmH;ubiG",1
+"Process","GO:0009259","Ribonucleotide metabolic process",56,12,9.9,0.274167092515083,"RS00690;RS00695;RS01015;RS02255;RS02550;RS02575;RS02580;RS05110;guaB;pdhA;purE;tpiA",1
+"Function","GO:0016741","Transferase activity, transferring one-carbon groups",46,10,8.1,0.284631278525361,"RS00365;RS01645;RS04045;RS04480;RS06130;RS06680;RS06685;rsmH;trmD;ubiG",1
+"Function","GO:0003676","Nucleic acid binding",197,38,34.8,0.286258820126111,"RS00300;RS00365;RS00805;RS01325;RS01330;RS01395;RS01625;RS01645;RS02030;RS02060;RS02365;RS02455;RS03090;RS03095;RS04045;RS04785;RS04825;RS05180;RS06030;RS06075;RS06130;RS06475;RS06670;RS06685;dnaN;efp;gltX;greA;lon;rnpA;rplF;rplN;rplX;rpoH;rpoZ;rpsO;smpB;tsf",1
+"Process","GO:0009147","Pyrimidine nucleoside triphosphate metabolic process",6,2,1.1,0.287373841374955,"RS02550;RS04480",1
+"Process","GO:0015886","Heme transport",6,2,1.1,0.287373841374955,"RS02220;ccmA",1
+"Process","GO:0019725","Cellular homeostasis",6,2,1.1,0.287373841374955,"lpdA;phoU",1
+"Process","GO:0090501","RNA phosphodiester bond hydrolysis",6,2,1.1,0.287373841374955,"rnpA;ybeY",1
+"Process","GO:1901678","Iron coordination entity transport",6,2,1.1,0.287373841374955,"RS02220;ccmA",1
+"Function","GO:0003746","Translation elongation factor activity",6,2,1.1,0.287373841374955,"efp;tsf",1
+"Function","GO:0004540","Ribonuclease activity",6,2,1.1,0.287373841374955,"rnpA;ybeY",1
+"Function","GO:0043565","Sequence-specific DNA binding",6,2,1.1,0.287373841374955,"RS01625;lon",1
+"Function","GO:0051537","2 iron, 2 sulfur cluster binding",6,2,1.1,0.287373841374955,"RS02970;RS03655",1
+"InterPro","IPR012332","Autotransporter, pectate lyase C-like domain superfamily",6,2,1.1,0.287373841374955,"RS05385;RS05535",1
+"Component","GO:0005622","Intracellular anatomical structure",280,53,49.5,0.289400535664426,"RS00690;RS00805;RS01050;RS01920;RS02365;RS02580;RS04045;RS04480;RS04605;RS04825;RS06020;RS06030;RS06670;RS06685;clpB;cysS;dapA;dapF;dnaJ;dnaN;efp;fabA;frr;fsa;gltX;groES;groL;grpE;lon;murA;murD;pdhA;phoU;rimM;rimP;rplF;rplN;rplX;rpmH;rpoH;rpsB;rpsO;rsmH;ruvX;serS;smpB;tpiA;trmD;trxB;tsf;ubiC;ubiG;ybeY",1
+"Process","GO:0019693","Ribose phosphate metabolic process",57,12,10.1,0.29643290290062,"RS00690;RS00695;RS01015;RS02255;RS02550;RS02575;RS02580;RS05110;guaB;pdhA;purE;tpiA",1
+"Process","GO:0006753","Nucleoside phosphate metabolic process",73,15,12.9,0.297938227764542,"RS00690;RS00695;RS01015;RS01050;RS02255;RS02550;RS02575;RS02580;RS04480;RS05110;RS05850;guaB;pdhA;purE;tpiA",1
+"Process","GO:0009117","Nucleotide metabolic process",73,15,12.9,0.297938227764542,"RS00690;RS00695;RS01015;RS01050;RS02255;RS02550;RS02575;RS02580;RS04480;RS05110;RS05850;guaB;pdhA;purE;tpiA",1
+"Process","GO:0009066","Aspartate family amino acid metabolic process",11,3,1.9,0.305249224604174,"RS05340;dapA;dapF",1
+"Process","GO:0033866","Nucleoside bisphosphate biosynthetic process",11,3,1.9,0.305249224604174,"RS02575;RS02580;pdhA",1
+"Process","GO:0034030","Ribonucleoside bisphosphate biosynthetic process",11,3,1.9,0.305249224604174,"RS02575;RS02580;pdhA",1
+"Process","GO:0034033","Purine nucleoside bisphosphate biosynthetic process",11,3,1.9,0.305249224604174,"RS02575;RS02580;pdhA",1
+"Keyword","KW-0274","FAD",11,3,1.9,0.305249224604174,"aroC;lpdA;trxB",1
+"InterPro","IPR003594","Histidine kinase/HSP90-like ATPase",11,3,1.9,0.305249224604174,"RS02065;RS02110;RS06480",1
+"Process","GO:0006631","Fatty acid metabolic process",16,4,2.8,0.308743790118893,"fabA;fabB;fabI;fabI",1
+"Process","GO:0006633","Fatty acid biosynthetic process",16,4,2.8,0.308743790118893,"fabA;fabB;fabI;fabI",1
+"Process","GO:0032774","RNA biosynthetic process",16,4,2.8,0.308743790118893,"RS02365;rpoH;rpoZ;serS",1
+"KEGG","bbk00620","Pyruvate metabolism",16,4,2.8,0.308743790118893,"RS02575;RS02580;lpdA;pdhA",1
+"Process","GO:0050896","Response to stimulus",70,14,12.4,0.34729290072943,"RS00300;RS01625;RS02060;RS02065;RS02110;RS04400;RS04785;RS06475;RS06480;clpB;dnaJ;lon;rpoH;trxB",1
+"Process","GO:0006417","Regulation of translation",17,4,3,0.352616533407015,"RS03090;RS06670;efp;tsf",1
+"Process","GO:0008360","Regulation of cell shape",17,4,3,0.352616533407015,"RS04590;RS04605;murA;murD",1
+"Process","GO:0010608","Post-transcriptional regulation of gene expression",17,4,3,0.352616533407015,"RS03090;RS06670;efp;tsf",1
+"Process","GO:0022603","Regulation of anatomical structure morphogenesis",17,4,3,0.352616533407015,"RS04590;RS04605;murA;murD",1
+"Process","GO:0022604","Regulation of cell morphogenesis",17,4,3,0.352616533407015,"RS04590;RS04605;murA;murD",1
+"Process","GO:0034248","Regulation of cellular amide metabolic process",17,4,3,0.352616533407015,"RS03090;RS06670;efp;tsf",1
+"Process","GO:0050793","Regulation of developmental process",17,4,3,0.352616533407015,"RS04590;RS04605;murA;murD",1
+"Process","GO:2000112","Regulation of cellular macromolecule biosynthetic process",17,4,3,0.352616533407015,"RS03090;RS06670;efp;tsf",1
+"Function","GO:0008173","RNA methyltransferase activity",17,4,3,0.352616533407015,"RS04045;RS06685;rsmH;trmD",1
+"Process","GO:0006139","Nucleobase-containing compound metabolic process",230,43,40.6,0.354902379133965,"RS00365;RS00690;RS00695;RS01015;RS01050;RS01325;RS01395;RS01645;RS01920;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS03090;RS04045;RS04480;RS05110;RS05850;RS05905;RS06020;RS06670;RS06685;cysS;dnaJ;dnaN;gltX;guaB;murA;pdhA;purE;rimM;rnpA;rpoH;rpoZ;rsmH;ruvX;serS;tpiA;trhO;trmD;ybeY",1
+"Process","GO:0034660","ncRNA metabolic process",65,13,11.5,0.356320692489751,"RS01395;RS04045;RS05905;cysS;gltX;rimM;rnpA;rsmH;ruvX;serS;trhO;trmD;ybeY",1
+"Process","GO:0043412","Macromolecule modification",65,13,11.5,0.356320692489751,"RS00365;RS01395;RS01645;RS02065;RS02110;RS04045;RS05905;RS06130;RS06480;RS06685;rsmH;trhO;trmD",1
+"Process","GO:0043650","Dicarboxylic acid biosynthetic process",12,3,2.1,0.35822987806209,"RS05340;aroC;dapA",1
+"Process","GO:0065008","Regulation of biological quality",12,3,2.1,0.35822987806209,"lpdA;nhaA;phoU",1
+"Function","GO:0016835","Carbon-oxygen lyase activity",12,3,2.1,0.35822987806209,"aroC;dapA;fabA",1
+"Function","GO:0140299","Small molecule sensor activity",12,3,2.1,0.35822987806209,"RS02065;RS02110;RS06480",1
+"Keyword","KW-0275","Fatty acid biosynthesis",12,3,2.1,0.35822987806209,"fabA;fabI;fabI",1
+"Keyword","KW-0276","Fatty acid metabolism",12,3,2.1,0.35822987806209,"fabA;fabI;fabI",1
+"Keyword","KW-0663","Pyridoxal phosphate",12,3,2.1,0.35822987806209,"RS00520;RS05290;alr",1
+"Process","GO:0005996","Monosaccharide metabolic process",7,2,1.2,0.358432946600364,"RS05110;tpiA",1
+"Process","GO:0016226","Iron-sulfur cluster assembly",7,2,1.2,0.358432946600364,"RS02970;RS03655",1
+"Process","GO:0031163","Metallo-sulfur cluster assembly",7,2,1.2,0.358432946600364,"RS02970;RS03655",1
+"Function","GO:0016814","Hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in cyclic amidines",7,2,1.2,0.358432946600364,"RS05850;RS05905",1
+"Function","GO:0016831","Carboxy-lyase activity",7,2,1.2,0.358432946600364,"RS01015;RS05290",1
+"Function","GO:0030170","Pyridoxal phosphate binding",7,2,1.2,0.358432946600364,"RS00520;alr",1
+"Function","GO:0070279","Vitamin B6 binding",7,2,1.2,0.358432946600364,"RS00520;alr",1
+"Keyword","KW-0255","Endonuclease",7,2,1.2,0.358432946600364,"rnpA;ybeY",1
+"InterPro","IPR003661","Signal transduction histidine kinase, dimerisation/phosphoacceptor domain",7,2,1.2,0.358432946600364,"RS02110;RS06480",1
+"InterPro","IPR003959","ATPase, AAA-type, core",7,2,1.2,0.358432946600364,"clpB;lon",1
+"Process","GO:0043648","Dicarboxylic acid metabolic process",18,4,3.2,0.396526379587588,"RS05340;aroC;dapA;dapF",1
+"Process","GO:0044272","Sulfur compound biosynthetic process",18,4,3.2,0.396526379587588,"RS02575;RS02580;RS05340;pdhA",1
+"KEGG","bbk00020","Citrate cycle (TCA cycle)",18,4,3.2,0.396526379587588,"RS02575;RS02580;lpdA;pdhA",1
+"InterPro","IPR036388","Winged helix-like DNA-binding domain superfamily",18,4,3.2,0.396526379587588,"RS00300;RS02060;RS04785;RS06475",1
+"Process","GO:1901605","Alpha-amino acid metabolic process",45,9,8,0.398685214691573,"RS01315;RS01425;RS02550;RS05340;alr;dapA;dapF;ilvC;serS",1
+"Process","GO:0018193","Peptidyl-amino acid modification",13,3,2.3,0.41062452610551,"RS02065;RS02110;RS06480",1
+"Component","GO:0140535","Intracellular protein-containing complex",13,3,2.3,0.41062452610551,"RS01920;dnaN;rpoZ",1
+"Keyword","KW-0133","Cell shape",13,3,2.3,0.41062452610551,"RS04605;murA;murD",1
+"Keyword","KW-0573","Peptidoglycan synthesis",13,3,2.3,0.41062452610551,"RS04605;murA;murD",1
+"InterPro","IPR036188","FAD/NAD(P)-binding domain superfamily",13,3,2.3,0.41062452610551,"RS00470;lpdA;trxB",1
+"Process","GO:0044281","Small molecule metabolic process",196,36,34.6,0.423304228963188,"RS00470;RS00690;RS00695;RS01015;RS01050;RS01315;RS01425;RS02255;RS02550;RS02575;RS02580;RS04480;RS05110;RS05340;RS05850;RS06020;alr;aroC;cysS;dapA;dapF;fabA;fabB;fabI;fabI;gltX;guaB;ilvC;murA;pdhA;purE;ribB;serS;tpiA;ubiC;ubiG",1
+"Component","GO:0043229","Intracellular organelle",68,13,12,0.424802894423612,"RS02365;RS02580;RS04825;RS06030;RS06670;pdhA;rimM;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Process","GO:0051716","Cellular response to stimulus",57,11,10.1,0.42592904485886,"RS00300;RS01625;RS02060;RS02065;RS02110;RS04400;RS04785;RS06475;RS06480;lon;trxB",1
+"Process","GO:0009069","Serine family amino acid metabolic process",8,2,1.4,0.426745031662878,"RS01315;serS",1
+"Process","GO:0071897","DNA biosynthetic process",8,2,1.4,0.426745031662878,"RS02455;dnaN",1
+"Component","GO:0061695","Transferase complex, transferring phosphorus-containing groups",8,2,1.4,0.426745031662878,"dnaN;rpoZ",1
+"Function","GO:0003887","DNA-directed DNA polymerase activity",8,2,1.4,0.426745031662878,"RS02455;dnaN",1
+"Function","GO:0016836","Hydro-lyase activity",8,2,1.4,0.426745031662878,"dapA;fabA",1
+"Function","GO:0034061","DNA polymerase activity",8,2,1.4,0.426745031662878,"RS02455;dnaN",1
+"KEGG","bbk00480","Glutathione metabolism",8,2,1.4,0.426745031662878,"RS05100;RS05290",1
+"KEGG","bbk00860","Porphyrin and chlorophyll metabolism",8,2,1.4,0.426745031662878,"RS03030;gltX",1
+"Process","GO:0006807","Nitrogen compound metabolic process",450,81,79.5,0.435585885420235,"RS00365;RS00690;RS00695;RS01015;RS01050;RS01315;RS01325;RS01395;RS01425;RS01600;RS01645;RS01920;RS01980;RS02065;RS02110;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS03090;RS04045;RS04405;RS04480;RS04605;RS04825;RS05100;RS05110;RS05290;RS05330;RS05340;RS05850;RS05890;RS05905;RS06020;RS06130;RS06480;RS06670;RS06685;alr;aroC;cysS;dapA;dapF;def;dnaJ;dnaN;efp;frr;gltX;guaB;htpX;ilvC;lon;murA;murD;pdhA;purE;ribB;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tldD;tpiA;trhO;trmD;tsf;ybeY",1
+"Function","GO:0008757","S-adenosylmethionine-dependent methyltransferase activity",19,4,3.4,0.439947893841631,"RS06130;rsmH;trmD;ubiG",1
+"Keyword","KW-0521","NADP",19,4,3.4,0.439947893841631,"RS05340;aroC;ilvC;trxB",1
+"Keyword","KW-0540","Nuclease",19,4,3.4,0.439947893841631,"RS01920;rnpA;ruvX;ybeY",1
+"Process","GO:0000096","Sulfur amino acid metabolic process",3,1,0.5,0.442233703665841,"RS05340",1
+"Process","GO:0000271","Polysaccharide biosynthetic process",3,1,0.5,0.442233703665841,"RS06020",1
+"Process","GO:0005976","Polysaccharide metabolic process",3,1,0.5,0.442233703665841,"RS06020",1
+"Process","GO:0006098","Pentose-phosphate shunt",3,1,0.5,0.442233703665841,"fsa",1
+"Process","GO:0006241","CTP biosynthetic process",3,1,0.5,0.442233703665841,"RS02550",1
+"Process","GO:0006269","DNA replication, synthesis of RNA primer",3,1,0.5,0.442233703665841,"RS02365",1
+"Process","GO:0006740","NADPH regeneration",3,1,0.5,0.442233703665841,"fsa",1
+"Process","GO:0006778","Porphyrin-containing compound metabolic process",3,1,0.5,0.442233703665841,"RS03030",1
+"Process","GO:0006779","Porphyrin-containing compound biosynthetic process",3,1,0.5,0.442233703665841,"RS03030",1
+"Process","GO:0008653","Lipopolysaccharide metabolic process",3,1,0.5,0.442233703665841,"RS06020",1
+"Process","GO:0009103","Lipopolysaccharide biosynthetic process",3,1,0.5,0.442233703665841,"RS06020",1
+"Process","GO:0009200","Deoxyribonucleoside triphosphate metabolic process",3,1,0.5,0.442233703665841,"RS04480",1
+"Process","GO:0009208","Pyrimidine ribonucleoside triphosphate metabolic process",3,1,0.5,0.442233703665841,"RS02550",1
+"Process","GO:0009209","Pyrimidine ribonucleoside triphosphate biosynthetic process",3,1,0.5,0.442233703665841,"RS02550",1
+"Process","GO:0009211","Pyrimidine deoxyribonucleoside triphosphate metabolic process",3,1,0.5,0.442233703665841,"RS04480",1
+"Process","GO:0009219","Pyrimidine deoxyribonucleotide metabolic process",3,1,0.5,0.442233703665841,"RS04480",1
+"Process","GO:0009221","Pyrimidine deoxyribonucleotide biosynthetic process",3,1,0.5,0.442233703665841,"RS04480",1
+"Process","GO:0009265","2-deoxyribonucleotide biosynthetic process",3,1,0.5,0.442233703665841,"RS04480",1
+"Process","GO:0009308","Amine metabolic process",3,1,0.5,0.442233703665841,"RS05290",1
+"Process","GO:0030163","Protein catabolic process",3,1,0.5,0.442233703665841,"lon",1
+"Process","GO:0032506","Cytokinetic process",3,1,0.5,0.442233703665841,"yihA",1
+"Process","GO:0033692","Cellular polysaccharide biosynthetic process",3,1,0.5,0.442233703665841,"RS06020",1
+"Process","GO:0034637","Cellular carbohydrate biosynthetic process",3,1,0.5,0.442233703665841,"RS06020",1
+"Process","GO:0042886","Amide transport",3,1,0.5,0.442233703665841,"tolQ",1
+"Process","GO:0044264","Cellular polysaccharide metabolic process",3,1,0.5,0.442233703665841,"RS06020",1
+"Process","GO:0045017","Glycerolipid biosynthetic process",3,1,0.5,0.442233703665841,"RS02820",1
+"Process","GO:0046036","CTP metabolic process",3,1,0.5,0.442233703665841,"RS02550",1
+"Process","GO:0046037","GMP metabolic process",3,1,0.5,0.442233703665841,"guaB",1
+"Process","GO:0046385","Deoxyribose phosphate biosynthetic process",3,1,0.5,0.442233703665841,"RS04480",1
+"Process","GO:0046474","Glycerophospholipid biosynthetic process",3,1,0.5,0.442233703665841,"RS02820",1
+"Process","GO:0050790","Regulation of catalytic activity",3,1,0.5,0.442233703665841,"yacG",1
+"Process","GO:0051156","Glucose 6-phosphate metabolic process",3,1,0.5,0.442233703665841,"fsa",1
+"Process","GO:0062197","Cellular response to chemical stress",3,1,0.5,0.442233703665841,"trxB",1
+"Process","GO:0065009","Regulation of molecular function",3,1,0.5,0.442233703665841,"yacG",1
+"Process","GO:0090529","Cell septum assembly",3,1,0.5,0.442233703665841,"yihA",1
+"Component","GO:0005657","Replication fork",3,1,0.5,0.442233703665841,"RS02365",1
+"Component","GO:0009360","DNA polymerase III complex",3,1,0.5,0.442233703665841,"dnaN",1
+"Component","GO:0030894","Replisome",3,1,0.5,0.442233703665841,"RS02365",1
+"Component","GO:0032993","protein-DNA complex",3,1,0.5,0.442233703665841,"RS02365",1
+"Component","GO:0042575","DNA polymerase complex",3,1,0.5,0.442233703665841,"dnaN",1
+"Component","GO:1990077","Primosome complex",3,1,0.5,0.442233703665841,"RS02365",1
+"Function","GO:0004176","ATP-dependent peptidase activity",3,1,0.5,0.442233703665841,"lon",1
+"Function","GO:0004315","3-oxoacyl-[acyl-carrier-protein] synthase activity",3,1,0.5,0.442233703665841,"fabB",1
+"Function","GO:0004359","Glutaminase activity",3,1,0.5,0.442233703665841,"RS02550",1
+"Function","GO:0008169","C-methyltransferase activity",3,1,0.5,0.442233703665841,"ubiG",1
+"Function","GO:0008745","N-acetylmuramoyl-L-alanine amidase activity",3,1,0.5,0.442233703665841,"RS04405",1
+"Function","GO:0008955","Peptidoglycan glycosyltransferase activity",3,1,0.5,0.442233703665841,"RS04590",1
+"Function","GO:0016417","S-acyltransferase activity",3,1,0.5,0.442233703665841,"RS02580",1
+"Function","GO:0016744","Transketolase or transaldolase activity",3,1,0.5,0.442233703665841,"fsa",1
+"Function","GO:0016812","Hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in cyclic amides",3,1,0.5,0.442233703665841,"RS05370",1
+"Function","GO:0016861","Intramolecular oxidoreductase activity, interconverting aldoses and ketoses",3,1,0.5,0.442233703665841,"tpiA",1
+"Function","GO:0016868","Intramolecular transferase activity, phosphotransferases",3,1,0.5,0.442233703665841,"RS05110",1
+"Function","GO:0016880","Acid-ammonia (or amide) ligase activity",3,1,0.5,0.442233703665841,"RS01425",1
+"Function","GO:0047134","Protein-disulfide reductase (NAD(P)) activity",3,1,0.5,0.442233703665841,"trxB",1
+"Function","GO:1901505","Carbohydrate derivative transmembrane transporter activity",3,1,0.5,0.442233703665841,"lptC",1
+"Keyword","KW-0448","Lipopolysaccharide biosynthesis",3,1,0.5,0.442233703665841,"RS06020",1
+"Keyword","KW-0574","Periplasm",3,1,0.5,0.442233703665841,"tolB",1
+"Keyword","KW-0592","Phosphate transport",3,1,0.5,0.442233703665841,"phoU",1
+"Keyword","KW-0639","Primosome",3,1,0.5,0.442233703665841,"RS02365",1
+"Keyword","KW-0686","Riboflavin biosynthesis",3,1,0.5,0.442233703665841,"ribB",1
+"Keyword","KW-0731","Sigma factor",3,1,0.5,0.442233703665841,"rpoH",1
+"Keyword","KW-1134","Transmembrane beta strand",3,1,0.5,0.442233703665841,"RS02220",1
+"KEGG","bbk00450","Selenocompound metabolism",3,1,0.5,0.442233703665841,"trxB",1
+"InterPro","IPR000713","Mur ligase, N-terminal catalytic domain",3,1,0.5,0.442233703665841,"RS04605",1
+"InterPro","IPR000794","Beta-ketoacyl synthase",3,1,0.5,0.442233703665841,"fabB",1
+"InterPro","IPR000943","RNA polymerase sigma-70",3,1,0.5,0.442233703665841,"rpoH",1
+"InterPro","IPR001100","Pyridine nucleotide-disulphide oxidoreductase, class I",3,1,0.5,0.442233703665841,"lpdA",1
+"InterPro","IPR001387","Cro/C1-type helix-turn-helix domain",3,1,0.5,0.442233703665841,"RS06075",1
+"InterPro","IPR002314","Aminoacyl-tRNA synthetase, class II (G/ P/ S/T)",3,1,0.5,0.442233703665841,"serS",1
+"InterPro","IPR002898","MotA/TolQ/ExbB proton channel",3,1,0.5,0.442233703665841,"tolQ",1
+"InterPro","IPR002938","FAD-binding domain",3,1,0.5,0.442233703665841,"RS00470",1
+"InterPro","IPR004099","Pyridine nucleotide-disulphide oxidoreductase, dimerisation domain",3,1,0.5,0.442233703665841,"lpdA",1
+"InterPro","IPR004841","Amino acid permease/ SLC12A domain",3,1,0.5,0.442233703665841,"RS05835",1
+"InterPro","IPR006145","Pseudouridine synthase, RsuA/RluA-like",3,1,0.5,0.442233703665841,"RS01395",1
+"InterPro","IPR007627","RNA polymerase sigma-70 region 2",3,1,0.5,0.442233703665841,"rpoH",1
+"InterPro","IPR007630","RNA polymerase sigma-70 region 4",3,1,0.5,0.442233703665841,"rpoH",1
+"InterPro","IPR007848","Methyltransferase small domain",3,1,0.5,0.442233703665841,"RS06130",1
+"InterPro","IPR008925","Aminoacyl-tRNA synthetase, class I, anticodon-binding superfamily",3,1,0.5,0.442233703665841,"gltX",1
+"InterPro","IPR009014","Transketolase C-terminal/Pyruvate-ferredoxin oxidoreductase domain II",3,1,0.5,0.442233703665841,"RS02575",1
+"InterPro","IPR010978","Class I and II aminoacyl-tRNA synthetase, tRNA-binding arm",3,1,0.5,0.442233703665841,"serS",1
+"InterPro","IPR011054","Rudiment single hybrid motif",3,1,0.5,0.442233703665841,"RS01015",1
+"InterPro","IPR011250","Outer membrane protein/outer membrane enzyme PagP, beta-barrel",3,1,0.5,0.442233703665841,"RS05915",1
+"InterPro","IPR012676","TGS-like",3,1,0.5,0.442233703665841,"RS02255",1
+"InterPro","IPR012999","Pyridine nucleotide-disulphide oxidoreductase, class I, active site",3,1,0.5,0.442233703665841,"lpdA",1
+"InterPro","IPR013325","RNA polymerase sigma factor, region 2",3,1,0.5,0.442233703665841,"rpoH",1
+"InterPro","IPR014030","Beta-ketoacyl synthase, N-terminal",3,1,0.5,0.442233703665841,"fabB",1
+"InterPro","IPR014031","Beta-ketoacyl synthase, C-terminal",3,1,0.5,0.442233703665841,"fabB",1
+"InterPro","IPR014284","RNA polymerase sigma-70 like domain",3,1,0.5,0.442233703665841,"rpoH",1
+"InterPro","IPR016156","FAD/NAD-linked reductase, dimerisation domain superfamily",3,1,0.5,0.442233703665841,"lpdA",1
+"InterPro","IPR016193","Cytidine deaminase-like",3,1,0.5,0.442233703665841,"RS05905",1
+"InterPro","IPR020751","Aminoacyl-tRNA synthetase, class I, anticodon-binding domain, subdomain 2",3,1,0.5,0.442233703665841,"gltX",1
+"InterPro","IPR020841","Polyketide synthase, beta-ketoacyl synthase domain",3,1,0.5,0.442233703665841,"fabB",1
+"InterPro","IPR022643","Orn/DAP/Arg decarboxylase 2, C-terminal",3,1,0.5,0.442233703665841,"RS05290",1
+"InterPro","IPR022644","Orn/DAP/Arg decarboxylase 2, N-terminal",3,1,0.5,0.442233703665841,"RS05290",1
+"InterPro","IPR027385","Outer membrane protein beta-barrel domain",3,1,0.5,0.442233703665841,"RS05915",1
+"InterPro","IPR029001","Inosine triphosphate pyrophosphatase-like",3,1,0.5,0.442233703665841,"RS01050",1
+"InterPro","IPR033248","Transketolase, C-terminal domain",3,1,0.5,0.442233703665841,"RS02575",1
+"InterPro","IPR043519","Nucleotidyltransferase superfamily",3,1,0.5,0.442233703665841,"RS02255",1
+"InterPro","IPR043990","Autochaperone domain type 1",3,1,0.5,0.442233703665841,"RS05535",1
+"InterPro","IPR045865","ACT-like domain",3,1,0.5,0.442233703665841,"RS02255",1
+"InterPro","IPR046357","Peptidyl-prolyl cis-trans isomerase domain superfamily",3,1,0.5,0.442233703665841,"RS02535",1
+"Pfam","PF00109","Beta-ketoacyl synthase, N-terminal domain",3,1,0.5,0.442233703665841,"fabB",1
+"Pfam","PF00324","Amino acid permease",3,1,0.5,0.442233703665841,"RS05835",1
+"Pfam","PF00364","Biotin-requiring enzyme",3,1,0.5,0.442233703665841,"RS02575",1
+"Pfam","PF00587","tRNA synthetase class II core domain (G, H, P, S and T)",3,1,0.5,0.442233703665841,"serS",1
+"Pfam","PF00849","RNA pseudouridylate synthase",3,1,0.5,0.442233703665841,"RS01395",1
+"Pfam","PF01225","Mur ligase family, catalytic domain",3,1,0.5,0.442233703665841,"RS04605",1
+"Pfam","PF01406","tRNA synthetases class I (C) catalytic domain",3,1,0.5,0.442233703665841,"cysS",1
+"Pfam","PF01618","MotA/TolQ/ExbB proton channel family",3,1,0.5,0.442233703665841,"tolQ",1
+"Pfam","PF02462","Opacity family porin protein",3,1,0.5,0.442233703665841,"RS05915",1
+"Pfam","PF02780","Transketolase, C-terminal domain",3,1,0.5,0.442233703665841,"RS02575",1
+"Pfam","PF02801","Beta-ketoacyl synthase, C-terminal domain",3,1,0.5,0.442233703665841,"fabB",1
+"Pfam","PF02852","Pyridine nucleotide-disulphide oxidoreductase, dimerisation domain",3,1,0.5,0.442233703665841,"lpdA",1
+"Pfam","PF04542","Sigma-70 region 2 ",3,1,0.5,0.442233703665841,"rpoH",1
+"Pfam","PF04545","Sigma-70, region 4",3,1,0.5,0.442233703665841,"rpoH",1
+"Pfam","PF13541","Subunit ChlI of Mg-chelatase",3,1,0.5,0.442233703665841,"lon",1
+"Function","GO:0016747","Acyltransferase activity, transferring groups other than amino-acyl groups",25,5,4.4,0.460236881051547,"RS02580;fabA;fabB;fabI;fabI",1
+"Function","GO:0016779","Nucleotidyltransferase activity",25,5,4.4,0.460236881051547,"RS02455;RS02820;RS06020;dnaN;rpoZ",1
+"Keyword","KW-0548","Nucleotidyltransferase",25,5,4.4,0.460236881051547,"RS02455;RS02820;RS06020;dnaN;rpoZ",1
+"Process","GO:0009057","Macromolecule catabolic process",14,3,2.5,0.461644689898988,"RS01920;RS04405;lon",1
+"Process","GO:0016051","Carbohydrate biosynthetic process",14,3,2.5,0.461644689898988,"RS05110;RS06020;tpiA",1
+"Keyword","KW-0235","DNA replication",14,3,2.5,0.461644689898988,"RS02365;dnaJ;dnaN",1
+"KEGG","bbk00550","Peptidoglycan biosynthesis",14,3,2.5,0.461644689898988,"RS04605;murA;murD",1
+"KEGG","bbk03030","DNA replication",14,3,2.5,0.461644689898988,"RS02365;RS02455;dnaN",1
+"Process","GO:0046483","Heterocycle metabolic process",255,46,45.1,0.462446977352922,"RS00365;RS00690;RS00695;RS01015;RS01050;RS01325;RS01395;RS01645;RS01920;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS03090;RS04045;RS04480;RS05110;RS05850;RS05905;RS06020;RS06670;RS06685;cysS;dnaJ;dnaN;gltX;guaB;murA;murD;pdhA;purE;ribB;rimM;rnpA;rpoH;rpoZ;rsmH;ruvX;serS;tpiA;trhO;trmD;ybeY",1
+"Process","GO:1901360","Organic cyclic compound metabolic process",261,47,46.1,0.467253439767657,"RS00365;RS00690;RS00695;RS01015;RS01050;RS01325;RS01395;RS01645;RS01920;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS03090;RS04045;RS04480;RS05110;RS05850;RS05905;RS06020;RS06670;RS06685;aroC;cysS;dnaJ;dnaN;gltX;guaB;murA;murD;pdhA;purE;ribB;rimM;rnpA;rpoH;rpoZ;rsmH;ruvX;serS;tpiA;trhO;trmD;ybeY",1
+"Process","GO:0006725","Cellular aromatic compound metabolic process",256,46,45.2,0.475606014797751,"RS00365;RS00690;RS00695;RS01015;RS01050;RS01325;RS01395;RS01645;RS01920;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS03090;RS04045;RS04480;RS05110;RS05850;RS05905;RS06020;RS06670;RS06685;aroC;cysS;dnaJ;dnaN;gltX;guaB;murA;murD;pdhA;purE;rimM;rnpA;rpoH;rpoZ;rsmH;ruvX;serS;tpiA;trhO;trmD;ybeY",1
+"Process","GO:0034641","Cellular nitrogen compound metabolic process",335,60,59.2,0.475788581753512,"RS00365;RS00690;RS00695;RS01015;RS01050;RS01325;RS01395;RS01645;RS01920;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS03090;RS04045;RS04480;RS04825;RS05100;RS05110;RS05290;RS05850;RS05905;RS06020;RS06670;RS06685;cysS;def;dnaJ;dnaN;efp;frr;gltX;guaB;murA;murD;pdhA;purE;ribB;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tpiA;trhO;trmD;tsf;ybeY",1
+"Process","GO:0044085","Cellular component biogenesis",76,14,13.4,0.479365897580405,"RS01395;RS02670;RS02970;RS03655;RS04605;ccmA;murA;murD;rimM;rimP;rsmH;ruvX;ybeY;yihA",1
+"Process","GO:0051246","Regulation of protein metabolic process",20,4,3.5,0.482430952695224,"RS03090;RS06670;efp;tsf",1
+"Keyword","KW-0862","Zinc",37,7,6.5,0.48851432448114,"RS01600;RS05905;cysS;dnaJ;htpX;yacG;ybeY",1
+"Process","GO:0006541","Glutamine metabolic process",9,2,1.6,0.491063649886662,"RS01425;RS02550",1
+"Component","GO:0005694","Chromosome",9,2,1.6,0.491063649886662,"RS02365;RS06670",1
+"Function","GO:0050661","NADP binding",9,2,1.6,0.491063649886662,"RS05340;ilvC",1
+"KEGG","bbk00030","Pentose phosphate pathway",9,2,1.6,0.491063649886662,"RS00695;fsa",1
+"KEGG","bbk00270","Cysteine and methionine metabolism",9,2,1.6,0.491063649886662,"RS01315;RS05340",1
+"KEGG","bbk00330","Arginine and proline metabolism",9,2,1.6,0.491063649886662,"RS05290;RS05370",1
+"Process","GO:0071704","Organic substance metabolic process",507,90,89.6,0.50426316759315,"RS00365;RS00470;RS00690;RS00695;RS01015;RS01050;RS01315;RS01325;RS01395;RS01425;RS01600;RS01645;RS01920;RS01980;RS02065;RS02110;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS02820;RS03030;RS03090;RS04045;RS04405;RS04480;RS04605;RS04825;RS05100;RS05110;RS05290;RS05330;RS05340;RS05850;RS05890;RS05905;RS06020;RS06130;RS06480;RS06670;RS06685;alr;aroC;cysS;dapA;dapF;def;dnaJ;dnaN;efp;fabA;fabB;fabI;fabI;frr;fsa;gltX;guaB;htpX;ilvC;lon;murA;murD;pdhA;purE;ribB;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tldD;tpiA;trhO;trmD;tsf;ubiC;ubiG;ybeY",1
+"Keyword","KW-0961","Cell wall biogenesis/degradation",15,3,2.7,0.510679963880943,"RS04605;murA;murD",1
+"KEGG","bbk03430","Mismatch repair",15,3,2.7,0.510679963880943,"RS01920;RS02455;dnaN",1
+"Process","GO:1901135","Carbohydrate derivative metabolic process",112,20,19.8,0.521005292860196,"RS00690;RS00695;RS01015;RS02255;RS02550;RS02575;RS02580;RS04405;RS04480;RS04605;RS05110;RS05850;RS06020;fsa;guaB;murA;murD;pdhA;purE;tpiA",1
+"Component","GO:0019867","Outer membrane",21,4,3.7,0.523601749456912,"RS00640;RS02220;RS03155;RS05535",1
+"Process","GO:0006793","Phosphorus metabolic process",124,22,21.9,0.532298297834116,"RS00690;RS00695;RS01015;RS01050;RS02065;RS02110;RS02255;RS02550;RS02575;RS02580;RS02820;RS04480;RS05110;RS05850;RS06020;RS06480;fsa;guaB;murA;pdhA;purE;tpiA",1
+"Process","GO:0008033","tRNA processing",27,5,4.8,0.533595495533519,"RS04045;RS05905;rnpA;trhO;trmD",1
+"Keyword","KW-0028","Amino-acid biosynthesis",27,5,4.8,0.533595495533519,"RS05340;aroC;dapA;dapF;ilvC",1
+"Process","GO:0034654","Nucleobase-containing compound biosynthetic process",90,16,15.9,0.535675744854178,"RS01015;RS02365;RS02455;RS02550;RS02575;RS02580;RS04480;RS06020;dnaN;guaB;murA;pdhA;purE;rpoH;rpoZ;serS",1
+"Process","GO:0000910","Cytokinesis",4,1,0.7,0.54104661767468,"yihA",1
+"Process","GO:0006352","DNA-templated transcription, initiation",4,1,0.7,0.54104661767468,"rpoH",1
+"Process","GO:0006415","Translational termination",4,1,0.7,0.54104661767468,"frr",1
+"Process","GO:0006650","Glycerophospholipid metabolic process",4,1,0.7,0.54104661767468,"RS02820",1
+"Process","GO:0006739","NADP metabolic process",4,1,0.7,0.54104661767468,"fsa",1
+"Process","GO:0006771","Riboflavin metabolic process",4,1,0.7,0.54104661767468,"ribB",1
+"Process","GO:0009231","Riboflavin biosynthetic process",4,1,0.7,0.54104661767468,"ribB",1
+"Process","GO:0009263","Deoxyribonucleotide biosynthetic process",4,1,0.7,0.54104661767468,"RS04480",1
+"Process","GO:0009396","Folic acid-containing compound biosynthetic process",4,1,0.7,0.54104661767468,"murD",1
+"Process","GO:0015074","DNA integration",4,1,0.7,0.54104661767468,"RS01325",1
+"Process","GO:0022402","Cell cycle process",4,1,0.7,0.54104661767468,"yihA",1
+"Process","GO:0022411","Cellular component disassembly",4,1,0.7,0.54104661767468,"frr",1
+"Process","GO:0031324","Negative regulation of cellular metabolic process",4,1,0.7,0.54104661767468,"phoU",1
+"Process","GO:0032984","Protein-containing complex disassembly",4,1,0.7,0.54104661767468,"frr",1
+"Process","GO:0042559","Pteridine-containing compound biosynthetic process",4,1,0.7,0.54104661767468,"murD",1
+"Process","GO:0042726","Flavin-containing compound metabolic process",4,1,0.7,0.54104661767468,"ribB",1
+"Process","GO:0042727","Flavin-containing compound biosynthetic process",4,1,0.7,0.54104661767468,"ribB",1
+"Process","GO:0046486","Glycerolipid metabolic process",4,1,0.7,0.54104661767468,"RS02820",1
+"Process","GO:0070475","rRNA base methylation",4,1,0.7,0.54104661767468,"rsmH",1
+"Process","GO:2000142","Regulation of DNA-templated transcription, initiation",4,1,0.7,0.54104661767468,"rpoH",1
+"Function","GO:0004529","Exodeoxyribonuclease activity",4,1,0.7,0.54104661767468,"RS01920",1
+"Function","GO:0016774","Phosphotransferase activity, carboxyl group as acceptor",4,1,0.7,0.54104661767468,"RS00690",1
+"Function","GO:0016877","Ligase activity, forming carbon-sulfur bonds",4,1,0.7,0.54104661767468,"RS05995",1
+"Function","GO:0016891","Endoribonuclease activity, producing 5-phosphomonoesters",4,1,0.7,0.54104661767468,"rnpA",1
+"Function","GO:0016893","Endonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5-phosphomonoesters",4,1,0.7,0.54104661767468,"rnpA",1
+"Function","GO:0016895","Exodeoxyribonuclease activity, producing 5-phosphomonoesters",4,1,0.7,0.54104661767468,"RS01920",1
+"Function","GO:0016987","Sigma factor activity",4,1,0.7,0.54104661767468,"rpoH",1
+"Keyword","KW-0545","Nucleotide biosynthesis",4,1,0.7,0.54104661767468,"RS04480",1
+"Keyword","KW-0717","Septation",4,1,0.7,0.54104661767468,"yihA",1
+"KEGG","bbk00280","Valine, leucine and isoleucine degradation",4,1,0.7,0.54104661767468,"lpdA",1
+"KEGG","bbk00310","Lysine degradation",4,1,0.7,0.54104661767468,"lpdA",1
+"KEGG","bbk00380","Tryptophan metabolism",4,1,0.7,0.54104661767468,"lpdA",1
+"KEGG","bbk00471","D-Glutamine and D-glutamate metabolism",4,1,0.7,0.54104661767468,"murD",1
+"KEGG","bbk00750","Vitamin B6 metabolism",4,1,0.7,0.54104661767468,"RS01315",1
+"KEGG","bbk00790","Folate biosynthesis",4,1,0.7,0.54104661767468,"ribB",1
+"KEGG","bbk00910","Nitrogen metabolism",4,1,0.7,0.54104661767468,"RS01425",1
+"KEGG","bbk01501","beta-Lactam resistance",4,1,0.7,0.54104661767468,"RS03155",1
+"KEGG","bbk03020","RNA polymerase",4,1,0.7,0.54104661767468,"rpoZ",1
+"InterPro","IPR002477","Peptidoglycan binding-like",4,1,0.7,0.54104661767468,"RS04405",1
+"InterPro","IPR003660","HAMP domain",4,1,0.7,0.54104661767468,"RS06480",1
+"InterPro","IPR005475","Transketolase-like, pyrimidine-binding domain",4,1,0.7,0.54104661767468,"RS02575",1
+"InterPro","IPR010982","Lambda repressor-like, DNA-binding domain superfamily",4,1,0.7,0.54104661767468,"RS06075",1
+"InterPro","IPR013324","RNA polymerase sigma factor, region 3/4-like",4,1,0.7,0.54104661767468,"rpoH",1
+"InterPro","IPR014746","Glutamine synthetase/guanido kinase, catalytic domain",4,1,0.7,0.54104661767468,"RS01425",1
+"InterPro","IPR016039","Thiolase-like",4,1,0.7,0.54104661767468,"fabB",1
+"InterPro","IPR016169","FAD-binding, type PCMH, subdomain 2",4,1,0.7,0.54104661767468,"RS04315",1
+"InterPro","IPR017926","Glutamine amidotransferase",4,1,0.7,0.54104661767468,"RS02550",1
+"InterPro","IPR018357","Hexapeptide transferase, conserved site",4,1,0.7,0.54104661767468,"RS04510",1
+"InterPro","IPR019489","Clp ATPase, C-terminal",4,1,0.7,0.54104661767468,"clpB",1
+"InterPro","IPR027304","Trigger factor/SurA domain superfamily",4,1,0.7,0.54104661767468,"RS02535",1
+"InterPro","IPR029044","Nucleotide-diphospho-sugar transferases",4,1,0.7,0.54104661767468,"RS06020",1
+"InterPro","IPR029064","50S ribosomal protein L30e-like",4,1,0.7,0.54104661767468,"RS06685",1
+"InterPro","IPR029069","HotDog domain superfamily",4,1,0.7,0.54104661767468,"fabA",1
+"InterPro","IPR032317","RND efflux pump, membrane fusion protein, barrel-sandwich domain",4,1,0.7,0.54104661767468,"RS00490",1
+"InterPro","IPR036318","FAD-binding, type PCMH-like superfamily",4,1,0.7,0.54104661767468,"RS04315",1
+"InterPro","IPR036365","PGBD-like superfamily",4,1,0.7,0.54104661767468,"RS04405",1
+"InterPro","IPR036366","PGBD superfamily",4,1,0.7,0.54104661767468,"RS04405",1
+"InterPro","IPR043129","ATPase, nucleotide binding domain",4,1,0.7,0.54104661767468,"dnaK",1
+"Pfam","PF00578","AhpC/TSA family",4,1,0.7,0.54104661767468,"RS04515",1
+"Pfam","PF01471","Putative peptidoglycan binding domain",4,1,0.7,0.54104661767468,"RS04405",1
+"Pfam","PF14602","Hexapeptide repeat of succinyl-transferase",4,1,0.7,0.54104661767468,"RS04510",1
+"Keyword","KW-0560","Oxidoreductase",62,11,11,0.54886354492465,"RS00470;RS02575;RS03030;RS05340;fabI;fabI;guaB;ilvC;lpdA;pdhA;trxB",1
+"Keyword","KW-0648","Protein biosynthesis",39,7,6.9,0.549218382469381,"cysS;def;efp;frr;gltX;serS;tsf",1
+"Component","GO:1990234","Transferase complex",10,2,1.8,0.550664503279158,"dnaN;rpoZ",1
+"Keyword","KW-0676","Redox-active center",10,2,1.8,0.550664503279158,"lpdA;trxB",1
+"KEGG","bbk03018","RNA degradation",10,2,1.8,0.550664503279158,"dnaK;groL",1
+"Process","GO:0006091","Generation of precursor metabolites and energy",45,8,8,0.555747906709395,"RS00690;RS00695;RS02580;RS05030;RS05110;RS06015;fsa;tpiA",1
+"Process","GO:0009127","Purine nucleoside monophosphate biosynthetic process",16,3,2.8,0.557280619364493,"RS01015;guaB;purE",1
+"Process","GO:0009168","Purine ribonucleoside monophosphate biosynthetic process",16,3,2.8,0.557280619364493,"RS01015;guaB;purE",1
+"Function","GO:0050660","Flavin adenine dinucleotide binding",16,3,2.8,0.557280619364493,"RS00470;RS04315;lpdA",1
+"Keyword","KW-0285","Flavoprotein",16,3,2.8,0.557280619364493,"aroC;lpdA;trxB",1
+"Keyword","KW-0658","Purine biosynthesis",16,3,2.8,0.557280619364493,"RS01015;guaB;purE",1
+"Process","GO:0043170","Macromolecule metabolic process",308,54,54.4,0.560741754634634,"RS00365;RS01325;RS01395;RS01600;RS01645;RS01920;RS01980;RS02065;RS02110;RS02365;RS02455;RS03090;RS04045;RS04405;RS04605;RS04825;RS05330;RS05890;RS05905;RS06020;RS06130;RS06480;RS06670;RS06685;cysS;def;dnaJ;dnaN;efp;frr;gltX;htpX;lon;murA;murD;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tldD;trhO;trmD;tsf;ybeY",1
+"Keyword","KW-0645","Protease",22,4,3.9,0.563160587844476,"RS01600;RS05330;htpX;lon",1
+"Keyword","KW-0819","tRNA processing",22,4,3.9,0.563160587844476,"RS04045;RS05905;rnpA;trmD",1
+"Process","GO:0044238","Primary metabolic process",458,80,80.9,0.588496008201094,"RS00365;RS00690;RS00695;RS01015;RS01050;RS01315;RS01325;RS01395;RS01425;RS01600;RS01645;RS01920;RS01980;RS02065;RS02110;RS02255;RS02365;RS02455;RS02550;RS02575;RS02580;RS02820;RS03090;RS04045;RS04480;RS04825;RS05110;RS05330;RS05340;RS05850;RS05890;RS05905;RS06020;RS06130;RS06480;RS06670;RS06685;alr;aroC;cysS;dapA;dapF;def;dnaJ;dnaN;efp;fabA;fabB;fabI;fabI;frr;fsa;gltX;guaB;htpX;ilvC;lon;murA;pdhA;purE;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tldD;tpiA;trhO;trmD;tsf;ybeY",1
+"Process","GO:0010467","Gene expression",162,28,28.6,0.592439556767332,"RS01395;RS04045;RS04825;RS05905;RS06685;cysS;def;efp;frr;gltX;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;trhO;trmD;tsf;ybeY",1
+"Function","GO:0140098","Catalytic activity, acting on RNA",64,11,11.3,0.595521864719918,"RS01395;RS04045;RS06685;cysS;gltX;rnpA;rpoZ;rsmH;serS;trmD;ybeY",1
+"Process","GO:0008152","Metabolic process",555,97,98.1,0.596609141590446,"RS00365;RS00470;RS00690;RS00695;RS01015;RS01050;RS01315;RS01325;RS01395;RS01425;RS01600;RS01645;RS01920;RS01980;RS02065;RS02110;RS02255;RS02355;RS02365;RS02455;RS02550;RS02575;RS02580;RS02820;RS02970;RS03030;RS03090;RS03655;RS04045;RS04405;RS04480;RS04605;RS04825;RS05030;RS05100;RS05110;RS05290;RS05330;RS05340;RS05850;RS05890;RS05905;RS06015;RS06020;RS06130;RS06480;RS06670;RS06680;RS06685;alr;aroC;cysS;dapA;dapF;def;dnaJ;dnaN;efp;fabA;fabB;fabI;fabI;frr;fsa;gltX;guaB;htpX;ilvC;lon;murA;murD;pdhA;purE;ribB;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tldD;tpiA;trhO;trmD;trxB;tsf;ubiC;ubiG;ybeY",1
+"Process","GO:0071840","Cellular component organization or biogenesis",99,17,17.5,0.598887168608405,"RS01395;RS02365;RS02670;RS02970;RS03655;RS04185;RS04605;ccmA;frr;murA;murD;rimM;rimP;rsmH;ruvX;ybeY;yihA",1
+"Process","GO:0006260","DNA replication",23,4,4.1,0.600877398172099,"RS02365;RS02455;dnaJ;dnaN",1
+"InterPro","IPR036291","NAD(P)-binding domain superfamily",23,4,4.1,0.600877398172099,"RS05340;fabI;fabI;ilvC",1
+"Process","GO:0006310","DNA recombination",17,3,3,0.601137209212523,"RS01325;RS03090;RS06670",1
+"Process","GO:0009126","Purine nucleoside monophosphate metabolic process",17,3,3,0.601137209212523,"RS01015;guaB;purE",1
+"Process","GO:0009167","Purine ribonucleoside monophosphate metabolic process",17,3,3,0.601137209212523,"RS01015;guaB;purE",1
+"Process","GO:0090305","Nucleic acid phosphodiester bond hydrolysis",29,5,5.1,0.602182582289684,"RS01920;dnaN;rnpA;ruvX;ybeY",1
+"Function","GO:0004518","Nuclease activity",29,5,5.1,0.602182582289684,"RS01920;dnaN;rnpA;ruvX;ybeY",1
+"Function","GO:0016746","Acyltransferase activity",29,5,5.1,0.602182582289684,"RS02580;fabA;fabB;fabI;fabI",1
+"Process","GO:0000154","rRNA modification",11,2,1.9,0.605201231873599,"RS01395;rsmH",1
+"Component","GO:0042597","Periplasmic space",11,2,1.9,0.605201231873599,"RS06015;tolB",1
+"Function","GO:0016614","Oxidoreductase activity, acting on CH-OH group of donors",11,2,1.9,0.605201231873599,"guaB;ilvC",1
+"Function","GO:0016616","Oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",11,2,1.9,0.605201231873599,"guaB;ilvC",1
+"Function","GO:0016627","Oxidoreductase activity, acting on the CH-CH group of donors",11,2,1.9,0.605201231873599,"fabI;fabI",1
+"Function","GO:0016765","Transferase activity, transferring alkyl or aryl (other than methyl) groups",11,2,1.9,0.605201231873599,"RS05100;murA",1
+"Function","GO:0016881","Acid-amino acid ligase activity",11,2,1.9,0.605201231873599,"RS04605;murD",1
+"Function","GO:0019842","Vitamin binding",11,2,1.9,0.605201231873599,"RS00520;alr",1
+"InterPro","IPR014721","Ribosomal protein S5 domain 2-type fold, subgroup",11,2,1.9,0.605201231873599,"lon;rnpA",1
+"Process","GO:1901564","Organonitrogen compound metabolic process",312,54,55.1,0.608881136737125,"RS00690;RS00695;RS01015;RS01315;RS01425;RS01600;RS01980;RS02065;RS02110;RS02255;RS02550;RS02575;RS02580;RS03030;RS04405;RS04480;RS04605;RS04825;RS05100;RS05110;RS05290;RS05330;RS05340;RS05890;RS06480;alr;aroC;cysS;dapA;dapF;def;efp;frr;gltX;guaB;htpX;ilvC;lon;murA;murD;pdhA;purE;ribB;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tldD;tpiA;tsf",1
+"Process","GO:0001522","Pseudouridine synthesis",5,1,0.9,0.622427190418233,"RS01395",1
+"Process","GO:0006026","Aminoglycan catabolic process",5,1,0.9,0.622427190418233,"RS04405",1
+"Process","GO:0006027","Glycosaminoglycan catabolic process",5,1,0.9,0.622427190418233,"RS04405",1
+"Process","GO:0006749","Glutathione metabolic process",5,1,0.9,0.622427190418233,"RS05100",1
+"Process","GO:0006817","Phosphate ion transport",5,1,0.9,0.622427190418233,"phoU",1
+"Process","GO:0009253","Peptidoglycan catabolic process",5,1,0.9,0.622427190418233,"RS04405",1
+"Process","GO:0030488","tRNA methylation",5,1,0.9,0.622427190418233,"trmD",1
+"Process","GO:0044262","Cellular carbohydrate metabolic process",5,1,0.9,0.622427190418233,"RS06020",1
+"Process","GO:0045454","Cell redox homeostasis",5,1,0.9,0.622427190418233,"lpdA",1
+"Process","GO:0048523","Negative regulation of cellular process",5,1,0.9,0.622427190418233,"phoU",1
+"Process","GO:1901264","Carbohydrate derivative transport",5,1,0.9,0.622427190418233,"lptC",1
+"Component","GO:0000428","DNA-directed RNA polymerase complex",5,1,0.9,0.622427190418233,"rpoZ",1
+"Component","GO:0030880","RNA polymerase complex",5,1,0.9,0.622427190418233,"rpoZ",1
+"Function","GO:0003755","Peptidyl-prolyl cis-trans isomerase activity",5,1,0.9,0.622427190418233,"RS02535",1
+"Function","GO:0003899","DNA-directed 5-3 RNA polymerase activity",5,1,0.9,0.622427190418233,"rpoZ",1
+"Function","GO:0008171","O-methyltransferase activity",5,1,0.9,0.622427190418233,"ubiG",1
+"Function","GO:0008175","tRNA methyltransferase activity",5,1,0.9,0.622427190418233,"trmD",1
+"Function","GO:0009982","Pseudouridine synthase activity",5,1,0.9,0.622427190418233,"RS01395",1
+"Function","GO:0016620","Oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",5,1,0.9,0.622427190418233,"RS05340",1
+"Function","GO:0016758","Hexosyltransferase activity",5,1,0.9,0.622427190418233,"RS04590",1
+"Function","GO:0016796","Exonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5-phosphomonoesters",5,1,0.9,0.622427190418233,"RS01920",1
+"Function","GO:0016859","Cis-trans isomerase activity",5,1,0.9,0.622427190418233,"RS02535",1
+"Function","GO:0034062","5-3 RNA polymerase activity",5,1,0.9,0.622427190418233,"rpoZ",1
+"Function","GO:0046873","Metal ion transmembrane transporter activity",5,1,0.9,0.622427190418233,"nhaA",1
+"Function","GO:0047429","Nucleoside-triphosphate diphosphatase activity",5,1,0.9,0.622427190418233,"RS01050",1
+"Function","GO:0097747","RNA polymerase activity",5,1,0.9,0.622427190418233,"rpoZ",1
+"Keyword","KW-0201","Cytochrome c-type biogenesis",5,1,0.9,0.622427190418233,"ccmA",1
+"Keyword","KW-0239","DNA-directed DNA polymerase",5,1,0.9,0.622427190418233,"dnaN",1
+"Keyword","KW-0240","DNA-directed RNA polymerase",5,1,0.9,0.622427190418233,"rpoZ",1
+"Keyword","KW-0546","Nucleotide metabolism",5,1,0.9,0.622427190418233,"RS01050",1
+"Keyword","KW-0630","Potassium",5,1,0.9,0.622427190418233,"guaB",1
+"KEGG","bbk00740","Riboflavin metabolism",5,1,0.9,0.622427190418233,"ribB",1
+"InterPro","IPR000014","PAS domain",5,1,0.9,0.622427190418233,"RS02110",1
+"InterPro","IPR001451","Hexapeptide repeat",5,1,0.9,0.622427190418233,"RS04510",1
+"InterPro","IPR002942","RNA-binding S4 domain",5,1,0.9,0.622427190418233,"RS01395",1
+"InterPro","IPR005546","Autotransporter beta-domain",5,1,0.9,0.622427190418233,"RS05535",1
+"InterPro","IPR006315","Outer membrane autotransporter barrel",5,1,0.9,0.622427190418233,"RS05535",1
+"InterPro","IPR011004","Trimeric LpxA-like superfamily",5,1,0.9,0.622427190418233,"RS04510",1
+"InterPro","IPR011050","Pectin lyase fold/virulence factor",5,1,0.9,0.622427190418233,"RS05535",1
+"InterPro","IPR012675","Beta-grasp domain superfamily",5,1,0.9,0.622427190418233,"RS02255",1
+"InterPro","IPR020103","Pseudouridine synthase, catalytic domain superfamily",5,1,0.9,0.622427190418233,"RS01395",1
+"InterPro","IPR036709","Autotransporter beta-domain superfamily",5,1,0.9,0.622427190418233,"RS05535",1
+"Process","GO:0090304","Nucleic acid metabolic process",153,26,27,0.630669137309593,"RS00365;RS01325;RS01395;RS01645;RS01920;RS02365;RS02455;RS03090;RS04045;RS05905;RS06670;RS06685;cysS;dnaJ;dnaN;gltX;rimM;rnpA;rpoH;rpoZ;rsmH;ruvX;serS;trhO;trmD;ybeY",1
+"Process","GO:0006399","tRNA metabolic process",48,8,8.5,0.63497134437485,"RS04045;RS05905;cysS;gltX;rnpA;serS;trhO;trmD",1
+"Process","GO:0044237","Cellular metabolic process",508,88,89.8,0.63833068830111,"RS00365;RS00470;RS00690;RS00695;RS01015;RS01050;RS01315;RS01325;RS01395;RS01425;RS01645;RS01920;RS02065;RS02110;RS02255;RS02355;RS02365;RS02455;RS02550;RS02575;RS02580;RS02820;RS02970;RS03030;RS03090;RS03655;RS04045;RS04480;RS04605;RS04825;RS05030;RS05100;RS05110;RS05290;RS05340;RS05850;RS05905;RS06015;RS06020;RS06130;RS06480;RS06670;RS06685;alr;aroC;cysS;dapA;dapF;def;dnaJ;dnaN;efp;fabA;fabB;fabI;fabI;frr;fsa;gltX;guaB;ilvC;murA;murD;pdhA;purE;ribB;rimM;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tpiA;trhO;trmD;trxB;tsf;ubiC;ubiG;ybeY",1
+"Component","GO:0043232","Intracellular non-membrane-bounded organelle",66,11,11.7,0.639920167985852,"RS02365;RS04825;RS06030;RS06670;rimM;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Process","GO:1901576","Organic substance biosynthetic process",309,53,54.6,0.640580377871675,"RS00470;RS01015;RS01315;RS01425;RS02365;RS02455;RS02550;RS02575;RS02580;RS02820;RS03030;RS04480;RS04605;RS04825;RS05110;RS05290;RS05340;RS06020;alr;aroC;cysS;dapA;dapF;def;dnaN;efp;fabA;fabB;fabI;fabI;frr;gltX;guaB;ilvC;murA;murD;pdhA;purE;ribB;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;serS;smpB;tpiA;tsf;ubiC;ubiG",1
+"Process","GO:0018130","Heterocycle biosynthetic process",113,19,20,0.641131803560403,"RS01015;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS04480;RS06020;dnaN;guaB;murA;murD;pdhA;purE;ribB;rpoH;rpoZ;serS",1
+"Process","GO:0071555","Cell wall organization",18,3,3.2,0.64205937513751,"RS04605;murA;murD",1
+"KEGG","bbk00240","Pyrimidine metabolism",18,3,3.2,0.64205937513751,"RS02550;RS04480;RS05850",1
+"Process","GO:0009058","Biosynthetic process",315,54,55.7,0.643789447169982,"RS00470;RS01015;RS01315;RS01425;RS02355;RS02365;RS02455;RS02550;RS02575;RS02580;RS02820;RS03030;RS04480;RS04605;RS04825;RS05110;RS05290;RS05340;RS06020;alr;aroC;cysS;dapA;dapF;def;dnaN;efp;fabA;fabB;fabI;fabI;frr;gltX;guaB;ilvC;murA;murD;pdhA;purE;ribB;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;serS;smpB;tpiA;tsf;ubiC;ubiG",1
+"Process","GO:0006188","IMP biosynthetic process",12,2,2.1,0.654595502635901,"RS01015;purE",1
+"Process","GO:0006189","De novo IMP biosynthetic process",12,2,2.1,0.654595502635901,"RS01015;purE",1
+"Process","GO:0006351","Transcription, DNA-templated",12,2,2.1,0.654595502635901,"rpoH;rpoZ",1
+"Process","GO:0046040","IMP metabolic process",12,2,2.1,0.654595502635901,"RS01015;purE",1
+"Process","GO:0097659","Nucleic acid-templated transcription",12,2,2.1,0.654595502635901,"rpoH;rpoZ",1
+"Function","GO:0008135","Translation factor activity, RNA binding",12,2,2.1,0.654595502635901,"efp;tsf",1
+"Function","GO:0016667","Oxidoreductase activity, acting on a sulfur group of donors",12,2,2.1,0.654595502635901,"lpdA;trxB",1
+"Function","GO:0045182","Translation regulator activity",12,2,2.1,0.654595502635901,"efp;tsf",1
+"Function","GO:0090079","Translation regulator activity, nucleic acid binding",12,2,2.1,0.654595502635901,"efp;tsf",1
+"Keyword","KW-0233","DNA recombination",12,2,2.1,0.654595502635901,"RS03090;RS06670",1
+"Keyword","KW-0830","Ubiquinone",12,2,2.1,0.654595502635901,"RS00470;RS02670",1
+"KEGG","bbk00630","Glyoxylate and dicarboxylate metabolism",12,2,2.1,0.654595502635901,"RS01425;lpdA",1
+"KEGG","bbk01210","2-Oxocarboxylic acid metabolism",12,2,2.1,0.654595502635901,"RS05340;ilvC",1
+"Process","GO:0019438","Aromatic compound biosynthetic process",114,19,20.1,0.657882692449997,"RS01015;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS04480;RS06020;aroC;dnaN;guaB;murA;murD;pdhA;purE;rpoH;rpoZ;serS",1
+"Process","GO:1901362","Organic cyclic compound biosynthetic process",120,20,21.2,0.660262488460378,"RS01015;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS04480;RS06020;aroC;dnaN;guaB;murA;murD;pdhA;purE;ribB;rpoH;rpoZ;serS",1
+"Process","GO:0006520","Cellular amino acid metabolic process",73,12,12.9,0.662310845103303,"RS01315;RS01425;RS02550;RS05340;alr;aroC;cysS;dapA;dapF;gltX;ilvC;serS",1
+"Process","GO:0009059","Macromolecule biosynthetic process",144,24,25.4,0.669825407751623,"RS02365;RS02455;RS04605;RS04825;RS06020;cysS;def;dnaN;efp;frr;gltX;murA;murD;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;serS;smpB;tsf",1
+"Process","GO:0019538","Protein metabolic process",150,25,26.5,0.672216683875629,"RS01600;RS01980;RS02065;RS02110;RS04825;RS05330;RS05890;RS06480;cysS;def;efp;frr;gltX;htpX;lon;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tldD;tsf",1
+"Process","GO:0043604","Amide biosynthetic process",109,18,19.3,0.672299444347008,"RS02575;RS02580;RS04825;cysS;def;efp;frr;gltX;pdhA;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tsf",1
+"Process","GO:0043603","Cellular amide metabolic process",115,19,20.3,0.67423719104931,"RS02575;RS02580;RS04825;RS05100;cysS;def;efp;frr;gltX;pdhA;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tsf",1
+"Process","GO:0006796","Phosphate-containing compound metabolic process",121,20,21.4,0.67621737016481,"RS00690;RS00695;RS01015;RS01050;RS02065;RS02110;RS02255;RS02550;RS02575;RS02580;RS02820;RS04480;RS05110;RS05850;RS06480;fsa;guaB;pdhA;purE;tpiA",1
+"Process","GO:0006023","Aminoglycan biosynthetic process",19,3,3.4,0.679955277880488,"RS04605;murA;murD",1
+"Process","GO:0006024","Glycosaminoglycan biosynthetic process",19,3,3.4,0.679955277880488,"RS04605;murA;murD",1
+"Process","GO:0009252","Peptidoglycan biosynthetic process",19,3,3.4,0.679955277880488,"RS04605;murA;murD",1
+"Process","GO:0009273","Peptidoglycan-based cell wall biogenesis",19,3,3.4,0.679955277880488,"RS04605;murA;murD",1
+"Process","GO:0042546","Cell wall biogenesis",19,3,3.4,0.679955277880488,"RS04605;murA;murD",1
+"Process","GO:0043933","Protein-containing complex organization",19,3,3.4,0.679955277880488,"RS02670;ccmA;frr",1
+"Process","GO:0044038","Cell wall macromolecule biosynthetic process",19,3,3.4,0.679955277880488,"RS04605;murA;murD",1
+"Process","GO:0070589","Cellular component macromolecule biosynthetic process",19,3,3.4,0.679955277880488,"RS04605;murA;murD",1
+"Function","GO:0016773","Phosphotransferase activity, alcohol group as acceptor",19,3,3.4,0.679955277880488,"RS02065;RS02110;RS06480",1
+"Process","GO:0044249","Cellular biosynthetic process",307,52,54.2,0.682661183884449,"RS00470;RS01015;RS01315;RS01425;RS02355;RS02365;RS02455;RS02550;RS02575;RS02580;RS02820;RS03030;RS04480;RS04605;RS04825;RS05290;RS05340;RS06020;alr;aroC;cysS;dapA;dapF;def;dnaN;efp;fabA;fabB;fabI;fabI;frr;gltX;guaB;ilvC;murA;murD;pdhA;purE;ribB;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;serS;smpB;tsf;ubiC;ubiG",1
+"Process","GO:0019637","Organophosphate metabolic process",104,17,18.4,0.687206467743631,"RS00690;RS00695;RS01015;RS01050;RS02255;RS02550;RS02575;RS02580;RS02820;RS04480;RS05110;RS05850;fsa;guaB;pdhA;purE;tpiA",1
+"Process","GO:0009152","Purine ribonucleotide biosynthetic process",38,6,6.7,0.688448118953302,"RS01015;RS02575;RS02580;guaB;pdhA;purE",1
+"Keyword","KW-0378","Hydrolase",110,18,19.4,0.688648280106739,"RS01050;RS01600;RS01920;RS01980;RS01985;RS02365;RS04405;RS05330;RS05370;RS05850;RS05905;def;htpX;lon;ribB;rnpA;ruvX;ybeY",1
+"Function","GO:0016740","Transferase activity",192,32,33.9,0.688855890711058,"RS00365;RS00690;RS01315;RS01645;RS02065;RS02110;RS02255;RS02455;RS02580;RS02820;RS04045;RS04480;RS04510;RS04590;RS04745;RS05100;RS06020;RS06130;RS06480;RS06680;RS06685;dnaN;fabA;fabB;fabI;fabI;fsa;murA;rpoZ;rsmH;trmD;ubiG",1
+"Process","GO:0006760","Folic acid-containing compound metabolic process",6,1,1.1,0.68943786022689,"murD",1
+"Process","GO:0009423","Chorismate biosynthetic process",6,1,1.1,0.68943786022689,"aroC",1
+"Process","GO:0015698","Inorganic anion transport",6,1,1.1,0.68943786022689,"phoU",1
+"Process","GO:0033013","Tetrapyrrole metabolic process",6,1,1.1,0.68943786022689,"RS03030",1
+"Process","GO:0033014","Tetrapyrrole biosynthetic process",6,1,1.1,0.68943786022689,"RS03030",1
+"Process","GO:0042558","Pteridine-containing compound metabolic process",6,1,1.1,0.68943786022689,"murD",1
+"Process","GO:0046417","Chorismate metabolic process",6,1,1.1,0.68943786022689,"aroC",1
+"Component","GO:0015935","Small ribosomal subunit",6,1,1.1,0.68943786022689,"rpsB",1
+"Function","GO:0008170","N-methyltransferase activity",6,1,1.1,0.68943786022689,"rsmH",1
+"Function","GO:0008408","3-5 exonuclease activity",6,1,1.1,0.68943786022689,"dnaN",1
+"Function","GO:0016407","Acetyltransferase activity",6,1,1.1,0.68943786022689,"RS02580",1
+"Function","GO:0020037","Heme binding",6,1,1.1,0.68943786022689,"RS06015",1
+"Function","GO:0043021","Ribonucleoprotein complex binding",6,1,1.1,0.68943786022689,"rimM",1
+"Function","GO:0043022","Ribosome binding",6,1,1.1,0.68943786022689,"rimM",1
+"Function","GO:0044877","Protein-containing complex binding",6,1,1.1,0.68943786022689,"rimM",1
+"Function","GO:0046906","Tetrapyrrole binding",6,1,1.1,0.68943786022689,"RS06015",1
+"Function","GO:0071949","FAD binding",6,1,1.1,0.68943786022689,"RS00470",1
+"Keyword","KW-0057","Aromatic amino acid biosynthesis",6,1,1.1,0.68943786022689,"aroC",1
+"Keyword","KW-0315","Glutamine amidotransferase",6,1,1.1,0.68943786022689,"RS02550",1
+"Keyword","KW-0349","Heme",6,1,1.1,0.68943786022689,"RS06015",1
+"Keyword","KW-0720","Serine protease",6,1,1.1,0.68943786022689,"lon",1
+"KEGG","bbk01503","Cationic antimicrobial peptide (CAMP) resistance",6,1,1.1,0.68943786022689,"RS03155",1
+"InterPro","IPR002052","DNA methylase, N-6 adenine-specific, conserved site",6,1,1.1,0.68943786022689,"RS06130",1
+"InterPro","IPR006195","Aminoacyl-tRNA synthetase, class II",6,1,1.1,0.68943786022689,"serS",1
+"InterPro","IPR009080","Aminoacyl-tRNA synthetase, class Ia, anticodon-binding",6,1,1.1,0.68943786022689,"cysS",1
+"InterPro","IPR016185","Pre-ATP-grasp domain superfamily",6,1,1.1,0.68943786022689,"RS01015",1
+"InterPro","IPR029062","Class I glutamine amidotransferase-like",6,1,1.1,0.68943786022689,"RS02550",1
+"InterPro","IPR035965","PAS domain superfamily",6,1,1.1,0.68943786022689,"RS02110",1
+"InterPro","IPR036986","RNA-binding S4 domain superfamily",6,1,1.1,0.68943786022689,"RS01395",1
+"Process","GO:0009987","Cellular process",683,118,120.7,0.696473372233467,"RS00300;RS00365;RS00470;RS00490;RS00690;RS00695;RS01015;RS01050;RS01315;RS01325;RS01395;RS01425;RS01625;RS01645;RS01900;RS01920;RS02060;RS02065;RS02110;RS02220;RS02255;RS02355;RS02365;RS02455;RS02535;RS02550;RS02575;RS02580;RS02670;RS02820;RS02970;RS03030;RS03090;RS03155;RS03655;RS04045;RS04185;RS04400;RS04480;RS04590;RS04605;RS04785;RS04825;RS05030;RS05100;RS05110;RS05290;RS05340;RS05835;RS05850;RS05905;RS06015;RS06020;RS06130;RS06475;RS06480;RS06670;RS06685;alr;aroC;ccmA;clpB;cysS;dapA;dapF;def;dnaJ;dnaK;dnaN;efp;fabA;fabB;fabI;fabI;frr;fsa;gltX;groES;groL;grpE;guaB;ilvC;lon;lpdA;lptC;murA;murD;nhaA;pdhA;phoU;purE;ribB;rimM;rimP;rnpA;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;rsmH;ruvX;serS;smpB;tolB;tolQ;tpiA;trhO;trmD;trxB;tsf;ubiC;ubiG;ybeY;yihA",1
+"Keyword","KW-0677","Repeat",13,2,2.3,0.698953862005063,"clpB;dnaJ",1
+"InterPro","IPR020568","Ribosomal protein S5 domain 2-type fold",13,2,2.3,0.698953862005063,"lon;rnpA",1
+"InterPro","IPR036249","Thioredoxin-like superfamily",13,2,2.3,0.698953862005063,"RS04515;RS05100",1
+"Process","GO:0000270","Peptidoglycan metabolic process",26,4,4.6,0.701588092587988,"RS04405;RS04605;murA;murD",1
+"Process","GO:0006022","Aminoglycan metabolic process",26,4,4.6,0.701588092587988,"RS04405;RS04605;murA;murD",1
+"Process","GO:0009124","Nucleoside monophosphate biosynthetic process",26,4,4.6,0.701588092587988,"RS01015;RS04480;guaB;purE",1
+"Process","GO:0030203","Glycosaminoglycan metabolic process",26,4,4.6,0.701588092587988,"RS04405;RS04605;murA;murD",1
+"KEGG","bbk00230","Purine metabolism",26,4,4.6,0.701588092587988,"RS01015;RS02255;guaB;purE",1
+"Function","GO:0016772","Transferase activity, transferring phosphorus-containing groups",63,10,11.1,0.70226289869268,"RS00690;RS02065;RS02110;RS02255;RS02455;RS02820;RS06020;RS06480;dnaN;rpoZ",1
+"Keyword","KW-0694","RNA-binding",63,10,11.1,0.70226289869268,"RS00365;RS01395;RS01645;RS04825;rnpA;rplF;rplN;rplX;rpsO;smpB",1
+"Keyword","KW-0808","Transferase",170,28,30,0.706165687930016,"RS00365;RS00690;RS01315;RS01645;RS02065;RS02110;RS02255;RS02455;RS02580;RS02820;RS04045;RS04480;RS04510;RS04745;RS05100;RS06020;RS06130;RS06480;RS06680;RS06685;dnaN;fabB;fsa;murA;rpoZ;rsmH;trmD;ubiG",1
+"Process","GO:0006164","Purine nucleotide biosynthetic process",39,6,6.9,0.713762616495832,"RS01015;RS02575;RS02580;guaB;pdhA;purE",1
+"Process","GO:0072522","Purine-containing compound biosynthetic process",39,6,6.9,0.713762616495832,"RS01015;RS02575;RS02580;guaB;pdhA;purE",1
+"Function","GO:0097159","Organic cyclic compound binding",379,64,67,0.715646720719643,"RS00300;RS00365;RS00470;RS00520;RS00690;RS00805;RS01015;RS01325;RS01330;RS01395;RS01625;RS01645;RS01690;RS02030;RS02060;RS02365;RS02455;RS02550;RS03090;RS03095;RS04045;RS04315;RS04605;RS04785;RS04825;RS05180;RS05340;RS06015;RS06030;RS06055;RS06075;RS06130;RS06475;RS06670;RS06685;alr;ccmA;clpB;cysS;dnaJ;dnaK;dnaN;efp;gltX;greA;groES;groL;grpE;guaB;ilvC;lon;lpdA;murD;rnpA;rplF;rplN;rplX;rpoH;rpoZ;rpsO;serS;smpB;tsf;yihA",1
+"Function","GO:1901363","Heterocyclic compound binding",379,64,67,0.715646720719643,"RS00300;RS00365;RS00470;RS00520;RS00690;RS00805;RS01015;RS01325;RS01330;RS01395;RS01625;RS01645;RS01690;RS02030;RS02060;RS02365;RS02455;RS02550;RS03090;RS03095;RS04045;RS04315;RS04605;RS04785;RS04825;RS05180;RS05340;RS06015;RS06030;RS06055;RS06075;RS06130;RS06475;RS06670;RS06685;alr;ccmA;clpB;cysS;dnaJ;dnaK;dnaN;efp;gltX;greA;groES;groL;grpE;guaB;ilvC;lon;lpdA;murD;rnpA;rplF;rplN;rplX;rpoH;rpoZ;rpsO;serS;smpB;tsf;yihA",1
+"Function","GO:0016301","Kinase activity",33,5,5.8,0.720608422880378,"RS00690;RS02065;RS02110;RS02255;RS06480",1
+"Keyword","KW-0175","Coiled coil",77,12,13.6,0.737082418689424,"RS00490;RS00520;RS00670;RS01600;RS01625;RS02110;RS03155;RS05395;RS05535;clpB;lon;rpoH",1
+"Process","GO:0006221","Pyrimidine nucleotide biosynthetic process",14,2,2.5,0.738505390689408,"RS02550;RS04480",1
+"Process","GO:0006575","Cellular modified amino acid metabolic process",14,2,2.5,0.738505390689408,"RS05100;murD",1
+"Component","GO:0009279","Cell outer membrane",14,2,2.5,0.738505390689408,"RS00640;RS02220",1
+"Component","GO:0044391","Ribosomal subunit",14,2,2.5,0.738505390689408,"rplN;rpsB",1
+"Function","GO:0004519","Endonuclease activity",14,2,2.5,0.738505390689408,"rnpA;ybeY",1
+"InterPro","IPR011455","Protein of unknown function DUF1561",14,2,2.5,0.738505390689408,"RS04280;RS05805",1
+"Pfam","PF07598","Protein of unknown function (DUF1561)",14,2,2.5,0.738505390689408,"RS04280;RS05805",1
+"Process","GO:0006261","DNA-templated DNA replication",7,1,1.2,0.74460534583131,"RS02365",1
+"Process","GO:0009072","Aromatic amino acid family metabolic process",7,1,1.2,0.74460534583131,"aroC",1
+"Process","GO:0009073","Aromatic amino acid family biosynthetic process",7,1,1.2,0.74460534583131,"aroC",1
+"Process","GO:0009636","Response to toxic substance",7,1,1.2,0.74460534583131,"trxB",1
+"Process","GO:0009892","Negative regulation of metabolic process",7,1,1.2,0.74460534583131,"phoU",1
+"Process","GO:0048519","Negative regulation of biological process",7,1,1.2,0.74460534583131,"phoU",1
+"Process","GO:0097237","Cellular response to toxic substance",7,1,1.2,0.74460534583131,"trxB",1
+"Process","GO:0098754","Detoxification",7,1,1.2,0.74460534583131,"trxB",1
+"Process","GO:0098869","Cellular oxidant detoxification",7,1,1.2,0.74460534583131,"trxB",1
+"Process","GO:1901136","Carbohydrate derivative catabolic process",7,1,1.2,0.74460534583131,"RS04405",1
+"Process","GO:1990748","Cellular detoxification",7,1,1.2,0.74460534583131,"trxB",1
+"Component","GO:1990204","Oxidoreductase complex",7,1,1.2,0.74460534583131,"RS02580",1
+"Function","GO:0015035","Protein-disulfide reductase activity",7,1,1.2,0.74460534583131,"trxB",1
+"Function","GO:0016209","Antioxidant activity",7,1,1.2,0.74460534583131,"trxB",1
+"Function","GO:0022884","Macromolecule transmembrane transporter activity",7,1,1.2,0.74460534583131,"lptC",1
+"Keyword","KW-0288","FMN",7,1,1.2,0.74460534583131,"aroC",1
+"Keyword","KW-0998","Cell outer membrane",7,1,1.2,0.74460534583131,"RS02220",1
+"InterPro","IPR006073","GTP binding domain",7,1,1.2,0.74460534583131,"yihA",1
+"InterPro","IPR011761","ATP-grasp fold",7,1,1.2,0.74460534583131,"RS01015",1
+"InterPro","IPR011990","Tetratricopeptide-like helical domain superfamily",7,1,1.2,0.74460534583131,"RS01790",1
+"InterPro","IPR013766","Thioredoxin domain",7,1,1.2,0.74460534583131,"RS04515",1
+"Pfam","PF01926","50S ribosome-binding GTPase",7,1,1.2,0.74460534583131,"yihA",1
+"Function","GO:0016879","Ligase activity, forming carbon-nitrogen bonds",34,5,6,0.745947072198802,"RS01015;RS01425;RS02550;RS04605;murD",1
+"Process","GO:0006418","tRNA aminoacylation for protein translation",21,3,3.7,0.746680972116677,"cysS;gltX;serS",1
+"Process","GO:0043038","Amino acid activation",21,3,3.7,0.746680972116677,"cysS;gltX;serS",1
+"Process","GO:0043039","tRNA aminoacylation",21,3,3.7,0.746680972116677,"cysS;gltX;serS",1
+"Process","GO:0044036","Cell wall macromolecule metabolic process",21,3,3.7,0.746680972116677,"RS04605;murA;murD",1
+"Function","GO:0004812","aminoacyl-tRNA ligase activity",21,3,3.7,0.746680972116677,"cysS;gltX;serS",1
+"Function","GO:0016875","Ligase activity, forming carbon-oxygen bonds",21,3,3.7,0.746680972116677,"cysS;gltX;serS",1
+"Keyword","KW-0030","Aminoacyl-tRNA synthetase",21,3,3.7,0.746680972116677,"cysS;gltX;serS",1
+"Process","GO:0009260","Ribonucleotide biosynthetic process",47,7,8.3,0.753102962693165,"RS01015;RS02550;RS02575;RS02580;guaB;pdhA;purE",1
+"Component","GO:1902494","Catalytic complex",28,4,4.9,0.757841847663831,"RS01920;RS02580;dnaN;rpoZ",1
+"Keyword","KW-0520","NAD",28,4,4.9,0.757841847663831,"fabI;fabI;guaB;lpdA",1
+"Process","GO:0008610","Lipid biosynthetic process",41,6,7.2,0.760090568796701,"RS02820;RS06020;fabA;fabB;fabI;fabI",1
+"Process","GO:0034645","Cellular macromolecule biosynthetic process",121,19,21.4,0.763089574430894,"RS04605;RS04825;RS06020;cysS;def;efp;frr;gltX;murA;murD;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tsf",1
+"Process","GO:0006518","Peptide metabolic process",103,16,18.2,0.76430564706069,"RS04825;RS05100;cysS;def;efp;frr;gltX;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tsf",1
+"Process","GO:0006412","Translation",97,15,17.1,0.765218618978654,"RS04825;cysS;def;efp;frr;gltX;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tsf",1
+"Function","GO:0003723","RNA binding",85,13,15,0.768083563280314,"RS00365;RS01395;RS01645;RS04045;RS04825;RS06685;gltX;rnpA;rplF;rplN;rplX;rpsO;smpB",1
+"Process","GO:0022607","Cellular component assembly",35,5,6.2,0.769563662217264,"RS02670;RS02970;RS03655;ccmA;yihA",1
+"Keyword","KW-0418","Kinase",35,5,6.2,0.769563662217264,"RS00690;RS02065;RS02110;RS02255;RS06480",1
+"Process","GO:0046390","Ribose phosphate biosynthetic process",48,7,8.5,0.77327177557678,"RS01015;RS02550;RS02575;RS02580;guaB;pdhA;purE",1
+"Process","GO:0006220","Pyrimidine nucleotide metabolic process",15,2,2.7,0.773555456352249,"RS02550;RS04480",1
+"Process","GO:0009142","Nucleoside triphosphate biosynthetic process",15,2,2.7,0.773555456352249,"RS02550;RS04480",1
+"Process","GO:0065003","Protein-containing complex assembly",15,2,2.7,0.773555456352249,"RS02670;ccmA",1
+"Process","GO:1901565","Organonitrogen compound catabolic process",15,2,2.7,0.773555456352249,"RS04405;lon",1
+"Component","GO:0030312","External encapsulating structure",15,2,2.7,0.773555456352249,"RS00640;RS02220",1
+"Component","GO:1990904","Ribonucleoprotein complex",15,2,2.7,0.773555456352249,"rplN;rpsB",1
+"Process","GO:0006400","tRNA modification",22,3,3.9,0.775657874896499,"RS05905;trhO;trmD",1
+"Process","GO:0036211","Protein modification process",22,3,3.9,0.775657874896499,"RS02065;RS02110;RS06480",1
+"Process","GO:0045229","External encapsulating structure organization",22,3,3.9,0.775657874896499,"RS04605;murA;murD",1
+"Process","GO:0071554","Cell wall organization or biogenesis",22,3,3.9,0.775657874896499,"RS04605;murA;murD",1
+"Function","GO:0016887","ATP hydrolysis activity",22,3,3.9,0.775657874896499,"RS02365;clpB;lon",1
+"Process","GO:0044255","Cellular lipid metabolic process",42,6,7.4,0.781107026927666,"RS02820;RS06020;fabA;fabB;fabI;fabI",1
+"Process","GO:0044271","Cellular nitrogen compound biosynthetic process",212,34,37.5,0.784236288979536,"RS01015;RS02365;RS02455;RS02550;RS02575;RS02580;RS03030;RS04480;RS04825;RS05290;RS06020;cysS;def;dnaN;efp;frr;gltX;guaB;murA;murD;pdhA;purE;ribB;rplF;rplN;rplX;rpmH;rpoH;rpoZ;rpsB;rpsO;serS;smpB;tsf",1
+"Process","GO:0006865","Amino acid transport",8,1,1.4,0.790013962141086,"RS05835",1
+"Process","GO:0009129","Pyrimidine nucleoside monophosphate metabolic process",8,1,1.4,0.790013962141086,"RS04480",1
+"Process","GO:0009130","Pyrimidine nucleoside monophosphate biosynthetic process",8,1,1.4,0.790013962141086,"RS04480",1
+"Process","GO:0019439","Aromatic compound catabolic process",8,1,1.4,0.790013962141086,"RS01920",1
+"Process","GO:0032392","DNA geometric change",8,1,1.4,0.790013962141086,"RS02365",1
+"Process","GO:0032508","DNA duplex unwinding",8,1,1.4,0.790013962141086,"RS02365",1
+"Process","GO:0034655","Nucleobase-containing compound catabolic process",8,1,1.4,0.790013962141086,"RS01920",1
+"Process","GO:0042398","Cellular modified amino acid biosynthetic process",8,1,1.4,0.790013962141086,"murD",1
+"Process","GO:0044265","Cellular macromolecule catabolic process",8,1,1.4,0.790013962141086,"RS01920",1
+"Process","GO:0044270","Cellular nitrogen compound catabolic process",8,1,1.4,0.790013962141086,"RS01920",1
+"Process","GO:0046700","Heterocycle catabolic process",8,1,1.4,0.790013962141086,"RS01920",1
+"Process","GO:0070887","Cellular response to chemical stimulus",8,1,1.4,0.790013962141086,"trxB",1
+"Process","GO:1901361","Organic cyclic compound catabolic process",8,1,1.4,0.790013962141086,"RS01920",1
+"Component","GO:0015934","Large ribosomal subunit",8,1,1.4,0.790013962141086,"rplN",1
+"Function","GO:0003678","DNA helicase activity",8,1,1.4,0.790013962141086,"RS02365",1
+"Function","GO:0008483","Transaminase activity",8,1,1.4,0.790013962141086,"RS01315",1
+"Function","GO:0008649","rRNA methyltransferase activity",8,1,1.4,0.790013962141086,"rsmH",1
+"Function","GO:0015291","Secondary active transmembrane transporter activity",8,1,1.4,0.790013962141086,"nhaA",1
+"Function","GO:0061783","Peptidoglycan muralytic activity",8,1,1.4,0.790013962141086,"RS04405",1
+"Function","GO:0140102","Catalytic activity, acting on a rRNA",8,1,1.4,0.790013962141086,"rsmH",1
+"Keyword","KW-0032","Aminotransferase",8,1,1.4,0.790013962141086,"RS01315",1
+"Keyword","KW-0863","Zinc-finger",8,1,1.4,0.790013962141086,"dnaJ",1
+"KEGG","bbk00400","Phenylalanine, tyrosine and tryptophan biosynthesis",8,1,1.4,0.790013962141086,"aroC",1
+"InterPro","IPR012337","Ribonuclease H-like superfamily",8,1,1.4,0.790013962141086,"ruvX",1
+"InterPro","IPR013815","ATP-grasp fold, subdomain 1",8,1,1.4,0.790013962141086,"RS01015",1
+"InterPro","IPR015421","Pyridoxal phosphate-dependent transferase, major domain",8,1,1.4,0.790013962141086,"RS01315",1
+"InterPro","IPR015422","Pyridoxal phosphate-dependent transferase, small domain",8,1,1.4,0.790013962141086,"RS01315",1
+"InterPro","IPR015424","Pyridoxal phosphate-dependent transferase",8,1,1.4,0.790013962141086,"RS01315",1
+"Keyword","KW-0732","Signal",68,10,12,0.792430760689755,"RS02220;RS03155;RS04280;RS04410;RS04775;RS05395;RS05535;RS05805;RS05915;tolB",1
+"Process","GO:0043043","Peptide biosynthetic process",99,15,17.5,0.793296147870909,"RS04825;cysS;def;efp;frr;gltX;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tsf",1
+"Process","GO:0044260","Cellular macromolecule metabolic process",213,34,37.6,0.794245699966033,"RS00365;RS01325;RS01645;RS01920;RS02365;RS02455;RS03090;RS04045;RS04605;RS04825;RS06020;RS06130;RS06670;RS06685;cysS;def;dnaJ;dnaN;efp;frr;gltX;murA;murD;rplF;rplN;rplX;rpmH;rpsB;rpsO;rsmH;serS;smpB;trmD;tsf",1
+"Function","GO:0005198","Structural molecule activity",62,9,11,0.797071719816746,"RS03090;RS04825;RS06670;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Component","GO:0043226","Organelle",87,13,15.4,0.79749365586055,"RS02365;RS02580;RS04825;RS06030;RS06670;pdhA;rimM;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Process","GO:0006629","Lipid metabolic process",43,6,7.6,0.800716953000145,"RS02820;RS06020;fabA;fabB;fabI;fabI",1
+"Component","GO:0005840","Ribosome",56,8,9.9,0.802811283473876,"RS04825;rimM;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Process","GO:0016043","Cellular component organization",75,11,13.3,0.803716912784591,"RS02365;RS02670;RS02970;RS03655;RS04185;RS04605;ccmA;frr;murA;murD;yihA",1
+"Component","GO:0005887","Integral component of plasma membrane",16,2,2.8,0.804451861636215,"lptC;tolQ",1
+"Function","GO:0004527","Exonuclease activity",16,2,2.8,0.804451861636215,"RS01920;dnaN",1
+"Function","GO:0005488","Binding",475,79,83.9,0.805246457948123,"RS00300;RS00365;RS00470;RS00520;RS00690;RS00805;RS01015;RS01325;RS01330;RS01395;RS01600;RS01625;RS01645;RS01690;RS01900;RS01980;RS02030;RS02060;RS02365;RS02455;RS02550;RS02970;RS03030;RS03090;RS03095;RS03655;RS04045;RS04315;RS04605;RS04775;RS04785;RS04825;RS05180;RS05340;RS05370;RS05905;RS06015;RS06030;RS06055;RS06075;RS06130;RS06475;RS06670;RS06685;alr;ccmA;clpB;cysS;def;dnaJ;dnaK;dnaN;efp;gltX;greA;groES;groL;grpE;guaB;htpX;ilvC;lon;lpdA;murD;ribB;rimM;rnpA;rplF;rplN;rplX;rpoH;rpoZ;rpsO;serS;smpB;tsf;yacG;ybeY;yihA",1
+"Process","GO:0009123","Nucleoside monophosphate metabolic process",30,4,5.3,0.805589704371573,"RS01015;RS04480;guaB;purE",1
+"Process","GO:1901566","Organonitrogen compound biosynthetic process",232,37,41,0.806624817101165,"RS01015;RS01315;RS01425;RS02550;RS02575;RS02580;RS03030;RS04480;RS04605;RS04825;RS05290;RS05340;alr;aroC;cysS;dapA;dapF;def;efp;frr;gltX;guaB;ilvC;murA;murD;pdhA;purE;ribB;rplF;rplN;rplX;rpmH;rpsB;rpsO;serS;smpB;tsf",1
+"Function","GO:0016491","Oxidoreductase activity",94,14,16.6,0.80858278564906,"RS00470;RS02575;RS03030;RS05030;RS05340;RS06015;fabI;fabI;guaB;ilvC;lpdA;pdhA;trhO;trxB",1
+"Process","GO:0006950","Response to stress",37,5,6.5,0.811762614177958,"clpB;dnaJ;lon;rpoH;trxB",1
+"Function","GO:0140101","Catalytic activity, acting on a tRNA",37,5,6.5,0.811762614177958,"cysS;gltX;rnpA;serS;trmD",1
+"Process","GO:0009156","Ribonucleoside monophosphate biosynthetic process",24,3,4.2,0.825487688204385,"RS01015;guaB;purE",1
+"Keyword","KW-0443","Lipid metabolism",24,3,4.2,0.825487688204385,"fabA;fabI;fabI",1
+"Keyword","KW-0444","Lipid biosynthesis",24,3,4.2,0.825487688204385,"fabA;fabI;fabI",1
+"InterPro","IPR014729","Rossmann-like alpha/beta/alpha sandwich fold",24,3,4.2,0.825487688204385,"RS05030;cysS;gltX",1
+"Process","GO:0009218","Pyrimidine ribonucleotide metabolic process",9,1,1.6,0.82738275117289,"RS02550",1
+"Process","GO:0009220","Pyrimidine ribonucleotide biosynthetic process",9,1,1.6,0.82738275117289,"RS02550",1
+"Process","GO:0015849","Organic acid transport",9,1,1.6,0.82738275117289,"RS05835",1
+"Process","GO:0017004","Cytochrome complex assembly",9,1,1.6,0.82738275117289,"ccmA",1
+"Process","GO:0031167","rRNA methylation",9,1,1.6,0.82738275117289,"rsmH",1
+"Function","GO:0003700","DNA-binding transcription factor activity",9,1,1.6,0.82738275117289,"rpoH",1
+"Function","GO:0004252","Serine-type endopeptidase activity",9,1,1.6,0.82738275117289,"lon",1
+"Function","GO:0004536","Deoxyribonuclease activity",9,1,1.6,0.82738275117289,"RS01920",1
+"Function","GO:0016769","Transferase activity, transferring nitrogenous groups",9,1,1.6,0.82738275117289,"RS01315",1
+"Function","GO:0140110","Transcription regulator activity",9,1,1.6,0.82738275117289,"rpoH",1
+"Function","GO:0140359","ABC-type transporter activity",9,1,1.6,0.82738275117289,"ccmA",1
+"Keyword","KW-0328","Glycosyltransferase",9,1,1.6,0.82738275117289,"RS04745",1
+"Keyword","KW-0665","Pyrimidine biosynthesis",9,1,1.6,0.82738275117289,"RS02550",1
+"KEGG","bbk00520","Amino sugar and nucleotide sugar metabolism",9,1,1.6,0.82738275117289,"murA",1
+"KEGG","bbk00564","Glycerophospholipid metabolism",9,1,1.6,0.82738275117289,"RS02820",1
+"KEGG","bbk00640","Propanoate metabolism",9,1,1.6,0.82738275117289,"lpdA",1
+"KEGG","bbk00670","One carbon pool by folate",9,1,1.6,0.82738275117289,"RS04480",1
+"InterPro","IPR001412","Aminoacyl-tRNA synthetase, class I, conserved site",9,1,1.6,0.82738275117289,"gltX",1
+"InterPro","IPR009000","Translation protein, beta-barrel domain superfamily",9,1,1.6,0.82738275117289,"rimM",1
+"Function","GO:0016788","Hydrolase activity, acting on ester bonds",38,5,6.7,0.830446628605936,"RS01920;dnaN;rnpA;ruvX;ybeY",1
+"Keyword","KW-0699","rRNA-binding",38,5,6.7,0.830446628605936,"RS04825;rplF;rplN;rplX;rpsO",1
+"Component","GO:0030313","Cell envelope",17,2,3,0.831560481959374,"RS00640;RS02220",1
+"Component","GO:0031226","Intrinsic component of plasma membrane",17,2,3,0.831560481959374,"lptC;tolQ",1
+"Component","GO:0031975","Envelope",17,2,3,0.831560481959374,"RS00640;RS02220",1
+"Function","GO:0003824","Catalytic activity",543,90,95.9,0.844088426599018,"RS00365;RS00470;RS00690;RS00695;RS01015;RS01050;RS01315;RS01325;RS01395;RS01425;RS01600;RS01645;RS01920;RS01980;RS01985;RS02065;RS02110;RS02255;RS02365;RS02455;RS02535;RS02550;RS02575;RS02580;RS02785;RS02820;RS03030;RS04045;RS04405;RS04480;RS04510;RS04590;RS04605;RS04745;RS05030;RS05100;RS05110;RS05290;RS05330;RS05340;RS05370;RS05695;RS05850;RS05890;RS05905;RS05995;RS06015;RS06020;RS06130;RS06480;RS06680;RS06685;alr;aroC;clpB;cysS;dapA;dapF;def;dnaN;fabA;fabB;fabI;fabI;fsa;gltX;groL;guaB;htpX;ilvC;lon;lpdA;murA;murD;pdhA;purE;ribB;rnpA;rpoZ;rsmH;ruvX;serS;tldD;tpiA;trhO;trmD;trxB;ubiC;ubiG;ybeY",1
+"Process","GO:0009161","Ribonucleoside monophosphate metabolic process",25,3,4.4,0.846666552692917,"RS01015;guaB;purE",1
+"KEGG","bbk00970","Aminoacyl-tRNA biosynthesis",25,3,4.4,0.846666552692917,"cysS;gltX;serS",1
+"Function","GO:0016787","Hydrolase activity",159,24,28.1,0.849166164390956,"RS01050;RS01600;RS01920;RS01980;RS01985;RS02365;RS02550;RS04405;RS05330;RS05370;RS05695;RS05850;RS05890;RS05905;clpB;def;dnaN;htpX;lon;ribB;rnpA;ruvX;tldD;ybeY",1
+"Component","GO:0110165","Cellular anatomical entity",561,93,99.1,0.850688611711089,"RS00005;RS00190;RS00490;RS00640;RS00690;RS00805;RS00885;RS01050;RS01295;RS01790;RS01920;RS02040;RS02065;RS02110;RS02220;RS02355;RS02365;RS02535;RS02580;RS02670;RS02680;RS02820;RS03030;RS03155;RS04045;RS04140;RS04185;RS04310;RS04315;RS04480;RS04515;RS04590;RS04605;RS04630;RS04690;RS04775;RS04825;RS05020;RS05385;RS05535;RS05835;RS06015;RS06020;RS06030;RS06470;RS06480;RS06670;RS06675;RS06685;clpB;cysS;dapA;dapF;dnaJ;dnaN;efp;fabA;frr;fsa;gltX;groES;groL;grpE;htpX;lon;lptC;murA;murD;nhaA;pdhA;phoU;rimM;rimP;rplF;rplN;rplX;rpmH;rpoH;rpsB;rpsO;rsmH;ruvX;serS;smpB;tolB;tolQ;tpiA;trmD;trxB;tsf;ubiC;ubiG;ybeY",1
+"Function","GO:0016757","Glycosyltransferase activity",18,2,3.2,0.855248120312106,"RS04590;RS04745",1
+"Process","GO:0006820","Anion transport",10,1,1.8,0.858129223161082,"phoU",1
+"Process","GO:0030030","Cell projection organization",10,1,1.8,0.858129223161082,"RS04185",1
+"Process","GO:0044781","Bacterial-type flagellum organization",10,1,1.8,0.858129223161082,"RS04185",1
+"Function","GO:0015036","Disulfide oxidoreductase activity",10,1,1.8,0.858129223161082,"trxB",1
+"Keyword","KW-0269","Exonuclease",10,1,1.8,0.858129223161082,"RS01920",1
+"KEGG","bbk00770","Pantothenate and CoA biosynthesis",10,1,1.8,0.858129223161082,"ilvC",1
+"Function","GO:0140640","Catalytic activity, acting on a nucleic acid",111,16,19.6,0.860633683690218,"RS01325;RS01395;RS01920;RS02365;RS02455;RS04045;RS06685;cysS;dnaN;gltX;rnpA;rpoZ;rsmH;serS;trmD;ybeY",1
+"Process","GO:0006259","DNA metabolic process",60,8,10.6,0.861495664298846,"RS01325;RS01920;RS02365;RS02455;RS03090;RS06670;dnaJ;dnaN",1
+"Process","GO:0006812","Cation transport",33,4,5.8,0.86266240506968,"RS02220;RS05395;ccmA;nhaA",1
+"Process","GO:1901137","Carbohydrate derivative biosynthetic process",86,12,15.2,0.863013467921882,"RS01015;RS02550;RS02575;RS02580;RS04480;RS04605;RS06020;guaB;murA;murD;pdhA;purE",1
+"KEGG","bbk01100","Metabolic pathways",269,42,47.5,0.866239238222324,"RS00470;RS00690;RS00695;RS01015;RS01315;RS01425;RS02255;RS02550;RS02575;RS02580;RS02820;RS03030;RS04480;RS04605;RS05100;RS05110;RS05290;RS05340;RS05370;RS05850;RS06020;alr;aroC;dapA;dapF;fabA;fabB;fabI;fabI;fsa;gltX;guaB;ilvC;lpdA;murA;murD;pdhA;purE;ribB;tpiA;ubiC;ubiG",1
+"Function","GO:0003735","Structural constituent of ribosome",54,7,9.5,0.869512971433939,"RS04825;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"KEGG","bbk03010","Ribosome",54,7,9.5,0.869512971433939,"RS04825;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Process","GO:0009165","Nucleotide biosynthetic process",61,8,10.8,0.873748900034597,"RS01015;RS02550;RS02575;RS02580;RS04480;guaB;pdhA;purE",1
+"Process","GO:1901293","Nucleoside phosphate biosynthetic process",61,8,10.8,0.873748900034597,"RS01015;RS02550;RS02575;RS02580;RS04480;guaB;pdhA;purE",1
+"Process","GO:0072528","Pyrimidine-containing compound biosynthetic process",19,2,3.4,0.875870807657003,"RS02550;RS04480",1
+"KEGG","bbk03440","Homologous recombination",19,2,3.4,0.875870807657003,"RS02455;dnaN",1
+"Function","GO:0019843","rRNA binding",41,5,7.2,0.87765138146679,"RS04825;rplF;rplN;rplX;rpsO",1
+"Function","GO:0140657","ATP-dependent activity",55,7,9.7,0.881754537713031,"RS02365;ccmA;clpB;dnaK;groES;groL;lon",1
+"Keyword","KW-0689","Ribosomal protein",55,7,9.7,0.881754537713031,"RS04825;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Process","GO:1903509","Liposaccharide metabolic process",11,1,1.9,0.88342202228983,"RS06020",1
+"Keyword","KW-0347","Helicase",11,1,1.9,0.88342202228983,"RS02365",1
+"KEGG","bbk00540","Lipopolysaccharide biosynthesis",11,1,1.9,0.88342202228983,"RS06020",1
+"InterPro","IPR045864","Class II Aminoacyl-tRNA synthetase/Biotinyl protein ligase (BPL) and lipoyl protein ligase (LPL)",11,1,1.9,0.88342202228983,"serS",1
+"Keyword","KW-0687","Ribonucleoprotein",56,7,9.9,0.893032145461481,"RS04825;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Process","GO:0009064","Glutamine family amino acid metabolic process",20,2,3.5,0.893766173870369,"RS01425;RS02550",1
+"Process","GO:0072527","Pyrimidine-containing compound metabolic process",20,2,3.5,0.893766173870369,"RS02550;RS04480",1
+"Function","GO:0009055","Electron transfer activity",20,2,3.5,0.893766173870369,"RS05030;RS06015",1
+"Process","GO:0006996","Organelle organization",28,3,4.9,0.897389576704408,"RS02365;RS02670;RS04185",1
+"Function","GO:0004386","Helicase activity",12,1,2.1,0.90422443316746,"RS02365",1
+"Function","GO:0051287","NAD binding",12,1,2.1,0.90422443316746,"RS05340",1
+"KEGG","bbk00220","Arginine biosynthesis",12,1,2.1,0.90422443316746,"RS01425",1
+"KEGG","bbk03070","Bacterial secretion system",12,1,2.1,0.90422443316746,"RS03155",1
+"Process","GO:0098662","Inorganic cation transmembrane transport",21,2,3.7,0.909248826686546,"ccmA;nhaA",1
+"Component","GO:0043228","Non-membrane-bounded organelle",85,11,15,0.913591027270052,"RS02365;RS04825;RS06030;RS06670;rimM;rplF;rplN;rplX;rpmH;rpsB;rpsO",1
+"Keyword","KW-0812","Transmembrane",218,32,38.5,0.919674042191018,"RS00005;RS00490;RS00885;RS01295;RS01790;RS02040;RS02065;RS02110;RS02220;RS02355;RS02535;RS02680;RS02820;RS03030;RS04140;RS04185;RS04310;RS04315;RS04515;RS04590;RS04630;RS04690;RS05020;RS05385;RS05835;RS06470;RS06480;RS06675;htpX;lptC;nhaA;tolQ",1
+"Process","GO:0009084","Glutamine family amino acid biosynthetic process",13,1,2.3,0.92133031409766,"RS01425",1
+"Process","GO:0009201","Ribonucleoside triphosphate biosynthetic process",13,1,2.3,0.92133031409766,"RS02550",1
+"Process","GO:0071103","DNA conformation change",13,1,2.3,0.92133031409766,"RS02365",1
+"Keyword","KW-0449","Lipoprotein",13,1,2.3,0.92133031409766,"RS00640",1
+"Process","GO:0071702","Organic substance transport",52,6,9.2,0.921615321388165,"RS02220;RS05835;ccmA;lptC;tolB;tolQ",1
+"Function","GO:0000049","tRNA binding",22,2,3.9,0.922607921865551,"gltX;rnpA",1
+"Process","GO:0006811","Ion transport",45,5,8,0.922927748732258,"RS02220;RS05395;ccmA;nhaA;phoU",1
+"Function","GO:0140097","Catalytic activity, acting on DNA",45,5,8,0.922927748732258,"RS01325;RS01920;RS02365;RS02455;dnaN",1
+"Keyword","KW-0436","Ligase",60,7,10.6,0.929533367989466,"RS01015;RS02550;RS04605;cysS;gltX;murD;serS",1
+"Function","GO:0046872","Metal ion binding",146,20,25.8,0.931931134722396,"RS01015;RS01600;RS01980;RS02030;RS02550;RS03030;RS05370;RS05905;RS06015;cysS;def;dnaJ;gltX;guaB;htpX;ilvC;ribB;yacG;ybeY;yihA",1
+"Process","GO:0022900","Electron transport chain",23,2,4.1,0.934106300480827,"RS05030;RS06015",1
+"Process","GO:0098660","Inorganic ion transmembrane transport",23,2,4.1,0.934106300480827,"ccmA;nhaA",1
+"Keyword","KW-1133","Transmembrane helix",215,31,38,0.934268482177503,"RS00005;RS00490;RS00885;RS01295;RS01790;RS02040;RS02065;RS02110;RS02355;RS02535;RS02680;RS02820;RS03030;RS04140;RS04185;RS04310;RS04315;RS04515;RS04590;RS04630;RS04690;RS05020;RS05385;RS05835;RS06470;RS06480;RS06675;htpX;lptC;nhaA;tolQ",1
+"Process","GO:0051276","Chromosome organization",14,1,2.5,0.935393769744448,"RS02365",1
+"Function","GO:0008236","Serine-type peptidase activity",14,1,2.5,0.935393769744448,"lon",1
+"Function","GO:0016651","Oxidoreductase activity, acting on NAD(P)H",14,1,2.5,0.935393769744448,"RS03030",1
+"Function","GO:0017171","Serine hydrolase activity",14,1,2.5,0.935393769744448,"lon",1
+"Function","GO:0016874","Ligase activity",75,9,13.3,0.93756105133739,"RS01015;RS01425;RS02550;RS04605;RS05995;cysS;gltX;murD;serS",1
+"Process","GO:0071705","Nitrogen compound transport",47,5,8.3,0.939469318054573,"RS02220;RS05835;ccmA;tolB;tolQ",1
+"InterPro","IPR003593","AAA+ ATPase domain",47,5,8.3,0.939469318054573,"RS01690;RS02365;ccmA;clpB;lon",1
+"Function","GO:0043169","Cation binding",148,20,26.1,0.941585708812917,"RS01015;RS01600;RS01980;RS02030;RS02550;RS03030;RS05370;RS05905;RS06015;cysS;def;dnaJ;gltX;guaB;htpX;ilvC;ribB;yacG;ybeY;yihA",1
+"Process","GO:0098655","Cation transmembrane transport",24,2,4.2,0.943980719778685,"ccmA;nhaA",1
+"Keyword","KW-0406","Ion transport",15,1,2.7,0.946953649272463,"nhaA",1
+"KEGG","bbk00250","Alanine, aspartate and glutamate metabolism",15,1,2.7,0.946953649272463,"RS01425",1
+"Process","GO:0042221","Response to chemical",16,1,2.8,0.956453768448213,"trxB",1
+"Process","GO:0044248","Cellular catabolic process",16,1,2.8,0.956453768448213,"RS01920",1
+"Function","GO:0008094","ATP-dependent activity, acting on DNA",16,1,2.8,0.956453768448213,"RS02365",1
+"Function","GO:0042626","ATPase-coupled transmembrane transporter activity",16,1,2.8,0.956453768448213,"ccmA",1
+"Keyword","KW-0012","Acyltransferase",16,1,2.8,0.956453768448213,"RS02580",1
+"InterPro","IPR003439","ABC transporter-like, ATP-binding domain",26,2,4.6,0.959680570528279,"RS01690;ccmA",1
+"Keyword","KW-0342","GTP-binding",17,1,3,0.964259598853765,"yihA",1
+"Keyword","KW-0479","Metal-binding",115,14,20.3,0.965416937515534,"RS01600;RS02550;RS05905;RS06015;cysS;def;dnaJ;guaB;htpX;ilvC;ribB;yacG;ybeY;yihA",1
+"Component","GO:0016021","Integral component of membrane",225,31,39.8,0.967372652109244,"RS00005;RS00490;RS00885;RS01295;RS01790;RS02040;RS02065;RS02110;RS02355;RS02535;RS02680;RS02820;RS03030;RS04140;RS04185;RS04310;RS04315;RS04515;RS04590;RS04630;RS04690;RS05020;RS05385;RS05835;RS06470;RS06480;RS06675;htpX;lptC;nhaA;tolQ",1
+"Component","GO:0031224","Intrinsic component of membrane",226,31,39.9,0.969713454544551,"RS00005;RS00490;RS00885;RS01295;RS01790;RS02040;RS02065;RS02110;RS02355;RS02535;RS02680;RS02820;RS03030;RS04140;RS04185;RS04310;RS04315;RS04515;RS04590;RS04630;RS04690;RS05020;RS05385;RS05835;RS06470;RS06480;RS06675;htpX;lptC;nhaA;tolQ",1
+"Process","GO:0009110","Vitamin biosynthetic process",18,1,3.2,0.97067203876798,"ribB",1
+"Process","GO:0042364","Water-soluble vitamin biosynthetic process",18,1,3.2,0.97067203876798,"ribB",1
+"Function","GO:0051536","Iron-sulfur cluster binding",28,2,4.9,0.971126927019931,"RS02970;RS03655",1
+"Function","GO:0051540","Metal cluster binding",28,2,4.9,0.971126927019931,"RS02970;RS03655",1
+"Function","GO:0016462","Pyrophosphatase activity",45,4,8,0.971232153241662,"RS01050;RS02365;clpB;lon",1
+"Function","GO:0016817","Hydrolase activity, acting on acid anhydrides",45,4,8,0.971232153241662,"RS01050;RS02365;clpB;lon",1
+"Function","GO:0016818","Hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",45,4,8,0.971232153241662,"RS01050;RS02365;clpB;lon",1
+"Function","GO:0017111","Nucleoside-triphosphatase activity",37,3,6.5,0.972130572715289,"RS02365;clpB;lon",1
+"Process","GO:0006766","Vitamin metabolic process",19,1,3.4,0.975938773829701,"ribB",1
+"Process","GO:0006767","Water-soluble vitamin metabolic process",19,1,3.4,0.975938773829701,"ribB",1
+"Function","GO:0005525","GTP binding",19,1,3.4,0.975938773829701,"yihA",1
+"Function","GO:0019001","Guanyl nucleotide binding",19,1,3.4,0.975938773829701,"yihA",1
+"Function","GO:0022890","Inorganic cation transmembrane transporter activity",19,1,3.4,0.975938773829701,"nhaA",1
+"Function","GO:0032561","Guanyl ribonucleotide binding",19,1,3.4,0.975938773829701,"yihA",1
+"Keyword","KW-1278","Translocase",19,1,3.4,0.975938773829701,"ccmA",1
+"Keyword","KW-0067","ATP-binding",153,19,27,0.977644838384433,"RS00690;RS01015;RS01625;RS01690;RS02065;RS02110;RS02365;RS02550;RS04605;RS06480;ccmA;clpB;cysS;dnaK;gltX;groL;lon;murD;serS",1
+"Process","GO:0006644","Phospholipid metabolic process",20,1,3.5,0.980263647511771,"RS02820",1
+"Process","GO:0008654","Phospholipid biosynthetic process",20,1,3.5,0.980263647511771,"RS02820",1
+"InterPro","IPR027417","P-loop containing nucleoside triphosphate hydrolase",101,11,17.8,0.982297462890535,"RS00075;RS01370;RS01625;RS01690;RS02365;RS02550;RS06055;ccmA;clpB;lon;yihA",1
+"Component","GO:0032991","Protein-containing complex",72,7,12.7,0.982480118445228,"RS01920;RS02365;RS02580;dnaN;rplN;rpoZ;rpsB",1
+"Keyword","KW-0408","Iron",31,2,5.5,0.982649724806294,"RS06015;def",1
+"Function","GO:0030554","Adenyl nucleotide binding",163,20,28.8,0.983580923645681,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;grpE;lon;murD;serS",1
+"InterPro","IPR012340","Nucleic acid-binding, OB-fold",21,1,3.7,0.983814388553033,"efp",1
+"Component","GO:0016020","Membrane",279,38,49.3,0.985325045182355,"RS00005;RS00190;RS00490;RS00640;RS00885;RS01295;RS01790;RS02040;RS02065;RS02110;RS02220;RS02355;RS02535;RS02670;RS02680;RS02820;RS03030;RS03155;RS04140;RS04185;RS04310;RS04315;RS04515;RS04590;RS04630;RS04690;RS04775;RS05020;RS05385;RS05535;RS05835;RS06470;RS06480;RS06675;htpX;lptC;nhaA;tolQ",1
+"Process","GO:0033036","Macromolecule localization",32,2,5.7,0.985388607033604,"lptC;tolB",1
+"Process","GO:0033554","Cellular response to stress",32,2,5.7,0.985388607033604,"lon;trxB",1
+"Process","GO:0034220","Ion transmembrane transport",32,2,5.7,0.985388607033604,"ccmA;nhaA",1
+"Process","GO:0090407","Organophosphate biosynthetic process",89,9,15.7,0.986481950052891,"RS01015;RS02550;RS02575;RS02580;RS02820;RS04480;guaB;pdhA;purE",1
+"Function","GO:0008324","Cation transmembrane transporter activity",22,1,3.9,0.986728982204817,"nhaA",1
+"Keyword","KW-0472","Membrane",251,33,44.3,0.988679027695503,"RS00005;RS00490;RS00885;RS01295;RS01790;RS02040;RS02065;RS02110;RS02220;RS02355;RS02535;RS02680;RS02820;RS03030;RS04140;RS04185;RS04310;RS04315;RS04515;RS04590;RS04630;RS04690;RS05020;RS05385;RS05835;RS06470;RS06480;RS06675;ccmA;htpX;lptC;nhaA;tolQ",1
+"Keyword","KW-0460","Magnesium",52,4,9.2,0.989524258697098,"RS02550;ilvC;ribB;yihA",1
+"Function","GO:0005524","ATP binding",162,19,28.6,0.990397154618745,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;lon;murD;serS",1
+"Function","GO:0032559","Adenyl ribonucleotide binding",162,19,28.6,0.990397154618745,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;lon;murD;serS",1
+"Function","GO:0015318","Inorganic molecular entity transmembrane transporter activity",24,1,4.2,0.991083539783376,"nhaA",1
+"Keyword","KW-0547","Nucleotide-binding",178,21,31.4,0.992547134714776,"RS00690;RS01015;RS01625;RS01690;RS02065;RS02110;RS02365;RS02550;RS04605;RS06480;ccmA;clpB;cysS;dnaK;gltX;groL;lon;lpdA;murD;serS;yihA",1
+"Function","GO:0000287","Magnesium ion binding",25,1,4.4,0.992693569721667,"ilvC",1
+"Function","GO:0022804","Active transmembrane transporter activity",37,2,6.5,0.993893891566968,"ccmA;nhaA",1
+"Function","GO:0017076","Purine nucleotide binding",181,21,32,0.994456955543518,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;grpE;lon;murD;serS;yihA",1
+"Process","GO:0015031","Protein transport",27,1,4.8,0.995096940314919,"tolB",1
+"Function","GO:0015075","Ion transmembrane transporter activity",28,1,4.9,0.995984718585104,"nhaA",1
+"Function","GO:0000166","Nucleotide binding",225,27,39.8,0.996332374948428,"RS00470;RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04315;RS04605;RS05340;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;grpE;guaB;ilvC;lon;lpdA;murD;serS;yihA",1
+"Function","GO:1901265","Nucleoside phosphate binding",225,27,39.8,0.996332374948428,"RS00470;RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04315;RS04605;RS05340;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;grpE;guaB;ilvC;lon;lpdA;murD;serS;yihA",1
+"Function","GO:0043168","Anion binding",212,25,37.5,0.996394365785273,"RS00470;RS00520;RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04315;RS04605;RS06055;alr;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;lon;lpdA;murD;serS;yihA",1
+"Process","GO:0008104","Protein localization",29,1,5.1,0.99671241908072,"tolB",1
+"Process","GO:0045184","Establishment of protein localization",29,1,5.1,0.99671241908072,"tolB",1
+"Process","GO:0051641","Cellular localization",29,1,5.1,0.99671241908072,"tolB",1
+"Process","GO:0070727","Cellular macromolecule localization",29,1,5.1,0.99671241908072,"tolB",1
+"Function","GO:0015399","Primary active transmembrane transporter activity",29,1,5.1,0.99671241908072,"ccmA",1
+"Function","GO:0032555","Purine ribonucleotide binding",180,20,31.8,0.996940705279695,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;lon;murD;serS;yihA",1
+"Function","GO:0035639","Purine ribonucleoside triphosphate binding",180,20,31.8,0.996940705279695,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;lon;murD;serS;yihA",1
+"Function","GO:0036094","Small molecule binding",240,29,42.4,0.996958511918171,"RS00470;RS00520;RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04315;RS04605;RS05340;RS06055;alr;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;grpE;guaB;ilvC;lon;lpdA;murD;serS;yihA",1
+"Function","GO:0032553","Ribonucleotide binding",186,20,32.9,0.998402512399246,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;lon;murD;serS;yihA",1
+"Function","GO:0005215","Transporter activity",82,6,14.5,0.998482646561181,"RS00490;RS02220;RS03155;ccmA;lptC;nhaA",1
+"Function","GO:0022857","Transmembrane transporter activity",82,6,14.5,0.998482646561181,"RS00490;RS02220;RS03155;ccmA;lptC;nhaA",1
+"KEGG","bbk02010","ABC transporters",33,1,5.8,0.998525546035959,"ccmA",1
+"Function","GO:0043167","Ion binding",312,39,55.1,0.998577104802614,"RS00470;RS00520;RS00690;RS01015;RS01600;RS01625;RS01690;RS01980;RS02030;RS02365;RS02550;RS03030;RS04315;RS04605;RS05370;RS05905;RS06015;RS06055;alr;ccmA;clpB;cysS;def;dnaJ;dnaK;gltX;groES;groL;guaB;htpX;ilvC;lon;lpdA;murD;ribB;serS;yacG;ybeY;yihA",1
+"KEGG","bbk00190","Oxidative phosphorylation",34,1,6,0.998794000223497,"RS03030",1
+"Function","GO:0097367","Carbohydrate derivative binding",192,20,33.9,0.99918884502571,"RS00690;RS01015;RS01625;RS01690;RS02365;RS02550;RS04605;RS06055;ccmA;clpB;cysS;dnaJ;dnaK;gltX;groES;groL;lon;murD;serS;yihA",1
+"Keyword","KW-0997","Cell inner membrane",69,4,12.2,0.999272055100076,"ccmA;htpX;nhaA;tolQ",1
+"Process","GO:0006810","Transport",131,11,23.1,0.999556345754908,"RS00490;RS02220;RS03155;RS05395;RS05835;ccmA;lptC;nhaA;phoU;tolB;tolQ",1
+"Process","GO:0051179","Localization",133,11,23.5,0.999662443680799,"RS00490;RS02220;RS03155;RS05395;RS05835;ccmA;lptC;nhaA;phoU;tolB;tolQ",1
+"Process","GO:0051234","Establishment of localization",133,11,23.5,0.999662443680799,"RS00490;RS02220;RS03155;RS05395;RS05835;ccmA;lptC;nhaA;phoU;tolB;tolQ",1
+"Process","GO:0055085","Transmembrane transport",101,7,17.8,0.999685041115852,"RS00490;RS02220;RS03155;RS05835;ccmA;lptC;nhaA",1
+"Keyword","KW-1003","Cell membrane",106,6,18.7,0.999964899105881,"RS03030;RS06480;ccmA;htpX;nhaA;tolQ",1
+"Component","GO:0071944","Cell periphery",149,11,26.3,0.999965918858892,"RS00640;RS02220;RS03030;RS04185;RS04310;RS04690;RS04775;htpX;lptC;nhaA;tolQ",1
+"Component","GO:0005886","Plasma membrane",135,9,23.9,0.99997689698372,"RS03030;RS04185;RS04310;RS04690;RS04775;htpX;lptC;nhaA;tolQ",1
+"Keyword","KW-0813","Transport",82,3,14.5,0.999987675518317,"ccmA;nhaA;phoU",1
+"Process","GO:0000003","Reproduction",3,0,0.5,1,"",1
+"Process","GO:0001539","Cilium or flagellum-dependent cell motility",12,0,2.1,1,"",1
+"Process","GO:0002949","tRNA threonylcarbamoyladenosine modification",3,0,0.5,1,"",1
+"Process","GO:0003333","Amino acid transmembrane transport",3,0,0.5,1,"",1
+"Process","GO:0006066","Alcohol metabolic process",8,0,1.4,1,"",1
+"Process","GO:0006081","Cellular aldehyde metabolic process",6,0,1.1,1,"",1
+"Process","GO:0006099","Tricarboxylic acid cycle",13,0,2.3,1,"",1
+"Process","GO:0006119","Oxidative phosphorylation",6,0,1.1,1,"",1
+"Process","GO:0006167","AMP biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0006206","Pyrimidine nucleobase metabolic process",5,0,0.9,1,"",1
+"Process","GO:0006207","De novo pyrimidine nucleobase biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0006222","UMP biosynthetic process",6,0,1.1,1,"",1
+"Process","GO:0006265","DNA topological change",5,0,0.9,1,"",1
+"Process","GO:0006281","DNA repair",28,0,4.9,1,"",1
+"Process","GO:0006284","Base-excision repair",5,0,0.9,1,"",1
+"Process","GO:0006289","Nucleotide-excision repair",4,0,0.7,1,"",1
+"Process","GO:0006353","DNA-templated transcription, termination",4,0,0.7,1,"",1
+"Process","GO:0006401","RNA catabolic process",4,0,0.7,1,"",1
+"Process","GO:0006413","Translational initiation",4,0,0.7,1,"",1
+"Process","GO:0006450","Regulation of translational fidelity",4,0,0.7,1,"",1
+"Process","GO:0006479","Protein methylation",4,0,0.7,1,"",1
+"Process","GO:0006525","Arginine metabolic process",8,0,1.4,1,"",1
+"Process","GO:0006526","Arginine biosynthetic process",8,0,1.4,1,"",1
+"Process","GO:0006544","Glycine metabolic process",5,0,0.9,1,"",1
+"Process","GO:0006546","Glycine catabolic process",3,0,0.5,1,"",1
+"Process","GO:0006560","Proline metabolic process",3,0,0.5,1,"",1
+"Process","GO:0006561","Proline biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0006591","Ornithine metabolic process",3,0,0.5,1,"",1
+"Process","GO:0006605","Protein targeting",7,0,1.2,1,"",1
+"Process","GO:0006643","Membrane lipid metabolic process",8,0,1.4,1,"",1
+"Process","GO:0006664","Glycolipid metabolic process",8,0,1.4,1,"",1
+"Process","GO:0006720","Isoprenoid metabolic process",7,0,1.2,1,"",1
+"Process","GO:0006721","Terpenoid metabolic process",5,0,0.9,1,"",1
+"Process","GO:0006730","One-carbon metabolic process",5,0,0.9,1,"",1
+"Process","GO:0006754","ATP biosynthetic process",10,0,1.8,1,"",1
+"Process","GO:0006772","Thiamine metabolic process",5,0,0.9,1,"",1
+"Process","GO:0006886","Intracellular protein transport",7,0,1.2,1,"",1
+"Process","GO:0006935","Chemotaxis",4,0,0.7,1,"",1
+"Process","GO:0006974","Cellular response to DNA damage stimulus",28,0,4.9,1,"",1
+"Process","GO:0007059","Chromosome segregation",4,0,0.7,1,"",1
+"Process","GO:0008213","Protein alkylation",4,0,0.7,1,"",1
+"Process","GO:0008299","Isoprenoid biosynthetic process",7,0,1.2,1,"",1
+"Process","GO:0008614","Pyridoxine metabolic process",3,0,0.5,1,"",1
+"Process","GO:0008615","Pyridoxine biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0008643","Carbohydrate transport",5,0,0.9,1,"",1
+"Process","GO:0009060","Aerobic respiration",21,0,3.7,1,"",1
+"Process","GO:0009063","Cellular amino acid catabolic process",5,0,0.9,1,"",1
+"Process","GO:0009071","Serine family amino acid catabolic process",3,0,0.5,1,"",1
+"Process","GO:0009112","Nucleobase metabolic process",7,0,1.2,1,"",1
+"Process","GO:0009145","Purine nucleoside triphosphate biosynthetic process",11,0,1.9,1,"",1
+"Process","GO:0009173","Pyrimidine ribonucleoside monophosphate metabolic process",6,0,1.1,1,"",1
+"Process","GO:0009174","Pyrimidine ribonucleoside monophosphate biosynthetic process",6,0,1.1,1,"",1
+"Process","GO:0009206","Purine ribonucleoside triphosphate biosynthetic process",11,0,1.9,1,"",1
+"Process","GO:0009228","Thiamine biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0009229","Thiamine diphosphate biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0009235","Cobalamin metabolic process",3,0,0.5,1,"",1
+"Process","GO:0009236","Cobalamin biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0009240","Isopentenyl diphosphate biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0009245","Lipid A biosynthetic process",7,0,1.2,1,"",1
+"Process","GO:0009247","Glycolipid biosynthetic process",8,0,1.4,1,"",1
+"Process","GO:0009306","Protein secretion",8,0,1.4,1,"",1
+"Process","GO:0009311","Oligosaccharide metabolic process",8,0,1.4,1,"",1
+"Process","GO:0009312","Oligosaccharide biosynthetic process",8,0,1.4,1,"",1
+"Process","GO:0009432","SOS response",7,0,1.2,1,"",1
+"Process","GO:0009435","NAD biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0009605","Response to external stimulus",13,0,2.3,1,"",1
+"Process","GO:0009890","Negative regulation of biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0009991","Response to extracellular stimulus",7,0,1.2,1,"",1
+"Process","GO:0010558","Negative regulation of macromolecule biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0010605","Negative regulation of macromolecule metabolic process",6,0,1.1,1,"",1
+"Process","GO:0010629","Negative regulation of gene expression",4,0,0.7,1,"",1
+"Process","GO:0015711","Organic anion transport",4,0,0.7,1,"",1
+"Process","GO:0015936","Coenzyme A metabolic process",4,0,0.7,1,"",1
+"Process","GO:0015937","Coenzyme A biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0015939","Pantothenate metabolic process",3,0,0.5,1,"",1
+"Process","GO:0015980","Energy derivation by oxidation of organic compounds",23,0,4.1,1,"",1
+"Process","GO:0015986","Proton motive force-driven ATP synthesis",10,0,1.8,1,"",1
+"Process","GO:0016054","Organic acid catabolic process",6,0,1.1,1,"",1
+"Process","GO:0016071","mRNA metabolic process",3,0,0.5,1,"",1
+"Process","GO:0016114","Terpenoid biosynthetic process",5,0,0.9,1,"",1
+"Process","GO:0019288","Isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway",4,0,0.7,1,"",1
+"Process","GO:0019359","Nicotinamide nucleotide biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0019362","Pyridine nucleotide metabolic process",4,0,0.7,1,"",1
+"Process","GO:0019363","Pyridine nucleotide biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0019682","glyceraldehyde-3-phosphate metabolic process",4,0,0.7,1,"",1
+"Process","GO:0019856","Pyrimidine nucleobase biosynthetic process",5,0,0.9,1,"",1
+"Process","GO:0019954","Asexual reproduction",3,0,0.5,1,"",1
+"Process","GO:0022414","Reproductive process",3,0,0.5,1,"",1
+"Process","GO:0022904","Respiratory electron transport chain",7,0,1.2,1,"",1
+"Process","GO:0030031","Cell projection assembly",6,0,1.1,1,"",1
+"Process","GO:0030162","Regulation of proteolysis",3,0,0.5,1,"",1
+"Process","GO:0031327","Negative regulation of cellular biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0031554","Regulation of DNA-templated transcription, termination",3,0,0.5,1,"",1
+"Process","GO:0031564","Transcription antitermination",3,0,0.5,1,"",1
+"Process","GO:0031668","Cellular response to extracellular stimulus",7,0,1.2,1,"",1
+"Process","GO:0032505","Reproduction of a single-celled organism",3,0,0.5,1,"",1
+"Process","GO:0032940","Secretion by cell",8,0,1.4,1,"",1
+"Process","GO:0034308","Primary alcohol metabolic process",5,0,0.9,1,"",1
+"Process","GO:0034309","Primary alcohol biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0035592","Establishment of protein localization to extracellular region",8,0,1.4,1,"",1
+"Process","GO:0040011","Locomotion",4,0,0.7,1,"",1
+"Process","GO:0042255","Ribosome assembly",3,0,0.5,1,"",1
+"Process","GO:0042330","Taxis",4,0,0.7,1,"",1
+"Process","GO:0042357","Thiamine diphosphate metabolic process",4,0,0.7,1,"",1
+"Process","GO:0042723","Thiamine-containing compound metabolic process",5,0,0.9,1,"",1
+"Process","GO:0042724","Thiamine-containing compound biosynthetic process",5,0,0.9,1,"",1
+"Process","GO:0042773","ATP synthesis coupled electron transport",5,0,0.9,1,"",1
+"Process","GO:0042816","Vitamin B6 metabolic process",3,0,0.5,1,"",1
+"Process","GO:0042819","Vitamin B6 biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0043093","FtsZ-dependent cytokinesis",3,0,0.5,1,"",1
+"Process","GO:0043163","Cell envelope organization",4,0,0.7,1,"",1
+"Process","GO:0043165","Gram-negative-bacterium-type cell outer membrane assembly",4,0,0.7,1,"",1
+"Process","GO:0043244","Regulation of protein-containing complex disassembly",4,0,0.7,1,"",1
+"Process","GO:0043952","Protein transport by the Sec complex",3,0,0.5,1,"",1
+"Process","GO:0044091","Membrane biogenesis",4,0,0.7,1,"",1
+"Process","GO:0044205","De novo UMP biosynthetic process",6,0,1.1,1,"",1
+"Process","GO:0044282","Small molecule catabolic process",8,0,1.4,1,"",1
+"Process","GO:0044780","Bacterial-type flagellum assembly",6,0,1.1,1,"",1
+"Process","GO:0045333","Cellular respiration",23,0,4.1,1,"",1
+"Process","GO:0046033","AMP metabolic process",3,0,0.5,1,"",1
+"Process","GO:0046049","UMP metabolic process",6,0,1.1,1,"",1
+"Process","GO:0046112","Nucleobase biosynthetic process",7,0,1.2,1,"",1
+"Process","GO:0046165","Alcohol biosynthetic process",4,0,0.7,1,"",1
+"Process","GO:0046395","Carboxylic acid catabolic process",6,0,1.1,1,"",1
+"Process","GO:0046434","Organophosphate catabolic process",4,0,0.7,1,"",1
+"Process","GO:0046467","Membrane lipid biosynthetic process",8,0,1.4,1,"",1
+"Process","GO:0046490","Isopentenyl diphosphate metabolic process",4,0,0.7,1,"",1
+"Process","GO:0046493","Lipid A metabolic process",7,0,1.2,1,"",1
+"Process","GO:0046496","Nicotinamide nucleotide metabolic process",4,0,0.7,1,"",1
+"Process","GO:0046653","Tetrahydrofolate metabolic process",5,0,0.9,1,"",1
+"Process","GO:0046654","Tetrahydrofolate biosynthetic process",3,0,0.5,1,"",1
+"Process","GO:0046677","Response to antibiotic",3,0,0.5,1,"",1
+"Process","GO:0046903","Secretion",8,0,1.4,1,"",1
+"Process","GO:0046907","Intracellular transport",7,0,1.2,1,"",1
+"Process","GO:0046940","Nucleoside monophosphate phosphorylation",5,0,0.9,1,"",1
+"Process","GO:0048870","Cell motility",12,0,2.1,1,"",1
+"Process","GO:0051128","Regulation of cellular component organization",5,0,0.9,1,"",1
+"Process","GO:0051172","Negative regulation of nitrogen compound metabolic process",4,0,0.7,1,"",1
+"Process","GO:0051248","Negative regulation of protein metabolic process",3,0,0.5,1,"",1
+"Process","GO:0051604","Protein maturation",4,0,0.7,1,"",1
+"Process","GO:0051649","Establishment of localization in cell",7,0,1.2,1,"",1
+"Process","GO:0051668","Localization within membrane",5,0,0.9,1,"",1
+"Process","GO:0061024","Membrane organization",4,0,0.7,1,"",1
+"Process","GO:0065002","Intracellular protein transmembrane transport",4,0,0.7,1,"",1
+"Process","GO:0070525","tRNA threonylcarbamoyladenosine metabolic process",3,0,0.5,1,"",1
+"Process","GO:0070925","Organelle assembly",9,0,1.6,1,"",1
+"Process","GO:0071496","Cellular response to external stimulus",7,0,1.2,1,"",1
+"Process","GO:0071692","Protein localization to extracellular region",8,0,1.4,1,"",1
+"Process","GO:0071709","Membrane assembly",4,0,0.7,1,"",1
+"Process","GO:0071806","Protein transmembrane transport",6,0,1.1,1,"",1
+"Process","GO:0071973","Bacterial-type flagellum-dependent cell motility",11,0,1.9,1,"",1
+"Process","GO:0072524","Pyridine-containing compound metabolic process",7,0,1.2,1,"",1
+"Process","GO:0072525","Pyridine-containing compound biosynthetic process",7,0,1.2,1,"",1
+"Process","GO:0072657","Protein localization to membrane",5,0,0.9,1,"",1
+"Process","GO:0090150","Establishment of protein localization to membrane",5,0,0.9,1,"",1
+"Process","GO:0097588","Archaeal or bacterial-type flagellum-dependent cell motility",12,0,2.1,1,"",1
+"Process","GO:0098656","Anion transmembrane transport",7,0,1.2,1,"",1
+"Process","GO:0098661","Inorganic anion transmembrane transport",3,0,0.5,1,"",1
+"Process","GO:0106074","aminoacyl-tRNA metabolism involved in translational fidelity",3,0,0.5,1,"",1
+"Process","GO:0140352","Export from cell",8,0,1.4,1,"",1
+"Process","GO:0140694","Non-membrane-bounded organelle assembly",9,0,1.6,1,"",1
+"Process","GO:1901269","Lipooligosaccharide metabolic process",7,0,1.2,1,"",1
+"Process","GO:1901271","Lipooligosaccharide biosynthetic process",7,0,1.2,1,"",1
+"Process","GO:1901606","Alpha-amino acid catabolic process",5,0,0.9,1,"",1
+"Process","GO:1901615","Organic hydroxy compound metabolic process",12,0,2.1,1,"",1
+"Process","GO:1901617","Organic hydroxy compound biosynthetic process",7,0,1.2,1,"",1
+"Process","GO:1902600","Proton transmembrane transport",14,0,2.5,1,"",1
+"Process","GO:1903825","Organic acid transmembrane transport",4,0,0.7,1,"",1
+"Process","GO:1905039","Carboxylic acid transmembrane transport",4,0,0.7,1,"",1
+"Process","GO:2001293","malonyl-CoA metabolic process",3,0,0.5,1,"",1
+"Process","GO:2001295","malonyl-CoA biosynthetic process",3,0,0.5,1,"",1
+"Component","GO:0005576","Extracellular region",5,0,0.9,1,"",1
+"Component","GO:0005829","Cytosol",7,0,1.2,1,"",1
+"Component","GO:0009288","Bacterial-type flagellum",19,0,3.4,1,"",1
+"Component","GO:0009317","acetyl-CoA carboxylase complex",3,0,0.5,1,"",1
+"Component","GO:0009380","Excinuclease repair complex",3,0,0.5,1,"",1
+"Component","GO:0009425","Bacterial-type flagellum basal body",16,0,2.8,1,"",1
+"Component","GO:0009426","Bacterial-type flagellum basal body, distal rod",3,0,0.5,1,"",1
+"Component","GO:0009986","Cell surface",4,0,0.7,1,"",1
+"Component","GO:0016469","Proton-transporting two-sector ATPase complex",9,0,1.6,1,"",1
+"Component","GO:0030288","Outer membrane-bounded periplasmic space",3,0,0.5,1,"",1
+"Component","GO:0030694","Bacterial-type flagellum basal body, rod",5,0,0.9,1,"",1
+"Component","GO:0032153","Cell division site",3,0,0.5,1,"",1
+"Component","GO:0033177","Proton-transporting two-sector ATPase complex, proton-transporting domain",4,0,0.7,1,"",1
+"Component","GO:0033178","Proton-transporting two-sector ATPase complex, catalytic domain",5,0,0.9,1,"",1
+"Component","GO:0042995","Cell projection",19,0,3.4,1,"",1
+"Component","GO:0043190","ATP-binding cassette (ABC) transporter complex",12,0,2.1,1,"",1
+"Component","GO:0045259","Proton-transporting ATP synthase complex",9,0,1.6,1,"",1
+"Component","GO:0045261","Proton-transporting ATP synthase complex, catalytic core F(1)",5,0,0.9,1,"",1
+"Component","GO:0045263","Proton-transporting ATP synthase complex, coupling factor F(o)",4,0,0.7,1,"",1
+"Component","GO:0070469","Respirasome",5,0,0.9,1,"",1
+"Component","GO:0098533","ATPase dependent transmembrane transport complex",12,0,2.1,1,"",1
+"Component","GO:0098796","Membrane protein complex",24,0,4.2,1,"",1
+"Component","GO:0098797","Plasma membrane protein complex",12,0,2.1,1,"",1
+"Component","GO:1902495","Transmembrane transporter complex",13,0,2.3,1,"",1
+"Component","GO:1905347","Endodeoxyribonuclease complex",3,0,0.5,1,"",1
+"Component","GO:1990351","Transporter complex",13,0,2.3,1,"",1
+"Component","GO:1990391","DNA repair complex",4,0,0.7,1,"",1
+"Function","GO:0000104","Succinate dehydrogenase activity",4,0,0.7,1,"",1
+"Function","GO:0002161","aminoacyl-tRNA editing activity",3,0,0.5,1,"",1
+"Function","GO:0003684","Damaged DNA binding",5,0,0.9,1,"",1
+"Function","GO:0003690","Double-stranded DNA binding",3,0,0.5,1,"",1
+"Function","GO:0003697","Single-stranded DNA binding",4,0,0.7,1,"",1
+"Function","GO:0003743","Translation initiation factor activity",3,0,0.5,1,"",1
+"Function","GO:0003747","Translation release factor activity",3,0,0.5,1,"",1
+"Function","GO:0003774","Cytoskeletal motor activity",6,0,1.1,1,"",1
+"Function","GO:0003916","DNA topoisomerase activity",5,0,0.9,1,"",1
+"Function","GO:0003918","DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) activity",4,0,0.7,1,"",1
+"Function","GO:0003924","GTPase activity",14,0,2.5,1,"",1
+"Function","GO:0003954","NADH dehydrogenase activity",12,0,2.1,1,"",1
+"Function","GO:0003955","NAD(P)H dehydrogenase (quinone) activity",12,0,2.1,1,"",1
+"Function","GO:0003989","acetyl-CoA carboxylase activity",4,0,0.7,1,"",1
+"Function","GO:0004129","Cytochrome-c oxidase activity",3,0,0.5,1,"",1
+"Function","GO:0004177","Aminopeptidase activity",5,0,0.9,1,"",1
+"Function","GO:0004180","Carboxypeptidase activity",4,0,0.7,1,"",1
+"Function","GO:0004185","Serine-type carboxypeptidase activity",4,0,0.7,1,"",1
+"Function","GO:0004520","Endodeoxyribonuclease activity",4,0,0.7,1,"",1
+"Function","GO:0004553","Hydrolase activity, hydrolyzing O-glycosyl compounds",3,0,0.5,1,"",1
+"Function","GO:0004601","Peroxidase activity",3,0,0.5,1,"",1
+"Function","GO:0004642","Phosphoribosylformylglycinamidine synthase activity",3,0,0.5,1,"",1
+"Function","GO:0005216","Ion channel activity",12,0,2.1,1,"",1
+"Function","GO:0005261","Cation channel activity",10,0,1.8,1,"",1
+"Function","GO:0005315","Inorganic phosphate transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0005342","Organic acid transmembrane transporter activity",4,0,0.7,1,"",1
+"Function","GO:0005506","Iron ion binding",6,0,1.1,1,"",1
+"Function","GO:0008079","Translation termination factor activity",3,0,0.5,1,"",1
+"Function","GO:0008080","N-acetyltransferase activity",5,0,0.9,1,"",1
+"Function","GO:0008137","NADH dehydrogenase (ubiquinone) activity",9,0,1.6,1,"",1
+"Function","GO:0008186","ATP-dependent activity, acting on RNA",3,0,0.5,1,"",1
+"Function","GO:0008235","Metalloexopeptidase activity",3,0,0.5,1,"",1
+"Function","GO:0008238","Exopeptidase activity",9,0,1.6,1,"",1
+"Function","GO:0008276","Protein methyltransferase activity",4,0,0.7,1,"",1
+"Function","GO:0008320","Protein transmembrane transporter activity",4,0,0.7,1,"",1
+"Function","GO:0008509","Anion transmembrane transporter activity",5,0,0.9,1,"",1
+"Function","GO:0008514","Organic anion transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0008933","Lytic transglycosylase activity",3,0,0.5,1,"",1
+"Function","GO:0009002","Serine-type D-Ala-D-Ala carboxypeptidase activity",3,0,0.5,1,"",1
+"Function","GO:0009381","Excinuclease ABC activity",3,0,0.5,1,"",1
+"Function","GO:0009678","Pyrophosphate hydrolysis-driven proton transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0010181","FMN binding",6,0,1.1,1,"",1
+"Function","GO:0015078","Proton transmembrane transporter activity",13,0,2.3,1,"",1
+"Function","GO:0015171","Amino acid transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0015252","Proton channel activity",10,0,1.8,1,"",1
+"Function","GO:0015267","Channel activity",13,0,2.3,1,"",1
+"Function","GO:0015293","Symporter activity",3,0,0.5,1,"",1
+"Function","GO:0015424","ABC-type amino acid transporter activity",3,0,0.5,1,"",1
+"Function","GO:0015450","Protein-transporting ATPase activity",3,0,0.5,1,"",1
+"Function","GO:0015453","Oxidoreduction-driven active transmembrane transporter activity",13,0,2.3,1,"",1
+"Function","GO:0016149","Translation release factor activity, codon specific",3,0,0.5,1,"",1
+"Function","GO:0016410","N-acyltransferase activity",8,0,1.4,1,"",1
+"Function","GO:0016421","CoA carboxylase activity",4,0,0.7,1,"",1
+"Function","GO:0016433","rRNA (adenine) methyltransferase activity",3,0,0.5,1,"",1
+"Function","GO:0016635","Oxidoreductase activity, acting on the CH-CH group of donors, quinone or related compound as acceptor",3,0,0.5,1,"",1
+"Function","GO:0016638","Oxidoreductase activity, acting on the CH-NH2 group of donors",4,0,0.7,1,"",1
+"Function","GO:0016645","Oxidoreductase activity, acting on the CH-NH group of donors",6,0,1.1,1,"",1
+"Function","GO:0016646","Oxidoreductase activity, acting on the CH-NH group of donors, NAD or NADP as acceptor",5,0,0.9,1,"",1
+"Function","GO:0016655","Oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor",13,0,2.3,1,"",1
+"Function","GO:0016675","Oxidoreductase activity, acting on a heme group of donors",4,0,0.7,1,"",1
+"Function","GO:0016684","Oxidoreductase activity, acting on peroxide as acceptor",3,0,0.5,1,"",1
+"Function","GO:0016725","Oxidoreductase activity, acting on CH or CH2 groups",5,0,0.9,1,"",1
+"Function","GO:0016742","Hydroxymethyl-, formyl- and related transferase activity",6,0,1.1,1,"",1
+"Function","GO:0016743","Carboxyl- or carbamoyltransferase activity",4,0,0.7,1,"",1
+"Function","GO:0016763","Pentosyltransferase activity",7,0,1.2,1,"",1
+"Function","GO:0016776","Phosphotransferase activity, phosphate group as acceptor",8,0,1.4,1,"",1
+"Function","GO:0016780","Phosphotransferase activity, for other substituted phosphate groups",5,0,0.9,1,"",1
+"Function","GO:0016782","Transferase activity, transferring sulphur-containing groups",8,0,1.4,1,"",1
+"Function","GO:0016783","Sulfurtransferase activity",6,0,1.1,1,"",1
+"Function","GO:0016798","Hydrolase activity, acting on glycosyl bonds",10,0,1.8,1,"",1
+"Function","GO:0016799","Hydrolase activity, hydrolyzing N-glycosyl compounds",7,0,1.2,1,"",1
+"Function","GO:0016878","Acid-thiol ligase activity",3,0,0.5,1,"",1
+"Function","GO:0016884","Carbon-nitrogen ligase activity, with glutamine as amido-N-donor",10,0,1.8,1,"",1
+"Function","GO:0016885","Ligase activity, forming carbon-carbon bonds",4,0,0.7,1,"",1
+"Function","GO:0019104","DNA N-glycosylase activity",6,0,1.1,1,"",1
+"Function","GO:0019205","Nucleobase-containing compound kinase activity",6,0,1.1,1,"",1
+"Function","GO:0019238","Cyclohydrolase activity",3,0,0.5,1,"",1
+"Function","GO:0019829","ATPase-coupled cation transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0022803","Passive transmembrane transporter activity",13,0,2.3,1,"",1
+"Function","GO:0022853","Active ion transmembrane transporter activity",12,0,2.1,1,"",1
+"Function","GO:0033218","Amide binding",3,0,0.5,1,"",1
+"Function","GO:0033283","ATPase-coupled organic acid transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0033284","ATPase-coupled carboxylic acid transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0042578","Phosphoric ester hydrolase activity",4,0,0.7,1,"",1
+"Function","GO:0042625","ATPase-coupled ion transmembrane transporter activity",3,0,0.5,1,"",1
+"Function","GO:0043177","Organic acid binding",4,0,0.7,1,"",1
+"Function","GO:0044769","ATPase activity, coupled to transmembrane movement of ions, rotational mechanism",3,0,0.5,1,"",1
+"Function","GO:0046933","Proton-transporting ATP synthase activity, rotational mechanism",10,0,1.8,1,"",1
+"Function","GO:0046943","Carboxylic acid transmembrane transporter activity",4,0,0.7,1,"",1
+"Function","GO:0046961","Proton-transporting ATPase activity, rotational mechanism",3,0,0.5,1,"",1
+"Function","GO:0048038","Quinone binding",12,0,2.1,1,"",1
+"Function","GO:0050136","NADH dehydrogenase (quinone) activity",12,0,2.1,1,"",1
+"Function","GO:0050145","Nucleoside monophosphate kinase activity",5,0,0.9,1,"",1
+"Function","GO:0050567","glutaminyl-tRNA synthase (glutamine-hydrolyzing) activity",3,0,0.5,1,"",1
+"Function","GO:0051539","4 iron, 4 sulfur cluster binding",21,0,3.7,1,"",1
+"Function","GO:0052689","Carboxylic ester hydrolase activity",4,0,0.7,1,"",1
+"Function","GO:0070006","Metalloaminopeptidase activity",3,0,0.5,1,"",1
+"Function","GO:0070008","Serine-type exopeptidase activity",4,0,0.7,1,"",1
+"Function","GO:0070566","Adenylyltransferase activity",4,0,0.7,1,"",1
+"Function","GO:0097573","Glutathione oxidoreductase activity",3,0,0.5,1,"",1
+"Function","GO:0140104","Molecular carrier activity",3,0,0.5,1,"",1
+"Function","GO:0140318","Protein transporter activity",4,0,0.7,1,"",1
+"Function","GO:0140612","DNA damage sensor activity",4,0,0.7,1,"",1
+"Function","GO:0140664","ATP-dependent DNA damage sensor activity",4,0,0.7,1,"",1
+"Function","GO:1901681","Sulfur compound binding",5,0,0.9,1,"",1
+"Keyword","KW-0001","2Fe-2S",4,0,0.7,1,"",1
+"Keyword","KW-0004","4Fe-4S",16,0,2.8,1,"",1
+"Keyword","KW-0031","Aminopeptidase",3,0,0.5,1,"",1
+"Keyword","KW-0055","Arginine biosynthesis",8,0,1.4,1,"",1
+"Keyword","KW-0066","ATP synthesis",9,0,1.6,1,"",1
+"Keyword","KW-0138","CF(0)",4,0,0.7,1,"",1
+"Keyword","KW-0139","CF(1)",5,0,0.9,1,"",1
+"Keyword","KW-0159","Chromosome partition",3,0,0.5,1,"",1
+"Keyword","KW-0170","Cobalt",4,0,0.7,1,"",1
+"Keyword","KW-0173","Coenzyme A biosynthesis",3,0,0.5,1,"",1
+"Keyword","KW-0210","Decarboxylase",5,0,0.9,1,"",1
+"Keyword","KW-0227","DNA damage",23,0,4.1,1,"",1
+"Keyword","KW-0228","DNA excision",3,0,0.5,1,"",1
+"Keyword","KW-0234","DNA repair",22,0,3.9,1,"",1
+"Keyword","KW-0249","Electron transport",7,0,1.2,1,"",1
+"Keyword","KW-0267","Excision nuclease",3,0,0.5,1,"",1
+"Keyword","KW-0282","Flagellum",26,0,4.6,1,"",1
+"Keyword","KW-0326","Glycosidase",6,0,1.1,1,"",1
+"Keyword","KW-0375","Hydrogen ion transport",10,0,1.8,1,"",1
+"Keyword","KW-0396","Initiation factor",3,0,0.5,1,"",1
+"Keyword","KW-0411","Iron-sulfur",20,0,3.5,1,"",1
+"Keyword","KW-0414","Isoprene biosynthesis",5,0,0.9,1,"",1
+"Keyword","KW-0441","Lipid A biosynthesis",6,0,1.1,1,"",1
+"Keyword","KW-0464","Manganese",10,0,1.8,1,"",1
+"Keyword","KW-0488","Methylation",5,0,0.9,1,"",1
+"Keyword","KW-0511","Multifunctional enzyme",7,0,1.2,1,"",1
+"Keyword","KW-0554","One-carbon metabolism",4,0,0.7,1,"",1
+"Keyword","KW-0594","Phospholipid biosynthesis",6,0,1.1,1,"",1
+"Keyword","KW-0653","Protein transport",15,0,2.7,1,"",1
+"Keyword","KW-0664","Pyridoxine biosynthesis",3,0,0.5,1,"",1
+"Keyword","KW-0678","Repressor",5,0,0.9,1,"",1
+"Keyword","KW-0697","Rotamase",4,0,0.7,1,"",1
+"Keyword","KW-0742","SOS response",7,0,1.2,1,"",1
+"Keyword","KW-0784","Thiamine biosynthesis",3,0,0.5,1,"",1
+"Keyword","KW-0799","Topoisomerase",5,0,0.9,1,"",1
+"Keyword","KW-0806","Transcription termination",3,0,0.5,1,"",1
+"Keyword","KW-0811","Translocation",7,0,1.2,1,"",1
+"Keyword","KW-0816","Tricarboxylic acid cycle",8,0,1.4,1,"",1
+"Keyword","KW-0820","tRNA-binding",12,0,2.1,1,"",1
+"Keyword","KW-0874","Quinone",11,0,1.9,1,"",1
+"Keyword","KW-0889","Transcription antitermination",3,0,0.5,1,"",1
+"Keyword","KW-0964","Secreted",4,0,0.7,1,"",1
+"Keyword","KW-0966","Cell projection",26,0,4.6,1,"",1
+"Keyword","KW-0969","Cilium",26,0,4.6,1,"",1
+"Keyword","KW-0975","Bacterial flagellum",14,0,2.5,1,"",1
+"Keyword","KW-1005","Bacterial flagellum biogenesis",4,0,0.7,1,"",1
+"Keyword","KW-1006","Bacterial flagellum protein export",3,0,0.5,1,"",1
+"Keyword","KW-1015","Disulfide bond",6,0,1.1,1,"",1
+"Keyword","KW-1208","Phospholipid metabolism",6,0,1.1,1,"",1
+"KEGG","bbk00500","Starch and sucrose metabolism",3,0,0.5,1,"",1
+"KEGG","bbk00561","Glycerolipid metabolism",4,0,0.7,1,"",1
+"KEGG","bbk00650","Butanoate metabolism",4,0,0.7,1,"",1
+"KEGG","bbk00730","Thiamine metabolism",10,0,1.8,1,"",1
+"KEGG","bbk00760","Nicotinate and nicotinamide metabolism",5,0,0.9,1,"",1
+"KEGG","bbk00900","Terpenoid backbone biosynthesis",7,0,1.2,1,"",1
+"KEGG","bbk02024","Quorum sensing",19,0,3.4,1,"",1
+"KEGG","bbk02030","Bacterial chemotaxis",5,0,0.9,1,"",1
+"KEGG","bbk02040","Flagellar assembly",25,0,4.4,1,"",1
+"KEGG","bbk03060","Protein export",12,0,2.1,1,"",1
+"KEGG","bbk03410","Base excision repair",11,0,1.9,1,"",1
+"KEGG","bbk03420","Nucleotide excision repair",7,0,1.2,1,"",1
+"KEGG","bbk04122","Sulfur relay system",3,0,0.5,1,"",1
+"InterPro","IPR000182","GNAT domain",3,0,0.5,1,"",1
+"InterPro","IPR000194","ATPase, F1/V1/A1 complex, alpha/beta subunit, nucleotide-binding domain",4,0,0.7,1,"",1
+"InterPro","IPR000362","Fumarate lyase family",3,0,0.5,1,"",1
+"InterPro","IPR000462","CDP-alcohol phosphatidyltransferase",3,0,0.5,1,"",1
+"InterPro","IPR000515","ABC transporter type 1, transmembrane domain MetI-like",11,0,1.9,1,"",1
+"InterPro","IPR000522","ABC transporter, permease protein, BtuC-like",3,0,0.5,1,"",1
+"InterPro","IPR000640","Elongation factor EFG, domain V-like",3,0,0.5,1,"",1
+"InterPro","IPR000795","Translational (tr)-type GTP-binding domain",7,0,1.2,1,"",1
+"InterPro","IPR000836","Phosphoribosyltransferase domain",4,0,0.7,1,"",1
+"InterPro","IPR001048","Aspartate/glutamate/uridylate kinase",4,0,0.7,1,"",1
+"InterPro","IPR001279","Metallo-beta-lactamase",3,0,0.5,1,"",1
+"InterPro","IPR001444","Flagellar basal body rod protein, N-terminal",5,0,0.9,1,"",1
+"InterPro","IPR001478","PDZ domain",4,0,0.7,1,"",1
+"InterPro","IPR001626","ABC transporter, TroCD-like",3,0,0.5,1,"",1
+"InterPro","IPR001650","Helicase, C-terminal",6,0,1.1,1,"",1
+"InterPro","IPR001750","NADH:quinone oxidoreductase/Mrp antiporter, membrane subunit",5,0,0.9,1,"",1
+"InterPro","IPR001940","Peptidase S1C",3,0,0.5,1,"",1
+"InterPro","IPR002104","Integrase, catalytic domain",3,0,0.5,1,"",1
+"InterPro","IPR002109","Glutaredoxin",3,0,0.5,1,"",1
+"InterPro","IPR002300","Aminoacyl-tRNA synthetase, class Ia",3,0,0.5,1,"",1
+"InterPro","IPR002481","Ferric-uptake regulator",3,0,0.5,1,"",1
+"InterPro","IPR002562","3-5 exonuclease domain",3,0,0.5,1,"",1
+"InterPro","IPR003029","S1 domain",3,0,0.5,1,"",1
+"InterPro","IPR004087","K Homology domain",4,0,0.7,1,"",1
+"InterPro","IPR004154","Anticodon-binding",3,0,0.5,1,"",1
+"InterPro","IPR004161","Translation elongation factor EFTu-like, domain 2",5,0,0.9,1,"",1
+"InterPro","IPR004821","Cytidyltransferase-like domain",3,0,0.5,1,"",1
+"InterPro","IPR005122","Uracil-DNA glycosylase-like",3,0,0.5,1,"",1
+"InterPro","IPR005135","Endonuclease/exonuclease/phosphatase",3,0,0.5,1,"",1
+"InterPro","IPR005225","Small GTP-binding protein domain",10,0,1.8,1,"",1
+"InterPro","IPR005594","Trimeric autotransporter adhesin YadA-like, C-terminal membrane anchor domain",3,0,0.5,1,"",1
+"InterPro","IPR006171","TOPRIM domain",5,0,0.9,1,"",1
+"InterPro","IPR006638","Elp3/MiaA/NifB-like, radical SAM core domain",4,0,0.7,1,"",1
+"InterPro","IPR007197","Radical SAM",5,0,0.9,1,"",1
+"InterPro","IPR008635","Trimeric autotransporter adhesin YadA-like, stalk domain",3,0,0.5,1,"",1
+"InterPro","IPR008915","Peptidase M50",3,0,0.5,1,"",1
+"InterPro","IPR008921","DNA polymerase III, clamp loader complex, gamma/delta/delta subunit, C-terminal",3,0,0.5,1,"",1
+"InterPro","IPR008948","L-Aspartase-like",3,0,0.5,1,"",1
+"InterPro","IPR008949","Isoprenoid synthase domain superfamily",3,0,0.5,1,"",1
+"InterPro","IPR009003","Peptidase S1, PA clan",3,0,0.5,1,"",1
+"InterPro","IPR009008","Valyl/Leucyl/Isoleucyl-tRNA synthetase, editing domain",3,0,0.5,1,"",1
+"InterPro","IPR009019","K homology domain superfamily, prokaryotic type",3,0,0.5,1,"",1
+"InterPro","IPR010065","Amino acid ABC transporter, permease protein, 3-TM domain",4,0,0.7,1,"",1
+"InterPro","IPR010642","Invasion protein B",6,0,1.1,1,"",1
+"InterPro","IPR010930","Flagellar basal-body/hook protein, C-terminal domain",5,0,0.9,1,"",1
+"InterPro","IPR010994","RuvA domain 2-like",4,0,0.7,1,"",1
+"InterPro","IPR011010","DNA breaking-rejoining enzyme, catalytic core",3,0,0.5,1,"",1
+"InterPro","IPR011049","Serralysin-like metalloprotease, C-terminal",3,0,0.5,1,"",1
+"InterPro","IPR011055","Duplicated hybrid motif",3,0,0.5,1,"",1
+"InterPro","IPR011129","Cold shock domain",3,0,0.5,1,"",1
+"InterPro","IPR011257","DNA glycosylase",3,0,0.5,1,"",1
+"InterPro","IPR011335","Restriction endonuclease type II-like",3,0,0.5,1,"",1
+"InterPro","IPR011527","ABC transporter type 1, transmembrane domain",4,0,0.7,1,"",1
+"InterPro","IPR011545","DEAD/DEAH box helicase domain",5,0,0.9,1,"",1
+"InterPro","IPR011701","Major facilitator superfamily",5,0,0.9,1,"",1
+"InterPro","IPR011782","Peptidase S1C, Do",3,0,0.5,1,"",1
+"InterPro","IPR012338","Beta-lactamase/transpeptidase-like",4,0,0.7,1,"",1
+"InterPro","IPR013155","Methionyl/Valyl/Leucyl/Isoleucyl-tRNA synthetase, anticodon-binding",3,0,0.5,1,"",1
+"InterPro","IPR013740","Redoxin",3,0,0.5,1,"",1
+"InterPro","IPR013760","DNA topoisomerase, type IIA-like domain superfamily",4,0,0.7,1,"",1
+"InterPro","IPR013762","Integrase-like, catalytic domain superfamily",3,0,0.5,1,"",1
+"InterPro","IPR014001","Helicase superfamily 1/2, ATP-binding domain",7,0,1.2,1,"",1
+"InterPro","IPR015797","NUDIX hydrolase-like domain superfamily",3,0,0.5,1,"",1
+"InterPro","IPR015946","K homology domain-like, alpha/beta",5,0,0.9,1,"",1
+"InterPro","IPR016047","Peptidase M23",3,0,0.5,1,"",1
+"InterPro","IPR016181","Acyl-CoA N-acyltransferase",3,0,0.5,1,"",1
+"InterPro","IPR017871","ABC transporter-like, conserved site",23,0,4.1,1,"",1
+"InterPro","IPR017896","4Fe-4S ferredoxin-type, iron-sulphur binding domain",3,0,0.5,1,"",1
+"InterPro","IPR017900","4Fe-4S ferredoxin, iron-sulphur binding, conserved site",3,0,0.5,1,"",1
+"InterPro","IPR017911","MacB, ATP-binding domain",3,0,0.5,1,"",1
+"InterPro","IPR017937","Thioredoxin, conserved site",4,0,0.7,1,"",1
+"InterPro","IPR019776","Flagellar basal body rod protein, conserved site",3,0,0.5,1,"",1
+"InterPro","IPR020013","Flagellar hook-basal body protein, FlgE/F/G",3,0,0.5,1,"",1
+"InterPro","IPR020557","Fumarate lyase, conserved site",3,0,0.5,1,"",1
+"InterPro","IPR020846","Major facilitator superfamily domain",6,0,1.1,1,"",1
+"InterPro","IPR022761","Fumarate lyase, N-terminal",3,0,0.5,1,"",1
+"InterPro","IPR022967","RNA-binding domain, S1",3,0,0.5,1,"",1
+"InterPro","IPR023346","Lysozyme-like domain superfamily",8,0,1.4,1,"",1
+"InterPro","IPR024083","Fumarase/histidase, N-terminal",3,0,0.5,1,"",1
+"InterPro","IPR027266","GTP-binding protein TrmE/Aminomethyltransferase GcvT, domain 1",3,0,0.5,1,"",1
+"InterPro","IPR029045","ClpP/crotonase-like domain superfamily",5,0,0.9,1,"",1
+"InterPro","IPR029055","Nucleophile aminohydrolases, N-terminal",3,0,0.5,1,"",1
+"InterPro","IPR029057","Phosphoribosyltransferase-like",4,0,0.7,1,"",1
+"InterPro","IPR029058","Alpha/Beta hydrolase fold",6,0,1.1,1,"",1
+"InterPro","IPR031157","Tr-type G domain, conserved site",6,0,1.1,1,"",1
+"InterPro","IPR032466","Metal-dependent hydrolase",3,0,0.5,1,"",1
+"InterPro","IPR034904","Fe-S cluster assembly domain superfamily",3,0,0.5,1,"",1
+"InterPro","IPR035647","EF-G domain III/V-like",4,0,0.7,1,"",1
+"InterPro","IPR035906","MetI-like superfamily",11,0,1.9,1,"",1
+"InterPro","IPR036034","PDZ superfamily",4,0,0.7,1,"",1
+"InterPro","IPR036259","MFS transporter superfamily",7,0,1.2,1,"",1
+"InterPro","IPR036390","Winged helix DNA-binding domain superfamily",8,0,1.4,1,"",1
+"InterPro","IPR036393","Acetylglutamate kinase-like superfamily",4,0,0.7,1,"",1
+"InterPro","IPR036397","Ribonuclease H superfamily",7,0,1.2,1,"",1
+"InterPro","IPR036621","Anticodon-binding domain superfamily",3,0,0.5,1,"",1
+"InterPro","IPR036640","ABC transporter type 1, transmembrane domain superfamily",4,0,0.7,1,"",1
+"InterPro","IPR036691","Endonuclease/exonuclease/phosphatase superfamily",3,0,0.5,1,"",1
+"InterPro","IPR036866","Ribonuclease Z/Hydroxyacylglutathione hydrolase-like",3,0,0.5,1,"",1
+"InterPro","IPR036895","Uracil-DNA glycosylase-like domain superfamily",3,0,0.5,1,"",1
+"InterPro","IPR037294","ABC transporter, BtuC-like",6,0,1.1,1,"",1
+"InterPro","IPR037925","Flagellar hook-basal body protein, FlgE/F/G-like",3,0,0.5,1,"",1
+"InterPro","IPR038696","Invasion protein B superfamily",6,0,1.1,1,"",1
+"InterPro","IPR039421","Type 1 protein exporter",4,0,0.7,1,"",1
+"InterPro","IPR043130","CDP-alcohol phosphatidyltransferase, transmembrane domain",3,0,0.5,1,"",1
+"InterPro","IPR043429","ABC transporter membrane protein permease protein ArtM/GltK/GlnP/TcyL/YhdX-like",3,0,0.5,1,"",1
+"InterPro","IPR045584","Pilin-like",3,0,0.5,1,"",1
+"InterPro","IPR046346","Aminoacid dehydrogenase-like, N-terminal domain superfamily",4,0,0.7,1,"",1
+"InterPro","IPR046348","SIS domain superfamily",3,0,0.5,1,"",1
+"Pfam","PF00009","Elongation factor Tu GTP binding domain",3,0,0.5,1,"",1
+"Pfam","PF00132","Bacterial transferase hexapeptide (six repeats)",4,0,0.7,1,"",1
+"Pfam","PF00133","tRNA synthetases class I (I, L, M and V)",3,0,0.5,1,"",1
+"Pfam","PF00206","Lyase",3,0,0.5,1,"",1
+"Pfam","PF00361","Proton-conducting membrane transporter",5,0,0.9,1,"",1
+"Pfam","PF00460","Flagella basal body rod protein",5,0,0.9,1,"",1
+"Pfam","PF00528","Binding-protein-dependent transport system inner membrane component",11,0,1.9,1,"",1
+"Pfam","PF00664","ABC transporter transmembrane region",4,0,0.7,1,"",1
+"Pfam","PF00696","Amino acid kinase family",4,0,0.7,1,"",1
+"Pfam","PF01032","FecCD transport family",5,0,0.9,1,"",1
+"Pfam","PF01066","CDP-alcohol phosphatidyltransferase",3,0,0.5,1,"",1
+"Pfam","PF01134","Glucose inhibited division protein A",3,0,0.5,1,"",1
+"Pfam","PF01475","Ferric uptake regulator family",3,0,0.5,1,"",1
+"Pfam","PF01551","Peptidase family M23",3,0,0.5,1,"",1
+"Pfam","PF03129","Anticodon binding domain",3,0,0.5,1,"",1
+"Pfam","PF03144","Elongation factor Tu domain 2",5,0,0.9,1,"",1
+"Pfam","PF03372","Endonuclease/Exonuclease/phosphatase family",3,0,0.5,1,"",1
+"Pfam","PF03895","YadA-like membrane anchor domain",3,0,0.5,1,"",1
+"Pfam","PF05662","Coiled stalk of trimeric autotransporter adhesin",3,0,0.5,1,"",1
+"Pfam","PF06429","Flagellar basal body rod FlgEFG protein C-terminal",5,0,0.9,1,"",1
+"Pfam","PF06776","Invasion associated locus B (IalB) protein",6,0,1.1,1,"",1
+"Pfam","PF07690","Major Facilitator Superfamily",6,0,1.1,1,"",1
+"Pfam","PF08264","Anticodon-binding domain of tRNA ligase",3,0,0.5,1,"",1
+"Pfam","PF13365","Trypsin-like peptidase domain",3,0,0.5,1,"",1

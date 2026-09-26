@@ -1,0 +1,55 @@
+         run condicion lecturas_procesadas asignadas_CDS pct_CDS pct_senuelo
+ SRR12653236      Pl25             3925147       1632850   41.60       50.30
+ SRR12653240      Pl25            14304227       7889918   55.16       41.38
+ SRR12653239      Pl30             2786511       1040336   37.33       54.87
+ SRR12653245      Pl30            19424593       7315694   37.66       55.31
+ SRR12653253      Pl37            14571581       6434736   44.16       50.07
+ SRR12653254      Pl37            10755965       4169634   38.77       56.87
+ SRR12653241      pH06            17677995       7546712   42.69       52.92
+ SRR12653243      pH06            18947385       7783637   41.08       54.57
+ SRR12653242      pH07            17494614       4931575   28.19       63.78
+ SRR12653250      pH07            19615158       4765745   24.30       69.84
+ SRR12653247      pH08            19928370       6780076   34.02       59.95
+ SRR12653255      pH08            14899375       5162312   34.65       53.25
+ SRR12653246      PlBG             8451630       3650196   43.19       40.22
+ SRR12653248      PlBG             6899648       3257434   47.21       39.70
+ SRR12653249      PlBG             7066188       3249419   45.99       39.24
+ SRR12653234      HB37            11026685        440904    4.00       64.80
+ SRR12653237      HB37            12417343        391872    3.16       61.78
+ SRR12653238      HB37            10341147        471162    4.56       65.85
+ SRR12653244      HBBG            14039393        883392    6.29       58.96
+ SRR12653251      HBBG             4974188        207630    4.17       55.96
+ SRR12653252      HBBG             8952548        491549    5.49       64.38
+ SRR12653235      HUVE            17414885         59457    0.34        1.04
+ SRR12653256      HUVE            20759346         45186    0.22        0.79
+ en_modelo
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+
+Lecturas asignadas a CDS por grupo (millones):
+                        grupo asignadas_CDS.1 asignadas_CDS.2
+1        celulas endoteliales           0.045           0.059
+2                 modelo (12)           1.040           7.890
+3 placa + atmosfera sanguinea           3.249           3.650
+4               sangre humana           0.208           0.883
