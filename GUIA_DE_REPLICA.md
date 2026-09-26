@@ -71,6 +71,12 @@ conda activate bartonella
 bash scripts/ejecutar_todo.sh
 ```
 
+Durante la primera corrida puede aparecer una ventana de Windows: *"Firewall de
+Windows Defender bloqueó algunas características de esta aplicación"*, con el
+nombre `R`. Haz clic en **Cancelar**. R solo se comunica con sus propios
+procesos dentro de la computadora, y eso funciona igual; el análisis no
+necesita recibir conexiones de ninguna red.
+
 El script borra `resultados/`, `figuras/` e `intermedios/`, los regenera desde
 cero y al final compara cada tabla con la versión publicada. La última línea
 debe decir una de estas dos cosas:
@@ -100,6 +106,9 @@ Si aparece algún `DISTINTO` o `FALTA`, no sigas: envía la salida tal cual.
 Para volver a los archivos originales: `git checkout -- resultados figuras registros`.
 
 ## 6. Nivel 2: desde las lecturas crudas del SRA
+
+Ensayado el 26-09-2026 en la computadora de referencia: 40 minutos para
+descargar y cuantificar, sin fallos (`CIFRAS_CONFIRMADAS.md`, sección 12d).
 
 Necesita internet y unos 25 GB libres en el disco de Windows (cada corrida se
 descarga, se cuantifica y se borra antes de la siguiente).
@@ -139,3 +148,5 @@ importa es que no cambie ninguna conclusión.
 - `FALTA Rscript` (u otro programa): falta `conda activate bartonella`.
 - Error de un script concreto: su salida completa está en
   `registros/<nombre del script>.log`.
+- Ventana del Firewall de Windows que menciona `R`: haz clic en **Cancelar**
+  (ver el paso 5).
