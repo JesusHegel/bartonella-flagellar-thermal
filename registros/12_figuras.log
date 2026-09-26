@@ -1,65 +1,17 @@
-
-(process:9152): Pango-WARNING **: 22:56:08.118: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:08.119: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:08.119: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:08.119: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:08.148: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:08.149: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:08.149: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:08.149: Invalid UTF-8 string passed to pango_layout_set_text()
-
---- Fig5: medianas por grupo ---
-                    grupo temp        lfc
-1 Aparato flagelar (n=31)   25  0.0000000
-2       Chaperonas (n=15)   25  0.0000000
-3 Aparato flagelar (n=31)   30 -1.7900191
-4       Chaperonas (n=15)   30  0.4745698
-5 Aparato flagelar (n=31)   37 -1.4530719
-6       Chaperonas (n=15)   37  0.7331285
+Figuras:
+   figura_1_flujo_de_trabajo 
 using ntop=500 top features by variance
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:09.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.027: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.027: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.028: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.028: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.028: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.028: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.028: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(process:9152): Pango-WARNING **: 22:56:10.028: Invalid UTF-8 string passed to pango_layout_set_text()
-
-Figuras escritas:
- [1] "curva_termica.pdf"         "curva_termica.png"        
- [3] "mapa_calor_flagelares.pdf" "mapa_calor_flagelares.png"
- [5] "panel_genero.pdf"          "panel_genero.png"         
- [7] "pca_y_tasa_mapeo.pdf"      "pca_y_tasa_mapeo.png"     
- [9] "volcan_37C_vs_25C.pdf"     "volcan_37C_vs_25C.png"    
+   figura_2_muestras 
+   figura_3_volcanes_temperatura_y_ph 
+   figura_4_flagelares_y_chaperonas 
+    medianas de la curva:
+              grupo  t    lfc
+  Flagelar (n = 31) 25  0.000
+ Chaperona (n = 14) 25  0.000
+  Flagelar (n = 31) 30 -1.594
+ Chaperona (n = 14) 30  0.394
+  Flagelar (n = 31) 37 -1.293
+ Chaperona (n = 14) 37  0.839
+   figura_5_red_string 
+    red:  163 genes con al menos una arista; 697 aristas
+   figura_6_panel_genero 

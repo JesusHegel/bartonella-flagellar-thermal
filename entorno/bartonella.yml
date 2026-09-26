@@ -22,5 +22,5 @@ dependencies:
   - r-ashr=2.2.63
   - bioconductor-fgsea=1.36.2
   - r-ggplot2=4.0.3
-  - r-igraph
-  - r-ggrepel
+  - r-igraph=2.3.3
+  - r-ggrepel=0.9.8
