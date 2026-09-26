@@ -27,7 +27,9 @@ metadatos de SRA. **No existen dos centros de secuenciación.**
 
 | Magnitud | Valor |
 |---|---|
-| CDS anotadas en el GFF | **1 217** |
+| CDS anotadas en el GFF (filas) | **1 217** |
+| Genes codificantes (locus distintos) | **1 216** (prfB, RS03925, ocupa dos filas CDS por desplazamiento ribosómico programado) |
+| Pseudogenes (sin `protein_id`) | 50 |
 | CDS con `protein_id` | 1 166 |
 | Accesiones de proteína únicas | **1 139** (coincide con `protein.faa` de NCBI) |
 | Accesiones duplicadas (región de ~28 kb) | 27 |
@@ -59,9 +61,12 @@ esas muestras del modelo de temperatura y pH (lecturas por grupo más abajo).
 
 El índice de salmon (`idx_kc583`) es un gentrome: las CDS como objetivo y el
 cromosoma como señuelo. Por tanto `percent_mapped` mide **asignación a CDS**, no
-contenido bacteriano total. En sangre, un 56-66 % adicional de los fragmentos cae
-en el señuelo; no está caracterizado de qué procede y **no debe interpretarse como
-fracción humana**.
+contenido bacteriano total. El señuelo (cromosoma fuera de las CDS) recibe una
+fracción grande **en todas las matrices bacterianas**: 39–70 % de los fragmentos
+en placa y caldo, 56–66 % en sangre, y solo 0,8–1,0 % en células endoteliales
+(`resultados/muestras/tabla_de_muestras.csv`). Por su tamaño es compatible con
+ARN ribosomal no eliminado (el estudio original buscaba ARN pequeños), pero **no
+se ha verificado**. No debe interpretarse como fracción humana.
 
 | Transcritos | Valor |
 |---|---|
@@ -254,7 +259,7 @@ con control post-transcripcional. Compatible, no demostrado.
 | Cifra anterior | Valor correcto | Motivo |
 |---|---|---|
 | Yale n=12 vs GENEWIZ n=11 | **un solo centro** | Metadatos de SRA: todas las corridas son de University of Montana |
-| 1 216 CDS | **1 217** | Faltaba BARBAKC583_RS03925 |
+| 1 216 CDS | **1 217 filas CDS = 1 216 genes** | prfB (RS03925) tiene dos segmentos; ambas cifras son correctas según se cuenten filas o genes |
 | 1 176 analizables | **1 186** | Recuento anterior no reproducible |
 | Universo 1 134 (o 1 175) | **1 138** | `lt2prot.tsv` anterior incluía 50 CDS sin `protein_id` |
 | 29 de 31 flagelares | **31 de 31 significativos** (30 repr. + 1 ind.) | |
@@ -362,3 +367,60 @@ datasets version: 18.33.1
 sra-tools 3.4.1
 Python 3.12 (en el entorno bartonella; 3.13 no es compatible con viennarna 2.7.0)
 ```
+
+## 14. Tabla de genes y análisis con STRING (Fase 2, 25–26 de septiembre de 2026)
+
+### Tabla de genes (`08_tabla_de_genes.R`, `resultados/genes/tabla_de_genes.csv`)
+
+| Magnitud | Valor |
+|---|---|
+| CDS en `cds_from_genomic.fna` | 1 216 |
+| Pseudogenes | 50 |
+| Locus con copia de secuencia idéntica | 54 (27 pares; salmon conserva uno de cada par) |
+| En la cuantificación de salmon | 1 189 |
+| Analizables en DESeq2 | 1 186 |
+| Universo del enriquecimiento | 1 138 |
+
+**Identidad de la flagelina.** RS05045 = locus antiguo BARBAKC583_1040 = **flaA,
+"Flagellin A"** en STRING. RS05445 = BARBAKC583_1120 es la proteína 3 asociada
+al gancho (HAP3) en STRING; UniProt (A1UTS8) la rotula "Flagellin" por familia.
+Las cifras de "flagelina" de este documento se refieren a RS05045.
+
+**Top 20, 37 °C frente a 25 °C** (`resultados/genes/top20_37C_vs_25C.csv`,
+padj < 0,05, ordenados por log2 del cambio):
+- Reprimidos: 6 de los 20 son flagelares (FliG RS05635, FliM/FliN RS05620, MotA,
+  FliQ, flagelina RS05045, FlgA). Aparecen también genes de fago (cápside mayor
+  N4-gp56, proteína portal).
+- Inducidos: 5 chaperonas o proteasas de choque térmico (ClpB, Hsp20, GroES, HtpX,
+  GroEL); los dos primeros son un sistema toxina-antitoxina (AbrB/MazE, VapC).
+
+### STRING (`10_descargar_string.sh`, `11_analisis_string.R`)
+
+Versión **12.0** (`https://version-12-0.string-db.org`), descargada el
+2026-09-26 y guardada en `datos/string/`. Identificadores: locus antiguos
+(360095.BARBAKC583_xxxx). 1 147 locus consultados, 1 142 con identificador.
+Universo con identificador: **1 115 de 1 138** (23 sin locus antiguo o sin
+entrada). En ese universo: 275 reprimidos y 197 inducidos.
+
+Enriquecimiento local (hipergeométrico, BH dentro de cada categoría, mismo
+universo que la sección 6):
+
+| Término (reprimidos) | Genes | Reprimidos | Esperados | q |
+|---|---|---|---|---|
+| KEGG bbk02040, Flagellar assembly | 25 | **25** | 6,2 | **1,9 × 10⁻¹⁴** |
+| Palabra clave KW-0282, Flagellum | 26 | **26** | 6,4 | **3,3 × 10⁻¹⁵** |
+| KEGG bbk00190, Oxidative phosphorylation | 34 | 20 | 8,4 | 6,1 × 10⁻⁴ |
+
+Inducidos: ningún término con q < 0,05 (STRING no agrupa las chaperonas en un
+término propio; nuestra categoría Chaperona sí es significativa, sección 6).
+
+**Concordancia con KEGG.** Los 25 genes de bbk02040 están **todos** en el
+conjunto flagelar de 31. El conjunto añade 6 con nombre flagelar que KEGG no
+incluye en esa vía: FliO (RS04185), FliL (RS05555), FlaF, FlbT, FliK y MotC.
+
+**Módulo en la red** (puntaje combinado ≥ 0,4): **400 aristas** entre los 31
+genes flagelares; 10 000 conjuntos aleatorios del mismo tamaño dan en promedio
+13,8 y como máximo 61 (p empírico = 1 / 10 001).
+
+Red de los genes con cambio mayor a 2 veces: 195 genes con identificador, 697
+aristas, 32 genes sin ninguna arista.
