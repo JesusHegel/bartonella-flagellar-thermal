@@ -20,3 +20,14 @@ henselae           2 de 31
 === ORTOLOGIA KC583 vs USM-LMMB07 (coincidencias reciprocas) ===
 Pares reciprocos : 1111
 Flagelares con ortologo reciproco: 31 de 31
+
+=== BUSQUEDA DE VUELTA EN KC583 (cada acierto del panel) ===
+clarridgeiae     31 aciertos, 31 ortologos reciprocos
+schoenbuchensis  31 aciertos, 31 ortologos reciprocos
+ancashensis      31 aciertos, 31 ortologos reciprocos
+tribocorum        2 aciertos,  1 ortologos reciprocos
+    no reciproco: WP_005767781.1 (flagellar protein export ATPase FliI) -> WP_012232483.1 (F0F1 ATP synthase subunit beta), identidad 30.945 %, cobertura 54 %; de vuelta: WP_005765873.1 (F0F1 ATP synthase subunit beta)
+quintana          2 aciertos,  1 ortologos reciprocos
+    no reciproco: WP_005767781.1 (flagellar protein export ATPase FliI) -> WP_014924520.1 (F0F1 ATP synthase subunit beta), identidad 29.938 %, cobertura 57 %; de vuelta: WP_005765873.1 (F0F1 ATP synthase subunit beta)
+henselae          2 aciertos,  1 ortologos reciprocos
+    no reciproco: WP_005767781.1 (flagellar protein export ATPase FliI) -> WP_011181298.1 (F0F1 ATP synthase subunit beta), identidad 30.556 %, cobertura 57 %; de vuelta: WP_005765873.1 (F0F1 ATP synthase subunit beta)

@@ -1,0 +1,100 @@
+especie	proteina_kc583	producto_kc583	acierto	producto_acierto	identidad	cobertura	vuelta_en_kc583	producto_vuelta	reciproco
+clarridgeiae	WP_005767250.1	flagellar biosynthetic protein FliO	WP_155914832.1	flagellar biosynthetic protein FliO	65.116	24	WP_005767250.1	flagellar biosynthetic protein FliO	si
+clarridgeiae	WP_005767719.1	flagellar biosynthesis protein FliQ	WP_013544835.1	flagellar biosynthesis protein FliQ	93.182	100	WP_005767719.1	flagellar biosynthesis protein FliQ	si
+clarridgeiae	WP_005767721.1	flagellar hook assembly protein FlgD	WP_013544834.1	flagellar hook assembly protein FlgD	75.912	68	WP_005767721.1	flagellar hook assembly protein FlgD	si
+clarridgeiae	WP_005767722.1	flagellar biosynthesis repressor FlbT	WP_013544833.1	flagellar biosynthesis repressor FlbT	81.203	96	WP_005767722.1	flagellar biosynthesis repressor FlbT	si
+clarridgeiae	WP_005767724.1	flagellar biosynthesis regulator FlaF	WP_013544832.1	flagellar biosynthesis regulator FlaF	89.344	100	WP_005767724.1	flagellar biosynthesis regulator FlaF	si
+clarridgeiae	WP_005767726.1	flagellar hook-associated family protein	WP_013544831.1	flagellar hook-associated family protein	68.056	100	WP_005767726.1	flagellar hook-associated family protein	si
+clarridgeiae	WP_005767728.1	flagellar hook-associated protein FlgK	WP_013544830.1	flagellar hook-associated protein FlgK	72.807	100	WP_005767728.1	flagellar hook-associated protein FlgK	si
+clarridgeiae	WP_005767730.1	flagellar hook protein FlgE	WP_013544829.1	flagellar hook protein FlgE	77.586	100	WP_005767730.1	flagellar hook protein FlgE	si
+clarridgeiae	WP_005767740.1	flagellar hook-length control protein FliK	WP_026501246.1	flagellar hook-length control protein FliK	42.350	100	WP_005767740.1	flagellar hook-length control protein FliK	si
+clarridgeiae	WP_005767742.1	chemotaxis protein MotC	WP_013544825.1	MotC family chemotaxis protein	57.275	95	WP_005767742.1	chemotaxis protein MotC	si
+clarridgeiae	WP_005767744.1	flagellar motor protein MotB	WP_013544824.1	flagellar motor protein MotB	61.838	100	WP_005767744.1	flagellar motor protein MotB	si
+clarridgeiae	WP_005767748.1	flagellar basal-body MS-ring/collar protein FliF	WP_013544822.1	flagellar basal-body MS-ring/collar protein FliF	82.033	99	WP_005767748.1	flagellar basal-body MS-ring/collar protein FliF	si
+clarridgeiae	WP_005767758.1	flagellar type III secretion system pore protein FliP	WP_013544816.1	flagellar type III secretion system pore protein FliP	83.200	100	WP_005767758.1	flagellar type III secretion system pore protein FliP	si
+clarridgeiae	WP_005767760.1	flagellar basal body-associated FliL family protein	WP_013544815.1	flagellar basal body-associated FliL family protein	60.241	100	WP_005767760.1	flagellar basal body-associated FliL family protein	si
+clarridgeiae	WP_005767762.1	flagellar basal body L-ring protein FlgH	WP_425351714.1	flagellar basal body L-ring protein FlgH	77.489	99	WP_005767762.1	flagellar basal body L-ring protein FlgH	si
+clarridgeiae	WP_005767766.1	flagellar basal body P-ring protein FlgI	WP_026501106.1	flagellar basal body P-ring protein FlgI	85.354	96	WP_005767766.1	flagellar basal body P-ring protein FlgI	si
+clarridgeiae	WP_005767768.1	flagellar basal body P-ring formation chaperone FlgA	WP_013544811.1	flagellar basal body P-ring formation chaperone FlgA	76.692	88	WP_005767768.1	flagellar basal body P-ring formation chaperone FlgA	si
+clarridgeiae	WP_005767770.1	flagellar basal-body rod protein FlgG	WP_026501105.1	flagellar basal-body rod protein FlgG	85.878	100	WP_005767770.1	flagellar basal-body rod protein FlgG	si
+clarridgeiae	WP_005767773.1	flagellar hook-basal body complex protein FliE	WP_026501104.1	flagellar hook-basal body complex protein FliE	63.793	100	WP_005767773.1	flagellar hook-basal body complex protein FliE	si
+clarridgeiae	WP_005767776.1	flagellar basal body rod protein FlgC	WP_013544808.1	flagellar basal body rod protein FlgC	85.401	100	WP_005767776.1	flagellar basal body rod protein FlgC	si
+clarridgeiae	WP_005767779.1	flagellar basal body rod protein FlgB	WP_013544807.1	flagellar basal body rod protein FlgB	71.875	100	WP_005767779.1	flagellar basal body rod protein FlgB	si
+clarridgeiae	WP_005767781.1	flagellar protein export ATPase FliI	WP_013544805.1	FliI/YscN family ATPase	76.228	94	WP_005767781.1	flagellar protein export ATPase FliI	si
+clarridgeiae	WP_005767784.1	flagellar basal-body rod protein FlgF	WP_013544804.1	flagellar basal-body rod protein FlgF	85.597	99	WP_005767784.1	flagellar basal-body rod protein FlgF	si
+clarridgeiae	WP_005767791.1	flagellar motor stator protein MotA	WP_013544802.1	flagellar motor stator protein MotA	88.966	99	WP_005767791.1	flagellar motor stator protein MotA	si
+clarridgeiae	WP_005767793.1	FliM/FliN family flagellar motor switch protein	WP_013544801.1	FliM/FliN family flagellar motor switch protein	73.913	99	WP_005767793.1	FliM/FliN family flagellar motor switch protein	si
+clarridgeiae	WP_005767802.1	flagellar motor switch protein FliG	WP_013544798.1	flagellar motor switch protein FliG	78.729	100	WP_005767802.1	flagellar motor switch protein FliG	si
+clarridgeiae	WP_005767804.1	flagellar biosynthesis protein FlhB	WP_013544797.1	flagellar biosynthesis protein FlhB	79.096	99	WP_005767804.1	flagellar biosynthesis protein FlhB	si
+clarridgeiae	WP_005767815.1	flagellar biosynthesis protein FliR	WP_013544790.1	flagellar biosynthetic protein FliR	69.291	96	WP_005767815.1	flagellar biosynthesis protein FliR	si
+clarridgeiae	WP_005767817.1	flagellar biosynthesis protein FlhA	WP_035450878.1	flagellar biosynthesis protein FlhA	87.536	99	WP_005767817.1	flagellar biosynthesis protein FlhA	si
+clarridgeiae	WP_011807398.1	flagellin N-terminal helical domain-containing protein	WP_013544624.1	flagellin N-terminal helical domain-containing protein	68.672	100	WP_011807398.1	flagellin N-terminal helical domain-containing protein	si
+clarridgeiae	WP_011807419.1	flagellar motor switch protein FliN	WP_081475859.1	flagellar motor switch protein FliN	75.000	77	WP_011807419.1	flagellar motor switch protein FliN	si
+schoenbuchensis	WP_005767250.1	flagellar biosynthetic protein FliO	WP_343358297.1	hypothetical protein	55.000	99	WP_005767250.1	flagellar biosynthetic protein FliO	si
+schoenbuchensis	WP_005767719.1	flagellar biosynthesis protein FliQ	WP_208541559.1	flagellar biosynthesis protein FliQ	90.909	100	WP_005767719.1	flagellar biosynthesis protein FliQ	si
+schoenbuchensis	WP_005767721.1	flagellar hook assembly protein FlgD	WP_208541560.1	flagellar hook assembly protein FlgD	68.667	77	WP_005767721.1	flagellar hook assembly protein FlgD	si
+schoenbuchensis	WP_005767722.1	flagellar biosynthesis repressor FlbT	WP_208541561.1	flagellar biosynthesis repressor FlbT	85.156	93	WP_005767722.1	flagellar biosynthesis repressor FlbT	si
+schoenbuchensis	WP_005767724.1	flagellar biosynthesis regulator FlaF	WP_208541562.1	flagellar biosynthesis regulator FlaF	88.525	100	WP_005767724.1	flagellar biosynthesis regulator FlaF	si
+schoenbuchensis	WP_005767726.1	flagellar hook-associated family protein	WP_208541563.1	flagellar hook-associated family protein	72.500	100	WP_005767726.1	flagellar hook-associated family protein	si
+schoenbuchensis	WP_005767728.1	flagellar hook-associated protein FlgK	WP_208541564.1	flagellar hook-associated protein FlgK	78.289	100	WP_005767728.1	flagellar hook-associated protein FlgK	si
+schoenbuchensis	WP_005767730.1	flagellar hook protein FlgE	WP_208541565.1	flagellar hook protein FlgE	77.778	100	WP_005767730.1	flagellar hook protein FlgE	si
+schoenbuchensis	WP_005767740.1	flagellar hook-length control protein FliK	WP_208541568.1	flagellar hook-length control protein FliK	46.347	100	WP_005767740.1	flagellar hook-length control protein FliK	si
+schoenbuchensis	WP_005767742.1	chemotaxis protein MotC	WP_246468232.1	chemotaxis protein	60.307	99	WP_005767742.1	chemotaxis protein MotC	si
+schoenbuchensis	WP_005767744.1	flagellar motor protein MotB	WP_208541569.1	flagellar motor protein MotB	60.882	99	WP_005767744.1	flagellar motor protein MotB	si
+schoenbuchensis	WP_005767748.1	flagellar basal-body MS-ring/collar protein FliF	WP_343358198.1	flagellar basal-body MS-ring/collar protein FliF	82.491	99	WP_005767748.1	flagellar basal-body MS-ring/collar protein FliF	si
+schoenbuchensis	WP_005767758.1	flagellar type III secretion system pore protein FliP	WP_208541576.1	flagellar type III secretion system pore protein FliP	84.190	100	WP_005767758.1	flagellar type III secretion system pore protein FliP	si
+schoenbuchensis	WP_005767760.1	flagellar basal body-associated FliL family protein	WP_208541577.1	flagellar basal body-associated FliL family protein	62.745	93	WP_005767760.1	flagellar basal body-associated FliL family protein	si
+schoenbuchensis	WP_005767762.1	flagellar basal body L-ring protein FlgH	WP_246468240.1	flagellar basal body L-ring protein FlgH	80.275	94	WP_005767762.1	flagellar basal body L-ring protein FlgH	si
+schoenbuchensis	WP_005767766.1	flagellar basal body P-ring protein FlgI	WP_208541580.1	flagellar basal body P-ring protein FlgI	84.672	99	WP_005767766.1	flagellar basal body P-ring protein FlgI	si
+schoenbuchensis	WP_005767768.1	flagellar basal body P-ring formation chaperone FlgA	WP_182480320.1	flagellar basal body P-ring formation chaperone FlgA	79.104	88	WP_005767768.1	flagellar basal body P-ring formation chaperone FlgA	si
+schoenbuchensis	WP_005767770.1	flagellar basal-body rod protein FlgG	WP_208541605.1	flagellar basal-body rod protein FlgG	87.786	100	WP_005767770.1	flagellar basal-body rod protein FlgG	si
+schoenbuchensis	WP_005767773.1	flagellar hook-basal body complex protein FliE	WP_246468233.1	flagellar hook-basal body complex protein FliE	64.103	71	WP_005767773.1	flagellar hook-basal body complex protein FliE	si
+schoenbuchensis	WP_005767776.1	flagellar basal body rod protein FlgC	WP_208541581.1	flagellar basal body rod protein FlgC	84.672	100	WP_005767776.1	flagellar basal body rod protein FlgC	si
+schoenbuchensis	WP_005767779.1	flagellar basal body rod protein FlgB	WP_208541582.1	flagellar basal body rod protein FlgB	71.875	100	WP_005767779.1	flagellar basal body rod protein FlgB	si
+schoenbuchensis	WP_005767781.1	flagellar protein export ATPase FliI	WP_342385331.1	flagellar protein export ATPase FliI	87.330	82	WP_005767781.1	flagellar protein export ATPase FliI	si
+schoenbuchensis	WP_005767784.1	flagellar basal-body rod protein FlgF	WP_208541583.1	flagellar basal-body rod protein FlgF	84.016	100	WP_005767784.1	flagellar basal-body rod protein FlgF	si
+schoenbuchensis	WP_005767791.1	flagellar motor stator protein MotA	WP_208541585.1	flagellar motor stator protein MotA	86.207	99	WP_005767791.1	flagellar motor stator protein MotA	si
+schoenbuchensis	WP_005767793.1	FliM/FliN family flagellar motor switch protein	WP_208541586.1	FliM/FliN family flagellar motor switch protein	80.782	95	WP_005767793.1	FliM/FliN family flagellar motor switch protein	si
+schoenbuchensis	WP_005767802.1	flagellar motor switch protein FliG	WP_246468237.1	flagellar motor switch protein FliG	78.994	93	WP_005767802.1	flagellar motor switch protein FliG	si
+schoenbuchensis	WP_005767804.1	flagellar biosynthesis protein FlhB	WP_208541588.1	flagellar type III secretion system protein FlhB	82.865	100	WP_005767804.1	flagellar biosynthesis protein FlhB	si
+schoenbuchensis	WP_005767815.1	flagellar biosynthesis protein FliR	WP_208541594.1	flagellar biosynthesis protein FliR	75.096	98	WP_005767815.1	flagellar biosynthesis protein FliR	si
+schoenbuchensis	WP_005767817.1	flagellar biosynthesis protein FlhA	WP_343358456.1	flagellar biosynthesis protein FlhA	88.542	97	WP_005767817.1	flagellar biosynthesis protein FlhA	si
+schoenbuchensis	WP_011807398.1	flagellin N-terminal helical domain-containing protein	WP_208541756.1	flagellin	69.744	100	WP_011807398.1	flagellin N-terminal helical domain-containing protein	si
+schoenbuchensis	WP_011807419.1	flagellar motor switch protein FliN	WP_208541609.1	flagellar motor switch protein FliN	78.723	68	WP_011807419.1	flagellar motor switch protein FliN	si
+ancashensis	WP_005767250.1	flagellar biosynthetic protein FliO	WP_082311411.1	flagellar biosynthetic protein FliO	67.273	32	WP_005767250.1	flagellar biosynthetic protein FliO	si
+ancashensis	WP_005767719.1	flagellar biosynthesis protein FliQ	WP_053943636.1	flagellar biosynthesis protein FliQ	92.045	100	WP_005767719.1	flagellar biosynthesis protein FliQ	si
+ancashensis	WP_005767721.1	flagellar hook assembly protein FlgD	WP_071628350.1	flagellar hook assembly protein FlgD	76.687	83	WP_005767721.1	flagellar hook assembly protein FlgD	si
+ancashensis	WP_005767722.1	flagellar biosynthesis repressor FlbT	WP_071628351.1	flagellar biosynthesis repressor FlbT	70.992	95	WP_005767722.1	flagellar biosynthesis repressor FlbT	si
+ancashensis	WP_005767724.1	flagellar biosynthesis regulator FlaF	WP_053943637.1	flagellar biosynthesis regulator FlaF	92.623	100	WP_005767724.1	flagellar biosynthesis regulator FlaF	si
+ancashensis	WP_005767726.1	flagellar hook-associated family protein	WP_053943638.1	flagellar hook-associated family protein	74.722	100	WP_005767726.1	flagellar hook-associated family protein	si
+ancashensis	WP_005767728.1	flagellar hook-associated protein FlgK	WP_053943639.1	flagellar hook-associated protein FlgK	85.088	100	WP_005767728.1	flagellar hook-associated protein FlgK	si
+ancashensis	WP_005767730.1	flagellar hook protein FlgE	WP_053943640.1	flagellar hook protein FlgE	85.396	100	WP_005767730.1	flagellar hook protein FlgE	si
+ancashensis	WP_005767740.1	flagellar hook-length control protein FliK	WP_053943642.1	flagellar hook-length control protein FliK	46.491	78	WP_005767740.1	flagellar hook-length control protein FliK	si
+ancashensis	WP_005767742.1	chemotaxis protein MotC	WP_236824011.1	chemotaxis protein	59.948	85	WP_005767742.1	chemotaxis protein MotC	si
+ancashensis	WP_005767744.1	flagellar motor protein MotB	WP_071628352.1	flagellar motor protein MotB	59.773	99	WP_005767744.1	flagellar motor protein MotB	si
+ancashensis	WP_005767748.1	flagellar basal-body MS-ring/collar protein FliF	WP_053943645.1	flagellar basal-body MS-ring/collar protein FliF	82.940	99	WP_005767748.1	flagellar basal-body MS-ring/collar protein FliF	si
+ancashensis	WP_005767758.1	flagellar type III secretion system pore protein FliP	WP_053943648.1	flagellar type III secretion system pore protein FliP	82.869	100	WP_005767758.1	flagellar type III secretion system pore protein FliP	si
+ancashensis	WP_005767760.1	flagellar basal body-associated FliL family protein	WP_053943649.1	flagellar basal body-associated FliL family protein	60.606	100	WP_005767760.1	flagellar basal body-associated FliL family protein	si
+ancashensis	WP_005767762.1	flagellar basal body L-ring protein FlgH	WP_414947447.1	flagellar basal body L-ring protein FlgH	79.565	100	WP_005767762.1	flagellar basal body L-ring protein FlgH	si
+ancashensis	WP_005767766.1	flagellar basal body P-ring protein FlgI	WP_144417860.1	flagellar basal body P-ring protein FlgI	86.064	99	WP_005767766.1	flagellar basal body P-ring protein FlgI	si
+ancashensis	WP_005767768.1	flagellar basal body P-ring formation chaperone FlgA	WP_053943652.1	flagellar basal body P-ring formation chaperone FlgA	76.159	99	WP_005767768.1	flagellar basal body P-ring formation chaperone FlgA	si
+ancashensis	WP_005767770.1	flagellar basal-body rod protein FlgG	WP_053944596.1	flagellar basal-body rod protein FlgG	90.840	100	WP_005767770.1	flagellar basal-body rod protein FlgG	si
+ancashensis	WP_005767773.1	flagellar hook-basal body complex protein FliE	WP_053943653.1	flagellar hook-basal body complex protein FliE	62.500	100	WP_005767773.1	flagellar hook-basal body complex protein FliE	si
+ancashensis	WP_005767776.1	flagellar basal body rod protein FlgC	WP_053943654.1	flagellar basal body rod protein FlgC	87.591	100	WP_005767776.1	flagellar basal body rod protein FlgC	si
+ancashensis	WP_005767779.1	flagellar basal body rod protein FlgB	WP_053943655.1	flagellar basal body rod protein FlgB	78.906	100	WP_005767779.1	flagellar basal body rod protein FlgB	si
+ancashensis	WP_005767781.1	flagellar protein export ATPase FliI	WP_053943656.1	FliI/YscN family ATPase	73.469	100	WP_005767781.1	flagellar protein export ATPase FliI	si
+ancashensis	WP_005767784.1	flagellar basal-body rod protein FlgF	WP_053943657.1	flagellar basal-body rod protein FlgF	81.148	100	WP_005767784.1	flagellar basal-body rod protein FlgF	si
+ancashensis	WP_005767791.1	flagellar motor stator protein MotA	WP_053943659.1	flagellar motor stator protein MotA	90.000	99	WP_005767791.1	flagellar motor stator protein MotA	si
+ancashensis	WP_005767793.1	FliM/FliN family flagellar motor switch protein	WP_053943660.1	FliM/FliN family flagellar motor switch protein	73.041	99	WP_005767793.1	FliM/FliN family flagellar motor switch protein	si
+ancashensis	WP_005767802.1	flagellar motor switch protein FliG	WP_053943662.1	flagellar motor switch protein FliG	77.348	100	WP_005767802.1	flagellar motor switch protein FliG	si
+ancashensis	WP_005767804.1	flagellar biosynthesis protein FlhB	WP_053943663.1	flagellar type III secretion system protein FlhB	83.989	100	WP_005767804.1	flagellar biosynthesis protein FlhB	si
+ancashensis	WP_005767815.1	flagellar biosynthesis protein FliR	WP_053944598.1	flagellar biosynthesis protein FliR	75.000	97	WP_005767815.1	flagellar biosynthesis protein FliR	si
+ancashensis	WP_005767817.1	flagellar biosynthesis protein FlhA	WP_414947450.1	flagellar biosynthesis protein FlhA	89.115	99	WP_005767817.1	flagellar biosynthesis protein FlhA	si
+ancashensis	WP_011807398.1	flagellin N-terminal helical domain-containing protein	WP_053944070.1	flagellin N-terminal helical domain-containing protein	83.158	100	WP_011807398.1	flagellin N-terminal helical domain-containing protein	si
+ancashensis	WP_011807419.1	flagellar motor switch protein FliN	WP_053944597.1	flagellar motor switch protein FliN	81.818	63	WP_011807419.1	flagellar motor switch protein FliN	si
+tribocorum	WP_005767250.1	flagellar biosynthetic protein FliO	WP_012231887.1	flagellar biosynthetic protein FliO	45.506	100	WP_005767250.1	flagellar biosynthetic protein FliO	si
+tribocorum	WP_005767781.1	flagellar protein export ATPase FliI	WP_012232483.1	F0F1 ATP synthase subunit beta	30.945	54	WP_005765873.1	F0F1 ATP synthase subunit beta	no
+quintana	WP_005767250.1	flagellar biosynthetic protein FliO	WP_014924164.1	flagellar biosynthetic protein FliO	46.067	100	WP_005767250.1	flagellar biosynthetic protein FliO	si
+quintana	WP_005767781.1	flagellar protein export ATPase FliI	WP_014924520.1	F0F1 ATP synthase subunit beta	29.938	57	WP_005765873.1	F0F1 ATP synthase subunit beta	no
+henselae	WP_005767250.1	flagellar biosynthetic protein FliO	WP_011180836.1	flagellar biosynthetic protein FliO	49.438	100	WP_005767250.1	flagellar biosynthetic protein FliO	si
+henselae	WP_005767781.1	flagellar protein export ATPase FliI	WP_011181298.1	F0F1 ATP synthase subunit beta	30.556	57	WP_005765873.1	F0F1 ATP synthase subunit beta	no
