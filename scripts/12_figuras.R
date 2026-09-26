@@ -34,10 +34,21 @@ tema <- theme_classic(base_size = 8) + theme(
   strip.text  = element_text(face = "bold", size = 7.5, colour = TINTA),
   plot.margin = margin(6, 8, 6, 6))
 coma <- function(x) format(x, big.mark = " ", decimal.mark = ",", scientific = FALSE, trim = TRUE)
+# El PDF guarda la fecha y hora de creacion; se fija una fecha constante (con el
+# mismo numero de caracteres) para que cada corrida produzca el mismo archivo.
+fijar_fecha_pdf <- function(f) {
+  x <- readBin(f, "raw", file.info(f)$size)
+  for (clave in c("/CreationDate (D:", "/ModDate (D:")) {
+    i <- grepRaw(clave, x, fixed = TRUE)
+    if (length(i) == 1) x[i + nchar(clave) + 0:13] <- charToRaw("20000101000000")
+  }
+  writeBin(x, f)
+}
 guardar <- function(g, nombre, ancho, alto) {
   for (ext in c("pdf", "png"))
     ggsave(fig(paste0(nombre, ".", ext)), g, width = ancho, height = alto, units = "mm",
            dpi = 300, bg = "white")
+  fijar_fecha_pdf(fig(paste0(nombre, ".pdf")))
   cat("  ", nombre, "\n")
 }
 juntar <- function(..., anchos = NULL) {       # paneles lado a lado, sin paquetes extra
@@ -231,7 +242,8 @@ f5 <- ggplot() +
   geom_point(data = nod, aes(x, y, fill = clase, shape = clase), size = 2.1, colour = "white", stroke = 0.4) +
   geom_text_repel(data = nod[nod$clase %in% c("Flagelar", "Chaperona"), ], aes(x, y, label = nombre),
                   size = 2, colour = TINTA, segment.size = 0.2, segment.colour = EJE,
-                  max.overlaps = Inf, box.padding = 0.15, min.segment.length = 0.2, seed = 42) +
+                  max.overlaps = Inf, box.padding = 0.15, min.segment.length = 0.2, seed = 42,
+                  max.time = 60, max.iter = 10000) +   # termina por iteraciones, no por tiempo: igual en cualquier computadora
   scale_fill_manual(values = c(Flagelar = FLAG, Chaperona = CHAP, "Otro reprimido" = GRIS_O, "Otro inducido" = GRIS), name = NULL) +
   scale_shape_manual(values = c(Flagelar = 25, Chaperona = 24, "Otro reprimido" = 25, "Otro inducido" = 24), name = NULL) +
   scale_alpha_continuous(range = c(0.15, 0.7), name = "Puntaje STRING") +
