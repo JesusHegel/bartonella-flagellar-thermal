@@ -374,6 +374,47 @@ decimales) y las listas de genes de STRING (flgA antes que RS05045). Con el
 orden "C", la corrida completa del 26-09-2026 dio **38 de 38 tablas idénticas
 byte a byte** a las publicadas, y lo mismo desde un clon nuevo del repositorio.
 
+## 12d. Réplica desde el SRA (nivel 2, 26 de septiembre de 2026)
+
+`scripts/replica_nivel_2.sh` en la computadora de referencia: descarga de las
+23 corridas del SRA, cuantificación con salmon (índice con las seis huellas del
+original), análisis completo en carpetas `_desde_sra` y comparación con
+`scripts/comparar_nivel_2.R`. Descarga y cuantificación: 40 minutos, sin fallos.
+
+**Cuantificación.** Lecturas procesadas idénticas en las 23 corridas. Lecturas
+asignadas: diferencia máxima de 0,054 %. Correlación mínima de NumReads entre
+las dos cuantificaciones (log2): 0,9986.
+
+**Cifras principales** (publicadas, desde el SRA):
+
+| Cifra | Publicada | Desde el SRA |
+|---|---|---|
+| 37 vs 25: significativos | 488 | 491 |
+| 37 vs 25: significativos y \|LFC\|>1 | 207 | 206 |
+| 37 vs 25: flagelares significativos (reprimidos + inducidos) | 31 (30 + 1) | 31 (30 + 1) |
+| Modelo de 23 muestras: significativos / flagelares | 538 / 30 | 532 / 30 |
+| 30 vs 25: significativos / flagelares | 423 / 30 | 422 / 30 |
+| 37 vs 30: flagelares no significativos | 30 | 30 |
+| pH 6 vs 8: significativos / flagelares | 375 / 6 | 375 / 6 |
+| Hipergeométrico Flagelar: reprimidos · q | 30 · 2,14 × 10⁻¹⁷ | 30 · 2,39 × 10⁻¹⁷ |
+| Hipergeométrico Chaperona: q de inducidos | 0,0117 | 0,0125 |
+| fgsea Flagelar: NES · q | −2,441 · 2,43 × 10⁻⁹ | −2,444 · 1,77 × 10⁻⁹ |
+| Umbral formal lfcThreshold=1: significativos / flagelares | 49 / 7 | 50 / 7 |
+| STRING KEGG bbk02040: reprimidos · q | 25 · 1,94 × 10⁻¹⁴ | 25 · 2,13 × 10⁻¹⁴ |
+
+**Todas las cifras de los genes flagelares son idénticas.** Los conteos del
+genoma completo varían en pocos genes y los valores q conservan su orden de
+magnitud. Genes que cambian de significancia: 3 en 37 vs 25, 1 en 30 vs 25,
+0 en 37 vs 30 y en pH, 8 en el modelo de 23 muestras; **ninguno flagelar**.
+Todos tenían padj entre 0,043 y 0,055, salvo RS00085 (proteína hipotética) en
+el modelo de 23 muestras (0,046 → 0,14): sus lecturas cambian en dos corridas
+PlBG (650 → 1 069 y 541 → 685), que no están en el modelo de 12 muestras. Los
+valores fraccionarios indican lecturas compartidas con otra secuencia, que
+salmon reparte de forma distinta en cada corrida con varios hilos.
+
+**Las cifras del manuscrito son las publicadas** (cuantificaciones incluidas en
+`cuantificacion/`); desde el SRA se reproducen todas las conclusiones.
+
 ## 13. Versiones de programas
 
 ```
