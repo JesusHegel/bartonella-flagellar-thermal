@@ -1,0 +1,65 @@
+
+(process:6593): Pango-WARNING **: 22:18:10.512: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:10.513: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:10.513: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:10.513: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:10.542: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:10.543: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:10.543: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:10.543: Invalid UTF-8 string passed to pango_layout_set_text()
+
+--- Fig5: medianas por grupo ---
+                    grupo temp        lfc
+1 Aparato flagelar (n=31)   25  0.0000000
+2       Chaperonas (n=15)   25  0.0000000
+3 Aparato flagelar (n=31)   30 -1.7900191
+4       Chaperonas (n=15)   30  0.4745698
+5 Aparato flagelar (n=31)   37 -1.4530719
+6       Chaperonas (n=15)   37  0.7331285
+using ntop=500 top features by variance
+
+(process:6593): Pango-WARNING **: 22:18:12.345: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.345: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.345: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.345: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.345: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.345: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.346: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.346: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.395: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.395: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.395: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.395: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.396: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.396: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.396: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:6593): Pango-WARNING **: 22:18:12.396: Invalid UTF-8 string passed to pango_layout_set_text()
+
+Figuras escritas:
+ [1] "curva_termica.pdf"         "curva_termica.png"        
+ [3] "mapa_calor_flagelares.pdf" "mapa_calor_flagelares.png"
+ [5] "panel_genero.pdf"          "panel_genero.png"         
+ [7] "pca_y_tasa_mapeo.pdf"      "pca_y_tasa_mapeo.png"     
+ [9] "volcan_37C_vs_25C.pdf"     "volcan_37C_vs_25C.png"    

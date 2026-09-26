@@ -1,0 +1,22 @@
+GCF_000015445.1  1139 proteinas (referencia local)
+GCF_000253015.1  1173 proteinas
+GCF_039555305.1  1335 proteinas
+GCF_001281405.1  1174 proteinas
+GCF_000196435.1  1966 proteinas
+GCF_009936175.1  1196 proteinas
+GCF_019930925.1  1489 proteinas
+GCF_001624625.1  1137 proteinas
+Secuencias en flag31.faa: 31
+
+=== PANEL DE GENERO (BLASTp, e<1e-5) ===
+bacilliformis      31 de 31
+clarridgeiae       31 de 31
+schoenbuchensis    31 de 31
+ancashensis        31 de 31
+tribocorum         2 de 31
+quintana           2 de 31
+henselae           2 de 31
+
+=== ORTOLOGIA KC583 vs USM-LMMB07 (coincidencias reciprocas) ===
+Pares reciprocos : 1111
+Flagelares con ortologo reciproco: 31 de 31

@@ -1,0 +1,121 @@
+Flagelares localizados en la matriz: 31 de 31 
+
+--- CONTEOS BAJO CADA DEFINICION ---
+              definicion genoma_padj05 genoma_padj05_lfc1 flag_padj05
+1          global 37vs25           538                214          30
+2     restringido 37vs25           488                207          31
+3     restringido 30vs25           423                146          30
+4 restringido pH06vspH08           375                 74           6
+  flag_padj05_lfc1
+1               22
+2               21
+3               25
+4                1
+
+--- SENSIBILIDAD AL UMBRAL ---
+                      criterio n_significativos n_flagelares
+1 post hoc padj<0.05 & |LFC|>1              207           21
+2        lfcThreshold=1 formal               49            7
+
+--- GLOBAL vs RESTRINGIDO ---
+                locus lfc_global lfc_restr   dif
+27 BARBAKC583_RS05635      -2.42     -2.40 -0.02
+26 BARBAKC583_RS05620      -2.12     -2.19  0.07
+25 BARBAKC583_RS05615      -2.15     -2.11 -0.04
+3  BARBAKC583_RS05420      -2.06     -2.04 -0.02
+2  BARBAKC583_RS05045      -2.03     -2.01 -0.02
+18 BARBAKC583_RS05575      -1.88     -1.81 -0.07
+31 BARBAKC583_RS07245      -1.72     -1.72  0.00
+23 BARBAKC583_RS05600      -1.66     -1.66  0.00
+28 BARBAKC583_RS05640      -1.60     -1.60  0.00
+15 BARBAKC583_RS05555      -1.47     -1.50  0.03
+16 BARBAKC583_RS05560      -1.37     -1.41  0.04
+17 BARBAKC583_RS05570      -1.37     -1.37  0.00
+8  BARBAKC583_RS05465      -1.38     -1.36 -0.02
+19 BARBAKC583_RS05580      -1.34     -1.36  0.02
+4  BARBAKC583_RS05425      -1.30     -1.32  0.02
+22 BARBAKC583_RS05595      -1.30     -1.29 -0.01
+24 BARBAKC583_RS05605      -1.31     -1.29 -0.02
+30 BARBAKC583_RS05690      -1.27     -1.28  0.01
+14 BARBAKC583_RS05550      -1.26     -1.27  0.01
+20 BARBAKC583_RS05585      -1.14     -1.23  0.09
+21 BARBAKC583_RS05590      -1.21     -1.20 -0.01
+12 BARBAKC583_RS05495      -0.98     -1.00  0.02
+5  BARBAKC583_RS05430      -1.01     -0.99 -0.02
+13 BARBAKC583_RS05510      -0.82     -0.90  0.08
+6  BARBAKC583_RS05435      -0.88     -0.89  0.01
+7  BARBAKC583_RS05445      -0.87     -0.86 -0.01
+9  BARBAKC583_RS05470      -0.67     -0.70  0.03
+11 BARBAKC583_RS05490      -0.62     -0.70  0.08
+29 BARBAKC583_RS05685      -0.70     -0.67 -0.03
+10 BARBAKC583_RS05485      -0.62     -0.66  0.04
+1  BARBAKC583_RS04185       0.89      0.87  0.02
+
+*** Diferencia maxima entre modelos: 0.09 ***
+
+--- CURVA 25 / 30 / 37 ---
+                locus L30v25 L37v25 L37v30 p37v30
+27 BARBAKC583_RS05635  -2.47  -2.40   0.04  0.910
+26 BARBAKC583_RS05620  -1.94  -2.19  -0.11  0.670
+25 BARBAKC583_RS05615  -2.21  -2.11   0.04  0.890
+3  BARBAKC583_RS05420  -1.59  -2.04  -0.15  0.570
+2  BARBAKC583_RS05045  -1.59  -2.01  -0.20  0.450
+18 BARBAKC583_RS05575  -2.20  -1.81   0.14  0.600
+31 BARBAKC583_RS07245  -2.43  -1.72   0.30  0.280
+23 BARBAKC583_RS05600  -1.92  -1.66   0.16  0.510
+28 BARBAKC583_RS05640  -1.25  -1.60  -0.19  0.450
+15 BARBAKC583_RS05555  -1.75  -1.50   0.11  0.680
+16 BARBAKC583_RS05560  -1.51  -1.41   0.05  0.850
+17 BARBAKC583_RS05570  -1.68  -1.37   0.16  0.540
+8  BARBAKC583_RS05465  -1.94  -1.36   0.32  0.210
+19 BARBAKC583_RS05580  -2.19  -1.36   0.50  0.060
+4  BARBAKC583_RS05425  -1.49  -1.32   0.10  0.690
+22 BARBAKC583_RS05595  -1.65  -1.29   0.19  0.450
+24 BARBAKC583_RS05605  -1.76  -1.29   0.24  0.360
+30 BARBAKC583_RS05690  -1.39  -1.28   0.07  0.800
+14 BARBAKC583_RS05550  -1.76  -1.27   0.19  0.490
+20 BARBAKC583_RS05585  -1.59  -1.23   0.21  0.420
+21 BARBAKC583_RS05590  -1.87  -1.20   0.44  0.072
+12 BARBAKC583_RS05495  -0.84  -1.00  -0.08  0.740
+5  BARBAKC583_RS05430  -1.35  -0.99   0.18  0.520
+13 BARBAKC583_RS05510  -1.74  -0.90   0.62  0.012
+6  BARBAKC583_RS05435  -1.22  -0.89   0.20  0.420
+7  BARBAKC583_RS05445  -1.46  -0.86   0.35  0.170
+9  BARBAKC583_RS05470  -0.89  -0.70   0.13  0.600
+11 BARBAKC583_RS05490  -0.99  -0.70   0.19  0.450
+29 BARBAKC583_RS05685  -0.49  -0.67  -0.07  0.820
+10 BARBAKC583_RS05485  -0.62  -0.66  -0.01  0.970
+1  BARBAKC583_RS04185   0.73   0.87   0.06  0.840
+
+--- ESPECIFICIDAD: temperatura vs pH ---
+           contraste flagelares_sig genoma_sig
+1 temperatura 37vs25             31        488
+2          pH 06vs08              6        375
+
+Replicas Pl25: 2  Pl30: 2  Pl37: 2 
+
+--- PARTICIONES INDEPENDIENTES ---
+Misma direccion: 31 de 31 
+Correlacion genoma completo: 0.581 
+
+--- Genes citados en CIFRAS, seccion 8 (medias de conteos normalizados) ---
+                 lt                                                   prod
+ BARBAKC583_RS05045 flagellin N-terminal helical domain-containing protein
+ BARBAKC583_RS05735                                       chaperonin GroEL
+ BARBAKC583_RS01390                       RNA polymerase sigma factor RpoH
+ BARBAKC583_RS06465                               molecular chaperone DnaK
+ BARBAKC583_RS02960                                   Hsp20 family protein
+ BARBAKC583_RS05740                                     co-chaperone GroES
+ BARBAKC583_RS01060                           ATP-dependent chaperone ClpB
+ BARBAKC583_RS02640                                       endopeptidase La
+ BARBAKC583_RS05920                                 outer membrane protein
+  Pl25  Pl30   Pl37
+ 57904 16796  12553
+ 41002 43266 199585
+ 18035 41771  60750
+ 13634 22565  53793
+  6681 20740  43968
+  4378  6629  24357
+  1315  1827  15181
+  3992  6089  12609
+ 58505 11347  15462

@@ -1,0 +1,58 @@
+tasa_mapeo.tsv generado desde 23 informes de salmon
+           run cond                      matriz      mapeo         PC1
+18 SRR12653251 HBBG               sangre humana  4.1741486 -24.9834478
+1  SRR12653234 HB37               sangre humana  3.9985181 -24.0858385
+11 SRR12653244 HBBG               sangre humana  6.2922378 -23.7957441
+5  SRR12653238 HB37               sangre humana  4.5561870 -22.5068507
+19 SRR12653252 HBBG               sangre humana  5.4906045 -22.0103648
+4  SRR12653237 HB37               sangre humana  3.1558442 -21.7712347
+2  SRR12653235 HUVE        celulas endoteliales  0.3414148 -13.9628572
+23 SRR12653256 HUVE        celulas endoteliales  0.2176658 -13.7227956
+13 SRR12653246 PlBG placa + atmosfera sanguinea 43.1892546  -8.6282308
+16 SRR12653249 PlBG placa + atmosfera sanguinea 45.9854592  -1.2105965
+15 SRR12653248 PlBG placa + atmosfera sanguinea 47.2115969  -0.2774562
+8  SRR12653241 pH06               placa / caldo 42.6898639  11.2546750
+10 SRR12653243 pH06               placa / caldo 41.0802704  11.2683835
+14 SRR12653247 pH08               placa / caldo 34.0222306  11.4387150
+22 SRR12653255 pH08               placa / caldo 34.6478426  13.0764309
+9  SRR12653242 pH07               placa / caldo 28.1891044  13.5683630
+17 SRR12653250 pH07               placa / caldo 24.2962356  14.1294330
+21 SRR12653254 Pl37               placa / caldo 38.7657825  14.5393291
+20 SRR12653253 Pl37               placa / caldo 44.1594910  15.8947047
+7  SRR12653240 Pl25               placa / caldo 55.1579474  16.3753605
+3  SRR12653236 Pl25               placa / caldo 41.5997159  16.5081455
+12 SRR12653245 Pl30               placa / caldo 37.6620195  18.9720046
+6  SRR12653239 Pl30               placa / caldo 37.3347171  19.9298719
+          PC2
+18   4.140122
+1    6.763861
+11   6.349522
+5    8.046884
+19   3.281961
+4    3.625219
+2  -21.357416
+23 -19.944230
+13  -6.046093
+16  -4.369259
+15  -2.909570
+8    9.089265
+10   8.744493
+14  11.793420
+22   9.789688
+9    7.298600
+17   6.946859
+21 -10.661892
+20  -8.602417
+7    3.712294
+3    1.710083
+12  -8.508327
+6   -8.893065
+
+*** Correlacion PC1 ~ tasa de mapeo: 0.817 ***
+*** Correlacion PC2 ~ tasa de mapeo: 0.06 ***
+
+                       matriz   PC1 mapeo
+1        celulas endoteliales -13.8   0.3
+2 placa + atmosfera sanguinea  -3.4  45.5
+3               placa / caldo  14.7  38.3
+4               sangre humana -23.2   4.6

@@ -1,0 +1,8 @@
+dd393249cdba0cc0042f9f2a3acb4c3d  bacilliformis
+b04f8ef53dfa5247318180e541547e8b  clarridgeiae
+2ef6aee9a024cb2f49c9a38824843f1b  schoenbuchensis
+914f83ad5aa19b805b0cd40974fb0dfa  ancashensis
+a96986a28afccfee6ae8e19d2ee72448  tribocorum
+4f2d0144751de48af20d6a85742b5868  quintana
+dc486375fe7799bd089e03a69f2f4eb4  henselae
+943db8b093079495f036338406027805  USM-LMMB07

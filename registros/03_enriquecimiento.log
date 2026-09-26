@@ -1,0 +1,29 @@
+*** Universo deduplicado: 1138  inducidos: 200  reprimidos: 278 ***
+
+--- HIPERGEOMETRICO ---
+   categoria genes inducidos reprimidos esp_red       p_ind        p_rep
+1   Flagelar    31         1         30     7.6 0.997712953 3.054350e-18
+2   Ribosoma    56         7          3    13.7 0.889563377 9.999801e-01
+3  Chaperona    15         8          2     3.7 0.001665562 9.138515e-01
+4  TranspABC    53         3         22    12.9 0.997746356 3.745625e-03
+5 HierroHemo    24         4          8     5.9 0.632004587 2.115093e-01
+6 Traduccion    59         8         12    14.4 0.843744420 8.165460e-01
+7 Hipotetica    86        18         19    21.0 0.236796759 7.400702e-01
+       q_ind        q_rep
+1 0.99774636 2.138045e-17
+2 0.99774636 9.999801e-01
+3 0.01165894 9.999801e-01
+4 0.99774636 1.310969e-02
+5 0.99774636 4.935217e-01
+6 0.99774636 9.999801e-01
+7 0.82878866 9.999801e-01
+
+--- FGSEA (semilla 42, 100000 permutaciones) ---
+     pathway size        NES         pval         padj
+1   Flagelar   31 -2.4414999 3.470450e-10 2.429315e-09
+2  TranspABC   53 -1.8736927 1.429086e-04 5.001802e-04
+3  Chaperona   15  1.7928066 4.942414e-03 1.153230e-02
+4 HierroHemo   24 -1.4155762 6.364435e-02 1.113776e-01
+5 Hipotetica   86  1.1878642 1.390685e-01 1.873394e-01
+6   Ribosoma   56  1.1946297 1.605767e-01 1.873394e-01
+7 Traduccion   59 -0.5097179 9.997290e-01 9.997290e-01

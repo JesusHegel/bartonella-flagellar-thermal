@@ -1,0 +1,7 @@
+salmon 2.4.1
+prefetch : 3.4.1
+
+blastp: 2.17.0+
+RNAfold 2.7.0
+datasets version: 18.33.1
+Python 3.12.14
