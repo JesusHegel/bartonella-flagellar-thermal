@@ -1,10 +1,18 @@
+# Lecturas y alineamientos: se descargan del SRA, no se guardan en git
 *.zip
+*.sra
 *.fastq
 *.fastq.gz
 *.bam
 *.sam
-ref/
-genero/GCF_*/
-che/GCF_*/
+
+# Carpetas de trabajo que se regeneran
+intermedios/
+descargas/
+
+# Replica completa desde el SRA (nivel 2)
+cuantificacion_desde_sra/
+*_desde_sra/
+
 .Rhistory
 .RData

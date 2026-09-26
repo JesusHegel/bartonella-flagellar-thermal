@@ -33,7 +33,7 @@ metadatos de SRA. **No existen dos centros de secuenciación.**
 | Accesiones duplicadas (región de ~28 kb) | 27 |
 | Genes con anotación flagelar | **31** |
 
-El conjunto flagelar se define en `scripts/01_definicion_conjunto_flagelar.sh`
+El conjunto flagelar se define en `scripts/01_anotacion.sh`
 por patrón sobre el campo `product` del GFF. **Ese script no consulta datos de
 expresión.** Los 31 son la totalidad de los anotados, no una selección.
 
@@ -98,8 +98,8 @@ pertenece a las series de temperatura ni de pH).
 - Correlación PC2 ~ tasa de mapeo: 0,06
 
 PC1 separa por **matriz biológica**, que determina simultáneamente qué
-fracción de la librería es bacteriana. Ambos factores son inseparables en
-este diseño.
+fracción de las lecturas se asigna a genes bacterianos. Ambos factores son
+inseparables en este diseño.
 
 **Modelo restringido**: 12 muestras en matriz homogénea
 (Pl25, Pl30, Pl37, pH06, pH07, pH08).
@@ -176,7 +176,8 @@ De los 31 genes flagelares, el contraste **37 vs 30 °C no es significativo en
 30 de 31** (único con p<0,05: FliF RS05510, p = 0,012, que no sobrevive la
 corrección por 31 pruebas). **23 de 31 alcanzan su mínimo a 30 °C.**
 
-Conteos normalizados (media por condición):
+Conteos normalizados (media por condición; `resultados/robustez/medias_normalizadas_25_30_37C.csv`).
+Sirven para comparar un mismo gen entre temperaturas, no genes distintos entre sí:
 
 | Gen | Producto | 25 °C | 30 °C | 37 °C |
 |---|---|---|---|---|
@@ -267,18 +268,30 @@ con control post-transcripcional. Compatible, no demostrado.
 ## 12. Reproducibilidad
 
 Todas las cifras de este documento se regeneran con los scripts de `scripts/`,
-ejecutados en ese orden:
+ejecutados en ese orden por `scripts/ejecutar_todo.sh`:
 
-| Script | Produce |
-|---|---|
-| `01_anotacion.sh` | sección 2 |
-| `02_deseq.R` | secciones 3 y 4 |
-| `03_enriquecimiento.R` | sección 6 |
-| `04_robustez.R` | secciones 5, 7 y 8 |
-| `05_pca_mapeo.R` | sección 4 |
-| `06_figuras.R` | las cinco figuras de `figures/` |
-| `07_panel_genero_ortologia.sh` | sección 9 (panel de género y ortología) |
-| `08_quimiotaxis_utr.sh` | secciones 9 (quimiotaxis) y 10 |
+| Script | Produce | Tablas |
+|---|---|---|
+| `01_anotacion.sh` | sección 2 | `resultados/anotacion/` |
+| `02_expresion_diferencial.R` | secciones 3, 4 y 5 | `resultados/expresion_diferencial/` |
+| `03_enriquecimiento.R` | sección 6 | `resultados/enriquecimiento/` |
+| `04_robustez.R` | secciones 5, 7 y 8 | `resultados/robustez/` |
+| `05_pca_y_tasa_mapeo.R` | secciones 3 y 4 | `resultados/muestras/` |
+| `06_panel_genero_y_ortologia.sh` | sección 9 (panel de género y ortología) | `resultados/genomica_comparada/` |
+| `07_quimiotaxis_y_utr.sh` | secciones 9 (quimiotaxis) y 10 | `resultados/genomica_comparada/` |
+| `08_figuras.R` | figuras | `figuras/` |
+
+`scripts/verificar.sh` compara cada tabla con su huella md5 registrada en
+`verificacion/sumas_md5.txt`. La réplica en otra computadora se describe en
+`GUIA_DE_REPLICA.md`.
+
+Nombres anteriores al 25-09-2026 (para leer las secciones 12b y los registros
+antiguos): `results/chk_*.csv` → `resultados/`; `chk_yale.csv` →
+`modelo_global_vs_restringido.csv`; `chk_curva31.csv` →
+`flagelares_curva_termica.csv`; `res_rY.csv` → `37C_vs_25C.csv`; `res_rG.csv` →
+`37C_vs_25C_modelo_23_muestras.csv`; `panel.tsv` → `panel_genero_blastp.tsv`;
+`rbh.tsv` → `ortologos_reciprocos_KC583_USM-LMMB07.tsv`; `quants/` →
+`cuantificacion/`; los scripts 06, 07 y 08 anteriores son ahora 08, 06 y 07.
 
 ## 12b. Verificación de reproducibilidad (25 de septiembre de 2026)
 

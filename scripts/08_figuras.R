@@ -1,5 +1,6 @@
+# 08. Figuras del proyecto (version de trabajo; se rehacen en la Fase 3).
 suppressMessages({library(DESeq2); library(ggplot2)})
-setwd("~/bbrna"); dir.create("salida/figuras", showWarnings=FALSE, recursive=TRUE)
+source("scripts/rutas.R")
 
 ROJO <- "#B2182B"; AZUL <- "#2166AC"; GRIS <- "#BDBDBD"; TINTA <- "#1A1A1A"
 w  <- function(x, n=74) paste(strwrap(x, width=n), collapse="\n")
@@ -19,15 +20,15 @@ tema <- theme_bw(base_size=13) + theme(
   legend.key.height= grid::unit(4,"mm"),
   plot.margin      = margin(10,16,8,10))
 
-dds <- readRDS("salida/dds.rds")
-rY  <- read.csv("salida/res_rY.csv",    row.names=1)
-r30 <- read.csv("salida/res_r30.csv",   row.names=1)
-r33 <- read.csv("salida/res_r3730.csv", row.names=1)
+dds <- readRDS(int("dds_23_muestras.rds"))
+rY  <- read.csv(res("expresion_diferencial", "37C_vs_25C.csv"), row.names=1)
+r30 <- read.csv(res("expresion_diferencial", "30C_vs_25C.csv"), row.names=1)
+r33 <- read.csv(res("expresion_diferencial", "37C_vs_30C.csv"), row.names=1)
 wp  <- rY$wp
-map <- read.delim("salida/lt2prot.tsv", header=FALSE); names(map) <- c("lt","prot")
-cds <- read.delim("salida/cds_todos.tsv", header=FALSE)
+map <- read.delim(res("anotacion", "locus_a_proteina.tsv"), header=FALSE); names(map) <- c("lt","prot")
+cds <- read.delim(res("anotacion", "anotacion_cds.tsv"), header=FALSE)
 names(cds) <- c("lt","ini","fin","hebra","prod")
-fl  <- read.delim("salida/flag_gff.tsv", header=FALSE)
+fl  <- read.delim(res("anotacion", "conjunto_flagelar.tsv"), header=FALSE)
 names(fl) <- c("lt","ini","fin","hebra","prod")
 g   <- match(map$prot[match(fl$lt, map$lt)], wp)
 
@@ -65,21 +66,21 @@ p5 <- ggplot(d5, aes(temp, lfc, group=gen, colour=grupo)) +
   scale_x_continuous(breaks=c(25,30,37), labels=c("25 °C","30 °C","37 °C"),
                      expand=expansion(mult=c(.05,.20))) +
   coord_cartesian(clip="off") +
-  labs(title="Dos programas térmicos independientes",
+  labs(title="Dos programas térmicos con perfiles distintos",
        subtitle=w("Cada línea fina es un gen; la línea gruesa es la mediana del grupo. La represión flagelar se completa a 30 °C y no avanza más allá; la respuesta de chaperonas sigue aumentando hasta 37 °C."),
        x="Temperatura de cultivo",
        y=expression(bold(log[2]~"(conteo / conteo a 25 °C)")),
        caption="Conteos normalizados por DESeq2, indexados a 25 °C. PRJNA647605, modelo restringido (12 muestras).") +
   tema + theme(plot.margin=margin(10,34,8,10))
-ggsave("salida/figuras/Fig5_disociacion.png", p5, width=235, height=145, units="mm", dpi=300, bg="white")
-ggsave("salida/figuras/Fig5_disociacion.pdf", p5, width=235, height=145, units="mm", bg="white")
+ggsave(fig("curva_termica.png"), p5, width=235, height=145, units="mm", dpi=300, bg="white")
+ggsave(fig("curva_termica.pdf"), p5, width=235, height=145, units="mm", bg="white")
 cat("\n--- Fig5: medianas por grupo ---\n"); print(med)
 
 # ============== FIGURA 1: PCA ==============
 vsd <- vst(dds, blind=TRUE)
 pv  <- plotPCA(vsd, intgroup="cond", ntop=500, returnData=TRUE)
 pct <- round(100*attr(pv,"percentVar"))
-pm  <- read.csv("salida/chk_pca_mapeo.csv")
+pm  <- read.csv(res("muestras", "pca_y_tasa_mapeo.csv"))
 pv$run <- rownames(pv); pv <- merge(pv, pm[,c("run","mapeo","matriz")], by="run")
 rho <- co(sprintf("%.2f", cor(pv$PC1, pv$mapeo)))
 niv <- c("placa / caldo","placa + atmosfera sanguinea","sangre humana","celulas endoteliales")
@@ -91,13 +92,13 @@ p1 <- ggplot(pv, aes(PC1, PC2, colour=mat, shape=mat)) +
   scale_colour_manual(values=setNames(c(AZUL,"#6BAED6",ROJO,"#7B3294"), eti)) +
   scale_shape_manual(values=setNames(c(16,17,15,18), eti)) +
   labs(title="La mayor fuente de variación es la matriz biológica",
-       subtitle=w(sprintf("PC1 correlaciona %s con la fracción de lecturas bacterianas de cada librería. Por eso los contrastes se restringen a las 12 muestras de matriz homogénea.", rho)),
+       subtitle=w(sprintf("PC1 correlaciona %s con la fracción de lecturas asignadas a genes bacterianos. Por eso los contrastes se restringen a las 12 muestras de matriz homogénea.", rho)),
        x=sprintf("PC1 (%d %% de la varianza)", pct[1]),
        y=sprintf("PC2 (%d %% de la varianza)", pct[2]),
        caption="23 corridas, un solo centro de secuenciación (University of Montana, HiSeq 2500).") +
   tema + theme(legend.position="right", plot.margin=margin(10,10,8,10))
-ggsave("salida/figuras/Fig1_PCA.png", p1, width=245, height=135, units="mm", dpi=300, bg="white")
-ggsave("salida/figuras/Fig1_PCA.pdf", p1, width=245, height=135, units="mm", bg="white")
+ggsave(fig("pca_y_tasa_mapeo.png"), p1, width=245, height=135, units="mm", dpi=300, bg="white")
+ggsave(fig("pca_y_tasa_mapeo.pdf"), p1, width=245, height=135, units="mm", bg="white")
 
 # ============== FIGURA 2: VOLCANO ==============
 vv <- data.frame(lfc=rY$log2FoldChange, padj=rY$padj, flag=FALSE)
@@ -117,8 +118,8 @@ p2 <- ggplot(vv[!vv$flag,], aes(lfc, y)) +
        subtitle=w("Modelo restringido a las 12 muestras de matriz homogénea, con encogimiento ashr."),
        x=expression(bold(log[2]~"del cambio  (37 °C / 25 °C)")),
        y=expression(bold(-log[10]*"(q)"))) + tema
-ggsave("salida/figuras/Fig2_volcano.png", p2, width=225, height=145, units="mm", dpi=300, bg="white")
-ggsave("salida/figuras/Fig2_volcano.pdf", p2, width=225, height=145, units="mm", bg="white")
+ggsave(fig("volcan_37C_vs_25C.png"), p2, width=225, height=145, units="mm", dpi=300, bg="white")
+ggsave(fig("volcan_37C_vs_25C.pdf"), p2, width=225, height=145, units="mm", bg="white")
 
 # ============== FIGURA 3: MAPA DE CALOR ==============
 r  <- regexpr("(Fli[A-Z]|Flg[A-Z]|Flh[A-Z]|Flb[A-Z]|Fla[A-Z]|Mot[A-Z]|Che[A-Z])", fl$prod)
@@ -146,11 +147,11 @@ p3 <- ggplot(h, aes(ctr, gen, fill=lfc)) +
                axis.text.x=element_text(size=11, face="bold"),
                panel.grid.major=element_blank(),
                plot.margin=margin(10,12,8,10))
-ggsave("salida/figuras/Fig3_heatmap.png", p3, width=185, height=225, units="mm", dpi=300, bg="white")
-ggsave("salida/figuras/Fig3_heatmap.pdf", p3, width=185, height=225, units="mm", bg="white")
+ggsave(fig("mapa_calor_flagelares.png"), p3, width=185, height=225, units="mm", dpi=300, bg="white")
+ggsave(fig("mapa_calor_flagelares.pdf"), p3, width=185, height=225, units="mm", bg="white")
 
 # ============== FIGURA 4: PANEL DE GENERO ==============
-pn <- read.delim("salida/panel.tsv", header=FALSE); names(pn) <- c("gen","especie","ident")
+pn <- read.delim(res("genomica_comparada", "panel_genero_blastp.tsv"), header=FALSE); names(pn) <- c("gen","especie","ident")
 cnt <- as.data.frame(table(unique(pn[,c("gen","especie")])$especie)); names(cnt) <- c("especie","n")
 cnt$especie <- factor(cnt$especie, levels=cnt$especie[order(cnt$n)])
 p4 <- ggplot(cnt, aes(n, especie)) +
@@ -162,7 +163,7 @@ p4 <- ggplot(cnt, aes(n, especie)) +
        x="Genes flagelares detectados", y=NULL) +
   tema + theme(axis.text.y=element_text(face="italic", size=11.5),
                panel.grid.major.y=element_blank())
-ggsave("salida/figuras/Fig4_genero.png", p4, width=215, height=125, units="mm", dpi=300, bg="white")
-ggsave("salida/figuras/Fig4_genero.pdf", p4, width=215, height=125, units="mm", bg="white")
+ggsave(fig("panel_genero.png"), p4, width=215, height=125, units="mm", dpi=300, bg="white")
+ggsave(fig("panel_genero.pdf"), p4, width=215, height=125, units="mm", bg="white")
 
-cat("\nFiguras escritas:\n"); print(list.files("salida/figuras"))
+cat("\nFiguras escritas:\n"); print(list.files(DIR_FIG))
