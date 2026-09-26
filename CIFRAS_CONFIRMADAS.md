@@ -288,7 +288,7 @@ ejecutados en ese orden por `scripts/ejecutar_todo.sh`:
 | `09_tabla_de_muestras.R` | sección 3 | `resultados/muestras/` |
 | `10_descargar_string.sh` | copia de STRING | `datos/string/` |
 | `11_analisis_string.R` | análisis con STRING | `resultados/string/` |
-| `12_figuras.R` | figuras | `figuras/` |
+| `12_figuras.R` | sección 15 | `figuras/` |
 
 `scripts/verificar.sh` compara cada tabla regenerada con la versión publicada en
 git. La réplica en otra computadora se describe en
@@ -351,6 +351,14 @@ La causa es la librería de álgebra lineal de cada instalación. Por eso
 `verificar.sh` compara esas 7 tablas con tolerancia (`comparar_con_tolerancia.R`:
 diferencia menor a 1e-4 absoluta o 1 % relativa, sin cambios de significancia ni
 de signo) y todas las demás byte a byte.
+
+**Orden alfabético (26 de septiembre de 2026).** `rutas.sh` y `rutas.R` fijan el
+orden alfabético "C" (`LC_COLLATE=C`, mayúsculas antes que minúsculas) y dejan
+el texto en UTF-8 para los acentos de las figuras. Con el orden del idioma del
+sistema, R ordena distinto las condiciones de DESeq2 (cambian los últimos
+decimales) y las listas de genes de STRING (flgA antes que RS05045). Con el
+orden "C", la corrida completa del 26-09-2026 dio **38 de 38 tablas idénticas
+byte a byte** a las publicadas, y lo mismo desde un clon nuevo del repositorio.
 
 ## 13. Versiones de programas
 
@@ -424,3 +432,58 @@ genes flagelares; 10 000 conjuntos aleatorios del mismo tamaño dan en promedio
 
 Red de los genes con cambio mayor a 2 veces: 195 genes con identificador, 697
 aristas, 32 genes sin ninguna arista.
+
+---
+
+## 15. Figuras (Fase 3, 26 de septiembre de 2026)
+
+`12_figuras.R` produce seis figuras en `figuras/` (PDF para imprenta y PNG a
+300 ppp, 180 mm de ancho). Las cifras que muestran se recalcularon desde
+`resultados/genes/tabla_de_genes.csv` y coinciden con `registros/12_figuras.log`.
+
+| Figura | Contenido | Cifras de origen |
+|---|---|---|
+| 1 | Flujo de trabajo | — |
+| 2 | PCA y lecturas asignadas a genes bacterianos, por muestra | secciones 3 y 4 |
+| 3 | Volcanes de temperatura (37 frente a 25 °C) y de pH (6 frente a 8) | abajo |
+| 4 | Genes flagelares y chaperonas: mapa de calor por réplica y curva térmica | abajo |
+| 5 | Red STRING de los genes con cambio mayor a 2 veces | abajo y sección 14 |
+| 6 | Presencia de los 31 genes flagelares en el género | sección 9 |
+
+**Figura 3.** Se cuentan los transcritos analizables (1 186; sección 14), no el
+universo deduplicado de la sección 6. En 1 184 hay valor q; los otros 2
+(RS07210 y RS01255) tienen cero lecturas en las 12 muestras y DESeq2 no les
+asigna valor q.
+
+| Contraste | Reprimidos | Inducidos | Total (padj < 0,05) | Flagelares significativos |
+|---|---|---|---|---|
+| 37 °C frente a 25 °C | 283 | 205 | 488 | 31 de 31 |
+| pH 6 frente a pH 8 | 187 | 188 | 375 | 6 de 31 |
+
+**Figura 4.** 45 genes: los 31 flagelares y 14 chaperonas. Las chaperonas son la
+categoría "Chaperona" de `scripts/categorias.R` (15 genes, definida por
+palabras clave antes de ver los resultados) sin FlgA (RS05575), que es
+flagelar. La categoría incluye chaperonas que no son de choque térmico (Hfq,
+SecB, PCu(A)C, HemW, la chaperona del sistema de secreción tipo III, ATP12),
+además de GroEL, GroES, DnaK, DnaJ, una proteína con dominio DnaJ, Hsp33, ClpB y
+HtpX.
+Hsp20 (RS02960, "Hsp20 family protein"), RpoH y Lon, que suben con la
+temperatura (sección 8), no entran: su anotación no contiene las palabras clave.
+
+- Mapa de calor: puntuación Z por gen de `vst(blind = FALSE)` del modelo de
+  12 muestras, en las dos réplicas de Pl25, Pl30 y Pl37.
+- Curva térmica: log2 del cambio respecto a 25 °C (contrastes 30 frente a 25 y
+  37 frente a 25). Medianas:
+
+| Grupo | 25 °C | 30 °C | 37 °C |
+|---|---|---|---|
+| Flagelares (n = 31) | 0 | −1,594 | −1,293 |
+| Chaperonas (n = 14) | 0 | +0,394 | +0,839 |
+
+A 30 °C, 30 de los 31 flagelares tienen log2 del cambio negativo, y 3 de las 14
+chaperonas.
+
+**Figura 5.** De los 195 genes con cambio mayor a 2 veces e identificador en
+STRING (sección 14), se dibujan los **163 con al menos una arista**; **697
+aristas** con puntaje combinado ≥ 0,4. Disposición de Fruchterman-Reingold con
+semilla 42.
