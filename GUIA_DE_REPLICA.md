@@ -87,8 +87,11 @@ ningún gen cambia de significativo a no significativo (ver
 `CIFRAS_CONFIRMADAS.md`, sección 12c).
 
 Los scripts 06 y 07 descargan proteomas del NCBI, así que necesitan internet.
-Las figuras se revisan a la vista (sus archivos guardan la fecha de creación y
-por eso no se comparan por md5).
+Las figuras se revisan a la vista y no se comparan por md5: en otra computadora
+cambian las fuentes y el dibujo varía un poco aunque los datos sean los mismos.
+La figura 5 puede variar incluso entre dos corridas en la misma computadora:
+ggrepel coloca algunas etiquetas en otra posición. Los nodos, las aristas y la
+disposición de la red son siempre los mismos.
 
 **Qué enviar a Hegel:** la salida completa de la pantalla y la carpeta
 `registros/`.

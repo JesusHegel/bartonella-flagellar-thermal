@@ -500,4 +500,7 @@ chaperonas.
 **Figura 5.** De los 195 genes con cambio mayor a 2 veces e identificador en
 STRING (sección 14), se dibujan los **163 con al menos una arista**; **697
 aristas** con puntaje combinado ≥ 0,4. Disposición de Fruchterman-Reingold con
-semilla 42.
+semilla 42, idéntica en cada corrida. La posición de algunas etiquetas (ggrepel
+0.9.8) puede variar entre corridas en la misma computadora: en 12 corridas
+seguidas salieron dos versiones (5 y 7), con la misma disposición de la red.
+Solo cambia el dibujo de las etiquetas, no los datos.

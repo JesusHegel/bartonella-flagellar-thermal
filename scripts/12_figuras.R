@@ -243,7 +243,9 @@ f5 <- ggplot() +
   geom_text_repel(data = nod[nod$clase %in% c("Flagelar", "Chaperona"), ], aes(x, y, label = nombre),
                   size = 2, colour = TINTA, segment.size = 0.2, segment.colour = EJE,
                   max.overlaps = Inf, box.padding = 0.15, min.segment.length = 0.2, seed = 42,
-                  max.time = 60, max.iter = 10000) +   # termina por iteraciones, no por tiempo: igual en cualquier computadora
+                  max.time = 60, max.iter = 10000) +   # termina por iteraciones, no por tiempo
+  # Aun asi, ggrepel 0.9.8 puede colocar algunas etiquetas en otra posicion entre
+  # corridas (comprobado: misma disposicion de la red, dos versiones del dibujo).
   scale_fill_manual(values = c(Flagelar = FLAG, Chaperona = CHAP, "Otro reprimido" = GRIS_O, "Otro inducido" = GRIS), name = NULL) +
   scale_shape_manual(values = c(Flagelar = 25, Chaperona = 24, "Otro reprimido" = 25, "Otro inducido" = 24), name = NULL) +
   scale_alpha_continuous(range = c(0.15, 0.7), name = "Puntaje STRING") +
