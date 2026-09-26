@@ -1,0 +1,13 @@
+{
+  "read_files": [
+    "SRR12653245_1.fastq",
+    "SRR12653245_2.fastq"
+  ],
+  "expected_format": "ISR",
+  "compatible_fragment_ratio": 1.0,
+  "num_compatible_fragments": 7315694,
+  "num_assigned_fragments": 7315694,
+  "num_frags_with_concordant_consistent_mappings": 7267014,
+  "num_frags_with_inconsistent_or_orphan_mappings": 48680,
+  "strand_mapping_bias": 0.0
+}

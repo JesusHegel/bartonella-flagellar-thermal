@@ -1,0 +1,15 @@
+{
+  "salmon_version": "2.4.1",
+  "index": "idx_kc583",
+  "libType": "A",
+  "output": "quants/SRR12653244",
+  "mates1": [
+    "SRR12653244_1.fastq"
+  ],
+  "mates2": [
+    "SRR12653244_2.fastq"
+  ],
+  "unmatedReads": [],
+  "threads": 6,
+  "sketch": false
+}
