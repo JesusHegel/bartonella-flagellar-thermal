@@ -54,8 +54,8 @@ Tasa de mapeo por matriz biológica (media):
 
 Entre el 0,2 y el 6 % de las lecturas de sangre y de células endoteliales se
 asignaron a secuencias codificantes bacterianas, frente al 38 % en cultivo puro.
-Esa diferencia de profundidad efectiva es la que impide medir cambios de
-expresión en esas muestras.
+Esa diferencia de profundidad, junto con la PCA (sección 4), justifica excluir
+esas muestras del modelo de temperatura y pH (lecturas por grupo más abajo).
 
 El índice de salmon (`idx_kc583`) es un gentrome: las CDS como objetivo y el
 cromosoma como señuelo. Por tanto `percent_mapped` mide **asignación a CDS**, no
@@ -67,6 +67,25 @@ fracción humana**.
 |---|---|
 | En el índice de salmon | 1 189 |
 | Analizables (`rowSums > 0`) | **1 186** |
+
+Lecturas asignadas a CDS por muestra (`num_mapped` de salmon):
+
+| Grupo | Muestras | Lecturas asignadas a CDS |
+|---|---|---|
+| Placa / caldo (modelo restringido) | 12 | 1,04 – 7,89 millones |
+| Placa + atmósfera sanguínea (PlBG) | 3 | 3,25 – 3,65 millones |
+| Sangre humana (HB37, HBBG) | 6 | 0,21 – 0,88 millones |
+| Células endoteliales (HUVE) | 2 | 0,045 – 0,059 millones |
+
+Referencia: Haas et al. 2012 (BMC Genomics 13:734) indican que 2–3 millones de
+fragmentos no ribosomales por muestra permiten detectar un número importante de
+genes con cambios de 2 veces o más, y que 5–10 millones detectan casi todos los
+genes salvo los de expresión más baja. Dos muestras incluidas quedan por debajo
+de 2 millones (Pl25 SRR12653236: 1,63; Pl30 SRR12653239: 1,04). **La profundidad
+sola no separa los grupos**: la muestra de sangre más profunda (0,88) está cerca
+de la de cultivo más baja (1,04). La exclusión de sangre y células endoteliales
+se apoya en la PCA (sección 4) y en el diseño; la de PlBG, solo en el diseño (no
+pertenece a las series de temperatura ni de pH).
 
 ---
 
@@ -151,7 +170,7 @@ y no aparece frente a un estímulo distinto de magnitud comparable.
 
 ---
 
-## 8. Perfil térmico: dos programas independientes
+## 8. Perfil térmico: dos programas con perfiles distintos
 
 De los 31 genes flagelares, el contraste **37 vs 30 °C no es significativo en
 30 de 31** (único con p<0,05: FliF RS05510, p = 0,012, que no sobrevive la
@@ -171,11 +190,13 @@ Conteos normalizados (media por condición):
 | RS02640 | Endopeptidasa La (Lon) | 3 992 | 6 089 | 12 609 |
 | RS05920 | Proteína de membrana externa | 58 505 | 11 347 | 15 462 |
 
-**La represión flagelar ocurre entre 25 y 30 °C** (flagelina −71 %), donde las
-chaperonas apenas se mueven (GroEL +5 %). **La respuesta de choque térmico
-ocurre entre 30 y 37 °C** (GroEL ×4,6, ClpB ×8,3), donde el flagelo ya no
-cambia. Son dos programas con umbrales térmicos distintos; el flagelar
-precede al de choque térmico.
+**La represión flagelar ocurre entre 25 y 30 °C** (flagelina −71 %) y no avanza
+entre 30 y 37 °C. **Las chaperonas principales cambian sobre todo entre 30 y
+37 °C**: GroEL +5 % de 25 a 30 °C y ×4,6 de 30 a 37 °C; ClpB ×1,4 y ×8,3.
+No todo el sistema de choque térmico espera a 37 °C: RpoH (×2,3), Hsp20 (×3,1)
+y DnaK (×1,7) ya suben entre 25 y 30 °C (razones entre las medias de la tabla).
+Los dos programas tienen perfiles térmicos distintos; los datos no permiten
+afirmar que uno preceda al otro.
 
 Lectura correcta: la expresión flagelar es **máxima a 25 °C** y ya está
 reprimida a 30 °C, sin descenso adicional a 37 °C.
@@ -269,7 +290,26 @@ Corrección aplicada en esa verificación: el script 05 requería `mapeo.tsv`, q
 ningún script generaba. Ahora lo construye a partir de los informes
 `quants/*/aux_info/meta_info.json` de salmon.
 
-Pendientes de reverificar: secciones 9 y 10 (BLASTp y RNAfold).
+Secciones 9 y 10 reverificadas el mismo día en `salida/` limpia: los scripts 07
+y 08 regeneraron `panel.tsv`, `rbh.tsv`, `chk_quimiotaxis.tsv` y
+`utr_flagelina.fa` **idénticos byte a byte**, y los valores del UTR (−39,5
+kcal/mol; controles media −26,6; 4 %) coinciden.
+
+### Cadena desde el SRA
+
+- Índice: `salmon index -t gentrome.fna -d decoys.txt -i idx_kc583 -k 31`.
+  `gentrome.fna` = `cds_from_genomic.fna` + genoma completo concatenados (md5
+  `bc9bf0e33d39363355d2e013eaf31e44`); `decoys.txt` = `NC_008783.1`. Reconstruido
+  el 25-09-2026: las seis huellas de `info.json` (secuencias, nombres, señuelo)
+  coinciden con el índice original.
+- Cuantificación, igual en las 23 muestras: `salmon quant -i idx_kc583 -l A
+  -1 R_1.fastq -2 R_2.fastq -p 6`, con lecturas obtenidas por `prefetch` y
+  `fasterq-dump --split-3`.
+- Prueba con SRR12653239 descargada de nuevo: mismas 2 786 511 lecturas;
+  asignadas 1 040 550 frente a 1 040 336 (+0,02 %); 8 transcritos con NumReads
+  distinto, ninguno flagelar; el mayor cambio en RS00010 (615 → 851). salmon con
+  varios hilos no es determinista: desde el SRA los resultados se reproducen con
+  diferencias mínimas, no byte a byte.
 
 ## 13. Versiones de programas
 
