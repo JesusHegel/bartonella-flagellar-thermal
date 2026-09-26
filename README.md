@@ -66,7 +66,7 @@ totalidad de los genes con anotación flagelar.
 | `03_enriquecimiento.R` | Enriquecimiento hipergeométrico y fgsea (`resultados/enriquecimiento/`) |
 | `04_robustez.R` | Umbrales, modelos, curva térmica, especificidad, particiones (`resultados/robustez/`) |
 | `05_pca_y_tasa_mapeo.R` | PCA frente a tasa de asignación por muestra (`resultados/muestras/`) |
-| `06_panel_genero_y_ortologia.sh` | BLASTp en siete especies, búsqueda de vuelta de los aciertos parciales y ortología con USM-LMMB07 (`resultados/genomica_comparada/`) |
+| `06_panel_genero_y_ortologia.sh` | BLASTp en siete especies con búsqueda de vuelta en KC583, y ortología con USM-LMMB07 (`resultados/genomica_comparada/`) |
 | `07_quimiotaxis_y_utr.sh` | Homólogos del sistema Che y estructura del 5'UTR de la flagelina |
 | `08_tabla_de_genes.R` | Qué gen es cada transcrito, TPM por condición y los 20 más inducidos y reprimidos (`resultados/genes/`) |
 | `09_tabla_de_muestras.R` | Lecturas de cada corrida y motivo de inclusión o exclusión (`resultados/muestras/`) |

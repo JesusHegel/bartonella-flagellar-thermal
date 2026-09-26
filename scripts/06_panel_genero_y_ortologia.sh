@@ -3,8 +3,8 @@
 #
 # Busca por BLASTp los 31 genes flagelares (conjunto del script 01) en siete
 # especies de Bartonella, y calcula ortologos reciprocos entre KC583 y
-# USM-LMMB07. En las especies donde no estan los 31, busca de vuelta en KC583
-# cada proteina encontrada, para saber si es el gen flagelar o una paraloga. Descarga los proteomas del NCBI (necesita internet) y guarda la
+# USM-LMMB07. Cada proteina encontrada en el panel se busca de vuelta en KC583,
+# para saber si es el gen flagelar (ortologo) o una proteina emparentada (paraloga). Descarga los proteomas del NCBI (necesita internet) y guarda la
 # huella md5 de cada uno, para saber si el NCBI los cambia en el futuro.
 set -uo pipefail
 source scripts/rutas.sh
@@ -80,17 +80,17 @@ awk 'NR==FNR{m[$1]=$2;next} m[$2]==$1' best_kc_usm.tsv best_usm_kc.tsv > "$GC/or
 echo "Pares reciprocos : $(wc -l < "$GC/ortologos_reciprocos_KC583_USM-LMMB07.tsv")"
 echo "Flagelares con ortologo reciproco: $(awk 'NR==FNR{k[$1];next} $2 in k' wp31.txt "$GC/ortologos_reciprocos_KC583_USM-LMMB07.tsv" | wc -l) de 31"
 
-echo; echo "=== ESPECIES SIN LOS 31: cada acierto se busca de vuelta en KC583 ==="
-# En las especies donde no estan los 31 genes, cada proteina encontrada se busca
-# de vuelta en KC583. Si su mejor coincidencia es el mismo gen flagelar, el
-# acierto es un ortologo reciproco. Si es otra proteina de KC583, el acierto es
-# una proteina emparentada (paraloga), no el gen flagelar.
+echo; echo "=== BUSQUEDA DE VUELTA EN KC583 (cada acierto del panel) ==="
+# Cada proteina encontrada en las otras seis especies se busca de vuelta en
+# KC583. Si su mejor coincidencia es el mismo gen flagelar, el acierto es un
+# ortologo reciproco. Si es otra proteina de KC583, el acierto es una proteina
+# emparentada (paraloga), no el gen flagelar.
 # Se piden las 5 mejores coincidencias y se elige la de mayor puntaje (bitscore),
 # porque -max_target_seqs 1 no garantiza devolver la mejor.
 while read A N; do echo "$N $(proteoma $A)"; done < nombres.txt > rutas_proteomas.txt
 : > ida.tsv
 while read A N; do
-  [ "$(awk -v n=$N '$2==n' "$GC/panel_genero_blastp.tsv" | wc -l)" -lt 31 ] || continue
+  [ "$A" = kc583 ] && continue
   blastp -query flag31.faa -db db/$N -max_hsps 1 -max_target_seqs 5 -evalue 1e-5 -num_threads 4 \
     -outfmt '6 qseqid sseqid pident qcovs bitscore' 2>/dev/null \
     | sort -t$'\t' -k1,1 -k5,5gr -k2,2 | awk -v n=$N -F'\t' '!v[$1]++ {print n"\t"$0}' >> ida.tsv
@@ -144,7 +144,11 @@ for l in open('ida.tsv'):
 with open(sys.argv[1], 'w') as f:
     f.write('\t'.join(cab) + '\n')
     for r in filas: f.write('\t'.join(r) + '\n')
-for r in filas:
-    print('%-12s %s (%s) -> %s (%s), identidad %s %%, cobertura %s %%; de vuelta: %s (%s) -> reciproco: %s'
-          % (r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]))
+for n in dict.fromkeys(r[0] for r in filas):
+    fs = [r for r in filas if r[0] == n]
+    print('%-16s %2d aciertos, %2d ortologos reciprocos' % (n, len(fs), sum(r[9] == 'si' for r in fs)))
+    for r in fs:
+        if r[9] == 'no':
+            print('    no reciproco: %s (%s) -> %s (%s), identidad %s %%, cobertura %s %%; de vuelta: %s (%s)'
+                  % (r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8]))
 PY
