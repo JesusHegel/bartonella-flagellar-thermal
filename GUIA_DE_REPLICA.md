@@ -107,15 +107,28 @@ descarga, se cuantifica y se borra antes de la siguiente).
 ```bash
 cd ~/bartonella
 conda activate bartonella
-bash scripts/00_descargar_y_cuantificar.sh
+bash scripts/replica_nivel_2.sh
 ```
 
-Primero reconstruye el índice de salmon y comprueba que sus seis huellas
-coinciden con el original. Luego descarga y cuantifica las 23 corridas en
-`cuantificacion_desde_sra/`, sin tocar `cuantificacion/`.
+Hace tres cosas, en orden:
 
-> La comparación de resultados del nivel 2 se completará después del ensayo
-> de la Fase 4.
+1. Reconstruye el índice de salmon, comprueba que sus seis huellas coinciden con
+   el original, y descarga y cuantifica las 23 corridas en
+   `cuantificacion_desde_sra/` (script 00). Si se corta, vuelve a correr el mismo
+   comando: retoma donde quedó.
+2. Corre el análisis completo sobre esas cuantificaciones, en carpetas aparte que
+   terminan en `_desde_sra`. Nunca toca `cuantificacion/` ni `resultados/`.
+3. Compara las cifras principales con las publicadas (`comparar_nivel_2.R`).
+
+No corras `ejecutar_todo.sh` mientras trabaja: borra `intermedios/`, donde está
+el índice de salmon.
+
+Desde el SRA **no se espera identidad byte a byte**: salmon con varios hilos no
+es determinista. La tabla A muestra las lecturas de cada corrida y la tabla B
+las cifras principales publicadas junto a las obtenidas desde el SRA. Lo que
+importa es que no cambie ninguna conclusión.
+
+**Qué enviar a Hegel:** `registros_desde_sra/comparar_nivel_2.log`.
 
 ---
 

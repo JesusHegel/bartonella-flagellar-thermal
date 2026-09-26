@@ -49,5 +49,8 @@ Rscript -e 'suppressMessages({library(tximport); library(DESeq2); library(ashr);
 { salmon --version; prefetch --version; blastp -version | head -1; RNAfold --version; datasets --version; python3 --version; } \
   > "$DIR_REG/versiones_programas.txt" 2>&1
 echo "== Terminado ($(date +%H:%M:%S)) =="
+# La replica desde el SRA (replica_nivel_2.sh) se compara con su propio script,
+# porque ahi no se esperan tablas identicas byte a byte.
+[ "${VERIFICAR:-1}" = 1 ] || exit 0
 echo
 bash scripts/verificar.sh

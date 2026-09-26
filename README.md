@@ -77,6 +77,8 @@ totalidad de los genes con anotación flagelar.
 | `12_figuras.R` | Las seis figuras del manuscrito (`figuras/`): flujo, muestras, volcanes, flagelares y chaperonas, red STRING y panel del género |
 | `ejecutar_todo.sh` | Corre del 01 al 12 y verifica el resultado |
 | `verificar.sh` | Compara cada tabla regenerada con la versión publicada |
+| `replica_nivel_2.sh` | Réplica completa desde el SRA: script 00, análisis en carpetas `_desde_sra` y comparación |
+| `comparar_nivel_2.R` | Compara la réplica desde el SRA con las cifras publicadas |
 
 ### Uso rápido
 
