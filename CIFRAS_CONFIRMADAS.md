@@ -281,8 +281,8 @@ ejecutados en ese orden por `scripts/ejecutar_todo.sh`:
 | `07_quimiotaxis_y_utr.sh` | secciones 9 (quimiotaxis) y 10 | `resultados/genomica_comparada/` |
 | `08_figuras.R` | figuras | `figuras/` |
 
-`scripts/verificar.sh` compara cada tabla con su huella md5 registrada en
-`verificacion/sumas_md5.txt`. La réplica en otra computadora se describe en
+`scripts/verificar.sh` compara cada tabla regenerada con la versión publicada en
+git. La réplica en otra computadora se describe en
 `GUIA_DE_REPLICA.md`.
 
 Nombres anteriores al 25-09-2026 (para leer las secciones 12b y los registros
@@ -324,6 +324,25 @@ kcal/mol; controles media −26,6; 4 %) coinciden.
   varios hilos no es determinista: desde el SRA los resultados se reproducen con
   diferencias mínimas, no byte a byte.
 
+## 12c. Entorno de referencia (25 de septiembre de 2026)
+
+Desde esta fecha, las tablas publicadas se generan con el entorno de conda
+`entorno/bartonella.yml`, que reúne en uno solo los programas antes repartidos
+en cuatro entornos. Comparado con la corrida anterior (entorno `de`), en la
+misma computadora:
+
+- 22 de 29 tablas **idénticas byte a byte**.
+- Los 5 contrastes de DESeq2, fgsea y la PCA difieren solo en decimales lejanos:
+  como máximo 1,4 × 10⁻⁵ en log2FoldChange, 3,9 × 10⁻⁵ en pvalue y 1 × 10⁻⁶ en
+  el NES. **Ningún gen cambia de significancia ni de signo**; los valores p de
+  fgsea son idénticos y ninguna cifra de este documento cambia.
+- Dos corridas seguidas con el entorno `bartonella` dan tablas idénticas.
+
+La causa es la librería de álgebra lineal de cada instalación. Por eso
+`verificar.sh` compara esas 7 tablas con tolerancia (`comparar_con_tolerancia.R`:
+diferencia menor a 1e-4 absoluta o 1 % relativa, sin cambios de significancia ni
+de signo) y todas las demás byte a byte.
+
 ## 13. Versiones de programas
 
 ```
@@ -336,4 +355,6 @@ fgsea 1.36.2
 blastp: 2.17.0+
 RNAfold 2.7.0
 datasets version: 18.33.1
+sra-tools 3.4.1
+Python 3.12 (en el entorno bartonella; 3.13 no es compatible con viennarna 2.7.0)
 ```

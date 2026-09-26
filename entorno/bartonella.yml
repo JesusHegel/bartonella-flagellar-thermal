@@ -8,12 +8,12 @@ channels:
 dependencies:
   # Cuantificacion (solo para la replica completa desde el SRA)
   - salmon=2.4.1
-  - sra-tools=VERSION_SRA
+  - sra-tools=3.4.1
   # Genomica comparada
   - ncbi-datasets-cli=18.33.1
   - blast=2.17.0
   - viennarna=2.7.0
-  - python=3.13
+  - python=3.12   # 3.13 no es compatible con viennarna 2.7.0
   - unzip
   # Analisis estadistico
   - r-base=4.5.3

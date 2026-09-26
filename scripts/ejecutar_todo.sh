@@ -41,8 +41,8 @@ correr 06_panel_genero_y_ortologia.sh
 correr 07_quimiotaxis_y_utr.sh
 correr 08_figuras.R
 
-Rscript -e 'sessionInfo()' > "$DIR_REG/versiones_R.txt" 2>&1
-{ salmon --version; blastp -version | head -1; RNAfold --version; datasets --version; python3 --version; } \
+Rscript -e 'suppressMessages({library(tximport); library(DESeq2); library(ashr); library(fgsea); library(ggplot2)}); sessionInfo()' > "$DIR_REG/versiones_R.txt" 2>&1
+{ salmon --version; prefetch --version; blastp -version | head -1; RNAfold --version; datasets --version; python3 --version; } \
   > "$DIR_REG/versiones_programas.txt" 2>&1
 echo "== Terminado ($(date +%H:%M:%S)) =="
 echo

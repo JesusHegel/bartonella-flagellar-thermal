@@ -8,7 +8,7 @@ Hay dos niveles de réplica:
 
 | Nivel | Parte de | Resultado esperado | Tiempo aproximado |
 |---|---|---|---|
-| **1** (obligatorio) | Las cuantificaciones de salmon incluidas en `cuantificacion/` | Todas las tablas **idénticas byte a byte** | 10–20 min, más la instalación |
+| **1** (obligatorio) | Las cuantificaciones de salmon incluidas en `cuantificacion/` | Tablas **idénticas byte a byte**, salvo 7 que pueden variar en el último decimal (se verifican con tolerancia) | 10–20 min, más la instalación |
 | **2** (si el equipo lo permite) | Las lecturas crudas del SRA | Mismas conclusiones, con diferencias mínimas en decimales | 1–2 h, necesita internet y 25 GB libres |
 
 El nivel 2 no puede dar archivos idénticos: salmon con varios hilos reparte de
@@ -72,12 +72,18 @@ bash scripts/ejecutar_todo.sh
 ```
 
 El script borra `resultados/`, `figuras/` e `intermedios/`, los regenera desde
-cero y al final compara cada tabla con su huella registrada. La última línea
-debe decir:
+cero y al final compara cada tabla con la versión publicada. La última línea
+debe decir una de estas dos cosas:
 
 ```
 RESULTADO: todo identico.
+RESULTADO: correcto. 22 tablas identicas y 7 equivalentes dentro de la tolerancia.
 ```
+
+La segunda es normal en otra computadora: los contrastes de DESeq2, fgsea y la
+PCA pueden variar en el último decimal según el procesador. Se aceptan solo si
+ningún gen cambia de significativo a no significativo (ver
+`CIFRAS_CONFIRMADAS.md`, sección 12c).
 
 Los scripts 06 y 07 descargan proteomas del NCBI, así que necesitan internet.
 Las figuras se revisan a la vista (sus archivos guardan la fecha de creación y

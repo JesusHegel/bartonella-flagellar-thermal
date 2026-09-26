@@ -1,46 +1,59 @@
 #!/bin/bash
-# Compara cada archivo con la huella md5 registrada en verificacion/sumas_md5.txt.
+# Compara cada tabla regenerada con la version publicada en el repositorio (git).
 #
-#   bash scripts/verificar.sh             verifica y resume
-#   bash scripts/verificar.sh --generar   rehace la lista (solo el autor, tras una
-#                                          corrida validada)
+#   bash scripts/verificar.sh
 #
-# La lista cubre los datos de entrada (datos/, cuantificacion/) y todas las
-# tablas de resultados/. Las figuras no se comparan por md5 porque los PNG y
-# PDF guardan la fecha de creacion dentro del archivo: se revisan a la vista.
+# - La mayoria de tablas deben ser IDENTICAS byte a byte.
+# - Los contrastes de DESeq2, fgsea y la PCA pueden variar en el ultimo decimal
+#   segun el procesador; si no son identicas se comparan con tolerancia
+#   (scripts/comparar_con_tolerancia.R) y se aceptan como EQUIVALENTES solo si
+#   no cambia ninguna decision de significancia.
+# - Las figuras no se comparan: sus archivos guardan la fecha de creacion.
+#   Se revisan a la vista.
 set -uo pipefail
 source scripts/rutas.sh
-LISTA=verificacion/sumas_md5.txt
+git rev-parse --git-dir >/dev/null 2>&1 || { echo "ERROR: esta carpeta no es un repositorio git"; exit 1; }
 
-if [ "${1:-}" = "--generar" ]; then
-  mkdir -p verificacion
-  find datos cuantificacion resultados -type f | sort | xargs md5sum > "$LISTA"
-  echo "Lista rehecha: $(wc -l < "$LISTA") archivos en $LISTA"
-  exit 0
-fi
-
-[ -f "$LISTA" ] || { echo "ERROR: falta $LISTA"; exit 1; }
-iguales=0; distintos=(); faltan=()
-while read -r suma ruta; do
-  case $ruta in
-    resultados/*)     real="$DIR_RES/${ruta#resultados/}" ;;
-    cuantificacion/*) [ "$DIR_CUANT" = cuantificacion ] || continue; real=$ruta ;;
-    *)                real=$ruta ;;
+con_tolerancia() {
+  case $1 in
+    resultados/expresion_diferencial/*|resultados/enriquecimiento/enriquecimiento_fgsea.csv|resultados/muestras/pca_y_tasa_mapeo.csv) return 0 ;;
+    *) return 1 ;;
   esac
-  if [ ! -f "$real" ]; then faltan+=("$real")
-  elif [ "$(md5sum < "$real" | cut -d' ' -f1)" = "$suma" ]; then iguales=$((iguales+1))
-  else distintos+=("$real"); fi
-done < "$LISTA"
-nuevos=$(comm -13 <(grep ' resultados/' "$LISTA" | sed "s#  resultados/#  $DIR_RES/#" | cut -d' ' -f3- | sort) \
-                  <(find "$DIR_RES" -type f | sort))
+}
 
-echo "===== VERIFICACION ($DIR_RES) ====="
-echo "Identicos : $iguales"
-echo "Distintos : ${#distintos[@]}";  for f in "${distintos[@]}"; do echo "   DISTINTO  $f"; done
-echo "Faltan    : ${#faltan[@]}";     for f in "${faltan[@]}";    do echo "   FALTA     $f"; done
-[ -n "$nuevos" ] && { echo "Archivos nuevos, sin huella registrada:"; echo "$nuevos" | sed 's/^/   NUEVO     /'; }
-if [ ${#distintos[@]} -eq 0 ] && [ ${#faltan[@]} -eq 0 ]; then
-  echo "RESULTADO: todo identico."
-else
+echo "===== VERIFICACION ($DIR_RES frente a la version publicada) ====="
+git diff --quiet HEAD -- datos cuantificacion \
+  && echo "Datos de entrada: sin cambios" \
+  || echo "AVISO: los datos de entrada (datos/ o cuantificacion/) no coinciden con los publicados"
+
+TMP=$(mktemp)
+iguales=0; equivalentes=(); distintos=(); faltan=()
+for ruta in $(git ls-files resultados); do
+  m=""
+  real="$DIR_RES/${ruta#resultados/}"
+  if [ ! -f "$real" ]; then faltan+=("$real"); continue; fi
+  git show "HEAD:$ruta" > "$TMP"
+  if cmp -s "$real" "$TMP"; then
+    iguales=$((iguales+1))
+  elif con_tolerancia "$ruta" && m=$(Rscript scripts/comparar_con_tolerancia.R "$real" "$TMP" 2>&1); then
+    equivalentes+=("$real  ->  $m")
+  else
+    distintos+=("$real  $m")
+  fi
+done
+rm -f "$TMP"
+nuevos=$(comm -13 <(git ls-files resultados | sed "s#^resultados/#$DIR_RES/#" | sort) <(find "$DIR_RES" -type f | sort))
+
+echo "Identicos    : $iguales"
+echo "Equivalentes : ${#equivalentes[@]}"; for f in "${equivalentes[@]}"; do echo "   $f"; done
+echo "Distintos    : ${#distintos[@]}";    for f in "${distintos[@]}";    do echo "   DISTINTO  $f"; done
+echo "Faltan       : ${#faltan[@]}";       for f in "${faltan[@]}";       do echo "   FALTA     $f"; done
+[ -n "$nuevos" ] && { echo "Archivos nuevos, sin version publicada:"; echo "$nuevos" | sed 's/^/   NUEVO     /'; }
+
+if [ ${#distintos[@]} -gt 0 ] || [ ${#faltan[@]} -gt 0 ]; then
   echo "RESULTADO: hay diferencias. No sigas hasta entender la causa."; exit 1
+elif [ ${#equivalentes[@]} -gt 0 ]; then
+  echo "RESULTADO: correcto. $iguales tablas identicas y ${#equivalentes[@]} equivalentes dentro de la tolerancia."
+else
+  echo "RESULTADO: todo identico."
 fi

@@ -55,7 +55,6 @@ totalidad de los genes con anotación flagelar.
     resultados/             Tablas que producen los scripts
     figuras/                Figuras (PNG para pantalla, PDF para imprenta)
     registros/              Salida de pantalla de cada script en la última corrida
-    verificacion/           Huella md5 de cada archivo, para comprobar una réplica
 
 ### Scripts
 
@@ -71,7 +70,7 @@ totalidad de los genes con anotación flagelar.
 | `07_quimiotaxis_y_utr.sh` | Homólogos del sistema Che y estructura del 5'UTR de la flagelina |
 | `08_figuras.R` | Figuras (`figuras/`) |
 | `ejecutar_todo.sh` | Corre del 01 al 08 y verifica el resultado |
-| `verificar.sh` | Compara cada tabla con su huella md5 registrada |
+| `verificar.sh` | Compara cada tabla regenerada con la versión publicada |
 
 ### Uso rápido
 
@@ -81,9 +80,11 @@ conda activate bartonella
 bash scripts/ejecutar_todo.sh
 ```
 
-La corrida completa tarda unos minutos y termina con un resumen de
-verificación. `RESULTADO: todo identico.` significa que cada tabla coincide
-byte a byte con la publicada.
+La corrida completa tarda unos minutos y termina comparando cada tabla con la
+versión publicada. Casi todas deben ser idénticas byte a byte. Los contrastes de
+DESeq2, fgsea y la PCA pueden variar en el último decimal según el procesador;
+en ese caso se comparan con tolerancia y solo se aceptan si no cambia ninguna
+decisión de significancia (ver `scripts/comparar_con_tolerancia.R`).
 
 ---
 
