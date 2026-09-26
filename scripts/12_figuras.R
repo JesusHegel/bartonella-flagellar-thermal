@@ -1,4 +1,4 @@
-# 08. Figuras del proyecto (version de trabajo; se rehacen en la Fase 3).
+# 12. Figuras del proyecto (version de trabajo; se rehacen en la Fase 3).
 suppressMessages({library(DESeq2); library(ggplot2)})
 source("scripts/rutas.R")
 

@@ -16,7 +16,8 @@ git rev-parse --git-dir >/dev/null 2>&1 || { echo "ERROR: esta carpeta no es un 
 
 con_tolerancia() {
   case $1 in
-    resultados/expresion_diferencial/*|resultados/enriquecimiento/enriquecimiento_fgsea.csv|resultados/muestras/pca_y_tasa_mapeo.csv) return 0 ;;
+    resultados/expresion_diferencial/*|resultados/enriquecimiento/enriquecimiento_fgsea.csv|resultados/muestras/pca_y_tasa_mapeo.csv|\
+    resultados/genes/*|resultados/string/red_cambio_2x_nodos.csv) return 0 ;;
     *) return 1 ;;
   esac
 }

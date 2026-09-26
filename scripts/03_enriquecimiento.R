@@ -28,14 +28,8 @@ ind <- sig & lfc > 0; rep <- sig & lfc < 0
 
 cat("*** Universo deduplicado:", N, " inducidos:", sum(ind), " reprimidos:", sum(rep), "***\n\n")
 
-vias <- list(
-  Flagelar   = u$lt[u$lt %in% fl],
-  Ribosoma   = u$lt[grepl("ribosomal protein", u$prod, ignore.case = TRUE)],
-  Chaperona  = u$lt[grepl("chaperon|heat shock|GroE|DnaJ|DnaK|ClpB|HtpX", u$prod, ignore.case = TRUE)],
-  TranspABC  = u$lt[grepl("ABC transporter", u$prod, ignore.case = TRUE)],
-  HierroHemo = u$lt[grepl("hemin|heme|iron|TonB|ferr", u$prod, ignore.case = TRUE)],
-  Traduccion = u$lt[grepl("tRNA|elongation factor|translation", u$prod, ignore.case = TRUE)],
-  Hipotetica = u$lt[grepl("hypothetical", u$prod, ignore.case = TRUE)])
+source("scripts/categorias.R")
+vias <- definir_categorias(u$lt, u$prod, fl)
 
 hy <- do.call(rbind, lapply(names(vias), function(v) {
   g <- u$lt %in% vias[[v]]; K <- sum(g); ki <- sum(g & ind); kr <- sum(g & rep)

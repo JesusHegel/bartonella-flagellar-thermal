@@ -8,7 +8,7 @@ Hay dos niveles de réplica:
 
 | Nivel | Parte de | Resultado esperado | Tiempo aproximado |
 |---|---|---|---|
-| **1** (obligatorio) | Las cuantificaciones de salmon incluidas en `cuantificacion/` | Tablas **idénticas byte a byte**, salvo 7 que pueden variar en el último decimal (se verifican con tolerancia) | 10–20 min, más la instalación |
+| **1** (obligatorio) | Las cuantificaciones de salmon incluidas en `cuantificacion/` | Tablas **idénticas byte a byte**, salvo las numéricas de DESeq2 y derivadas, que pueden variar en el último decimal (se verifican con tolerancia) | 10–20 min, más la instalación |
 | **2** (si el equipo lo permite) | Las lecturas crudas del SRA | Mismas conclusiones, con diferencias mínimas en decimales | 1–2 h, necesita internet y 25 GB libres |
 
 El nivel 2 no puede dar archivos idénticos: salmon con varios hilos reparte de
@@ -77,11 +77,12 @@ debe decir una de estas dos cosas:
 
 ```
 RESULTADO: todo identico.
-RESULTADO: correcto. 22 tablas identicas y 7 equivalentes dentro de la tolerancia.
+RESULTADO: correcto. N tablas identicas y M equivalentes dentro de la tolerancia.
 ```
 
-La segunda es normal en otra computadora: los contrastes de DESeq2, fgsea y la
-PCA pueden variar en el último decimal según el procesador. Se aceptan solo si
+La segunda es normal en otra computadora: los contrastes de DESeq2, fgsea, la
+PCA y las tablas que se derivan de ellos pueden variar en el último decimal
+según el procesador. Se aceptan solo si
 ningún gen cambia de significativo a no significativo (ver
 `CIFRAS_CONFIRMADAS.md`, sección 12c).
 

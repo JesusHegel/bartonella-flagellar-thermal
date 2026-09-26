@@ -279,7 +279,11 @@ ejecutados en ese orden por `scripts/ejecutar_todo.sh`:
 | `05_pca_y_tasa_mapeo.R` | secciones 3 y 4 | `resultados/muestras/` |
 | `06_panel_genero_y_ortologia.sh` | sección 9 (panel de género y ortología) | `resultados/genomica_comparada/` |
 | `07_quimiotaxis_y_utr.sh` | secciones 9 (quimiotaxis) y 10 | `resultados/genomica_comparada/` |
-| `08_figuras.R` | figuras | `figuras/` |
+| `08_tabla_de_genes.R` | tabla de genes y top 20 | `resultados/genes/` |
+| `09_tabla_de_muestras.R` | sección 3 | `resultados/muestras/` |
+| `10_descargar_string.sh` | copia de STRING | `datos/string/` |
+| `11_analisis_string.R` | análisis con STRING | `resultados/string/` |
+| `12_figuras.R` | figuras | `figuras/` |
 
 `scripts/verificar.sh` compara cada tabla regenerada con la versión publicada en
 git. La réplica en otra computadora se describe en

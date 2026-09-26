@@ -49,7 +49,7 @@ totalidad de los genes con anotación flagelar.
     CIFRAS_CONFIRMADAS.md   Todas las cifras del proyecto, con su procedencia
     GUIA_DE_REPLICA.md      Paso a paso para replicar el análisis en otra computadora
     entorno/                Programas y versiones exactas (entorno de conda)
-    datos/                  Tabla de muestras y genoma de referencia KC583 del NCBI
+    datos/                  Tabla de muestras, genoma de referencia KC583 del NCBI y copia de STRING
     cuantificacion/         Cuantificación de salmon de las 23 corridas (punto de partida)
     scripts/                Scripts numerados en el orden en que se ejecutan
     resultados/             Tablas que producen los scripts
@@ -68,8 +68,12 @@ totalidad de los genes con anotación flagelar.
 | `05_pca_y_tasa_mapeo.R` | PCA frente a tasa de asignación por muestra (`resultados/muestras/`) |
 | `06_panel_genero_y_ortologia.sh` | BLASTp en siete especies y ortología con USM-LMMB07 (`resultados/genomica_comparada/`) |
 | `07_quimiotaxis_y_utr.sh` | Homólogos del sistema Che y estructura del 5'UTR de la flagelina |
-| `08_figuras.R` | Figuras (`figuras/`) |
-| `ejecutar_todo.sh` | Corre del 01 al 08 y verifica el resultado |
+| `08_tabla_de_genes.R` | Qué gen es cada transcrito, TPM por condición y los 20 más inducidos y reprimidos (`resultados/genes/`) |
+| `09_tabla_de_muestras.R` | Lecturas de cada corrida y motivo de inclusión o exclusión (`resultados/muestras/`) |
+| `10_descargar_string.sh` | Descarga STRING para KC583 solo si no está guardado en `datos/string/` |
+| `11_analisis_string.R` | Enriquecimiento con la anotación de STRING y módulo flagelar en la red (`resultados/string/`) |
+| `12_figuras.R` | Figuras (`figuras/`) |
+| `ejecutar_todo.sh` | Corre del 01 al 12 y verifica el resultado |
 | `verificar.sh` | Compara cada tabla regenerada con la versión publicada |
 
 ### Uso rápido

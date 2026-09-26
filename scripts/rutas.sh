@@ -13,5 +13,5 @@ DIR_DESC=${DIR_DESC:-descargas}              # proteomas descargados del NCBI (n
 DIR_REG=${DIR_REG:-registros}                # salida de pantalla de cada script
 REF=datos/referencia                         # genoma de referencia KC583 (GCF_000015445.1)
 
-mkdir -p "$DIR_RES"/{anotacion,expresion_diferencial,enriquecimiento,robustez,muestras,genomica_comparada} \
+mkdir -p "$DIR_RES"/{anotacion,expresion_diferencial,enriquecimiento,robustez,muestras,genomica_comparada,genes,string} \
          "$DIR_INT" "$DIR_FIG" "$DIR_DESC" "$DIR_REG"
