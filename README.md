@@ -34,8 +34,10 @@ genoma (375 transcritos modificados, frente a 488 por temperatura), solo
 
 **Distribución en el género.** Los 31 genes están completos en
 *B. bacilliformis*, *B. clarridgeiae*, *B. schoenbuchensis* y *B. ancashensis*,
-y se reducen a **2 de 31** en *B. tribocorum*, *B. quintana* y *B. henselae*.
-Los 31 tienen ortólogo recíproco en la cepa peruana USM-LMMB07.
+con ortólogo recíproco, y se reducen a **1 de 31** (FliO) en *B. tribocorum*,
+*B. quintana* y *B. henselae*; el otro acierto en esas especies, de FliI, es la
+ATP sintasa β, un parálogo. Los 31 tienen ortólogo recíproco en la cepa peruana
+USM-LMMB07.
 
 El conjunto flagelar se define en `scripts/01_anotacion.sh` por palabras clave
 sobre la anotación del genoma. **Ese script no consulta ningún dato de

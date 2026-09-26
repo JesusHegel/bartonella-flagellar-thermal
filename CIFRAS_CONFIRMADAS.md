@@ -213,15 +213,28 @@ reprimida a 30 °C, sin descenso adicional a 37 °C.
 
 ### Panel de género (BLASTp, e<1e-5, de los 31 flagelares)
 
-| Especie | Genes presentes |
-|---|---|
-| *B. bacilliformis* | 31 / 31 |
-| *B. clarridgeiae* | 31 / 31 |
-| *B. schoenbuchensis* | 31 / 31 |
-| *B. ancashensis* | 31 / 31 |
-| *B. tribocorum* | **2 / 31** |
-| *B. quintana* | **2 / 31** |
-| *B. henselae* | **2 / 31** |
+Cada acierto se buscó de vuelta en KC583 (`scripts/06_panel_genero_y_ortologia.sh`,
+`resultados/genomica_comparada/panel_genero_busqueda_de_vuelta.tsv`): es ortólogo
+recíproco si su mejor coincidencia de vuelta (mayor bitscore) es el mismo gen
+flagelar.
+
+| Especie | Aciertos BLASTp | **Ortólogos recíprocos** |
+|---|---|---|
+| *B. bacilliformis* | 31 / 31 | 31 / 31 |
+| *B. clarridgeiae* | 31 / 31 | **31 / 31** |
+| *B. schoenbuchensis* | 31 / 31 | **31 / 31** |
+| *B. ancashensis* | 31 / 31 | **31 / 31** |
+| *B. tribocorum* | 2 / 31 | **1 / 31** (FliO) |
+| *B. quintana* | 2 / 31 | **1 / 31** (FliO) |
+| *B. henselae* | 2 / 31 | **1 / 31** (FliO) |
+
+- **FliO** (RS04185): 45,5 % (*B. tribocorum*), 46,1 % (*B. quintana*) y 49,4 %
+  (*B. henselae*) de identidad, 100 % de cobertura, anotada como FliO en las tres.
+- **El acierto de FliI (RS05600) es un parálogo:** la subunidad β de la ATP
+  sintasa F0F1 (identidad 29,9–30,9 %, cobertura 54–57 %), cuya mejor
+  coincidencia de vuelta en KC583 es la ATP sintasa β (WP_005765873.1), no FliI.
+
+"2 de 31" queda retirado (sección 11): la cifra correcta es **1 de 31**.
 
 ### Ortología con la cepa peruana USM-LMMB07
 
@@ -267,6 +280,7 @@ con control post-transcripcional. Compatible, no demostrado.
 | q = 1,3 × 10⁻¹⁶ | **2,14 × 10⁻¹⁷** | |
 | NES −2,46 · q 1,8 × 10⁻⁹ | **−2,44 · 2,43 × 10⁻⁹** | |
 | 6 flagelares con umbral formal | **7** | |
+| 2 de 31 flagelares en *B. tribocorum*, *B. quintana* y *B. henselae* | **1 de 31** (FliO) | El segundo acierto, de FliI, es la ATP sintasa β (parálogo); búsqueda de vuelta en KC583, 26-09-2026 |
 
 ---
 
@@ -448,7 +462,7 @@ aristas, 32 genes sin ninguna arista.
 | 3 | Volcanes de temperatura (37 frente a 25 °C) y de pH (6 frente a 8) | abajo |
 | 4 | Genes flagelares y chaperonas: mapa de calor por réplica y curva térmica | abajo |
 | 5 | Red STRING de los genes con cambio mayor a 2 veces | abajo y sección 14 |
-| 6 | Presencia de los 31 genes flagelares en el género | sección 9 |
+| 6 | Ortólogos recíprocos de los 31 genes flagelares en el género; la cruz marca el acierto parálogo de FliI | sección 9 |
 
 **Figura 3.** Se cuentan los transcritos analizables (1 186; sección 14), no el
 universo deduplicado de la sección 6. En 1 184 hay valor q; los otros 2

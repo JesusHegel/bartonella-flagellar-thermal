@@ -9,7 +9,7 @@
 #   figura_3  Volcanes de temperatura y de pH, con los 31 genes flagelares
 #   figura_4  Genes flagelares y chaperonas: mapa de calor por replica y curva termica
 #   figura_5  Red STRING de los genes con cambio mayor a 2 veces
-#   figura_6  Presencia de los 31 genes flagelares en el genero
+#   figura_6  Ortologos reciprocos de los 31 genes flagelares en el genero
 #
 # Colores: flagelar naranja y chaperona aqua (par validado para daltonismo),
 # el resto en gris; divergente azul-gris-rojo solo para puntuaciones Z.
@@ -242,21 +242,34 @@ guardar(f5, "figura_5_red_string", 180, 160)
 cat("    red: ", nrow(nod), "genes con al menos una arista;", nrow(ari), "aristas\n")
 
 # ======================================================= Figura 6: genero ===
+# Solo cuentan los ortologos reciprocos (script 06, busqueda de vuelta en KC583).
+# Un acierto cuya mejor coincidencia de vuelta es otra proteina de KC583 es una
+# paraloga: se marca con una cruz y no se cuenta.
 pn  <- read.delim(res("genomica_comparada", "panel_genero_blastp.tsv"), header = FALSE, col.names = c("wp", "especie", "ident"))
+vu  <- read.delim(res("genomica_comparada", "panel_genero_busqueda_de_vuelta.tsv"), stringsAsFactors = FALSE)
 fl  <- g[g$flagelar, ]; fl <- fl[order(fl$locus), ]
 esp <- c("bacilliformis", "ancashensis", "clarridgeiae", "schoenbuchensis", "tribocorum", "quintana", "henselae")
 pan <- expand.grid(wp = fl$proteina, especie = esp, stringsAsFactors = FALSE)
-pan$ident <- pn$ident[match(paste(pan$wp, pan$especie), paste(pn$wp, pn$especie))]
+k   <- match(paste(pan$wp, pan$especie), paste(vu$proteina_kc583, vu$especie))
+pan$reciproco <- ifelse(pan$especie == "bacilliformis", !is.na(match(pan$wp, pn$wp[pn$especie == "bacilliformis"])),
+                        !is.na(k) & vu$reciproco[k] %in% "si")
+pan$paraloga  <- !is.na(k) & vu$reciproco[k] %in% "no"
+pan$ident <- ifelse(pan$especie == "bacilliformis", pn$ident[match(paste(pan$wp, pan$especie), paste(pn$wp, pn$especie))],
+                    vu$identidad[k])
+pan$ident[!pan$reciproco] <- NA
 pan$nombre <- factor(fl$nombre[match(pan$wp, fl$proteina)], levels = fl$nombre)
-cuenta <- tapply(!is.na(pan$ident), pan$especie, sum)
+cuenta <- tapply(pan$reciproco, pan$especie, sum)
 pan$especie <- factor(paste0("B. ", pan$especie, "  (", cuenta[pan$especie], "/", nrow(fl), ")"),
                       levels = rev(paste0("B. ", esp, "  (", cuenta[esp], "/", nrow(fl), ")")))
-f6 <- ggplot(pan, aes(nombre, especie, fill = ident)) +
-  geom_tile(colour = "white", linewidth = 0.5) +
+f6 <- ggplot(pan, aes(nombre, especie)) +
+  geom_tile(aes(fill = ident), colour = "white", linewidth = 0.5) +
+  geom_point(data = pan[pan$paraloga, ], aes(shape = "Acierto parálogo (no recíproco)"), size = 1.6, stroke = 0.5, colour = TINTA2) +
   scale_fill_gradient(low = "#cde2fb", high = "#0d366b", limits = c(20, 100), na.value = "#f4f3f1",
-                      name = "Identidad (%)") +
+                      name = "Identidad (%)\ndel ortólogo recíproco") +
+  scale_shape_manual(values = 4, name = NULL) +
   labs(x = NULL, y = NULL) + tema +
   theme(axis.line = element_blank(), axis.ticks = element_blank(),
         axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 6),
-        axis.text.y = element_text(face = "italic", size = 7), legend.position = "right")
+        axis.text.y = element_text(face = "italic", size = 7), legend.position = "right",
+        legend.title = element_text(size = 7), legend.text = element_text(size = 6.5))
 guardar(f6, "figura_6_panel_genero", 180, 62)
