@@ -4,7 +4,11 @@
 
 [ -f CIFRAS_CONFIRMADAS.md ] || { echo "ERROR: ejecuta los scripts desde la carpeta raiz del repositorio."; exit 1; }
 
-export LC_ALL=C.UTF-8                        # mismo orden de 'sort' en cualquier computadora y acentos correctos
+# Idioma: texto en UTF-8 (acentos correctos en las figuras) y orden alfabetico
+# estricto "C" (mayusculas antes que minusculas), igual en cualquier computadora.
+# El orden importa: R ordena con el las condiciones de DESeq2 y las listas de genes.
+unset LC_ALL
+export LANG=C.UTF-8 LC_CTYPE=C.UTF-8 LC_COLLATE=C
 DIR_CUANT=${DIR_CUANT:-cuantificacion}       # cuantificaciones de salmon (entrada)
 DIR_RES=${DIR_RES:-resultados}               # tablas de resultados
 DIR_INT=${DIR_INT:-intermedios}              # objetos intermedios (no se suben a git)

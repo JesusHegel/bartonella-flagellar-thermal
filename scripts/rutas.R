@@ -5,6 +5,11 @@
 if (!file.exists("CIFRAS_CONFIRMADAS.md"))
   stop("Ejecuta los scripts desde la carpeta raiz del repositorio.")
 
+# Orden alfabetico estricto "C", el mismo en cualquier computadora. Sin esto, R
+# ordena segun el idioma del sistema, y cambian el orden de las condiciones en
+# DESeq2 (y con ello los ultimos decimales) y el orden de las listas de genes.
+invisible(Sys.setlocale("LC_COLLATE", "C"))
+
 leer_variable <- function(nombre, por_defecto) {
   valor <- Sys.getenv(nombre)
   if (nzchar(valor)) valor else por_defecto
