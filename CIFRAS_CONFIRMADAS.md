@@ -415,6 +415,60 @@ salmon reparte de forma distinta en cada corrida con varios hilos.
 **Las cifras del manuscrito son las publicadas** (cuantificaciones incluidas en
 `cuantificacion/`); desde el SRA se reproducen todas las conclusiones.
 
+## 12e. Réplica independiente en una segunda computadora (17 y 24 de octubre de 2026)
+
+Nivel 1 ejecutado por B. Castañeda en un equipo distinto al de referencia,
+siguiendo únicamente `GUIA_DE_REPLICA.md`.
+
+| | Computadora de referencia | Réplica independiente |
+|---|---|---|
+| Procesador | AMD Ryzen 5 PRO 4650G | Intel Core i7-13620H (13.ª gen.) |
+| Sistema | Debian GNU/Linux 13 (trixie) | Ubuntu 26.04.1 LTS sobre WSL 2 |
+
+Entorno creado en ambas desde `entorno/bartonella.yml` (salmon 2.4.1, R 4.5.3).
+Son dos arquitecturas de fabricantes distintos, que es la condición en la que
+esta comprobación tiene valor.
+
+**Resultado: 28 de las 39 tablas idénticas byte a byte y 11 equivalentes dentro
+de la tolerancia. Ninguna distinta, ninguna faltante.**
+
+Los cinco contrastes de DESeq2 conservan exactamente los mismos conteos de genes
+significativos que las tablas publicadas: 488 (37 vs 25), 538 (modelo de 23
+muestras), 423 (30 vs 25), 128 (37 vs 30) y 375 (pH 6 vs 8). **Ningún gen cambia
+de significancia ni de signo.** Las comprobaciones de significancia añadidas en
+fd162ff confirman además 3 vías significativas en fgsea, 1 categoría inducida y
+2 reprimidas en el hipergeométrico, y 0 y 46 términos de STRING en inducidos y
+reprimidos.
+
+Desviación máxima de toda la corrida: 1,0 × 10⁻³ absoluta y 2,1 × 10⁻³ relativa,
+en `genes/tabla_de_genes.csv`. En los contrastes, como máximo 4,1 × 10⁻⁶
+absoluta. `universo_genes.csv` resultó idéntico byte a byte, y los cuatro
+archivos de `datos/string/` conservan su md5: la réplica usó exactamente los
+mismos datos de STRING.
+
+**Hallazgo: tres tablas mal clasificadas por el verificador.** En la primera
+corrida (17-10-2026, antes de fd162ff), `enriquecimiento_hipergeometrico.csv` y
+las dos tablas de enriquecimiento de STRING salieron `DISTINTO`. Medidas con
+`comparar_con_tolerancia.R` resultaron equivalentes, con diferencias relativas
+máximas de 3,3 × 10⁻¹⁵, 3,0 × 10⁻¹⁵ y 5,4 × 10⁻¹⁵, y ningún término cruzando el
+umbral de 0,05. En el hipergeométrico los conteos son idénticos (31 genes
+flagelares, 1 inducido, 30 reprimidos, 7,6 esperados) y solo varían los últimos
+dígitos de `p_rep` y `q_rep`.
+
+Esas tres tablas no estaban en la lista de comparación con tolerancia de
+`verificar.sh`, pese a contener valores p y q sujetos a la misma variación entre
+procesadores descrita en 12c. Y como no tienen columna `padj`, tampoco pasaban
+por la comprobación de cambios de significancia: la tolerancia numérica por sí
+sola habría aceptado un término cruzando el 0,05 sin avisar. Ambas cosas se
+corrigieron en fd162ff, que añade las tres tablas a la lista y extiende la
+comprobación de significancia a las columnas `q`, `q_ind` y `q_rep`. **El
+verificador queda más estricto que antes, no menos.** La corrida del 24-10-2026
+con el parche aplicado es la que da el resultado de arriba.
+
+El hueco solo podía aparecer en una segunda computadora: en la de referencia
+esas tres tablas salen idénticas a sí mismas y nunca llegan a compararse con
+tolerancia.
+
 ## 13. Versiones de programas
 
 ```
