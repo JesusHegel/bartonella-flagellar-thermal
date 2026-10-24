@@ -33,15 +33,22 @@ ok <- is.na(d) | d < 1e-4 | r < 0.01
 if (!all(ok)) falla(sprintf("%d valores fuera de tolerancia", sum(!ok)))
 
 detalle <- ""
+# Columnas de significancia: padj en los contrastes, q en los enriquecimientos.
+# Sin esta comprobacion, las tablas de enriquecimiento pasarian la tolerancia
+# numerica sin que nadie verifique que ningun termino cruza el 0,05.
+for (col in intersect(c("padj", "q", "q_ind", "q_rep"), names(y))) {
+  sx <- !is.na(x[[col]]) & x[[col]] < 0.05
+  sy <- !is.na(y[[col]]) & y[[col]] < 0.05
+  if (any(sx != sy))
+    falla(sprintf("%d filas cambian de significancia en %s", sum(sx != sy), col))
+  detalle <- paste0(detalle, sprintf(", %d significativos (%s)", sum(sy), col))
+}
 if (all(c("log2FoldChange", "padj") %in% names(y))) {
-  sx <- !is.na(x$padj) & x$padj < 0.05; sy <- !is.na(y$padj) & y$padj < 0.05
-  if (any(sx != sy)) falla(sprintf("%d genes cambian de significancia", sum(sx != sy)))
   # El signo solo cuenta cuando el cambio no es practicamente cero (ashr deja
   # muchos genes en valores del orden de 1e-7, cuyo signo es ruido).
   claro <- !is.na(y$log2FoldChange) & abs(y$log2FoldChange) >= 1e-4
   if (any(sign(x$log2FoldChange[claro]) != sign(y$log2FoldChange[claro]), na.rm = TRUE))
     falla("algun log2FoldChange cambia de signo")
-  detalle <- sprintf(", %d significativos iguales", sum(sy))
 }
 cat(sprintf("equivalente (dif. absoluta max %.1e, relativa max %.1e%s)\n",
             max(d, na.rm = TRUE), max(r, na.rm = TRUE), detalle))
