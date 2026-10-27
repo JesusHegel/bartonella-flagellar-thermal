@@ -1,5 +1,5 @@
 #!/bin/bash
-# 00. Descarga de las 23 corridas del SRA y cuantificacion con salmon.
+# 00. Descarga de las 23 corridas del SRA, control de calidad y cuantificacion.
 #
 # Solo hace falta para la replica completa (nivel 2). El analisis normal parte
 # de las cuantificaciones ya incluidas en cuantificacion/.
@@ -8,6 +8,10 @@
 # Necesita internet y unos 20 GB libres: cada corrida se descarga, se
 # cuantifica y se borra antes de pasar a la siguiente.
 # Tiempo de referencia: unos 50 minutos para las 23 corridas.
+#
+# El informe de calidad (fastqc + multiqc) se escribe en control_de_calidad/
+# y es opcional: ver entorno/control_de_calidad.yml. Se hace sobre las
+# lecturas sin recortar, que es como entran a salmon.
 set -uo pipefail
 source scripts/rutas.sh
 SALIDA=${DIR_CUANT_SRA:-cuantificacion_desde_sra}
@@ -36,7 +40,22 @@ for k in "${!ESPERADO[@]}"; do
 done
 echo "Indice de salmon: las seis huellas coinciden con el original"
 
-# ---- 2. Descarga y cuantificacion, una corrida a la vez ----
+# ---- 2. Control de calidad de las lecturas (opcional) ----
+# fastqc y multiqc van en un entorno aparte (entorno/control_de_calidad.yml)
+# para no tocar el entorno del analisis, que ya esta verificado. Si no estan
+# instalados el script avisa y sigue: ningun resultado depende de ellos.
+# La salida va fuera de resultados/, asi que verificar.sh no la ve.
+DIR_QC=${DIR_QC:-control_de_calidad}
+FASTQC=$(command -v fastqc || true)
+if [ -n "$FASTQC" ]; then
+  mkdir -p "$DIR_QC"
+  echo "Control de calidad: activado ($(fastqc --version 2>/dev/null | grep -o 'FastQC.*'))"
+else
+  echo "AVISO: fastqc no esta instalado; no se generara el informe de calidad."
+  echo "       Para generarlo: conda env create -f entorno/control_de_calidad.yml"
+fi
+
+# ---- 3. Descarga y cuantificacion, una corrida a la vez ----
 for R in $(tail -n +2 datos/muestras.tsv | cut -f1); do
   if [ -f "$SALIDA/$R/quant.sf" ]; then echo "[ya estaba] $R"; continue; fi
   echo "[$(date +%H:%M)] $R descargando"
@@ -47,9 +66,43 @@ for R in $(tail -n +2 datos/muestras.tsv | cut -f1); do
     echo "[$(date +%H:%M)] $R cuantificando"
     salmon quant -i "$IDX" -l A -1 "$TMP/${R}_1.fastq" -2 "$TMP/${R}_2.fastq" -p "$HILOS" \
       -o "$SALIDA/$R" >> "$TMP/$R.log" 2>&1 || echo "  FALLO salmon $R"
+    # Sobre las lecturas sin recortar, antes de que se borren mas abajo.
+    # -t 2 porque son dos archivos por corrida (fastqc pide ~250 MB por hilo).
+    if [ -n "$FASTQC" ]; then
+      echo "[$(date +%H:%M)] $R control de calidad"
+      fastqc -t 2 -o "$DIR_QC" --quiet "$TMP/${R}_1.fastq" "$TMP/${R}_2.fastq" \
+        >> "$TMP/$R.log" 2>&1 || echo "  FALLO fastqc $R"
+    fi
   else
     echo "  SIN PAREJA $R"
   fi
   rm -rf "${TMP:?}/$R" "$TMP"/${R}*.fastq
 done
-echo "=== TERMINADO: $(ls "$SALIDA"/*/quant.sf 2>/dev/null | wc -l) de 23 en $SALIDA ==="
+N_QUANT=$(ls "$SALIDA"/*/quant.sf 2>/dev/null | wc -l)
+echo "=== TERMINADO: $N_QUANT de 23 en $SALIDA ==="
+
+# ---- 4. Informe combinado de calidad ----
+if [ -n "$FASTQC" ]; then
+  N_QC=$(ls "$DIR_QC"/*_fastqc.html 2>/dev/null | wc -l)
+  echo "=== Calidad: $N_QC informes en $DIR_QC (2 por corrida, se esperan $((N_QUANT * 2))) ==="
+  if [ "$N_QC" -ne "$((N_QUANT * 2))" ]; then
+    echo "AVISO: faltan informes de calidad. Las corridas que ya estaban cuantificadas"
+    echo "       se saltan enteras. Para generarlos todos: borra $SALIDA y vuelve a correr."
+  fi
+  if command -v multiqc > /dev/null 2>&1; then
+    if multiqc "$DIR_QC" -o "$DIR_QC" -n informe_multiqc --force --quiet > "$DIR_QC/multiqc.log" 2>&1; then
+      echo "Informe combinado: $DIR_QC/informe_multiqc.html"
+      # Tabla por muestra, que es la que va al material suplementario.
+      # Se copia a un nombre fijo porque el resto de informe_multiqc_data/
+      # no se sube (ver .gitignore).
+      if [ -f "$DIR_QC/informe_multiqc_data/multiqc_fastqc.txt" ]; then
+        cp "$DIR_QC/informe_multiqc_data/multiqc_fastqc.txt" "$DIR_QC/resumen_calidad.tsv"
+        echo "Resumen por muestra : $DIR_QC/resumen_calidad.tsv"
+      fi
+    else
+      echo "  FALLO multiqc (quedan los informes individuales de fastqc)"
+    fi
+  else
+    echo "AVISO: multiqc no esta instalado; quedan los $N_QC informes individuales."
+  fi
+fi

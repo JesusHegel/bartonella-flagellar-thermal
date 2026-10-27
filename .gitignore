@@ -16,3 +16,11 @@ cuantificacion_desde_sra/
 
 .Rhistory
 .RData
+
+# Control de calidad: se sube solo el informe combinado de multiqc.
+# Los informes individuales de fastqc pesan ~540 KB cada uno (46 archivos,
+# unos 25 MB) y su contenido esta resumido en el combinado. Los .zip de
+# fastqc ya los ignora la regla *.zip de mas arriba.
+control_de_calidad/*_fastqc.html
+control_de_calidad/informe_multiqc_data/
+control_de_calidad/multiqc.log

@@ -1,0 +1,26 @@
+# Entorno aparte para el informe de calidad de las lecturas (script 00).
+#
+# Se mantiene SEPARADO de bartonella.yml a proposito: ese entorno esta
+# verificado en dos computadoras distintas (ver CIFRAS 12e) y anadirle
+# paquetes obligaria a conda a resolver todo otra vez, con el riesgo de
+# mover alguna version del analisis sin aviso.
+#
+# Ningun numero del analisis depende de este entorno: fastqc solo describe
+# las lecturas y multiqc solo junta esas descripciones en un informe.
+#
+# Crear (solo hace falta para la replica completa, nivel 2):
+#   conda env create -f entorno/control_de_calidad.yml
+# Activar:
+#   conda activate control_de_calidad
+#
+# El script 00 funciona con o sin este entorno: si fastqc no esta instalado
+# avisa y sigue sin generar el informe.
+name: control_de_calidad
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - fastqc=0.12.1
+  # multiqc sin version fija: solo agrupa los informes de fastqc y no
+  # interviene en ningun resultado, asi que su version no afecta la replica.
+  - multiqc
