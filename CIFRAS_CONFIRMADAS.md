@@ -813,85 +813,118 @@ Solo cambia el dibujo de las etiquetas, no los datos.
 `scripts/13_candidatos_publicados.sh` ubica por BLASTp en el proteoma de KC583
 proteínas identificadas en otros trabajos, como blanco vacunal o como objeto de
 estudio funcional, y les añade los valores de expresión de este reanálisis.
-Salida en `resultados/candidatos/`. Seis consultas: los cinco candidatos de Gul
-et al. 2020 e IalB. Determinista: dos corridas seguidas dan md5 idéntico en las
-dos tablas, con `-num_threads 1`.
+Salida en `resultados/candidatos/`. Determinista: dos corridas seguidas dan md5
+idéntico en las tres tablas, con `-num_threads 1`.
+
+**24 consultas de tres estudios:** 5 de Gul et al. 2020, 18 de Rivera 2022
+(Khan et al. 2019 propone FlhA, que es la misma proteína del constructo II de
+Rivera) y la secuencia curada de IalB.
 
 ### Por qué el emparejamiento es por secuencia y no por nombre
 
 La anotación de RefSeq repite **84 nombres de producto** en este genoma, entre
-ellos seis `invasion associated locus B family protein` y seis de cada clase de
-transportador ABC. Ninguno de los 31 genes flagelares comparte su nombre con
-otro gen, pero los candidatos no flagelares caen dentro de operones de
-transportadores, donde genes vecinos llevan nombres parecidos y distintos.
+ellos seis `invasion associated locus B family protein`, seis
+`autotransporter outer membrane beta-barrel domain-containing protein` y seis de
+cada clase de transportador ABC. Ninguno de los 31 genes flagelares comparte su
+nombre con otro gen, pero varios candidatos no flagelares sí, y otros caen
+dentro de operones de transportadores donde genes vecinos llevan nombres
+parecidos y distintos.
+
+Dos de las 24 asignaciones tienen `n_genes_mismo_producto` igual a 6, es decir
+que por nombre eran indeterminables: `ialB_publicado` y `A1UTU0`.
 
 Columnas de control de `candidatos_publicados.tsv`: `asignacion` (solo
-`por secuencia` es utilizable), `ambiguo` (el segundo acierto llega al 95 % del
-puntaje del primero), `n_genes_mismo_producto` y las dos longitudes, porque
-BLASTp mide cobertura de la consulta y una consulta recortada da 100 % aunque le
-falte media proteína.
+`por secuencia` es utilizable), `ambiguo`, `segundo_identidad_pct`,
+`n_genes_mismo_producto` y las dos longitudes, porque BLASTp mide cobertura de
+la consulta y una consulta recortada da 100 % aunque le falte media proteína.
 
 ### Procedencia de las secuencias
 
-Los cinco accesos de Gul et al. 2020 **ya fueron retirados de UniProtKB**:
+Los 23 accesos de UniProt **ya fueron retirados de UniProtKB**:
 `rest.uniprot.org/uniprotkb/<acceso>.fasta` responde 200 con cuerpo vacío
 (`content-length: 0`), que se confunde con un fallo de red. Solo quedan en
-UniParc. Obtenidos el 3 de noviembre de 2026, versión de UniProt 2026_03,
-registrados en `datos/candidatos_publicados/procedencia_uniparc.txt`:
-
-| Acceso | UniParc | Longitud |
-|---|---|---|
-| A1UTU1 | UPI0000ED0A9F | 247 aa |
-| A1UU82 | UPI0000674951 | 259 aa |
-| A1URZ7 | UPI000067478A | 659 aa |
-| A1US20 | UPI000067479D | 366 aa |
-| A1USE3 | UPI0000ED09FE | 272 aa |
+UniParc. Obtenidos el 3 de noviembre de 2026, versión de UniProt 2026_03, con
+el `UPI` y la longitud de cada uno en
+`datos/candidatos_publicados/procedencia_uniparc.txt`.
 
 La secuencia de IalB es **P35641.1** (`IALB_BARBK`, 186 aa), entrada curada de
-UniProtKB/Swiss-Prot obtenida del NCBI el 3 de noviembre de 2026. El mnemónico
-`BARBK` corresponde a *B. bacilliformis* KC583, la misma cepa del genoma de
-referencia. No debe confundirse con **P35640.1** (`IALA_BARBK`, 170 aa), que es
-IalA, otra proteína.
+UniProtKB/Swiss-Prot obtenida del NCBI. El mnemónico `BARBK` corresponde a
+*B. bacilliformis* KC583, la misma cepa del genoma de referencia. No debe
+confundirse con **P35640.1** (`IALA_BARBK`, 170 aa), que es IalA.
 
-### Los cinco candidatos de Gul et al. 2020
+### Resultado principal: los ocho blancos flagelares están reprimidos
 
-| Consulta | Locus | Identidad | Producto | log2FC 37/25 | padj |
-|---|---|---|---|---|---|
-| A1UTU1 | RS05550 | 99,6 % | FliP, poro del sistema de secreción tipo III flagelar | −1,265 | 0,0017 |
-| A1US20 | RS02205 | 100 % | Permeasa ABC de la familia FecCD | −1,537 | 1,86 × 10⁻⁸ |
-| A1USE3 | RS02820 | 100 % | Fosfatidato citidililtransferasa | +0,550 | 0,0257 |
-| A1UU82 | RS06260 | 100 % | Permeasa ABC del hemo | +0,213 | 0,24 |
-| A1URZ7 | RS02080 | 100 % | Hemo liasa, subunidad familia CcmF/NrfE | +0,174 | 0,378 |
+Siete proteínas del constructo vacunal II de Rivera 2022, que aporta sus 12
+epítopos de proteínas asociadas a virulencia, más FliP de Gul et al. 2020:
 
-**Dos reprimidos a 37 °C, uno levemente inducido, dos sin cambio.** Ninguno de
-los cinco cambia con el pH: los cinco dan padj mayor a 0,25 en pH 6 frente a
-pH 8. La identidad de 99,6 % de A1UTU1 corresponde a una reanotación del codón
-de inicio (247 aa en UniProt, 250 en RefSeq), no a dos proteínas distintas.
+| Proteína | Locus | Estudio | log2FC 37/25 | padj |
+|---|---|---|---|---|
+| FliG | RS05635 | Rivera 2022 | −2,405 | 3,11 × 10⁻¹⁰ |
+| MotA | RS05615 | Rivera 2022 | −2,111 | 2,45 × 10⁻⁹ |
+| FlhB | RS05640 | Rivera 2022 | −1,596 | 8,74 × 10⁻¹¹ |
+| FlgK | RS05465 | Rivera 2022 | −1,360 | 4,46 × 10⁻⁶ |
+| Proteína del cuerpo basal | RS05605 | Rivera 2022 | −1,293 | 1,95 × 10⁻⁵ |
+| FlhA | RS05690 | Rivera 2022; Khan 2019 | −1,276 | 1,27 × 10⁻⁷ |
+| FliP | RS05550 | Gul 2020 | −1,265 | 1,70 × 10⁻³ |
+| FliF, anillo M | RS05510 | Rivera 2022 | −0,902 | 5,25 × 10⁻⁴ |
 
-La represión más fuerte **no es la flagelar**: la permeasa FecCD da
-padj 1,86 × 10⁻⁸ frente a 0,0017 de FliP. Ese gen está en el agrupamiento de
-captación de hemo y hierro, que se reprime entero:
+**Ocho de ocho reprimidos, todos con padj menor que 0,002.**
 
-| Locus | log2FC 37/25 | padj |
+El constructo II de Rivera se formó filtrando por "proteínas asociadas a
+virulencia" y conservación entre cepas. Sus 12 epítopos finales salen de esas
+siete proteínas flagelares: el filtro devolvió flagelo en su totalidad.
+
+### Control: el constructo I, de proteínas de membrana externa
+
+El mismo trabajo armó un segundo constructo con un filtro distinto, proteínas
+de membrana externa, sobre las mismas cepas y con el mismo método. Sirve de
+control para saber si la represión es propia del flagelo o un efecto general de
+la temperatura.
+
+| Proteína | Locus | log2FC 37/25 | padj | |
+|---|---|---|---|---|
+| LptD | RS02440 | −0,828 | 4,02 × 10⁻⁴ | reprimida |
+| BamA | RS02830 | −0,138 | 0,471 | sin cambio |
+| BamD | RS04545 | −0,114 | 0,467 | sin cambio |
+| Lipoproteína putativa | RS01620 | −0,009 | 0,968 | sin cambio |
+| OMP85 | RS06535 | +0,090 | 0,749 | sin cambio |
+| TolC | RS03155 | +0,534 | 0,0126 | inducida |
+| Autotransportador | RS05535 | +0,688 | 3,54 × 10⁻⁵ | inducida |
+
+Los tres epítopos experimentales, presentes en los dos constructos: UvrA
+(RS03570, −0,148, padj 0,578), 4-hidroxibenzoato octaprenyltransferasa
+(RS01890, −0,032, padj 0,830) y citrato sintasa (RS02885, −0,584, padj 0,0227).
+
+### Especificidad
+
+`resultados/candidatos/especificidad.tsv`, calculada por el mismo script sobre
+las 23 consultas asignadas por secuencia:
+
+| Grupo | Reprimidos a 37 °C | Total |
 |---|---|---|
-| RS02200 | −1,488 | 2,33 × 10⁻⁷ |
-| RS02205 (candidato de Gul) | −1,537 | 1,86 × 10⁻⁸ |
-| RS02210 | −1,696 | 1,66 × 10⁻¹⁰ |
-| RS02215 | −1,423 | 1,13 × 10⁻⁶ |
+| Flagelares | 8 | 8 |
+| No flagelares | 3 | 15 |
 
-Al ser represión coordinada de un operón, la observación no depende de haber
-acertado el locus exacto que eligió Gul.
+Fisher exacto de una cola: **p = 3,365 × 10⁻⁴**.
+
+Los tres no flagelares reprimidos son la permeasa FecCD de Gul (RS02205,
+−1,537), LptD (RS02440, −0,828) y la citrato sintasa (RS02885, −0,584).
+
+**Este es un contraste dentro del conjunto de candidatos publicados**, que es
+pequeño y no fue elegido al azar: las proteínas provienen de tamizajes con
+criterios propios y no son independientes entre sí. No sustituye a la prueba
+genómica, que es el hipergeométrico de la sección 6
+(q = 2,14 × 10⁻¹⁷). Lo que aporta es que la represión a 37 °C **no alcanza por
+igual a todos los blancos publicados**: de los candidatos de membrana externa
+del mismo autor, cuatro no cambian y dos suben.
 
 ### ialB corresponde a RS01570, y no cambia
 
-El genoma tiene **seis** proteínas anotadas `invasion associated locus B family
-protein` y la anotación de RefSeq **no asigna el símbolo `ialB` a ninguna**: la
-cadena `ialB` aparece cero veces en el GFF. Por nombre de producto el gen es
-indeterminable, y es el único de los seis candidatos del cruce con
-`n_genes_mismo_producto` igual a 6.
-
 P35641.1 empareja con **`BARBAKC583_RS01570`** al **100 % de identidad y 100 %
-de cobertura**, sin segundo acierto por encima de e < 1 × 10⁻⁵.
+de cobertura**, sin segundo acierto por encima de e < 1 × 10⁻⁵. El genoma tiene
+seis proteínas anotadas `invasion associated locus B family protein` y la
+anotación **no asigna el símbolo `ialB` a ninguna**: la cadena `ialB` aparece
+cero veces en el GFF.
 
 | | log2FC 37/25 | padj | log2FC pH 6/8 | padj |
 |---|---|---|---|---|
@@ -917,30 +950,51 @@ Los seis parálogos se parecen entre sí solo 20 a 27 % por BLASTp, salvo
 `RS01500` y `RS01510`, que dan 94,9 % entre ellos y son una duplicación en
 tándem separada por 5,5 kb en la misma hebra.
 
+### Los cinco candidatos de Gul et al. 2020
+
+| Consulta | Locus | Identidad | Producto | log2FC 37/25 | padj |
+|---|---|---|---|---|---|
+| A1UTU1 | RS05550 | 99,6 % | FliP, poro del sistema de secreción tipo III flagelar | −1,265 | 1,70 × 10⁻³ |
+| A1US20 | RS02205 | 100 % | Permeasa ABC de la familia FecCD | −1,537 | 1,86 × 10⁻⁸ |
+| A1USE3 | RS02820 | 100 % | Fosfatidato citidililtransferasa | +0,550 | 0,0257 |
+| A1UU82 | RS06260 | 100 % | Permeasa ABC del hemo | +0,213 | 0,24 |
+| A1URZ7 | RS02080 | 100 % | Hemo liasa, subunidad familia CcmF/NrfE | +0,174 | 0,378 |
+
+Dos reprimidos, uno levemente inducido, dos sin cambio. Ninguno de los cinco
+cambia con el pH: los cinco dan padj mayor a 0,25. La identidad de 99,6 % de
+A1UTU1 corresponde a una reanotación del codón de inicio (247 aa en UniProt,
+250 en RefSeq), no a dos proteínas distintas.
+
+`RS02205` está en el agrupamiento de captación de hemo y hierro, que se reprime
+entero (RS02200 −1,488, RS02205 −1,537, RS02210 −1,696, RS02215 −1,423; todos
+con padj menor que 1,2 × 10⁻⁶). Al ser represión coordinada de un operón, la
+observación no depende de haber acertado el locus exacto que eligió Gul.
+
+### Asignación ambigua
+
+`A1USN1` queda marcada `ambigua`: acierta al 100 % de identidad y cobertura,
+pero el segundo acierto llega al 94,6 %. Es la pareja TolC, y **la tesis misma
+la cita como "A1USK0/A1USN1"** porque tampoco las distingue. No debe elegirse
+una de las dos: en el manuscrito se citan como un par.
+
 ### Cifras retiradas de este cruce
 
-Cuatro asignaciones hechas a mano por nombre de producto, antes de existir el
-script, resultaron equivocadas y **no deben usarse**:
+Cinco cifras obtenidas a mano, antes de existir el script, resultaron
+equivocadas y **no deben usarse**:
 
-| Candidato | Cifra retirada | Cifra correcta |
-|---|---|---|
-| ialB | RS01500: −1,239 (padj 0,0032) en temperatura y +0,75 (padj 0,0317) en pH, presentado como concordante con Coleman y Minnick 2003 | RS01570: +0,391 (padj 0,214) y −0,259 (padj 0,453), **sin cambio en ninguno de los dos ejes** |
-| A1UU82 | CcmA RS06250, inducido +1,063, padj 0,0112 | RS06260, +0,213, padj 0,24, sin cambio |
-| A1URZ7 | agrupamiento del hemo reprimido, −1,42 a −1,70 | RS02080, +0,174, padj 0,378, sin cambio |
-| A1US20 | RS02200, RS02210 o RS02215 | RS02205, −1,537, padj 1,86 × 10⁻⁸ |
+| Cifra retirada | Cifra correcta |
+|---|---|
+| ialB en RS01500: −1,239 (padj 0,0032) en temperatura y +0,75 (padj 0,0317) en pH, presentado como concordante con Coleman y Minnick 2003 | ialB es RS01570: +0,391 (padj 0,214) y −0,259 (padj 0,453), **sin cambio en ninguno de los dos ejes** |
+| A1UU82 en CcmA RS06250, inducido +1,063, padj 0,0112 | RS06260, +0,213, padj 0,24, sin cambio |
+| A1URZ7 en el agrupamiento del hemo reprimido, −1,42 a −1,70 | RS02080, +0,174, padj 0,378, sin cambio |
+| A1US20 en RS02200, RS02210 o RS02215 | RS02205, −1,537, padj 1,86 × 10⁻⁸ |
+| Fisher de especificidad p = 1,0 × 10⁻³, calculado sobre 2 de 10 no flagelares | p = 3,365 × 10⁻⁴, sobre los 15 no flagelares asignados |
 
 `RS06250` (CcmA) sí está inducido, con +1,063 y padj 0,0112, pero **no es un
 candidato de Gul**: era una atribución errónea.
 
 La cifra retirada de `ialB` se había elegido por ser, de los seis parálogos, el
 que reproducía el resultado esperado. **Cualquier elección del parálogo hecha
-por nombre de producto, o por cuál de los seis da el resultado esperado, es
-circular y no es admisible.** También se había dado 170 aa como longitud de
+por nombre de producto, o por cuál de los candidatos da el resultado esperado,
+es circular y no es admisible.** También se había dado 170 aa como longitud de
 IalB; esa cifra corresponde a IalA (P35640.1), no a IalB.
-
-### Pendiente
-
-| Candidato | Estado |
-|---|---|
-| Khan et al. 2019 (FlhA) | no incorporado |
-| Rivera 2022 (FlgK, FliF, FliG, FlhB, FlhA, MotA) | no incorporado |

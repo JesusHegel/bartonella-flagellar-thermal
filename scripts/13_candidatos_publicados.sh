@@ -98,7 +98,8 @@ python3 - "$ENT/fuentes.tsv" "$DIR_INT/blastp_candidatos.tsv" \
          "$DIR_RES/anotacion/locus_a_proteina.tsv" "$DIR_RES/genes/tabla_de_genes.csv" \
          "$SAL/candidatos_publicados.tsv" "$SAL/candidatos_blastp.tsv" \
          "$DIR_INT/cand_faa.txt" <<'PY'
-import csv, sys, collections
+import csv, sys, os, collections
+from math import comb
 
 f_fuentes, f_blast, f_lp, f_genes, f_sal, f_sal_todo, f_faa = sys.argv[1:8]
 con_secuencia = {l.strip() for l in open(f_faa) if l.strip()}
@@ -277,6 +278,50 @@ if riesgo:
     for r in riesgo:
         print('  %-10s %-20s %s genes comparten "%s"' %
               (r['consulta'], r['locus'], r['n_genes_mismo_producto'], r['producto']))
+
+# ---- Especificidad: flagelares frente a no flagelares ----
+# Comprueba si la represion a 37 C es propia del aparato flagelar o un efecto
+# general de la temperatura. El universo son los candidatos publicados que se
+# pudieron asignar por secuencia; es una comparacion DENTRO de ese conjunto,
+# pequeno y no elegido al azar, no una prueba sobre el genoma (esa es el
+# hipergeometrico de la seccion 6).
+
+def reprimido(r):
+    if r['padj_37vs25'] in ('NA', 'no analizable'):
+        return False
+    return float(r['padj_37vs25']) < 0.05 and float(r['log2FC_37vs25']) < 0
+
+def fisher_una_cola(a, na, b, nb):
+    """Cola superior de la hipergeometrica para la tabla [a, na-a; b, nb-b]."""
+    tot, k = na + nb, a + b
+    return sum(comb(na, i) * comb(nb, k - i)
+               for i in range(a, min(na, k) + 1)) / comb(tot, k)
+
+utiles = [r for r in filas if r['asignacion'] == 'por secuencia']
+fl = [r for r in utiles if r['conjunto_flagelar'] == 'TRUE']
+nf = [r for r in utiles if r['conjunto_flagelar'] != 'TRUE']
+a, b = sum(map(reprimido, fl)), sum(map(reprimido, nf))
+
+if fl and nf:
+    p = fisher_una_cola(a, len(fl), b, len(nf))
+    print()
+    print('=== ESPECIFICIDAD: REPRESION A 37 C ===')
+    print('  flagelares    : %d reprimidos de %d' % (a, len(fl)))
+    print('  no flagelares : %d reprimidos de %d' % (b, len(nf)))
+    for r in nf:
+        if reprimido(r):
+            print('      no flagelar reprimido: %-8s %-20s log2FC %s  padj %s'
+                  % (r['consulta'], r['locus'], r['log2FC_37vs25'], r['padj_37vs25']))
+    print('  Fisher exacto, una cola: p = %.3e' % p)
+
+    f_esp = os.path.join(os.path.dirname(f_sal), 'especificidad.tsv')
+    with open(f_esp, 'w', newline='') as fh:
+        w = csv.writer(fh, delimiter='\t', lineterminator='\n')
+        w.writerow(['grupo', 'reprimidos_37vs25', 'total'])
+        w.writerow(['flagelar', a, len(fl)])
+        w.writerow(['no_flagelar', b, len(nf)])
+        w.writerow(['fisher_una_cola_p', '%.6e' % p, ''])
+    print('  Tabla : %s' % f_esp)
 PY
 
 echo
