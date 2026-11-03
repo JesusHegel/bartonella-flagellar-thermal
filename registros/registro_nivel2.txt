@@ -1,0 +1,126 @@
+Indice de salmon: las seis huellas coinciden con el original
+AVISO: fastqc no esta instalado; no se generara el informe de calidad.
+       Para generarlo: conda env create -f entorno/control_de_calidad.yml
+[ya estaba] SRR12653234
+[ya estaba] SRR12653237
+[ya estaba] SRR12653238
+[ya estaba] SRR12653244
+[ya estaba] SRR12653251
+[ya estaba] SRR12653252
+[ya estaba] SRR12653235
+[ya estaba] SRR12653256
+[ya estaba] SRR12653236
+[ya estaba] SRR12653240
+[ya estaba] SRR12653239
+[ya estaba] SRR12653245
+[ya estaba] SRR12653253
+[ya estaba] SRR12653254
+[ya estaba] SRR12653246
+[ya estaba] SRR12653248
+[ya estaba] SRR12653249
+[ya estaba] SRR12653241
+[ya estaba] SRR12653243
+[ya estaba] SRR12653242
+[ya estaba] SRR12653250
+[ya estaba] SRR12653247
+[ya estaba] SRR12653255
+=== TERMINADO: 23 de 23 en cuantificacion_desde_sra ===
+
+== Analisis completo sobre las cuantificaciones desde el SRA ==
+== Comprobando programas ==
+  ok      Rscript
+  ok      python3
+  ok      blastp
+  ok      makeblastdb
+  ok      datasets
+  ok      RNAfold
+  ok      unzip
+  ok      md5sum
+  ok      curl
+== Borrando salidas anteriores ==
+== 01_anotacion.sh  (04:03:43)
+== 02_expresion_diferencial.R  (04:03:43)
+== 03_enriquecimiento.R  (04:03:56)
+== 04_robustez.R  (04:04:01)
+== 05_pca_y_tasa_mapeo.R  (04:04:07)
+== 06_panel_genero_y_ortologia.sh  (04:04:08)
+== 07_quimiotaxis_y_utr.sh  (04:04:17)
+== 08_tabla_de_genes.R  (04:04:19)
+== 09_tabla_de_muestras.R  (04:04:25)
+== 10_descargar_string.sh  (04:04:25)
+== 11_analisis_string.R  (04:04:25)
+== 12_figuras.R  (04:04:33)
+== Terminado (04:04:51) ==
+
+== Comparacion con los resultados publicados ==
+=== A. CUANTIFICACION ( 23 corridas ) ===
+         run procesadas_pub procesadas_sra asignadas_pub asignadas_sra dif_asignadas_pct transcritos_distintos correlacion_log
+ SRR12653234       11026685       11026685        440904        440933             0.007                     7        0.999997
+ SRR12653237       12417343       12417343        391872        392011             0.035                    17        0.999262
+ SRR12653238       10341147       10341147        471162        471416             0.054                     8        0.998629
+ SRR12653244       14039393       14039393        883392        883459             0.008                    36        0.998947
+ SRR12653251        4974188        4974188        207630        207658             0.013                   150        0.992541
+ SRR12653252        8952548        8952548        491549        491555             0.001                    10        0.999862
+ SRR12653235       17414885       17414885         59457         59457             0.000                     0        1.000000
+ SRR12653256       20759346       20759346         45186         45186             0.000                     0        1.000000
+ SRR12653236        3925147        3925147       1632850       1632837            -0.001                     9        0.999891
+ SRR12653240       14304227       14304227       7889918       7889928             0.000                     1        1.000000
+ SRR12653239        2786511        2786511       1040336       1041062             0.070                     6        0.999961
+ SRR12653245       19424593       19424593       7315694       7315696             0.000                     1        1.000000
+ SRR12653253       14571581       14571581       6434736       6434738             0.000                     1        1.000000
+ SRR12653254       10755965       10755965       4169634       4169627             0.000                     1        1.000000
+ SRR12653246        8451630        8451630       3650196       3650610             0.011                     5        0.999999
+ SRR12653248        6899648        6899648       3257434       3257567             0.004                     6        0.999999
+ SRR12653249        7066188        7066188       3249419       3249285            -0.004                     4        0.999999
+ SRR12653241       17677995       17677995       7546712       7546717             0.000                     1        1.000000
+ SRR12653243       18947385       18947385       7783637       7783640             0.000                     1        1.000000
+ SRR12653242       17494614       17494614       4931575       4931585             0.000                     1        1.000000
+ SRR12653250       19615158       19615158       4765745       4765747             0.000                     1        1.000000
+ SRR12653247       19928370       19928370       6780076       6780077             0.000                     1        1.000000
+ SRR12653255       14899375       14899375       5162312       5162314             0.000                     1        1.000000
+
+Lecturas procesadas identicas en 23 de 23 corridas
+Diferencia en lecturas asignadas: maxima 0.07 %
+Correlacion minima de NumReads (log2): 0.992541 
+
+=== B. CIFRAS PRINCIPALES ===
+ cifra                                            publicado desde_sra diferencia     
+ 37 vs 25: significativos (padj<0,05)             488       490       2 genes        
+ 37 vs 25: significativos y |LFC|>1               207       206       -1 genes       
+ 37 vs 25: flagelares significativos              31        31        0 genes        
+ 37 vs 25: flagelares reprimidos                  30        30        0 genes        
+ 37 vs 25: flagelares inducidos                   1         1         0 genes        
+ Modelo de 23 muestras: significativos            538       538       0 genes        
+ Modelo de 23 muestras: flagelares significativos 30        30        0 genes        
+ 30 vs 25: significativos                         423       424       1 genes        
+ 30 vs 25: flagelares significativos              30        30        0 genes        
+ 37 vs 30: flagelares no significativos           30        30        0 genes        
+ pH 6 vs 8: significativos                        375       373       -2 genes       
+ pH 6 vs 8: flagelares significativos             6         6         0 genes        
+ Universo: inducidos                              200       202       2 genes        
+ Universo: reprimidos                             278       278       0 genes        
+ Hipergeometrico Flagelar: reprimidos             30        30        0 genes        
+ Hipergeometrico Flagelar: q                      2.14e-17  2.14e-17  0 % relativo   
+ Hipergeometrico Chaperona: q de inducidos        0.0117    0.0125    6.8 % relativo 
+ fgsea Flagelar: NES                              -2.441    -2.447    0.2 % relativo 
+ fgsea Flagelar: q                                2.43e-09  2.69e-09  10.7 % relativo
+ Umbral formal lfcThreshold=1: significativos     49        50        1 genes        
+ Umbral formal lfcThreshold=1: flagelares         7         7         0 genes        
+ STRING KEGG bbk02040: reprimidos                 25        25        0 genes        
+ STRING KEGG bbk02040: q                          1.94e-14  1.94e-14  0 % relativo   
+
+=== GENES QUE CAMBIAN DE SIGNIFICANCIA (padj<0,05) ===
+37C_vs_25C.csv                         8 genes cambian (0 flagelares); correlacion de log2FC 0.99976; diferencia maxima 0.547
+      RS00015 (padj 0.0014 -> 0.051); RS00030 (padj 0.46 -> 0.0018); RS00040 (padj 0.13 -> 0.048); RS00065 (padj 0.055 -> 0.029); RS00290 (padj 0.047 -> 0.051); RS02375 (padj 0.051 -> 0.048); RS06505 (padj 0.051 -> 0.049); RS06600 (padj 0.048 -> 0.052) 
+30C_vs_25C.csv                        11 genes cambian (0 flagelares); correlacion de log2FC 0.99956; diferencia maxima 0.509
+      RS00015 (padj 0.039 -> 0.91); RS00030 (padj 0.12 -> 1e-04); RS00205 (padj 0.051 -> 0.049); RS01520 (padj 0.051 -> 0.05); RS01800 (padj 0.051 -> 0.048); RS02120 (padj 0.051 -> 0.049); RS02440 (padj 0.049 -> 0.052); RS03100 (padj 0.05 -> 0.053); RS05300 (padj 0.053 -> 0.05); RS05405 (padj 0.049 -> 0.052); RS05870 (padj 0.048 -> 0.05) 
+37C_vs_30C.csv                         2 genes cambian (0 flagelares); correlacion de log2FC 0.99976; diferencia maxima 0.197
+      RS04675 (padj 0.052 -> 0.05); RS06605 (padj 0.049 -> 0.052) 
+pH6_vs_pH8.csv                         4 genes cambian (0 flagelares); correlacion de log2FC 0.99999; diferencia maxima 0.034
+      RS01505 (padj 0.049 -> 0.05); RS02540 (padj 0.051 -> 0.049); RS02845 (padj 0.049 -> 0.051); RS06105 (padj 0.049 -> 0.052) 
+37C_vs_25C_modelo_23_muestras.csv     12 genes cambian (0 flagelares); correlacion de log2FC 0.99955; diferencia maxima 0.537
+      RS00030 (padj 0.35 -> 0.00032); RS00035 (padj 0.056 -> 0.018); RS00040 (padj 0.053 -> 0.013); RS01760 (padj 0.043 -> 0.41); RS01955 (padj 0.049 -> 0.05); RS02490 (padj 0.039 -> 0.055); RS03105 (padj 0.054 -> 0.046); RS03545 (padj 0.048 -> 0.051); RS04005 (padj 0.049 -> 0.053); RS04140 (padj 0.21 -> 0.0077); RS04810 (padj 0.049 -> 0.051); RS05375 (padj 0.05 -> 0.047) 
+
+RESULTADO: conteos iguales en 12 de 18 ; valores q y NES con diferencia relativa maxima de 10.7 %.
+Desde el SRA no se espera identidad exacta (salmon con varios hilos no es determinista):
+ lo que importa es que no cambie ninguna conclusion. Revisa las tablas A y B.

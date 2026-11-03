@@ -1,0 +1,74 @@
+nohup: ignoring input
+Indice de salmon: las seis huellas coinciden con el original
+Control de calidad: activado (FastQC v0.12.1)
+[ya estaba] SRR12653234
+[01:38] SRR12653237 descargando
+[01:40] SRR12653237 cuantificando
+[01:42] SRR12653237 control de calidad
+[01:43] SRR12653238 descargando
+[01:45] SRR12653238 cuantificando
+[01:47] SRR12653238 control de calidad
+[01:48] SRR12653244 descargando
+[01:51] SRR12653244 cuantificando
+[01:53] SRR12653244 control de calidad
+[01:54] SRR12653251 descargando
+[01:55] SRR12653251 cuantificando
+[01:56] SRR12653251 control de calidad
+[01:56] SRR12653252 descargando
+[01:58] SRR12653252 cuantificando
+[02:00] SRR12653252 control de calidad
+[02:00] SRR12653235 descargando
+[02:05] SRR12653235 cuantificando
+[02:08] SRR12653235 control de calidad
+[02:10] SRR12653256 descargando
+[02:15] SRR12653256 cuantificando
+[02:19] SRR12653256 control de calidad
+[02:21] SRR12653236 descargando
+[02:21] SRR12653236 cuantificando
+[02:22] SRR12653236 control de calidad
+[02:22] SRR12653240 descargando
+[02:24] SRR12653240 cuantificando
+[02:24] SRR12653240 control de calidad
+[02:25] SRR12653239 descargando
+[02:25] SRR12653239 cuantificando
+[02:25] SRR12653239 control de calidad
+[02:25] SRR12653245 descargando
+[02:28] SRR12653245 cuantificando
+[02:29] SRR12653245 control de calidad
+[02:29] SRR12653253 descargando
+[02:31] SRR12653253 cuantificando
+[02:32] SRR12653253 control de calidad
+[02:32] SRR12653254 descargando
+[02:33] SRR12653254 cuantificando
+[02:33] SRR12653254 control de calidad
+[02:34] SRR12653246 descargando
+[02:35] SRR12653246 cuantificando
+[02:36] SRR12653246 control de calidad
+[02:36] SRR12653248 descargando
+[02:37] SRR12653248 cuantificando
+[02:38] SRR12653248 control de calidad
+[02:38] SRR12653249 descargando
+[02:39] SRR12653249 cuantificando
+[02:39] SRR12653249 control de calidad
+[02:40] SRR12653241 descargando
+[02:42] SRR12653241 cuantificando
+[02:42] SRR12653241 control de calidad
+[02:43] SRR12653243 descargando
+[02:46] SRR12653243 cuantificando
+[02:46] SRR12653243 control de calidad
+[02:47] SRR12653242 descargando
+[02:49] SRR12653242 cuantificando
+[02:49] SRR12653242 control de calidad
+[02:50] SRR12653250 descargando
+[02:52] SRR12653250 cuantificando
+[02:53] SRR12653250 control de calidad
+[02:53] SRR12653247 descargando
+[02:56] SRR12653247 cuantificando
+[02:56] SRR12653247 control de calidad
+[02:57] SRR12653255 descargando
+[02:59] SRR12653255 cuantificando
+[02:59] SRR12653255 control de calidad
+=== TERMINADO: 23 de 23 en cuantificacion_desde_sra ===
+=== Calidad: 46 informes en control_de_calidad (2 por corrida, se esperan 46) ===
+Informe combinado: control_de_calidad/informe_multiqc.html
+Resumen por muestra : control_de_calidad/resumen_calidad.tsv

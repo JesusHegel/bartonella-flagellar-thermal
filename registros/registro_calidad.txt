@@ -1,0 +1,6 @@
+Indice de salmon: las seis huellas coinciden con el original
+Control de calidad: activado (FastQC v0.12.1)
+[20:55] SRR12653234 descargando
+[20:58] SRR12653234 cuantificando
+[20:59] SRR12653234 control de calidad
+[20:59] SRR12653237 descargando
