@@ -1,0 +1,5 @@
+A1UTU1	UPI0000ED0A9F status=active	247 aa
+A1UU82	UPI0000674951 status=active	259 aa
+A1URZ7	UPI000067478A status=active	659 aa
+A1US20	UPI000067479D status=active	366 aa
+A1USE3	UPI0000ED09FE status=active	272 aa

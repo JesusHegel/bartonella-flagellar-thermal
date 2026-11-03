@@ -1,5 +1,8 @@
 #!/bin/bash
-# Ejecuta el analisis completo, del script 01 al 12, y al final lo verifica.
+# Ejecuta el analisis completo, del script 01 al 13, y al final lo verifica.
+#
+# El 13 (candidatos publicados) avisa y se salta solo si todavia no estan las
+# secuencias en datos/candidatos_publicados/. Ningun otro resultado depende de el.
 #
 # Uso, desde la carpeta raiz del repositorio y con el entorno activado:
 #   conda activate bartonella
@@ -44,6 +47,7 @@ correr 09_tabla_de_muestras.R
 correr 10_descargar_string.sh
 correr 11_analisis_string.R
 correr 12_figuras.R
+correr 13_candidatos_publicados.sh
 
 Rscript -e 'suppressMessages({library(tximport); library(DESeq2); library(ashr); library(fgsea); library(ggplot2); library(igraph); library(ggrepel)}); sessionInfo()' > "$DIR_REG/versiones_R.txt" 2>&1
 { salmon --version; prefetch --version; blastp -version | head -1; RNAfold --version; datasets --version; python3 --version; } \

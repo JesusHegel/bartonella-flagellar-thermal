@@ -1,0 +1,7 @@
+consulta	acceso	estudio	nombre_publicado	proteina_kc583	identidad_pct	cobertura_pct	largo_publicado_aa	largo_kc583_aa	segundo_acierto	segundo_identidad_pct	locus	producto	n_genes_mismo_producto	conjunto_flagelar	log2FC_37vs25	padj_37vs25	log2FC_pH6vspH8	padj_pH6vspH8	asignacion	ambiguo
+A1UTU1	A1UTU1	Gul et al. 2020	FliP	WP_005767758.1	99.6	100	247	250	ninguno	NA	BARBAKC583_RS05550	flagellar type III secretion system pore protein FliP	1	TRUE	-1.265	0.0017	-0.375	0.318	por secuencia	FALSE
+A1UU82	A1UU82	Gul et al. 2020	NA	WP_011807442.1	100.0	100	259	259	ninguno	NA	BARBAKC583_RS06260	heme ABC transporter permease	1	FALSE	0.213	0.24	0.015	0.952	por secuencia	FALSE
+A1URZ7	A1URZ7	Gul et al. 2020	NA	WP_005766468.1	100.0	100	659	659	ninguno	NA	BARBAKC583_RS02080	heme lyase CcmF/NrfE family subunit	1	FALSE	0.174	0.378	-0.278	0.258	por secuencia	FALSE
+A1US20	A1US20	Gul et al. 2020	NA	WP_005766509.1	100.0	100	366	366	WP_005767713.1	28.5	BARBAKC583_RS02205	FecCD family ABC transporter permease	1	FALSE	-1.537	1.86e-08	-0.267	0.377	por secuencia	FALSE
+A1USE3	A1USE3	Gul et al. 2020	NA	WP_005766755.1	100.0	100	272	272	ninguno	NA	BARBAKC583_RS02820	phosphatidate cytidylyltransferase	1	FALSE	0.55	0.0257	-0.044	0.888	por secuencia	FALSE
+ialB_publicado	PENDIENTE	Mitchell y Minnick 1995	IalB	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	sin secuencia	NA
