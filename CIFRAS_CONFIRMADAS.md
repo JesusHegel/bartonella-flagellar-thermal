@@ -94,6 +94,98 @@ pertenece a las series de temperatura ni de pH).
 
 ---
 
+## 3b. Control de calidad de las lecturas (2 y 3 de noviembre de 2026)
+
+`fastqc` 0.12.1 y `multiqc` sobre las **lecturas sin recortar**, que son las que
+entran a salmon. 46 informes, dos por corrida. Los produce
+`scripts/00_descargar_y_cuantificar.sh` cuando `fastqc` está en el PATH; van en
+un entorno aparte (`entorno/control_de_calidad.yml`) para no obligar a conda a
+resolver de nuevo el entorno del análisis, que ya está verificado (12e).
+**Ninguna cifra del análisis depende de este entorno**: fastqc solo describe las
+lecturas. Salida en `control_de_calidad/`, fuera de `resultados/`, así que
+`verificar.sh` no la compara.
+
+### Hallazgo: el contenido de adaptadores separa exactamente las 12 muestras del modelo
+
+| Módulo de fastqc | 12 del modelo (24 archivos) | 11 excluidas (22 archivos) |
+|---|---|---|
+| Contenido de adaptadores | **24 pasan** | **16 fallan, 6 advierten** |
+| Estadística básica | 24 pasan | 22 pasan |
+| Calidad por base | 24 pasan | 22 pasan |
+| Calidad por secuencia | 24 pasan | 22 pasan |
+| Contenido de N | 24 pasan | 22 pasan |
+| Secuencias sobrerrepresentadas | 8 pasan, 16 advierten | 15 advierten, 7 fallan |
+| Distribución de longitud | 24 advierten | 2 pasan, 20 advierten |
+| Contenido por base | 24 fallan | 1 advierte, 21 fallan |
+| GC por secuencia | 1 pasa, 8 advierten, 15 fallan | 1 pasa, 8 advierten, 13 fallan |
+| Niveles de duplicación | 1 advierte, 23 fallan | 22 fallan |
+
+El contenido de adaptadores es **el único módulo que reproduce la partición de
+12 frente a 11 usada en el modelo**, y lo hace sin una sola excepción: los 22
+fallos y advertencias caen en los 22 archivos de las 11 muestras excluidas.
+
+Las otras dos medidas que se usaron para excluir no dan esa partición:
+
+| Medida | Qué separa |
+|---|---|
+| Asignación a CDS (sección 3) | 8 muestras (sangre 4,6 %, endotelio 0,3 %). PlBG tiene 45,5 %, **más alta** que los cultivos (38,3 %) |
+| PC1 (sección 4) | PlBG queda intermedio (−3,4) entre cultivos (+14,7) y sangre (−23,2) |
+| Contenido de adaptadores | Las 11, incluidas las tres PlBG |
+
+PlBG se había excluido **solo por diseño**, por no pertenecer a las series de
+temperatura ni de pH (sección 3). El contenido de adaptadores le da a esa
+exclusión un respaldo medido que antes no tenía.
+
+### Lo que este control no dice
+
+**Las 12 muestras del modelo no pasan todos los módulos.** Fallan en contenido
+por base (24 de 24), niveles de duplicación (23 de 24) y GC por secuencia (15 de
+24). Los tres son los falsos positivos conocidos de RNA-seq: cebado no aleatorio
+al inicio de la lectura, transcritos muy abundantes que fastqc cuenta como
+duplicados, y una distribución de GC que no es unimodal porque el
+transcriptoma no tiene el GC medio del genoma. **No puede escribirse que las
+muestras del modelo "pasan el control de calidad"**, sino que pasan los módulos
+de calidad de base, calidad de secuencia, contenido de N y contenido de
+adaptadores.
+
+Pendiente de verificar: los umbrales exactos con que fastqc 0.12.1 decide
+`pass`, `warn` y `fail` en el módulo de adaptadores. Hay que citarlos de la
+documentación de la herramienta antes de afirmar un porcentaje en el
+manuscrito.
+
+### Contenido de GC por condición
+
+| Condición | Archivos | %GC |
+|---|---|---|
+| Pl25 | 4 | 39 – 41 |
+| Pl30 | 4 | 41 – 42 |
+| Pl37 | 4 | 42 – 43 |
+| pH06 | 4 | 43 – 44 |
+| pH07 | 4 | 45 – 46 |
+| pH08 | 4 | 43 – 45 |
+| PlBG | 6 | 41 – 42 |
+| HB37 | 6 | 51 – 52 |
+| HBBG | 6 | 51 – 52 |
+| HUVE | 4 | 55 – 57 |
+
+Genoma de referencia: **38,24 %** de GC (calculado sobre
+`datos/referencia/GCF_000015445.1_ASM1544v1_genomic.fna`, 1 445 021 nt).
+
+El GC separa **8 muestras**, las de sangre y endotelio, no las 11. Las tres de
+PlBG tienen GC de cultivo (41 a 42 %) y aun así fallan en adaptadores: son dos
+señales distintas y no deben presentarse como una sola. El exceso de GC en
+sangre y endotelio es compatible con material del hospedero, que tiene GC más
+alto, pero esto **no se ha verificado** asignando lecturas al genoma humano.
+
+### Consecuencia para los métodos
+
+La decisión de no recortar las lecturas queda respaldada por medición **para las
+12 muestras del modelo**, que son las únicas que entran a los contrastes. Las 11
+excluidas sí habrían necesitado recorte, lo que agrega una razón independiente a
+su exclusión.
+
+---
+
 ## 4. Estructura de los datos (PCA)
 
 `vst(blind=TRUE)`, `plotPCA(ntop=500)`.
@@ -469,6 +561,120 @@ El hueco solo podía aparecer en una segunda computadora: en la de referencia
 esas tres tablas salen idénticas a sí mismas y nunca llegan a compararse con
 tolerancia.
 
+## 12f. Segunda réplica desde el SRA (nivel 2, 2 y 3 de noviembre de 2026)
+
+Descarga y cuantificación de las 23 corridas desde el SRA, con el informe de
+calidad activado (3b), y análisis completo con `scripts/replica_nivel_2.sh`.
+Registros en `registros/registro_calidad.txt`,
+`registros/registro_calidad_2.txt` y `registros/registro_nivel2.txt`.
+
+Equipo: AMD Ryzen 5 PRO 4650G with Radeon Graphics, Debian GNU/Linux 13 (trixie). Es **la misma computadora de referencia**
+de 12c, 12d y 12e, con el mismo entorno conda. La única diferencia con 12d es
+que esta corrida volvió a descargar y cuantificar desde cero, con el control de
+calidad activado.
+
+Las seis huellas del índice de salmon coinciden con el original. Descarga,
+cuantificación y control de calidad: de 01:38 a 02:59, una hora y 21 minutos
+para 22 corridas (la primera venía de un intento anterior). Análisis completo:
+48 segundos.
+
+**Cuantificación.** Lecturas procesadas idénticas en las 23 corridas. Diferencia
+máxima en lecturas asignadas: **0,07 %** (SRR12653239). Correlación mínima de
+NumReads entre las dos cuantificaciones (log2): **0,992541** (SRR12653251, que
+es además la que más transcritos cambia, 150).
+
+**Cifras principales:**
+
+| Cifra | Publicada | Desde el SRA |
+|---|---|---|
+| 37 vs 25: significativos | 488 | 490 |
+| 37 vs 25: significativos y \|LFC\|>1 | 207 | 206 |
+| 37 vs 25: flagelares significativos (reprimidos + inducidos) | 31 (30 + 1) | 31 (30 + 1) |
+| Modelo de 23 muestras: significativos / flagelares | 538 / 30 | 538 / 30 |
+| 30 vs 25: significativos / flagelares | 423 / 30 | 424 / 30 |
+| 37 vs 30: flagelares no significativos | 30 | 30 |
+| pH 6 vs 8: significativos / flagelares | 375 / 6 | 373 / 6 |
+| Universo: inducidos / reprimidos | 200 / 278 | 202 / 278 |
+| Hipergeométrico Flagelar: reprimidos · q | 30 · 2,14 × 10⁻¹⁷ | 30 · 2,14 × 10⁻¹⁷ |
+| Hipergeométrico Chaperona: q de inducidos | 0,0117 | 0,0125 |
+| fgsea Flagelar: NES · q | −2,441 · 2,43 × 10⁻⁹ | −2,447 · 2,69 × 10⁻⁹ |
+| Umbral formal lfcThreshold=1: significativos / flagelares | 49 / 7 | 50 / 7 |
+| STRING KEGG bbk02040: reprimidos · q | 25 · 1,94 × 10⁻¹⁴ | 25 · 1,94 × 10⁻¹⁴ |
+
+Conteos iguales en **12 de 18**; diferencia relativa máxima en valores q y NES:
+**10,7 %** (q de fgsea Flagelar). **Las ocho cifras de genes flagelares son
+idénticas**, y los dos valores q de las pruebas principales (hipergeométrico
+2,14 × 10⁻¹⁷ y STRING 1,94 × 10⁻¹⁴) coinciden exactamente.
+
+### Genes que cambian de significancia
+
+**Ninguno flagelar, en ninguno de los cinco contrastes.**
+
+| Contraste | Cambian | De borde | Fuera de borde |
+|---|---|---|---|
+| 37 vs 25 | 8 | 4 | 4 |
+| 30 vs 25 | 11 | 9 | 2 |
+| 37 vs 30 | 2 | 2 | 0 |
+| pH 6 vs 8 | 4 | 4 | 0 |
+| Modelo de 23 muestras | 12 | 6 | 6 |
+| **Total** | **37** | **25** | **12** |
+
+"De borde" significa padj entre 0,04 y 0,06 en ambas corridas: el gen no cambia
+de valor, solo cruza el umbral de 0,05. Correlación de log2FC entre las dos
+corridas: 0,99955 a 0,99999 según el contraste.
+
+Los 12 cambios que no son de borde se concentran en **siete genes**, todos en la
+mitad baja de expresión (percentiles 9 a 42 del TPM mediano):
+
+| Locus | Producto | Contrastes | Factor máximo de cambio en padj |
+|---|---|---|---|
+| RS00030 | DNA polymerase III subunit epsilon | 3 | **1 200 ×** (0,12 → 1 × 10⁻⁴) |
+| RS00015 | DNA polymerase I | 2 | 36 × (0,0014 → 0,051) |
+| RS04140 | proteína hipotética (204 nt) | 1 | 27 × (0,21 → 0,0077) |
+| RS01760 | ComF family protein | 1 | 10 × (0,043 → 0,41) |
+| RS00040 | shikimate dehydrogenase | 2 | 4 × |
+| RS00035 | dephospho-CoA kinase | 1 | 3 × |
+| RS00065 | tRNA uridine-5-carboxymethylaminomethyl… | 1 | 2 × |
+
+**RS00030 no es utilizable**: su padj se mueve tres órdenes de magnitud entre
+corridas de los mismos datos, en tres contrastes distintos. Lo mismo vale, en
+menor grado, para los otros seis.
+
+Mecanismo: salmon con varios hilos no es determinista y reparte de forma
+distinta las lecturas compartidas entre secuencias parecidas (12c, 12d). Se
+comprobó que **no** es la región duplicada de ~28 kb (sección 2), que abarca
+RS03130 a RS03445: ninguno de los siete genes tiene copias idénticas. Cuatro de
+los siete (RS00015, RS00030, RS00035, RS00040) son consecutivos al inicio del
+cromosoma, entre las posiciones 1 970 y 7 360, y RS00035 y RS00040 se solapan en
+4 nt. La causa precisa **no se ha establecido**.
+
+### Comparación con la primera réplica de nivel 2 (12d)
+
+Las dos corridas de nivel 2 se hicieron **en la misma computadora, con el mismo
+entorno y los mismos datos de origen**. Difieren solo en que son dos descargas y
+dos cuantificaciones distintas. Aun así:
+
+| | 12d (26 de septiembre) | 12f (3 de noviembre) |
+|---|---|---|
+| 37 vs 25: significativos | 491 | 490 |
+| Modelo de 23 muestras: significativos | 532 | 538 |
+| 30 vs 25: significativos | 422 | 424 |
+| pH 6 vs 8: significativos | 375 | 373 |
+| Genes que cambian de significancia | 3, 1, 0, 0, 8 | 8, 11, 2, 4, 12 |
+
+**El número de genes que cruzan el umbral de 0,05 no es estable entre réplicas**,
+ni siquiera en la misma máquina: 12 cambios en 12d frente a 37 en esta. Esto
+aísla la causa, porque el equipo, el sistema, el entorno y los datos de entrada
+son idénticos: lo único que varía es el reparto de lecturas que hace salmon con
+varios hilos.
+
+Lo que sí es idéntico en las tres corridas (publicada, 12d y 12f) son **todas
+las cifras de genes flagelares**, y **ningún gen flagelar cambia de
+significancia en ninguna**.
+
+**Las cifras del manuscrito son las publicadas** (cuantificaciones incluidas en
+`cuantificacion/`); desde el SRA se reproducen todas las conclusiones.
+
 ## 13. Versiones de programas
 
 ```
@@ -599,3 +805,142 @@ semilla 42, idéntica en cada corrida. La posición de algunas etiquetas (ggrepe
 0.9.8) puede variar entre corridas en la misma computadora: en 12 corridas
 seguidas salieron dos versiones (5 y 7), con la misma disposición de la red.
 Solo cambia el dibujo de las etiquetas, no los datos.
+
+---
+
+## 16. Candidatos publicados por otros estudios (3 de noviembre de 2026)
+
+`scripts/13_candidatos_publicados.sh` ubica por BLASTp en el proteoma de KC583
+proteínas identificadas en otros trabajos, como blanco vacunal o como objeto de
+estudio funcional, y les añade los valores de expresión de este reanálisis.
+Salida en `resultados/candidatos/`. Seis consultas: los cinco candidatos de Gul
+et al. 2020 e IalB. Determinista: dos corridas seguidas dan md5 idéntico en las
+dos tablas, con `-num_threads 1`.
+
+### Por qué el emparejamiento es por secuencia y no por nombre
+
+La anotación de RefSeq repite **84 nombres de producto** en este genoma, entre
+ellos seis `invasion associated locus B family protein` y seis de cada clase de
+transportador ABC. Ninguno de los 31 genes flagelares comparte su nombre con
+otro gen, pero los candidatos no flagelares caen dentro de operones de
+transportadores, donde genes vecinos llevan nombres parecidos y distintos.
+
+Columnas de control de `candidatos_publicados.tsv`: `asignacion` (solo
+`por secuencia` es utilizable), `ambiguo` (el segundo acierto llega al 95 % del
+puntaje del primero), `n_genes_mismo_producto` y las dos longitudes, porque
+BLASTp mide cobertura de la consulta y una consulta recortada da 100 % aunque le
+falte media proteína.
+
+### Procedencia de las secuencias
+
+Los cinco accesos de Gul et al. 2020 **ya fueron retirados de UniProtKB**:
+`rest.uniprot.org/uniprotkb/<acceso>.fasta` responde 200 con cuerpo vacío
+(`content-length: 0`), que se confunde con un fallo de red. Solo quedan en
+UniParc. Obtenidos el 3 de noviembre de 2026, versión de UniProt 2026_03,
+registrados en `datos/candidatos_publicados/procedencia_uniparc.txt`:
+
+| Acceso | UniParc | Longitud |
+|---|---|---|
+| A1UTU1 | UPI0000ED0A9F | 247 aa |
+| A1UU82 | UPI0000674951 | 259 aa |
+| A1URZ7 | UPI000067478A | 659 aa |
+| A1US20 | UPI000067479D | 366 aa |
+| A1USE3 | UPI0000ED09FE | 272 aa |
+
+La secuencia de IalB es **P35641.1** (`IALB_BARBK`, 186 aa), entrada curada de
+UniProtKB/Swiss-Prot obtenida del NCBI el 3 de noviembre de 2026. El mnemónico
+`BARBK` corresponde a *B. bacilliformis* KC583, la misma cepa del genoma de
+referencia. No debe confundirse con **P35640.1** (`IALA_BARBK`, 170 aa), que es
+IalA, otra proteína.
+
+### Los cinco candidatos de Gul et al. 2020
+
+| Consulta | Locus | Identidad | Producto | log2FC 37/25 | padj |
+|---|---|---|---|---|---|
+| A1UTU1 | RS05550 | 99,6 % | FliP, poro del sistema de secreción tipo III flagelar | −1,265 | 0,0017 |
+| A1US20 | RS02205 | 100 % | Permeasa ABC de la familia FecCD | −1,537 | 1,86 × 10⁻⁸ |
+| A1USE3 | RS02820 | 100 % | Fosfatidato citidililtransferasa | +0,550 | 0,0257 |
+| A1UU82 | RS06260 | 100 % | Permeasa ABC del hemo | +0,213 | 0,24 |
+| A1URZ7 | RS02080 | 100 % | Hemo liasa, subunidad familia CcmF/NrfE | +0,174 | 0,378 |
+
+**Dos reprimidos a 37 °C, uno levemente inducido, dos sin cambio.** Ninguno de
+los cinco cambia con el pH: los cinco dan padj mayor a 0,25 en pH 6 frente a
+pH 8. La identidad de 99,6 % de A1UTU1 corresponde a una reanotación del codón
+de inicio (247 aa en UniProt, 250 en RefSeq), no a dos proteínas distintas.
+
+La represión más fuerte **no es la flagelar**: la permeasa FecCD da
+padj 1,86 × 10⁻⁸ frente a 0,0017 de FliP. Ese gen está en el agrupamiento de
+captación de hemo y hierro, que se reprime entero:
+
+| Locus | log2FC 37/25 | padj |
+|---|---|---|
+| RS02200 | −1,488 | 2,33 × 10⁻⁷ |
+| RS02205 (candidato de Gul) | −1,537 | 1,86 × 10⁻⁸ |
+| RS02210 | −1,696 | 1,66 × 10⁻¹⁰ |
+| RS02215 | −1,423 | 1,13 × 10⁻⁶ |
+
+Al ser represión coordinada de un operón, la observación no depende de haber
+acertado el locus exacto que eligió Gul.
+
+### ialB corresponde a RS01570, y no cambia
+
+El genoma tiene **seis** proteínas anotadas `invasion associated locus B family
+protein` y la anotación de RefSeq **no asigna el símbolo `ialB` a ninguna**: la
+cadena `ialB` aparece cero veces en el GFF. Por nombre de producto el gen es
+indeterminable, y es el único de los seis candidatos del cruce con
+`n_genes_mismo_producto` igual a 6.
+
+P35641.1 empareja con **`BARBAKC583_RS01570`** al **100 % de identidad y 100 %
+de cobertura**, sin segundo acierto por encima de e < 1 × 10⁻⁵.
+
+| | log2FC 37/25 | padj | log2FC pH 6/8 | padj |
+|---|---|---|---|---|
+| RS01570 (ialB) | +0,391 | 0,214 | −0,259 | 0,453 |
+
+**El transcrito de `ialB` no varía ni con la temperatura ni con el pH** en las
+12 muestras del modelo.
+
+El resultado no se debe a falta de potencia. `RS01570` es el transcrito
+**número 17 de 1 189** por abundancia (TPM mediano 7 657,6; percentil 98,6):
+
+| Condición | Pl25 | Pl30 | Pl37 | pH06 | pH07 | pH08 |
+|---|---|---|---|---|---|---|
+| TPM | 5 987,9 | 8 040,7 | 6 379,9 | 7 274,6 | 9 308,2 | 9 466,8 |
+
+**Lo que este resultado no autoriza a decir.** No se ha leído la sección de
+métodos de Coleman y Minnick 2003: se desconocen sus temperaturas, medio,
+tiempos de muestreo y si midieron transcrito o proteína. Por tanto puede
+escribirse que en este conjunto de datos la abundancia del transcrito no varía,
+pero **no** que no se replicó ese trabajo. Esa lectura queda pendiente.
+
+Los seis parálogos se parecen entre sí solo 20 a 27 % por BLASTp, salvo
+`RS01500` y `RS01510`, que dan 94,9 % entre ellos y son una duplicación en
+tándem separada por 5,5 kb en la misma hebra.
+
+### Cifras retiradas de este cruce
+
+Cuatro asignaciones hechas a mano por nombre de producto, antes de existir el
+script, resultaron equivocadas y **no deben usarse**:
+
+| Candidato | Cifra retirada | Cifra correcta |
+|---|---|---|
+| ialB | RS01500: −1,239 (padj 0,0032) en temperatura y +0,75 (padj 0,0317) en pH, presentado como concordante con Coleman y Minnick 2003 | RS01570: +0,391 (padj 0,214) y −0,259 (padj 0,453), **sin cambio en ninguno de los dos ejes** |
+| A1UU82 | CcmA RS06250, inducido +1,063, padj 0,0112 | RS06260, +0,213, padj 0,24, sin cambio |
+| A1URZ7 | agrupamiento del hemo reprimido, −1,42 a −1,70 | RS02080, +0,174, padj 0,378, sin cambio |
+| A1US20 | RS02200, RS02210 o RS02215 | RS02205, −1,537, padj 1,86 × 10⁻⁸ |
+
+`RS06250` (CcmA) sí está inducido, con +1,063 y padj 0,0112, pero **no es un
+candidato de Gul**: era una atribución errónea.
+
+La cifra retirada de `ialB` se había elegido por ser, de los seis parálogos, el
+que reproducía el resultado esperado. **Cualquier elección del parálogo hecha
+por nombre de producto, o por cuál de los seis da el resultado esperado, es
+circular y no es admisible.** También se había dado 170 aa como longitud de
+IalB; esa cifra corresponde a IalA (P35640.1), no a IalB.
+
+### Pendiente
+
+| Candidato | Estado |
+|---|---|
+| Khan et al. 2019 (FlhA) | no incorporado |
+| Rivera 2022 (FlgK, FliF, FliG, FlhB, FlhA, MotA) | no incorporado |
