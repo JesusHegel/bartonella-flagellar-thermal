@@ -5,3 +5,21 @@ A1URZ7	A1URZ7	Gul et al. 2020	NA	WP_005766468.1	100.0	100	659	659	ninguno	NA	BAR
 A1US20	A1US20	Gul et al. 2020	NA	WP_005766509.1	100.0	100	366	366	WP_005767713.1	28.5	BARBAKC583_RS02205	FecCD family ABC transporter permease	1	FALSE	-1.537	1.86e-08	-0.267	0.377	por secuencia	FALSE
 A1USE3	A1USE3	Gul et al. 2020	NA	WP_005766755.1	100.0	100	272	272	ninguno	NA	BARBAKC583_RS02820	phosphatidate cytidylyltransferase	1	FALSE	0.55	0.0257	-0.044	0.888	por secuencia	FALSE
 ialB_publicado	P35641.1	Mitchell y Minnick 1995	IalB	WP_005766252.1	100.0	100	186	186	ninguno	NA	BARBAKC583_RS01570	invasion associated locus B family protein	6	FALSE	0.391	0.214	-0.259	0.453	por secuencia	FALSE
+A1UTS9	A1UTS9	Rivera 2022	FlgK	WP_005767728.1	100.0	100	456	456	ninguno	NA	BARBAKC583_RS05465	flagellar hook-associated protein FlgK	1	TRUE	-1.36	4.46e-06	0.281	0.382	por secuencia	FALSE
+A1UTT7	A1UTT7	Rivera 2022	Flagellar M-ring protein	WP_005767748.1	100.0	100	553	553	ninguno	NA	BARBAKC583_RS05510	flagellar basal-body MS-ring/collar protein FliF	1	TRUE	-0.902	0.000525	-0.121	0.714	por secuencia	FALSE
+A1UTV2	A1UTV2	Rivera 2022	Flagellar basal body protein	WP_005767784.1	100.0	100	244	244	WP_005767770.1	27.6	BARBAKC583_RS05605	flagellar basal-body rod protein FlgF	1	TRUE	-1.293	1.95e-05	0.288	0.374	por secuencia	FALSE
+A1UTV8	A1UTV8	Rivera 2022	FliG	WP_005767802.1	100.0	100	362	362	ninguno	NA	BARBAKC583_RS05635	flagellar motor switch protein FliG	1	TRUE	-2.405	3.11e-10	0.026	0.949	por secuencia	FALSE
+A1UTV9	A1UTV9	Rivera 2022	FlhB	WP_005767804.1	100.0	100	356	356	ninguno	NA	BARBAKC583_RS05640	flagellar biosynthesis protein FlhB	1	TRUE	-1.596	8.74e-11	-0.063	0.846	por secuencia	FALSE
+A1UTW6	A1UTW6	Rivera 2022; Khan et al. 2019	FlhA	WP_005767817.1	100.0	100	694	694	ninguno	NA	BARBAKC583_RS05690	flagellar biosynthesis protein FlhA	1	TRUE	-1.276	1.27e-07	0.399	0.115	por secuencia	FALSE
+A1UTV4	A1UTV4	Rivera 2022	MotA	WP_005767791.1	99.7	97	301	291	ninguno	NA	BARBAKC583_RS05615	flagellar motor stator protein MotA	1	TRUE	-2.111	2.45e-09	-0.384	0.264	por secuencia	FALSE
+A1UTU0	A1UTU0	Rivera 2022	Outer membrane autotransporter	WP_011807413.1	100.0	100	1058	1058	WP_005767753.1	43.6	BARBAKC583_RS05535	autotransporter outer membrane beta-barrel domain-containing protein	6	FALSE	0.688	3.54e-05	0.112	0.595	por secuencia	FALSE
+A1UTB7	A1UTB7	Rivera 2022	BamD	WP_035453042.1	99.6	100	279	297	ninguno	NA	BARBAKC583_RS04545	outer membrane protein assembly factor BamD	1	FALSE	-0.114	0.467	0.082	0.742	por secuencia	FALSE
+A1UUD8	A1UUD8	Rivera 2022	Surface antigen OMP85	WP_005768133.1	100.0	100	653	653	WP_005766757.1	21.8	BARBAKC583_RS06535	autotransporter assembly complex protein TamA	1	FALSE	0.09	0.749	1.207	1.08e-05	por secuencia	FALSE
+A1US68	A1US68	Rivera 2022	LptD	WP_005766604.1	100.0	100	791	791	ninguno	NA	BARBAKC583_RS02440	LPS-assembly protein LptD	1	FALSE	-0.828	0.000402	-0.332	0.187	por secuencia	FALSE
+A1USK0	A1USK0	Rivera 2022	TolC	WP_011807348.1	100.0	100	428	428	WP_011807351.1	94.6	BARBAKC583_RS03155	TolC family outer membrane protein	1	FALSE	0.534	0.0126	-0.729	0.000372	por secuencia	FALSE
+A1USN1	A1USN1	Rivera 2022	TolC	WP_011807351.1	100.0	100	405	405	WP_011807348.1	94.6	BARBAKC583_RS03320	TolC family protein	1	FALSE	-0.999	0.0421	0.494	0.0848	ambigua	TRUE
+A1URQ3	A1URQ3	Rivera 2022	Putative lipoprotein	WP_005766273.1	100.0	100	124	124	ninguno	NA	BARBAKC583_RS01620	outer membrane lipoprotein Omp10	1	FALSE	-0.009	0.968	0.484	0.0768	por secuencia	FALSE
+A1USE4	A1USE4	Rivera 2022	BamA	WP_005766757.1	100.0	100	798	798	WP_005768133.1	21.8	BARBAKC583_RS02830	outer membrane protein assembly factor BamA	1	FALSE	-0.138	0.471	-0.736	0.000568	por secuencia	FALSE
+A1UST0	A1UST0	Rivera 2022	UvrA	WP_005766993.1	100.0	100	964	964	WP_005765850.1	29.8	BARBAKC583_RS03570	excinuclease ABC subunit UvrA	1	FALSE	-0.148	0.578	-0.649	0.0207	por secuencia	FALSE
+A1URV9	A1URV9	Rivera 2022	4-hydroxybenzoate octaprenyltransferase	WP_005766398.1	100.0	100	334	334	WP_005766421.1	30.4	BARBAKC583_RS01890	4-hydroxybenzoate octaprenyltransferase	1	FALSE	-0.032	0.83	0.273	0.163	por secuencia	FALSE
+A1USF4	A1USF4	Rivera 2022	Citrate synthase	WP_005766775.1	100.0	100	430	430	ninguno	NA	BARBAKC583_RS02885	citrate synthase	1	FALSE	-0.584	0.0227	-0.743	0.0024	por secuencia	FALSE
