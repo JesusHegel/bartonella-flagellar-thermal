@@ -85,36 +85,76 @@ g$nombre[sel] <- nombre_corto(g[sel, ])
 g$nombre[!sel] <- sub("BARBAKC583_", "", g$locus[!sel])
 
 # ======================================================= Figura 1: flujo ====
+# Cada caja lleva el numero del script que la ejecuta, de modo que la figura
+# sirve tambien de mapa del repositorio. Las etiquetas junto a las flechas son
+# los formatos de archivo que pasan de un paso al siguiente.
 cat("Figuras:\n")
-caja <- function(x, y, texto, borde = EJE, relleno = "white", ancho = 52, alto = 11)
-  list(annotate("rect", xmin = x - ancho / 2, xmax = x + ancho / 2, ymin = y - alto / 2, ymax = y + alto / 2,
-                fill = relleno, colour = borde, linewidth = 0.35),
-       annotate("text", x = x, y = y, label = texto, size = 2.35, colour = TINTA, lineheight = 0.95))
+caja <- function(x, y, texto, scr = "", borde = EJE, relleno = "white",
+                 ancho = 52, alto = 13) {
+  g <- list(annotate("rect", xmin = x - ancho / 2, xmax = x + ancho / 2,
+                     ymin = y - alto / 2, ymax = y + alto / 2,
+                     fill = relleno, colour = borde, linewidth = 0.35),
+            annotate("text", x = x, y = y - 1, label = texto, size = 2.3,
+                     colour = TINTA, lineheight = 0.95))
+  if (nzchar(scr))
+    g <- c(g, list(annotate("text", x = x + ancho / 2 - 2, y = y + alto / 2 - 2,
+                            label = scr, size = 1.75, hjust = 1, colour = FLAG,
+                            fontface = "bold")))
+  g
+}
 flecha <- function(x1, y1, x2, y2)
-  annotate("segment", x = x1, y = y1, xend = x2, yend = y2, colour = EJE, linewidth = 0.35,
-           arrow = arrow(length = unit(1.3, "mm"), type = "closed"))
+  annotate("segment", x = x1, y = y1, xend = x2, yend = y2, colour = EJE,
+           linewidth = 0.35, arrow = arrow(length = unit(1.3, "mm"), type = "closed"))
+fmt <- function(x, y, etq)
+  annotate("text", x = x + 2, y = y, label = etq, size = 1.7, hjust = 0,
+           colour = TINTA2, fontface = "italic")
+
 col <- c(30, 90, 150)
-f1 <- ggplot() + coord_cartesian(xlim = c(0, 180), ylim = c(0, 102), expand = FALSE) + theme_void() +
-  annotate("text", x = col, y = 98, size = 2.6, fontface = "bold", colour = TINTA,
+f1 <- ggplot() + coord_cartesian(xlim = c(0, 180), ylim = c(0, 122), expand = FALSE) +
+  theme_void() +
+  annotate("text", x = col, y = 118, size = 2.6, fontface = "bold", colour = TINTA,
            label = c("Genoma de referencia", "Datos de expresión", "Genómica comparada")) +
-  caja(col[1], 86, "NCBI GCF_000015445.1\nB. bacilliformis KC583") +
-  caja(col[1], 66, "Anotación: 1 216 genes\ncodificantes") +
-  caja(col[1], 46, "Conjunto flagelar a priori\n31 genes (sin datos de expresión)", borde = FLAG) +
-  caja(col[2], 86, "SRA PRJNA647605\n23 corridas pareadas") +
-  caja(col[2], 66, "salmon 2.4.1\níndice con señuelo (genoma)") +
-  caja(col[2], 46, "tximport + DESeq2\n12 muestras de placa y caldo") +
-  caja(col[2], 26, "5 contrastes\nencogimiento ashr") +
-  caja(col[3], 86, "Proteomas de 7 especies\ny de la cepa USM-LMMB07") +
-  caja(col[3], 66, "BLASTp: panel del género\ny ortólogos recíprocos") +
-  caja(col[3], 46, "STRING 12.0\nKEGG, GO y red") +
-  flecha(col[1], 80.5, col[1], 71.5) + flecha(col[1], 60.5, col[1], 51.5) +
-  flecha(col[2], 80.5, col[2], 71.5) + flecha(col[2], 60.5, col[2], 51.5) + flecha(col[2], 40.5, col[2], 31.5) +
-  flecha(col[3], 80.5, col[3], 71.5) +
-  caja(60, 7, "Enriquecimiento: hipergeométrico + fgsea\n7 categorías funcionales", borde = TINTA2, ancho = 64) +
-  caja(135, 7, "Anotación independiente (STRING)\ny módulo flagelar en la red", borde = TINTA2, ancho = 64) +
-  flecha(col[1], 40.5, 45, 12.5) + flecha(col[2], 20.5, 70, 12.5) + flecha(col[2], 20.5, 120, 12.5) +
-  flecha(col[3], 40.5, 145, 12.5)
-guardar(f1, "figura_1_flujo_de_trabajo", 180, 105)
+  # ---- columna 1
+  caja(col[1], 108, "NCBI GCF_000015445.1\nB. bacilliformis KC583") +
+  caja(col[1],  88, "Anotación: 1 216 genes\ncodificantes", "01") +
+  caja(col[1],  68, "Conjunto flagelar a priori\n31 genes (sin datos de expresión)", "01", borde = FLAG) +
+  # ---- columna 2
+  caja(col[2], 108, "SRA PRJNA647605 · 23 corridas\ntraslado de 2 h desde placa a 30 °C", "00") +
+  caja(col[2],  88, "Control de calidad\nfastqc y multiqc", "00") +
+  caja(col[2],  68, "salmon 2.4.1\níndice con señuelo (genoma)", "00") +
+  caja(col[2],  48, "tximport + DESeq2\n12 muestras de placa y caldo", "02") +
+  caja(col[2],  28, "5 contrastes\nencogimiento ashr", "02") +
+  # ---- columna 3
+  caja(col[3], 108, "Proteomas de 7 especies\ny de la cepa USM-LMMB07") +
+  caja(col[3],  88, "BLASTp: panel del género\ny ortólogos recíprocos", "06 · 07") +
+  caja(col[3],  68, "STRING 12.0\nKEGG, GO y red", "10 · 11") +
+  caja(col[3],  48, "Candidatos publicados\n35 consultas de 5 estudios, BLASTp", "13") +
+  # ---- flechas con formato
+  flecha(col[1], 101.5, col[1], 94.5) + fmt(col[1], 98, "GFF") +
+  flecha(col[1],  81.5, col[1], 74.5) + fmt(col[1], 78, "TSV") +
+  flecha(col[2], 101.5, col[2], 94.5) + fmt(col[2], 98, "FASTQ") +
+  flecha(col[2],  81.5, col[2], 74.5) +
+  flecha(col[2],  61.5, col[2], 54.5) + fmt(col[2], 58, "quant.sf") +
+  flecha(col[2],  41.5, col[2], 34.5) + fmt(col[2], 38, "CSV") +
+  flecha(col[3], 101.5, col[3], 94.5) + fmt(col[3], 98, "FAA") +
+  flecha(col[3],  81.5, col[3], 74.5) +
+  # el conjunto a priori entra al modelo, y los contrastes alimentan los cruces
+  flecha(col[1] + 26, 68, col[2] - 26, 52) +
+  flecha(col[2] + 26, 28, col[3] - 26, 44) +
+  # ---- salidas
+  caja(52, 12, "Enriquecimiento: hipergeométrico + fgsea\n7 categorías funcionales",
+       "03", borde = TINTA2, ancho = 70) +
+  caja(132, 12, "Figuras y tablas\n6 figuras · 1 189 transcritos",
+       "08 · 12", borde = TINTA2, ancho = 70) +
+  flecha(col[2] - 10, 21.5, 52, 18.5) +
+  flecha(col[2] + 10, 21.5, 120, 18.5) +
+  flecha(col[3], 41.5, 150, 18.5) +
+  # ---- verificacion
+  annotate("rect", xmin = 10, xmax = 170, ymin = 1, ymax = 6, fill = NEUTRO,
+           colour = TINTA2, linewidth = 0.3) +
+  annotate("text", x = 90, y = 3.5, size = 2.2, colour = TINTA2,
+           label = "verificar.sh · cada resultado se compara con el commit anterior · réplica desde el SRA en dos equipos")
+guardar(f1, "figura_1_flujo_de_trabajo", 180, 125)
 
 # ======================================================= Figura 2: muestras =
 mu  <- read.csv(res("muestras", "tabla_de_muestras.csv"), stringsAsFactors = FALSE)
