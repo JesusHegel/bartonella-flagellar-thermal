@@ -1,0 +1,6 @@
+
+ialB_publicado.faa   sp|P35641.1|IALB_BARBK   UniProtKB/Swiss-Prot   186 aa
+  Invasion protein B de Bartonella bacilliformis, entrada curada a mano.
+  Es el gen clonado por Mitchell y Minnick 1995 y el que Coleman y Minnick
+  2003 usaron como sonda. Bajada de NCBI protein el 12 de noviembre de 2026.
+  La entrada vecina P35640 es IalA, el otro gen del mismo locus.
