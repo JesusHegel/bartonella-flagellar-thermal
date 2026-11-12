@@ -40,13 +40,26 @@ KC583, pases 4 a 7, crecida **cuatro días en placa HIBB a 30 °C** (agar
 infusión corazón Bacto con 4 % de sangre desfibrinada y 2 % de suero, ambos de
 oveja) y **trasladada 2 h** a cada condición. Tabla 1 del artículo.
 
-| Condición | Medio | Traslado |
-|---|---|---|
-| Pl25, Pl30, Pl37 | placa HIBB | 2 h |
-| PlBG | placa HIBB, atmósfera sanguínea | 2 h |
-| pH06, pH07, pH08 | HIBB líquido | 2 h |
-| HB37, HBBG | sangre humana | 2 h |
-| HUVE | HUVEC en medio EGM-Plus | 24 h |
+| Condición | pH | Temperatura | Medio | Traslado |
+|---|---|---|---|---|
+| Pl25 | 7,4 | 25 °C | placa HIBB | 2 h |
+| Pl30 | 7,4 | 30 °C | placa HIBB | 2 h |
+| Pl37 | 7,4 | 37 °C | placa HIBB | 2 h |
+| PlBG | 7,4 | 37 °C, atmósfera sanguínea | placa HIBB | 2 h |
+| pH06 | 6,0 | 30 °C | HIBB líquido | 2 h |
+| pH07 | 7,4 | 30 °C | HIBB líquido | 2 h |
+| pH08 | **8,2** | 30 °C | HIBB líquido | 2 h |
+| HB37 | 7,4 | 37 °C | sangre humana | 2 h |
+| HBBG | 7,4 | 37 °C, atmósfera sanguínea | sangre humana | 2 h |
+| HUVE | 7,4 | 37 °C, atmósfera sanguínea | HUVEC en EGM-Plus | 24 h |
+
+La condición `pH08` es **pH 8,2**, no pH 8,0. La atmósfera sanguínea es 5 % de
+CO₂, 2,5 % de O₂ y 92,5 % de N₂ a 100 % de humedad.
+
+Wachter asigna un significado biológico a cada pH de la serie líquida, que
+conviene citar tal cual porque el eje de pH no es un gradiente sin más: pH 8,2
+es la comida de sangre inicial del flebótomo, pH 6,0 el flebótomo después de la
+comida, y pH 7,4 el hospedero humano o la comida a media digestión.
 
 **Ninguna condición es crecimiento sostenido a esa temperatura.** Lo que mide
 este reanálisis es la respuesta a un traslado de dos horas. Escribir "cultivos
@@ -877,10 +890,16 @@ chaperonas.
 **Figura 5.** De los 195 genes con cambio mayor a 2 veces e identificador en
 STRING (sección 14), se dibujan los **163 con al menos una arista**; **697
 aristas** con puntaje combinado ≥ 0,4. Disposición de Fruchterman-Reingold con
-semilla 42, idéntica en cada corrida. La posición de algunas etiquetas (ggrepel
-0.9.8) puede variar entre corridas en la misma computadora: en 12 corridas
-seguidas salieron dos versiones (5 y 7), con la misma disposición de la red.
-Solo cambia el dibujo de las etiquetas, no los datos.
+semilla 42, idéntica en cada corrida. Las etiquetas (ggrepel 0.9.8) variaban
+entre corridas pese a `seed = 42`: en 12 corridas seguidas salieron dos
+versiones (5 y 7), con la misma disposición de la red.
+
+**Causa, hallada el 12-11-2026: `max.time = 60`.** ggrepel corta con lo primero
+que se cumpla entre reloj e iteraciones, de modo que el límite de tiempo caía en
+una iteración distinta según la carga de la máquina. Con `max.time = Inf` el
+corte depende solo de `max.iter` y dos corridas seguidas dan md5 idéntico en PNG
+y en PDF, sin costo de tiempo (11,7 s el script completo). El comentario que
+acompañaba al código afirmaba que terminaba por iteraciones, sin comprobarlo.
 
 ---
 
@@ -1065,6 +1084,30 @@ Ese caso solo impide cualquier lectura simple del tipo "reprimida, luego no
 sirve como antígeno". Una proteína puede estar reprimida en cultivo a 37 °C y
 aun así generar anticuerpos en el paciente.
 
+### La represión no predice la seroreactividad
+
+`scripts/15_seroreactividad.py`. Dichter et al. 2021 es el único trabajo del
+cruce con suero de pacientes reales y reporta cuáles de sus 22 proteínas son
+reconocidas. Se prueba si la represión a 37 °C se asocia a ese reconocimiento.
+
+| Grupo | Reprimidas a 37 °C | Total |
+|---|---|---|
+| Reactivas con suero de pacientes | 8 | 14 |
+| No reactivas | 4 | 8 |
+
+Fisher exacto, una cola: **p = 0,5464. No hay asociación.**
+
+**Consecuencia para el argumento.** La expresión a 37 °C no predice qué es
+inmunogénico: flagelina (−2,007), FlgH (−1,414) y el autotransportador C
+(−1,468) están reprimidas en cultivo y el suero de pacientes las reconoce igual.
+Lo que sí parece predecir es qué funciona como blanco diagnóstico: Dichter tenía
+14 proteínas reactivas para elegir y llevó al ELISA las dos inducidas, porina B
+(+1,591) y autotransportador E (+0,688).
+
+Son dos cosas distintas y el paper debe separarlas. **No escribir** que las
+proteínas reprimidas pasan desapercibidas al sistema inmune: estos datos dicen
+lo contrario.
+
 ### RS05650 es un candidato publicado
 
 `pad09_ompHipC` cae en **RS05650** (−1,652, padj 1,26 × 10⁻⁸), el gen que está
@@ -1087,15 +1130,23 @@ del mismo autor, cuatro no cambian y dos suben.
 
 ### ialB corresponde a RS01570, y no cambia
 
-P35641.1 empareja con **`BARBAKC583_RS01570`** al **100 % de identidad y 100 %
-de cobertura**, sin segundo acierto por encima de e < 1 × 10⁻⁵. El genoma tiene
+`scripts/17_ialb.py`. P35641.1 empareja con **`BARBAKC583_RS01570`** al **100 %
+de identidad y 100 % de cobertura** sobre los 186 aa, con bitscore 376 frente a
+28,1 del segundo acierto: **13,4 veces de separación**. El segundo es RS01950, al
+20,2 % de identidad y e = 0,074, o sea por debajo del umbral. El genoma tiene
 seis proteínas anotadas `invasion associated locus B family protein` y la
 anotación **no asigna el símbolo `ialB` a ninguna**: la cadena `ialB` aparece
 cero veces en el GFF.
 
-| | log2FC 37/25 | padj | log2FC pH 6/8 | padj |
-|---|---|---|---|---|
-| RS01570 (ialB) | +0,391 | 0,214 | −0,259 | 0,453 |
+| Eje | log2FC | padj |
+|---|---|---|
+| 37 frente a 25 °C | +0,391 | 0,214 |
+| **37 frente a 30 °C** | **−0,049** | **0,864** |
+| pH 6,0 frente a pH 8,2 | −0,259 | 0,453 |
+| Líquido frente a placa (sección 18) | +0,164 | 0,592 |
+
+El eje de 37 frente a 30 °C es el que corresponde al diseño de Coleman y Minnick
+2003 y es el que faltaba en esta tabla.
 
 **El transcrito de `ialB` no varía ni con la temperatura ni con el pH** en las
 12 muestras del modelo.
@@ -1107,11 +1158,38 @@ El resultado no se debe a falta de potencia. `RS01570` es el transcrito
 |---|---|---|---|---|---|---|
 | TPM | 5 987,9 | 8 040,7 | 6 379,9 | 7 274,6 | 9 308,2 | 9 466,8 |
 
-**Lo que este resultado no autoriza a decir.** No se ha leído la sección de
-métodos de Coleman y Minnick 2003: se desconocen sus temperaturas, medio,
-tiempos de muestreo y si midieron transcrito o proteína. Por tanto puede
-escribirse que en este conjunto de datos la abundancia del transcrito no varía,
-pero **no** que no se replicó ese trabajo. Esa lectura queda pendiente.
+**Comparación con Coleman y Minnick 2003.** Leída su sección de métodos, que
+antes figuraba como pendiente en este documento:
+
+| | Coleman y Minnick 2003 | Este reanálisis |
+|---|---|---|
+| Cepa | JB584 | KC583 |
+| Medio | caldo de recuperación líquido | placa HIBB en agar |
+| Duración | 30 minutos | 2 horas |
+| Temperaturas | 30 a 37 °C | 25, 30 y 37 °C |
+| Ensayo | protección con nucleasa S1 | RNA-seq |
+| Nivel medido | transcrito y proteína | transcrito |
+| ialB | caída reportada del 74 al 80 % | sin cambio: −0,049, padj 0,864 |
+
+Midieron transcrito y proteína, y las dos se movieron juntas, así que la
+discrepancia no se explica por el nivel de medida.
+
+**Ninguno de los seis parálogos de la familia cambia entre 30 y 37 °C** (padj de
+0,357 a 0,864), de modo que el resultado nulo no depende de cuál sea el ialB
+verdadero. Esa es la afirmación que conviene escribir.
+
+Las tres diferencias candidatas para explicar la discrepancia son el tiempo, la
+cepa y el ensayo. La del tiempo es la de más peso: una respuesta presente a los
+30 minutos puede haberse relajado a las 2 horas. Lo que estos datos no permiten
+decidir es si el regulón responde distinto a la temperatura según la matriz,
+porque no hay condición de 37 °C en caldo (sección 18).
+
+**No escribir** que se replicó, ni que no se replicó, el trabajo de Coleman: los
+diseños no son comparables punto por punto. Lo defendible es que en estas
+condiciones el transcrito de ialB no varía.
+
+La magnitud del 74 al 80 % procede de la lectura del PDF hecha el 12-11-2026;
+conviene volver a verificarla contra el artículo al redactar.
 
 Los seis parálogos se parecen entre sí solo 20 a 27 % por BLASTp, salvo
 `RS01500` y `RS01510`, que dan 94,9 % entre ellos y son una duplicación en
@@ -1156,6 +1234,7 @@ equivocadas y **no deben usarse**:
 | A1URZ7 en el agrupamiento del hemo reprimido, −1,42 a −1,70 | RS02080, +0,174, padj 0,378, sin cambio |
 | A1US20 en RS02200, RS02210 o RS02215 | RS02205, −1,537, padj 1,86 × 10⁻⁸ |
 | Fisher de especificidad: p = 1,0 × 10⁻³ (2 de 10), p = 3,365 × 10⁻⁴ (3 de 15) y p = 7,088 × 10⁻⁵ (5 de 26) | **p = 2,761 × 10⁻⁵**, sobre 15 de 48 no flagelares deduplicados por locus | Cruce cerrado en siete estudios el 12-11-2026 |
+| ialB cae un 20,6 % de 30 a 37 °C (8 040,7 a 6 379,9 TPM), presentado como la misma dirección que Coleman y Minnick con menor magnitud | Un cociente de TPM promedio no es un tamaño de efecto. El modelo da **−0,049 con padj 0,864**, o sea sin cambio. Esta cifra nunca entró al repositorio: solo circuló en discusión. Retirada el 12-11-2026 |
 
 `RS06250` (CcmA) sí está inducido, con +1,063 y padj 0,0112, pero **no es un
 candidato de Gul**: era una atribución errónea.
@@ -1207,5 +1286,88 @@ las condiciones excluidas, y **no como apoyo del resultado principal**.
 
 A 30 °C y pH 7,4, mismo centro y mismo tiempo de traslado, el conjunto flagelar
 marca ~19 en placa (Pl30) y ~52 en líquido (pH07). Solo cambia sólido frente a
-líquido. **Pendiente**: contraste formal con DESeq2, posible porque las dos
+líquido. **Resuelto el 12-11-2026** con un contraste formal de DESeq2 (sección 18),
+posible porque las dos
 condiciones están entre las 12 del modelo.
+
+---
+
+## 18. Matriz de cultivo: sólido frente a líquido (12 de noviembre de 2026)
+
+`scripts/16_solido_vs_liquido.R`. Contraste de DESeq2 con ashr sobre el modelo
+de 12 muestras (`~cond`), pH07 frente a Pl30. Signo positivo = más alto en
+líquido.
+
+Las dos condiciones comparten todo salvo el soporte, según la Tabla 1 de
+Wachter: pH 7,4, 30 °C, medio HIBB, traslado de 2 h, centro Yale. Una es HIBB
+en agar y la otra HIBB en caldo.
+
+| | Transcritos |
+|---|---|
+| Con valor q | 1 184 |
+| Más altos en líquido (padj < 0,05) | 144 |
+| Más altos en placa (padj < 0,05) | 101 |
+
+**27 de los 31 genes flagelares salen más altos en líquido; ninguno más alto en
+placa.**
+
+| Prueba | Valor |
+|---|---|
+| Hipergeométrico, más altos en líquido | 27 de 31 en 144 de 1 184; **p = 4,113 × 10⁻²²** |
+| Hipergeométrico, más altos en placa | 0 de 31; p = 1 |
+| log2FC mediano, flagelares | +1,566 |
+| log2FC mediano, resto del genoma | −0,015 |
+| Wilcoxon una cola, flagelares más altos | p = 5,992 × 10⁻¹⁷ |
+
+**No es artefacto de normalización.** La mediana del resto del genoma es −0,015:
+el genoma no se movió, solo el conjunto flagelar.
+
+Los cuatro flagelares sin significancia:
+
+| Locus | log2FC | padj | Posición |
+|---|---|---|---|
+| RS05550 | +0,539 | 0,0668 | dentro del bloque |
+| RS05640 | +0,441 | 0,0617 | dentro del bloque |
+| RS05685 | +0,245 | 0,400 | dentro del bloque |
+| RS04185 | −0,231 | 0,396 | **876 kb, fuera del bloque** |
+
+Dos quedan al borde del umbral y dos son planos. El único con signo negativo,
+RS04185, es el miembro del conjunto que está físicamente fuera del agrupamiento
+flagelar, que va de 1,17 a 1,20 Mb. La señal es del operón, no un efecto difuso.
+
+### El efecto de la matriz es mayor que el térmico
+
+| Gen | Líquido frente a placa | 37 frente a 25 °C |
+|---|---|---|
+| Flagelina RS05045 | +2,453 | −2,007 |
+| FlgH RS05560 | +1,950 | −1,414 |
+| FlgE RS05470 | +1,214 | −0,704 |
+
+### Los contrastes reportados no quedan confundidos
+
+- Térmico: Pl25, Pl30 y Pl37 son las tres placa HIBB, pH 7,4, 2 h. Solo varía la temperatura.
+- pH: pH06, pH07 y pH08 son las tres HIBB líquido, 30 °C, 2 h. Solo varía el pH.
+
+Ninguno mezcla matrices. **La matriz es un tercer eje que el diseño permite
+medir, no un confusor de los dos ejes reportados.**
+
+### Lectura
+
+Las dos condiciones parten de las mismas placas de cuatro días a 30 °C y las dos
+duran 2 h, así que no hay diferencia de fase de crecimiento. En dos horas, pasar
+de estar sobre una superficie a estar suspendido en caldo fresco sube el regulón
+flagelar. Es compatible con percepción de superficie, un mecanismo conocido de
+regulación de la motilidad. Wachter no reportó este contraste porque buscaba
+ARN pequeños.
+
+**Lo que estos datos no permiten decidir:** si el regulón responde distinto a la
+temperatura según la matriz. Haría falta una condición de 37 °C en caldo, y la
+serie líquida varía pH a 30 °C fijo. Queda como pregunta abierta, no como
+explicación de nada.
+
+### Explicaciones retiradas
+
+| Retirado | Motivo |
+|---|---|
+| El contraste se explica por fase de crecimiento: placa de 4 días en estacionaria frente a caldo en fase exponencial | Las dos condiciones parten de las mismas placas de 4 días y las dos duran 2 h. No hay diferencia de fase. Retirado el 12-11-2026 |
+| Un efecto de piso del regulón en placa explica que Coleman y Minnick vieran −74 a −80 % en ialB y aquí no se vea nada | ialB (RS01570) no cambia entre matrices (+0,164, padj 0,592) y está a 8 040 TPM en placa, lejos de cualquier piso. Retirado el 12-11-2026 |
