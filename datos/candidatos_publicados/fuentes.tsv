@@ -23,3 +23,46 @@ A1USE4	A1USE4	Rivera 2022	BamA	Constructo vacunal I; 2 epitopos
 A1UST0	A1UST0	Rivera 2022	UvrA	Epitopo experimental; en los constructos I y II
 A1URV9	A1URV9	Rivera 2022	4-hydroxybenzoate octaprenyltransferase	Epitopo experimental; en los constructos I y II
 A1USF4	A1USF4	Rivera 2022	Citrate synthase	Epitopo experimental; en los constructos I y II
+prot81	QFZ89919.1	Jimenez-Vasquez et al. 2023	Prot 81	Epitopos B lineales para diagnostico serologico; sin nombre publicado
+prot288	QFZ90920.1	Jimenez-Vasquez et al. 2023	Prot 288	Epitopos B lineales para diagnostico serologico; sin nombre publicado
+prot447	QFZ90250.1	Jimenez-Vasquez et al. 2023	Prot 447	Epitopos B lineales para diagnostico serologico; sin nombre publicado
+prot492	QFZ90291.1	Jimenez-Vasquez et al. 2023	Prot 492	Epitopos B lineales para diagnostico serologico; sin nombre publicado
+prot504	QFZ90301.1	Jimenez-Vasquez et al. 2023	Prot 504	Epitopos B lineales para diagnostico serologico; sin nombre publicado
+prot612	QFZ90402.1	Jimenez-Vasquez et al. 2023	Prot 612	Epitopos B lineales para diagnostico serologico; sin nombre publicado
+prot689	QFZ90468.1	Jimenez-Vasquez et al. 2023	Prot 689	Epitopos B lineales para diagnostico serologico; sin nombre publicado
+scsA_publicado	WP_035454724	Gomes et al. 2016	SCS-alfa	Candidato C, 30,99 kDa
+groEL_publicado	A1UTX7	Gomes et al. 2016	GroEL	Candidato A, 57,52 kDa; pendiente de resolver el acceso
+scsB_publicado	A1UQV9	Gomes et al. 2016	SCS-beta	Candidato B, 42,74 kDa; hallazgo principal de ese trabajo
+pap31_publicado	A1UU13	Gomes et al. 2016	Pap31	Candidato D; se usa Omp25 de KC583, homologo de Pap31 al 100 por ciento, porque Q3HM50 es un fragmento de otra cepa
+dic01_aprI	WP_005765706.1	Dichter et al. 2021	AprI/Inh	seroreactiva=no
+dic02_bbadC	WP_005766217.1	Dichter et al. 2021	BbadC	seroreactiva=si
+dic03_hipA	WP_005766273.1	Dichter et al. 2021	Hipotetica A	seroreactiva=si
+dic04_porinaA	WP_005766494.1	Dichter et al. 2021	Porina A	seroreactiva=si
+dic05_tonB	WP_005766517.1	Dichter et al. 2021	Receptor TonB	seroreactiva=si
+dic06_lptD	WP_035453117.1	Dichter et al. 2021	LptD	seroreactiva=no
+dic07_autoA	WP_005766622.1	Dichter et al. 2021	Autotransportador A	seroreactiva=no
+dic08_lysM	WP_005766636.1	Dichter et al. 2021	LysM	seroreactiva=si
+dic09_duf1561	WP_005767307.1	Dichter et al. 2021	DUF1561	seroreactiva=si
+dic10_bbadA	WP_005767360.1	Dichter et al. 2021	BbadA	seroreactiva=si
+dic11_flagelina	WP_011807398.1	Dichter et al. 2021	Flagelina	seroreactiva=no; si con suero de conejo
+dic12_autoB	WP_005767706.1	Dichter et al. 2021	Autotransportador B	seroreactiva=no
+dic13_flgE	WP_005767730.1	Dichter et al. 2021	FlgE	seroreactiva=no; si con suero de conejo
+dic14_hipB	WP_051007750.1	Dichter et al. 2021	Hipotetica B	seroreactiva=si
+dic15_autoC	WP_193741240.1	Dichter et al. 2021	Autotransportador C	seroreactiva=si
+dic16_autoD	WP_005767753.1	Dichter et al. 2021	Autotransportador D	seroreactiva=no
+dic17_flgH	WP_005767762.1	Dichter et al. 2021	FlgH	seroreactiva=si
+dic18_porinaB	WP_005767896.1	Dichter et al. 2021	Porina B	seroreactiva=si
+dic19_pap31	WP_005767899.1	Dichter et al. 2021	Pap31	seroreactiva=si
+dic20_porinaC	WP_005767902.1	Dichter et al. 2021	Porina C	seroreactiva=no
+dic21_autoE	WP_011807413.1	Dichter et al. 2021	Autotransportador E	seroreactiva=si
+dic22_bbadB	WP_005766221.1	Dichter et al. 2021	BbadB	seroreactiva=si
+pad01_m23a	WP_005766132.1	Padilla Rojas et al. 2019	Peptidasa M23	Origen de epitopos de M1; ensayo de invasion a 30 C
+pad02_metiltr	WP_005766203	Padilla Rojas et al. 2019	Metiltransferasa homologa	Origen de epitopos de M1
+pad03_ompHipA	WP_005766357	Padilla Rojas et al. 2019	OMP hipotetica 1	Origen de epitopos de M1
+pad04_atpB1	WP_005766369	Padilla Rojas et al. 2019	ATP sintasa subunidad b1	Origen de epitopos de M1
+pad05_tonB	WP_005766517	Padilla Rojas et al. 2019	Receptor TonB	Origen de epitopos de M1; tambien en Dichter
+pad06_duf1009	WP_005766764.1	Padilla Rojas et al. 2019	DUF1009	Origen de epitopos de M1
+pad07_ompHipB	WP_005766862	Padilla Rojas et al. 2019	OMP hipotetica 2	Origen de epitopos de M1
+pad08_lemA	WP_005767319	Padilla Rojas et al. 2019	Familia LemA	Origen de epitopos de M1
+pad09_ompHipC	WP_005767808	Padilla Rojas et al. 2019	OMP hipotetica 3	Origen de epitopos de M1
+pad10_m23b	WP_011807308	Padilla Rojas et al. 2019	Peptidasa M23	Origen de epitopos de M1

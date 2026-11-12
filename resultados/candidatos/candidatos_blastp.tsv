@@ -40,3 +40,108 @@ A1UST0	6	WP_005768187.1	BARBAKC583_RS06655	30.1	10	964	264	44	LPS export ABC tra
 A1URV9	1	WP_005766398.1	BARBAKC583_RS01890	100.0	100	334	334	680	4-hydroxybenzoate octaprenyltransferase
 A1URV9	2	WP_005766421.1	BARBAKC583_RS01955	30.4	33	334	311	47	heme o synthase
 A1USF4	1	WP_005766775.1	BARBAKC583_RS02885	100.0	100	430	430	905	citrate synthase
+prot81	1	WP_005765827.1	BARBAKC583_RS00415	100.0	100	322	322	667	tyrosine recombinase XerC
+prot81	2	WP_005765749.1	BARBAKC583_RS00205	27.5	76	322	312	103	site-specific tyrosine recombinase XerD
+prot288	1	WP_005766305.1	BARBAKC583_RS01690	100.0	100	241	241	501	ABC transporter ATP-binding protein
+prot288	2	WP_005768092.1	BARBAKC583_RS06375	34.5	88	241	280	122	manganese/iron ABC transporter ATP-binding protein
+prot288	3	WP_005767717.1	BARBAKC583_RS05410	28.1	93	241	252	81	iron ABC transporter ATP-binding protein
+prot288	4	WP_005768040.1	BARBAKC583_RS06250	31.1	77	241	208	79	heme ABC exporter ATP-binding protein CcmA
+prot288	5	WP_035453254.1	BARBAKC583_RS00645	27.7	85	241	610	78	ABC-F family ATP-binding cassette domain-containing protein
+prot288	6	WP_005766507.1	BARBAKC583_RS02200	30.0	88	241	264	75	heme ABC transporter ATP-binding protein
+prot288	7	WP_005765853.1	BARBAKC583_RS00510	25.7	79	241	219	73	cell division ATP-binding protein FtsE
+prot288	8	WP_005765850.1	BARBAKC583_RS00495	25.3	73	241	668	72	MacB family efflux pump subunit
+prot288	9	WP_005767450.1	BARBAKC583_RS04635	28.7	67	241	549	69	energy-dependent translational throttle protein EttA
+prot288	10	WP_005767869.1	BARBAKC583_RS05830	26.7	77	241	226	64	energy-coupling factor ABC transporter ATP-binding protein
+prot447	1	WP_005766636.1	BARBAKC583_RS02515	100.0	100	397	397	812	peptidoglycan DD-metalloendopeptidase family protein
+prot447	2	WP_005766132.1	BARBAKC583_RS01250	32.3	29	397	646	57	M23 family metallopeptidase
+prot492	1	WP_005766734.1	BARBAKC583_RS02770	100.0	100	448	448	922	D-alanyl-D-alanine carboxypeptidase
+prot492	2	WP_005765755.1	BARBAKC583_RS00220	43.0	54	448	362	192	D-alanyl-D-alanine carboxypeptidase family protein
+prot504	1	WP_005766757.1	BARBAKC583_RS02830	100.0	100	798	798	1622	outer membrane protein assembly factor BamA
+prot504	2	WP_005768133.1	BARBAKC583_RS06535	21.8	52	798	653	52	autotransporter assembly complex protein TamA
+prot612	1	WP_005766996.1	BARBAKC583_RS03575	100.0	100	177	177	362	single-stranded DNA-binding protein
+prot689	1	WP_005767158.1	BARBAKC583_RS04020	100.0	100	281	281	571	septal ring lytic transglycosylase RlpA family protein
+scsA_publicado	1	WP_005765714.1	BARBAKC583_RS00130	98.7	100	300	300	590	succinate--CoA ligase subunit alpha
+groEL_publicado	1	WP_005767840.1	BARBAKC583_RS05735	100.0	100	544	544	1075	chaperonin GroEL
+scsB_publicado	1	WP_005765712.1	BARBAKC583_RS00125	100.0	100	398	398	803	ADP-forming succinate--CoA ligase subunit beta
+pap31_publicado	1	WP_005767899.1	BARBAKC583_RS05920	100.0	100	300	300	602	outer membrane protein
+pap31_publicado	2	WP_005767896.1	BARBAKC583_RS05915	37.3	100	300	284	201	outer membrane protein
+pap31_publicado	3	WP_005767902.1	BARBAKC583_RS05925	38.4	100	300	281	194	outer membrane protein
+dic01_aprI	1	WP_005765706.1	BARBAKC583_RS00110	100.0	100	177	177	361	AprI/Inh family metalloprotease inhibitor
+dic02_bbadC	1	WP_005766217.1	BARBAKC583_RS07145	100.0	100	551	551	1111	YadA-like family protein
+dic02_bbadC	2	WP_005767360.1	BARBAKC583_RS04425	50.7	39	551	1259	226	Vomp family autotransporter
+dic02_bbadC	3	WP_005766221.1	BARBAKC583_RS01505	59.7	31	551	1235	199	Vomp family autotransporter
+dic03_hipA	1	WP_005766273.1	BARBAKC583_RS01620	100.0	100	124	124	258	outer membrane lipoprotein Omp10
+dic04_porinaA	1	WP_005766494.1	BARBAKC583_RS02155	100.0	100	406	406	835	porin
+dic05_tonB	1	WP_005766517.1	BARBAKC583_RS02220	100.0	100	731	731	1513	TonB-dependent hemoglobin/transferrin/lactoferrin family receptor
+dic06_lptD	1	WP_005766604.1	BARBAKC583_RS02440	100.0	99	795	791	1639	LPS-assembly protein LptD
+dic07_autoA	1	WP_005766622.1	BARBAKC583_RS02475	100.0	100	800	800	1615	BafA family autotransporter
+dic07_autoA	2	WP_011807332.1	BARBAKC583_RS02470	40.2	100	800	815	548	autotransporter outer membrane beta-barrel domain-containing protein
+dic08_lysM	1	WP_005766636.1	BARBAKC583_RS02515	100.0	100	397	397	812	peptidoglycan DD-metalloendopeptidase family protein
+dic08_lysM	2	WP_005766132.1	BARBAKC583_RS01250	32.3	29	397	646	57	M23 family metallopeptidase
+dic09_duf1561	1	WP_005767307.1	BARBAKC583_RS04340	100.0	100	649	649	1352	DUF1561 family protein
+dic09_duf1561	2	WP_005767864.1	BARBAKC583_RS05805	63.4	97	649	644	829	DUF1561 family protein
+dic09_duf1561	3	WP_005767305.1	BARBAKC583_RS04335	60.5	97	649	645	809	DUF1561 family protein
+dic09_duf1561	4	WP_005767854.1	BARBAKC583_RS05775	59.9	99	649	640	795	DUF1561 family protein
+dic09_duf1561	5	WP_005766502.1	BARBAKC583_RS02185	55.0	96	649	647	721	DUF1561 family protein
+dic09_duf1561	6	WP_005767279.1	BARBAKC583_RS04280	51.9	99	649	638	678	DUF1561 family protein
+dic09_duf1561	7	WP_005766926.1	BARBAKC583_RS03300	52.5	99	649	639	677	DUF1561 family protein
+dic09_duf1561	8	WP_005766865.1	BARBAKC583_RS03135	52.3	99	649	639	675	DUF1561 family protein
+dic09_duf1561	9	WP_005767040.1	BARBAKC583_RS03690	50.4	99	649	640	660	DUF1561 family protein
+dic09_duf1561	10	WP_005767058.1	BARBAKC583_RS03780	50.6	97	649	644	641	DUF1561 family protein
+dic10_bbadA	1	WP_005767360.1	BARBAKC583_RS04425	100.0	100	1259	1259	2541	Vomp family autotransporter
+dic10_bbadA	2	WP_005766221.1	BARBAKC583_RS01505	48.8	38	1259	1235	479	Vomp family autotransporter
+dic10_bbadA	3	WP_005766217.1	BARBAKC583_RS07145	50.7	17	1259	551	226	YadA-like family protein
+dic11_flagelina	1	WP_011807398.1	BARBAKC583_RS05045	100.0	100	380	380	756	flagellin N-terminal helical domain-containing protein
+dic11_flagelina	2	WP_005767757.1	BARBAKC583_RS05540	37.8	91	380	350	241	hypothetical protein
+dic12_autoB	1	WP_005767706.1	BARBAKC583_RS05375	100.0	100	1193	1193	2414	autotransporter outer membrane beta-barrel domain-containing protein
+dic12_autoB	2	WP_005767753.1	BARBAKC583_RS05530	35.9	50	1193	825	337	autotransporter outer membrane beta-barrel domain-containing protein
+dic12_autoB	3	WP_011807413.1	BARBAKC583_RS05535	33.7	48	1193	1058	300	autotransporter outer membrane beta-barrel domain-containing protein
+dic12_autoB	4	WP_052467648.1	BARBAKC583_RS05525	39.4	24	1193	297	216	autotransporter outer membrane beta-barrel domain-containing protein
+dic12_autoB	5	WP_051007750.1	BARBAKC583_RS07130	35.9	23	1193	610	111	autotransporter outer membrane beta-barrel domain-containing protein
+dic12_autoB	6	WP_011807408.1	BARBAKC583_RS05385	37.5	21	1193	636	93	hypothetical protein
+dic13_flgE	1	WP_005767730.1	BARBAKC583_RS05470	100.0	100	404	404	824	flagellar hook protein FlgE
+dic13_flgE	2	WP_005767770.1	BARBAKC583_RS05580	34.6	29	404	262	69	flagellar basal-body rod protein FlgG
+dic13_flgE	3	WP_005767784.1	BARBAKC583_RS05605	28.0	32	404	244	50	flagellar basal-body rod protein FlgF
+dic14_hipB	1	WP_051007750.1	BARBAKC583_RS07130	100.0	100	610	610	1239	autotransporter outer membrane beta-barrel domain-containing protein
+dic14_hipB	2	WP_005767753.1	BARBAKC583_RS05530	51.1	85	610	825	469	autotransporter outer membrane beta-barrel domain-containing protein
+dic14_hipB	3	WP_011807413.1	BARBAKC583_RS05535	36.8	35	610	1058	135	autotransporter outer membrane beta-barrel domain-containing protein
+dic14_hipB	4	WP_005767706.1	BARBAKC583_RS05375	35.9	46	610	1193	110	autotransporter outer membrane beta-barrel domain-containing protein
+dic15_autoC	1	WP_052467648.1	BARBAKC583_RS05525	100.0	71	416	297	598	autotransporter outer membrane beta-barrel domain-containing protein
+dic15_autoC	2	WP_005767753.1	BARBAKC583_RS05530	68.2	79	416	825	457	autotransporter outer membrane beta-barrel domain-containing protein
+dic15_autoC	3	WP_011807413.1	BARBAKC583_RS05535	47.4	79	416	1058	312	autotransporter outer membrane beta-barrel domain-containing protein
+dic15_autoC	4	WP_005767706.1	BARBAKC583_RS05375	40.2	77	416	1193	244	autotransporter outer membrane beta-barrel domain-containing protein
+dic16_autoD	1	WP_005767753.1	BARBAKC583_RS05530	100.0	100	825	825	1670	autotransporter outer membrane beta-barrel domain-containing protein
+dic16_autoD	2	WP_051007750.1	BARBAKC583_RS07130	51.8	60	825	610	474	autotransporter outer membrane beta-barrel domain-containing protein
+dic16_autoD	3	WP_011807413.1	BARBAKC583_RS05535	43.6	66	825	1058	451	autotransporter outer membrane beta-barrel domain-containing protein
+dic16_autoD	4	WP_052467648.1	BARBAKC583_RS05525	67.3	36	825	297	412	autotransporter outer membrane beta-barrel domain-containing protein
+dic16_autoD	5	WP_005767706.1	BARBAKC583_RS05375	31.7	91	825	1193	339	autotransporter outer membrane beta-barrel domain-containing protein
+dic17_flgH	1	WP_005767762.1	BARBAKC583_RS05560	100.0	100	230	230	464	flagellar basal body L-ring protein FlgH
+dic18_porinaB	1	WP_005767896.1	BARBAKC583_RS05915	100.0	100	284	284	575	outer membrane protein
+dic18_porinaB	2	WP_005767899.1	BARBAKC583_RS05920	37.6	100	284	300	200	outer membrane protein
+dic18_porinaB	3	WP_005767902.1	BARBAKC583_RS05925	36.0	99	284	281	182	outer membrane protein
+dic19_pap31	1	WP_005767899.1	BARBAKC583_RS05920	100.0	100	300	300	602	outer membrane protein
+dic19_pap31	2	WP_005767896.1	BARBAKC583_RS05915	37.3	100	300	284	201	outer membrane protein
+dic19_pap31	3	WP_005767902.1	BARBAKC583_RS05925	38.4	100	300	281	194	outer membrane protein
+dic20_porinaC	1	WP_005767902.1	BARBAKC583_RS05925	100.0	100	281	281	575	outer membrane protein
+dic20_porinaC	2	WP_005767899.1	BARBAKC583_RS05920	38.1	100	281	300	194	outer membrane protein
+dic20_porinaC	3	WP_005767896.1	BARBAKC583_RS05915	36.0	99	281	284	182	outer membrane protein
+dic21_autoE	1	WP_011807413.1	BARBAKC583_RS05535	100.0	100	1058	1058	2171	autotransporter outer membrane beta-barrel domain-containing protein
+dic21_autoE	2	WP_005767753.1	BARBAKC583_RS05530	43.6	53	1058	825	451	autotransporter outer membrane beta-barrel domain-containing protein
+dic21_autoE	3	WP_005767706.1	BARBAKC583_RS05375	33.7	55	1058	1193	299	autotransporter outer membrane beta-barrel domain-containing protein
+dic21_autoE	4	WP_052467648.1	BARBAKC583_RS05525	47.0	28	1058	297	275	autotransporter outer membrane beta-barrel domain-containing protein
+dic21_autoE	5	WP_051007750.1	BARBAKC583_RS07130	36.8	22	1058	610	135	autotransporter outer membrane beta-barrel domain-containing protein
+dic22_bbadB	1	WP_005766221.1	BARBAKC583_RS01505	100.0	100	1235	1235	2501	Vomp family autotransporter
+dic22_bbadB	2	WP_005767360.1	BARBAKC583_RS04425	48.8	44	1235	1259	504	Vomp family autotransporter
+dic22_bbadB	3	WP_005766217.1	BARBAKC583_RS07145	59.7	15	1235	551	224	YadA-like family protein
+pad01_m23a	1	WP_005766132.1	BARBAKC583_RS01250	100.0	100	646	646	1346	M23 family metallopeptidase
+pad01_m23a	2	WP_005766636.1	BARBAKC583_RS02515	32.3	19	646	397	57	peptidoglycan DD-metalloendopeptidase family protein
+pad02_metiltr	1	WP_005766203.1	BARBAKC583_RS01445	100.0	100	247	247	508	16S rRNA (uracil(1498)-N(3))-methyltransferase
+pad03_ompHipA	1	WP_005766357.1	BARBAKC583_RS01785	100.0	100	567	567	1146	hypothetical protein
+pad04_atpB1	1	WP_005766369.1	BARBAKC583_RS01820	100.0	100	159	159	315	F0F1 ATP synthase subunit B
+pad04_atpB1	2	WP_005766367.1	BARBAKC583_RS01815	28.3	85	159	188	40	F0F1 ATP synthase subunit B
+pad05_tonB	1	WP_005766517.1	BARBAKC583_RS02220	100.0	100	731	731	1513	TonB-dependent hemoglobin/transferrin/lactoferrin family receptor
+pad06_duf1009	1	WP_005766764.1	BARBAKC583_RS02850	100.0	100	290	290	587	LpxI family protein
+pad07_ompHipB	1	WP_005766862.1	BARBAKC583_RS03125	100.0	100	403	403	837	alpha/beta hydrolase
+pad08_lemA	1	WP_005767319.1	BARBAKC583_RS04365	100.0	100	214	214	444	LemA family protein
+pad09_ompHipC	1	WP_005767808.1	BARBAKC583_RS05650	100.0	100	156	156	319	hypothetical protein
+pad10_m23b	1	WP_005766242.1	BARBAKC583_RS01555	100.0	96	420	403	818	murein hydrolase activator EnvC family protein

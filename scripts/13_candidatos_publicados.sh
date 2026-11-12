@@ -203,14 +203,32 @@ for q in orden:
     r['ambiguo'] = 'TRUE' if ambiguo else 'FALSE'
     razon = m['largo_q'] / m['largo_s'] if m['largo_s'] else 0.0
 
-    if m['identidad'] < MIN_IDENT or m['cobertura'] < MIN_COBERTURA:
+    # qcovs mide cobertura de la CONSULTA. Si la consulta es mas larga que el
+    # blanco, por ejemplo porque la accesion citada por el articulo fue
+    # extendida en la base de datos despues de publicarse, la cobertura de
+    # consulta baja aunque el blanco este cubierto entero. Ese es el caso
+    # seguro, no el peligroso: lo que el control debe cazar es una consulta
+    # RECORTADA, que da 100 % de cobertura faltandole media proteina.
+    # Se calcula tambien la cobertura del BLANCO, con los campos que ya hay.
+    cob_s = min(100.0, m['cobertura'] / 100.0 * m['largo_q'] / m['largo_s'] * 100) \
+        if m['largo_s'] else 0.0
+    cob_efectiva = max(m['cobertura'], cob_s)
+    blanco_entero = cob_s >= 95.0 and m['identidad'] >= MIN_IDENT
+    rescatados = globals().setdefault('rescatados', [])
+
+    if m['identidad'] < MIN_IDENT or cob_efectiva < MIN_COBERTURA:
         r['asignacion'] = 'acierto debil'
-    elif not (LARGO_MIN <= razon <= LARGO_MAX):
+    elif not (LARGO_MIN <= razon <= LARGO_MAX) and not blanco_entero:
         r['asignacion'] = 'largo dispar'
     elif ambiguo:
         r['asignacion'] = 'ambigua'
     else:
         r['asignacion'] = 'por secuencia'
+
+    if r['asignacion'] == 'por secuencia' and (
+            m['cobertura'] < MIN_COBERTURA or not (LARGO_MIN <= razon <= LARGO_MAX)):
+        rescatados.append((r['consulta'], m['proteina'], m['cobertura'], cob_s,
+                           m['largo_q'], m['largo_s']))
 
     L = locus_de.get(m['proteina'], 'NA')
     r['locus'] = L
@@ -241,6 +259,13 @@ with open(f_sal_todo, 'w', newline='') as fh:
     w.writerows(filas_todo)
 
 # ---- Resumen en pantalla ----
+print()
+if globals().get('rescatados'):
+    print()
+    print('=== ASIGNADAS POR COBERTURA DEL BLANCO (consulta mas larga que el blanco) ===')
+    for c, pr, cq, cs, lq, ls in rescatados:
+        print('  %-18s %-18s cobertura consulta %.0f%%, del blanco %.1f%% '
+              '(%d aa consultados frente a %d en KC583)' % (c, pr, cq, cs, lq, ls))
 print()
 print('=== ASIGNACION ===')
 for k, n in collections.Counter(r['asignacion'] for r in filas).most_common():
@@ -300,6 +325,28 @@ def fisher_una_cola(a, na, b, nb):
 utiles = [r for r in filas if r['asignacion'] == 'por secuencia']
 fl = [r for r in utiles if r['conjunto_flagelar'] == 'TRUE']
 nf = [r for r in utiles if r['conjunto_flagelar'] != 'TRUE']
+# Deduplicacion por locus. Varios estudios proponen la misma proteina y el
+# contraste debe contar genes distintos, no consultas: si tres trabajos
+# proponen Pap31, Pap31 pesa una vez.
+def un_locus(lista):
+    vistos, salida, colapsados = set(), [], []
+    for r in sorted(lista, key=lambda x: x['consulta']):
+        if r['locus'] in vistos:
+            colapsados.append((r['consulta'], r['locus']))
+            continue
+        vistos.add(r['locus']); salida.append(r)
+    return salida, colapsados
+
+fl_n, nf_n = len(fl), len(nf)
+fl, col_fl = un_locus(fl)
+nf, col_nf = un_locus(nf)
+if col_fl or col_nf:
+    print()
+    print('=== CONSULTAS COLAPSADAS POR LOCUS (misma proteina en varios estudios) ===')
+    for c, l in col_fl + col_nf:
+        print('  %-22s %s' % (c, l))
+    print('  flagelares %d -> %d, no flagelares %d -> %d' % (fl_n, len(fl), nf_n, len(nf)))
+
 a, b = sum(map(reprimido, fl)), sum(map(reprimido, nf))
 
 if fl and nf:
