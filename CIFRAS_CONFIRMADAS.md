@@ -17,9 +17,77 @@ no debe usarse.**
 | Panel de género | GCF_000253015.1 · GCF_039555305.1 · GCF_001281405.1 · GCF_000196435.1 · GCF_009936175.1 · GCF_019930925.1 |
 | Quimiotaxis | GCF_037023865.1 · GCF_000022005.1 · GCF_000092025.1 · GCF_003324715.1 |
 
-Las 23 corridas provienen de **un solo centro** (The University of Montana),
-mismo instrumento (Illumina HiSeq 2500) y mismo diseño pareado, según los
-metadatos de SRA. **No existen dos centros de secuenciación.**
+Las 23 corridas fueron depositadas por The University of Montana y
+secuenciadas en Illumina HiSeq 2500, pareado de 2 × 150 pb.
+
+**Corrección (12 de noviembre de 2026).** Este documento afirmaba antes que las
+corridas provenían de **un solo centro** y que **no existían dos centros de
+secuenciación**. Es falso. Wachter et al. 2020 indica en Materiales y métodos
+que el ARN se envió al **Yale Center for Genomic Analysis** (Pl25, Pl30, Pl37,
+pH06, pH07, pH08) o a **GENEWIZ** (PlBG, HUVE, HB37, HBBG). El campo de centro
+de los metadatos de SRA registra quién deposita, no quién secuencia; de ahí
+salió el error.
+
+El corte entre los dos centros **coincide exactamente** con el corte entre las
+12 muestras del modelo y las 11 excluidas. Dos consecuencias: el modelo
+restringido queda libre de efecto de lote por centro, y la exclusión de las 11
+gana una razón independiente de la matriz biológica y del PCA. Explica además
+el hallazgo de adaptadores de la sección 3b.
+
+### Diseño del estudio original
+
+KC583, pases 4 a 7, crecida **cuatro días en placa HIBB a 30 °C** (agar
+infusión corazón Bacto con 4 % de sangre desfibrinada y 2 % de suero, ambos de
+oveja) y **trasladada 2 h** a cada condición. Tabla 1 del artículo.
+
+| Condición | Medio | Traslado |
+|---|---|---|
+| Pl25, Pl30, Pl37 | placa HIBB | 2 h |
+| PlBG | placa HIBB, atmósfera sanguínea | 2 h |
+| pH06, pH07, pH08 | HIBB líquido | 2 h |
+| HB37, HBBG | sangre humana | 2 h |
+| HUVE | HUVEC en medio EGM-Plus | 24 h |
+
+**Ninguna condición es crecimiento sostenido a esa temperatura.** Lo que mide
+este reanálisis es la respuesta a un traslado de dos horas. Escribir "cultivos
+crecidos a 25, 30 y 37 °C" sería incorrecto.
+
+Wachter justifica las dos horas: con **cuatro horas a 37 °C** hubo muerte
+bacteriana, que atribuye a la adaptación de KC583 al laboratorio.
+
+### Réplicas descartadas por los autores originales
+
+Se enviaron **tres réplicas biológicas por condición** (30 bibliotecas) y en el
+SRA hay **23**. La tabla S2 del artículo lista las 30 y marca en amarillo las
+eliminadas, con la leyenda "Replicates removed from global analysis". Son siete
+y coinciden una a una con las que faltan en el depósito.
+
+| Réplica | Alineadas | Ambiguas |
+|---|---|---|
+| pH08-1 | 12,4 % | 60,7 % |
+| pH06-3 | 21,0 % | 44,4 % |
+| HUVE-3 | 2,1 % | 81,5 % |
+| Pl25-3 | 99,3 % | 56,6 % |
+| Pl30-1 | 99,1 % | 31,1 % |
+| Pl37-1 | 99,2 % | 33,6 % |
+| pH07-3 | 91,0 % | 2,5 % |
+
+Criterio declarado: descartaron las réplicas que **no correlacionaban** con las
+otras de su condición, no las técnicamente defectuosas. Cuatro de las siete no
+tienen problema técnico, y pH07-3 es la más limpia de sus tres hermanas.
+
+**Consecuencia para el modelo.** Las 12 muestras son dos réplicas por
+condición, y en cada una son las dos sobrevivientes de ese filtro. En Pl25 y
+Pl30 se conservó la réplica con peor depleción ribosomal (80,3 % y 84,7 % de
+ambiguas) y se descartó la mejor (56,6 % y 31,1 %); esas dos conservadas son
+las mismas que la sección 3 marca por debajo de dos millones de lecturas
+asignadas.
+
+El filtro **no se puede revertir ni reproducir**, porque el umbral de
+correlación no está publicado. Va declarado en limitaciones. El respaldo está
+en la sección 7: los 31 genes conservan la dirección en las dos particiones
+independientes, es decir con cualquiera de las dos réplicas de cada
+condición.
 
 ---
 
@@ -123,6 +191,14 @@ lecturas. Salida en `control_de_calidad/`, fuera de `resultados/`, así que
 El contenido de adaptadores es **el único módulo que reproduce la partición de
 12 frente a 11 usada en el modelo**, y lo hace sin una sola excepción: los 22
 fallos y advertencias caen en los 22 archivos de las 11 muestras excluidas.
+
+**Explicación (12 de noviembre de 2026).** No es coincidencia. Las 12 del
+modelo y las 11 excluidas se prepararon en **centros distintos**: Yale Center
+for Genomic Analysis y GENEWIZ respectivamente (sección 1). La partición de
+adaptadores es el efecto de dos preparaciones de biblioteca independientes. Las
+excluidas difieren además en el tratamiento del ARN: HUVE, HB37 y HBBG se
+enriquecieron con MICROBEnrich, y las de sangre se deplecionaron de globina con
+GLOBINclear.
 
 Las otras dos medidas que se usaron para excluir no dan esa partición:
 
@@ -363,7 +439,7 @@ con control post-transcripcional. Compatible, no demostrado.
 
 | Cifra anterior | Valor correcto | Motivo |
 |---|---|---|
-| Yale n=12 vs GENEWIZ n=11 | **un solo centro** | Metadatos de SRA: todas las corridas son de University of Montana |
+| un solo centro | **Yale n=12 vs GENEWIZ n=11** | Wachter et al. 2020, Materiales y métodos. El campo de centro de SRA registra quién **deposita** (University of Montana), no quién secuencia. Esta fila estaba invertida: retiraba el dato correcto. Restituida el 12-11-2026 |
 | 1 216 CDS | **1 217 filas CDS = 1 216 genes** | prfB (RS03925) tiene dos segmentos; ambas cifras son correctas según se cuenten filas o genes |
 | 1 176 analizables | **1 186** | Recuento anterior no reproducible |
 | Universo 1 134 (o 1 175) | **1 138** | `lt2prot.tsv` anterior incluía 50 CDS sin `protein_id` |
@@ -816,9 +892,38 @@ estudio funcional, y les añade los valores de expresión de este reanálisis.
 Salida en `resultados/candidatos/`. Determinista: dos corridas seguidas dan md5
 idéntico en las tres tablas, con `-num_threads 1`.
 
-**24 consultas de tres estudios:** 5 de Gul et al. 2020, 18 de Rivera 2022
-(Khan et al. 2019 propone FlhA, que es la misma proteína del constructo II de
-Rivera) y la secuencia curada de IalB.
+**67 consultas de siete estudios** (cerrado el 12 de noviembre de 2026):
+5 de Gul et al. 2020, 18 de Rivera-Asencios et al. 2025 (Khan et al. 2020
+propone FlhA, la misma proteína del constructo II de Rivera-Asencios), 7 de
+Jimenez-Vasquez et al. 2023, 4 de Gomes et al. 2016, 22 de Dichter et al. 2021,
+10 de Padilla Rojas et al. 2019 y la secuencia curada de IalB. Asignadas por
+secuencia: 66; ambigua: 1 (A1USN1).
+
+Henriquez-Camacho 2015, que la introducción también cita, es una revisión y no
+propone candidatos propios: discute flagelina, IalB y Pap31, los tres ya
+incluidos. **El cruce cubre todos los estudios que proponen blancos.**
+
+### Deduplicación por locus
+
+Siete consultas caen en loci que otro estudio ya había propuesto y se colapsan
+antes del contraste, porque este cuenta genes distintos y no consultas: si tres
+trabajos proponen Pap31, Pap31 pesa una vez. No flagelares 55 a 48.
+
+### Cobertura del blanco
+
+`qcovs` mide cobertura de la **consulta**. Cuando la consulta es más larga que
+el blanco, la cobertura de consulta baja aunque el blanco esté cubierto entero.
+El control original rechazaba ese caso, que es el seguro: lo peligroso es una
+consulta **recortada**, que da 100 % de cobertura faltándole media proteína.
+Ahora se calcula también la cobertura del blanco y se acepta la asignación si
+el blanco está cubierto al 95 % o más con identidad suficiente.
+
+Un caso lo motivó: `dic15_autoC`. Dichter cita WP_193741240.1 declarando 297 aa,
+pero NCBI extendió esa entrada a 416 aa después de la publicación. El acierto en
+KC583 es WP_052467648.1, de **297 aa exactos y 100 % de identidad**, con el
+segundo acierto a 68,2 %. La discrepancia está en la base de datos, no en la
+asignación. Se incluye, y su gen RS05525 está reprimido, de modo que incluirlo
+**debilita** el contraste: es la decisión conservadora.
 
 ### Por qué el emparejamiento es por secuencia y no por nombre
 
@@ -898,17 +1003,79 @@ Los tres epítopos experimentales, presentes en los dos constructos: UvrA
 ### Especificidad
 
 `resultados/candidatos/especificidad.tsv`, calculada por el mismo script sobre
-las 23 consultas asignadas por secuencia:
+las 66 consultas asignadas por secuencia, deduplicadas por locus:
 
 | Grupo | Reprimidos a 37 °C | Total |
 |---|---|---|
-| Flagelares | 8 | 8 |
-| No flagelares | 3 | 15 |
+| Flagelares | 11 | 11 |
+| No flagelares | 15 | 48 |
 
-Fisher exacto de una cola: **p = 3,365 × 10⁻⁴**.
+Fisher exacto de una cola: **p = 2,761 × 10⁻⁵**.
 
-Los tres no flagelares reprimidos son la permeasa FecCD de Gul (RS02205,
-−1,537), LptD (RS02440, −0,828) y la citrato sintasa (RS02885, −0,584).
+Los once flagelares incluyen ahora flagelina (RS05045, −2,007), FlgE (RS05470,
+−0,704) y FlgH (RS05560, −1,414), que aporta Dichter.
+
+### Los candidatos publicados se reparten en tres grupos
+
+Con el cruce ampliado aparece por primera vez un candidato **inducido** a
+temperatura de hospedero, lo que cambia la lectura del conjunto:
+
+| Comportamiento a 37 °C | Candidatos |
+|---|---|
+| Reprimidos | los 8 flagelares, más FecCD, LptD, citrato sintasa, Prot 492 y Pap31 |
+| Inducidos | **GroEL** (RS05735, +2,057, padj 3,11 × 10⁻¹⁰) y TolC, autotransportador, Prot 288 |
+| Sin cambio | SCS-α (RS00130, −0,090), SCS-β (RS00125, −0,207), IalB y el resto |
+
+**GroEL es el hallazgo del cruce ampliado.** Gomes et al. 2016 lo propone como
+antígeno (candidato A, secuenciación N-terminal) y aquí sube cuatro veces a
+37 °C. El locus RS05735 está anotado como `chaperonin GroEL` y ya figuraba en
+el grupo de chaperonas de la figura 4 y en el top 20 del contraste de
+temperatura: el cruce lo reencuentra por una vía independiente, partiendo de la
+secuencia publicada y no de la anotación.
+
+Pap31 merece una nota: UniProt da Q3HM50 como **fragmento** y de otra cepa, de
+modo que la consulta usa Omp25 de KC583 (A1UU13, vía UniParc), que Gomes
+reporta como su homólogo al 100 %. Su producto comparte nombre con otros tres
+genes, así que por nombre habría sido indeterminable.
+
+### Los antígenos que funcionan en pacientes son los que se inducen a 37 °C
+
+Dichter et al. 2021 montó un ELISA con **porina B y autotransportador E** que
+alcanza 81 % de sensibilidad y 95 % de especificidad con suero de pacientes
+peruanos. Los dos están **inducidos** en estos datos:
+
+| Antígeno del ELISA | Locus | log2FC 37/25 | padj |
+|---|---|---|---|
+| Porina B | RS05915 | **+1,591** | 1,55 × 10⁻¹² |
+| Autotransportador E | RS05535 | **+0,688** | 3,54 × 10⁻⁵ |
+
+Es el respaldo más fuerte del criterio que propone este trabajo, y viene de
+datos ajenos ya validados experimentalmente. Pap31, el antígeno clásico, es
+vecino de porina B en el genoma (RS05920 frente a RS05915) y va al revés:
+−1,615.
+
+### FlgH: reprimida y reconocida por los pacientes
+
+De las tres proteínas flagelares del panel de Dichter, flagelina y FlgE fueron
+reactivas solo con **suero de conejo**; **FlgH** está entre las catorce que
+reconoce el suero de pacientes. Y FlgH está reprimida: RS05560, −1,414, padj
+9,93 × 10⁻⁶.
+
+Ese caso solo impide cualquier lectura simple del tipo "reprimida, luego no
+sirve como antígeno". Una proteína puede estar reprimida en cultivo a 37 °C y
+aun así generar anticuerpos en el paciente.
+
+### RS05650 es un candidato publicado
+
+`pad09_ompHipC` cae en **RS05650** (−1,652, padj 1,26 × 10⁻⁸), el gen que está
+dentro del clúster flagelar, entre FlhB (RS05640) y FliR (RS05685), anotado como
+`hypothetical protein` y por eso fuera de los 31.
+
+Resulta ser una de las proteínas de origen de los epítopos de M1 de Padilla
+Rojas. Que el regulón sea más amplio que la anotación deja de ser una
+observación interna y pasa a tener consecuencia sobre un candidato vacunal
+publicado. Su nombre de producto lo comparten **98 genes**: por nombre era
+imposible.
 
 **Este es un contraste dentro del conjunto de candidatos publicados**, que es
 pequeño y no fue elegido al azar: las proteínas provienen de tamizajes con
@@ -988,7 +1155,7 @@ equivocadas y **no deben usarse**:
 | A1UU82 en CcmA RS06250, inducido +1,063, padj 0,0112 | RS06260, +0,213, padj 0,24, sin cambio |
 | A1URZ7 en el agrupamiento del hemo reprimido, −1,42 a −1,70 | RS02080, +0,174, padj 0,378, sin cambio |
 | A1US20 en RS02200, RS02210 o RS02215 | RS02205, −1,537, padj 1,86 × 10⁻⁸ |
-| Fisher de especificidad p = 1,0 × 10⁻³, calculado sobre 2 de 10 no flagelares | p = 3,365 × 10⁻⁴, sobre los 15 no flagelares asignados |
+| Fisher de especificidad: p = 1,0 × 10⁻³ (2 de 10), p = 3,365 × 10⁻⁴ (3 de 15) y p = 7,088 × 10⁻⁵ (5 de 26) | **p = 2,761 × 10⁻⁵**, sobre 15 de 48 no flagelares deduplicados por locus | Cruce cerrado en siete estudios el 12-11-2026 |
 
 `RS06250` (CcmA) sí está inducido, con +1,063 y padj 0,0112, pero **no es un
 candidato de Gul**: era una atribución errónea.
@@ -998,3 +1165,47 @@ que reproducía el resultado esperado. **Cualquier elección del parálogo hecha
 por nombre de producto, o por cuál de los candidatos da el resultado esperado,
 es circular y no es admisible.** También se había dado 170 aa como longitud de
 IalB; esa cifra corresponde a IalA (P35640.1), no a IalB.
+
+---
+
+## 17. Condiciones excluidas: no concluyente (12 de noviembre de 2026)
+
+`scripts/14_exploratorio_sangre.py`. **Exploratorio, sin valores p, fuera de
+`verificar.sh`.** Mide el percentil mediano del conjunto flagelar dentro de
+cada muestra, a partir del TPM de `quant.sf`. El rango es insensible a la
+profundidad y a la composición de la biblioteca, que es lo que difiere entre
+matrices.
+
+| Condición | Centro | Percentil mediano del conjunto flagelar |
+|---|---|---|
+| Pl25 | Yale | 49,1 · 62,6 |
+| Pl30 | Yale | 18,0 · 19,7 |
+| Pl37 | Yale | 25,0 · 16,2 |
+| pH06 | Yale | 67,5 · 69,6 |
+| pH07 | Yale | 50,3 · 53,2 |
+| pH08 | Yale | 66,3 · 62,4 |
+| PlBG | GENEWIZ | 64,0 · 75,1 · 64,3 |
+| HB37 | GENEWIZ | 61,7 · 56,3 · 67,5 |
+| HBBG | GENEWIZ | 74,6 · 59,5 · 60,5 |
+| HUVE | GENEWIZ | 18,2 · 23,7 |
+
+**El método es válido:** en placa reproduce el resultado conocido, alto a 25 °C
+y bajo a 30 y 37 °C. No hay artefacto de ceros: entre 95 y 99 % de los
+transcritos tienen señal en todas las muestras.
+
+**Pero el resultado no es interpretable.** En sangre humana a 37 °C el conjunto
+flagelar queda alto, lo contrario de lo que se esperaría. Eso no se puede leer
+como biología: **PlBG es placa a 37 °C igual que Pl37** y marca 68 frente a 21.
+Esas dos se diferencian en la atmósfera sanguínea y en el centro de preparación
+de biblioteca. El centro está perfectamente confundido con la condición en las
+11 muestras excluidas (sección 1).
+
+**Qué hacer con esto.** Va en limitaciones, para explicar por qué no se usaron
+las condiciones excluidas, y **no como apoyo del resultado principal**.
+
+### Observación aparte, esta sí dentro del modelo
+
+A 30 °C y pH 7,4, mismo centro y mismo tiempo de traslado, el conjunto flagelar
+marca ~19 en placa (Pl30) y ~52 en líquido (pH07). Solo cambia sólido frente a
+líquido. **Pendiente**: contraste formal con DESeq2, posible porque las dos
+condiciones están entre las 12 del modelo.
