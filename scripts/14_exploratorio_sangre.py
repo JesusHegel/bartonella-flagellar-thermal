@@ -40,8 +40,7 @@ DESeq2, posible porque las dos condiciones estan entre las 12 del modelo.
 """
 import os, sys, csv, statistics
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-def r(*p): return os.path.join(RAIZ, *p)
+from rutas import r   # redirige resultados/, intermedios/ y figuras/ a $DIR_*
 
 ORDEN = ["Pl25", "Pl30", "Pl37", "pH06", "pH07", "pH08", "PlBG", "HB37", "HBBG", "HUVE"]
 EN_MODELO = {"Pl25", "Pl30", "Pl37", "pH06", "pH07", "pH08"}
@@ -132,4 +131,4 @@ for c in ORDEN:
               % (c, "" if c in EN_MODELO else "(fuera)",
                  "  ".join("%.1f%%" % x for x in v)))
 print("\nSalida:", sal)
-print("EXPLORATORIO: sin valores p. No entra a verificar.sh.")
+print("EXPLORATORIO: sin valores p, pero la salida si entra a verificar.sh.")

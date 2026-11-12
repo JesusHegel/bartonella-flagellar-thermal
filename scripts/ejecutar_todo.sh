@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ejecuta el analisis completo, del script 01 al 17, y al final lo verifica.
-# El 14 es exploratorio (no produce valores p) y se corre aparte, a mano.
+# El 14 no produce valores p, pero su salida esta publicada y se verifica.
 #
 # El 13 (candidatos publicados) avisa y se salta solo si todavia no estan las
 # secuencias en datos/candidatos_publicados/. Ningun otro resultado depende de el.
@@ -50,6 +50,7 @@ correr 10_descargar_string.sh
 correr 11_analisis_string.R
 correr 12_figuras.R
 correr 13_candidatos_publicados.sh
+correr 14_exploratorio_sangre.py
 correr 15_seroreactividad.py
 correr 16_solido_vs_liquido.R
 correr 17_ialb.py
