@@ -16,8 +16,7 @@ Salida: resultados/candidatos/seroreactividad.tsv
 import os, csv, sys
 from math import comb
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-def r(*p): return os.path.join(RAIZ, *p)
+from rutas import r   # redirige resultados/, intermedios/ y figuras/ a $DIR_*
 
 PADJ, LFC = 0.05, 0.0          # mismo criterio que el script 13
 

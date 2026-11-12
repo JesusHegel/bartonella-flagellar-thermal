@@ -211,7 +211,7 @@ volcan <- function(lfc, padj, etiqueta_x, tag) {
     labs(x = etiqueta_x, y = expression(-log[10]~"(q)"), tag = tag) + tema)
 }
 vt <- volcan("log2FC_37vs25", "padj_37vs25", expression(log[2]~"del cambio, 37 °C / 25 °C"), "A")
-vp <- volcan("log2FC_pH6vspH8", "padj_pH6vspH8", expression(log[2]~"del cambio, pH 6 / pH 8"), "B")
+vp <- volcan("log2FC_pH6vspH8", "padj_pH6vspH8", expression(log[2]~"del cambio, pH 6,0 / pH 8,2"), "B")
 lx <- range(c(vt$d$lfc, vp$d$lfc)) * 1.05; ly <- c(0, max(c(vt$d$y, vp$d$y)) * 1.12)
 guardar(juntar(vt$g + coord_cartesian(xlim = lx, ylim = ly), vp$g + coord_cartesian(xlim = lx, ylim = ly)),
         "figura_3_volcanes_temperatura_y_ph", 180, 80)
@@ -283,7 +283,8 @@ f5 <- ggplot() +
   geom_text_repel(data = nod[nod$clase %in% c("Flagelar", "Chaperona"), ], aes(x, y, label = nombre),
                   size = 2, colour = TINTA, segment.size = 0.2, segment.colour = EJE,
                   max.overlaps = Inf, box.padding = 0.15, min.segment.length = 0.2, seed = 42,
-                  max.time = 60, max.iter = 10000) +   # termina por iteraciones, no por tiempo
+                  max.time = Inf, max.iter = 10000) +  # sin techo de reloj: el corte es solo
+                  # por iteraciones, que es lo que lo vuelve reproducible
   # Aun asi, ggrepel 0.9.8 puede colocar algunas etiquetas en otra posicion entre
   # corridas (comprobado: misma disposicion de la red, dos versiones del dibujo).
   scale_fill_manual(values = c(Flagelar = FLAG, Chaperona = CHAP, "Otro reprimido" = GRIS_O, "Otro inducido" = GRIS), name = NULL) +

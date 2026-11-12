@@ -22,7 +22,9 @@ con_tolerancia() {
     resultados/muestras/pca_y_tasa_mapeo.csv|\
     resultados/string/enriquecimiento_string_inducidos.csv|\
     resultados/string/enriquecimiento_string_reprimidos.csv|\
-    resultados/string/red_cambio_2x_nodos.csv) return 0 ;;
+    resultados/string/red_cambio_2x_nodos.csv|\
+    resultados/condiciones/*|\
+    resultados/candidatos/ialB_identificacion.csv) return 0 ;;
     *) return 1 ;;
   esac
 }

@@ -25,3 +25,5 @@ control_de_calidad/*_fastqc.html
 control_de_calidad/informe_multiqc_data/
 control_de_calidad/multiqc.log
 *.respaldo
+__pycache__/
+*.pyc

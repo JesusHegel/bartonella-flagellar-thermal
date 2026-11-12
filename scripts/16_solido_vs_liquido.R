@@ -12,8 +12,16 @@
 # Salida: resultados/condiciones/solido_vs_liquido.csv
 suppressPackageStartupMessages({ library(DESeq2); library(ashr) })
 
-r <- function(...) file.path(normalizePath("."), ...)
-stopifnot(dir.exists(r("scripts")))
+source("scripts/rutas.R")
+r <- function(...) {
+  p <- file.path(...)
+  for (nd in list(c("resultados", DIR_RES), c("intermedios", DIR_INT),
+                  c("figuras", DIR_FIG))) {
+    if (grepl(paste0("^", nd[1], "(/|$)"), p))
+      return(file.path(nd[2], sub(paste0("^", nd[1], "/?"), "", p)))
+  }
+  p
+}
 
 ARCH <- r("intermedios", "dds_12_muestras.rds")
 if (!file.exists(ARCH)) {

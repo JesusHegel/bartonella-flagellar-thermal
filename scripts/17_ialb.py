@@ -14,12 +14,11 @@ flagelar si se mueve, la senal flagelar no es fisiologia global.
 
     python3 scripts/17_ialb.py
 
-Salida: resultados/candidatos/ialB_identificacion.tsv
+Salida: resultados/candidatos/ialB_identificacion.csv
 """
 import os, csv, sys, subprocess
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-def r(*p): return os.path.join(RAIZ, *p)
+from rutas import r   # redirige resultados/, intermedios/ y figuras/ a $DIR_*
 
 CONSULTA = r("datos/referencia/ialB_publicado.faa")
 BLANCO   = r("datos/referencia/protein.faa")
@@ -111,9 +110,9 @@ cols = ["locus", "proteina", "es_ialB_publicado", "TPM_Pl25", "TPM_Pl30",
         "TPM_Pl37", "TPM_pH07", "log2FC_37vs30", "padj_37vs30",
         "log2FC_37vs25", "padj_37vs25", "log2FC_liq_vs_plac", "padj_liq_vs_plac"]
 os.makedirs(r("resultados/candidatos"), exist_ok=True)
-dest = r("resultados/candidatos/ialB_identificacion.tsv")
+dest = r("resultados/candidatos/ialB_identificacion.csv")
 with open(dest, "w", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=cols, delimiter="\t")
+    w = csv.DictWriter(f, fieldnames=cols, lineterminator="\n")
     w.writeheader()
     for d in sorted(familia, key=lambda x: x["locus"]):
         w.writerow(d)

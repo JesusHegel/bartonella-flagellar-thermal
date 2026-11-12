@@ -21,7 +21,8 @@ DIR_FIG   <- leer_variable("DIR_FIG",   "figuras")
 
 for (d in c(file.path(DIR_RES, c("anotacion", "expresion_diferencial", "enriquecimiento",
                                  "robustez", "muestras", "genomica_comparada",
-                                 "genes", "string")),
+                                 "genes", "string", "candidatos",
+                                 "condiciones", "exploratorio")),
             DIR_INT, DIR_FIG))
   dir.create(d, recursive = TRUE, showWarnings = FALSE)
 

@@ -1,5 +1,6 @@
 #!/bin/bash
-# Ejecuta el analisis completo, del script 01 al 13, y al final lo verifica.
+# Ejecuta el analisis completo, del script 01 al 17, y al final lo verifica.
+# El 14 es exploratorio (no produce valores p) y se corre aparte, a mano.
 #
 # El 13 (candidatos publicados) avisa y se salta solo si todavia no estan las
 # secuencias en datos/candidatos_publicados/. Ningun otro resultado depende de el.
@@ -31,6 +32,7 @@ correr() {                        # correr <script>  -> registros/<script>.log
   case $s in
     *.sh) bash scripts/$s    > "$log" 2>&1 ;;
     *.R)  Rscript scripts/$s > "$log" 2>&1 ;;
+    *.py) python3 scripts/$s > "$log" 2>&1 ;;
   esac
   local e=$?
   [ $e -eq 0 ] || { echo "ERROR en $s (codigo $e). Revisa $log"; exit 1; }
@@ -48,6 +50,9 @@ correr 10_descargar_string.sh
 correr 11_analisis_string.R
 correr 12_figuras.R
 correr 13_candidatos_publicados.sh
+correr 15_seroreactividad.py
+correr 16_solido_vs_liquido.R
+correr 17_ialb.py
 
 Rscript -e 'suppressMessages({library(tximport); library(DESeq2); library(ashr); library(fgsea); library(ggplot2); library(igraph); library(ggrepel)}); sessionInfo()' > "$DIR_REG/versiones_R.txt" 2>&1
 { salmon --version; prefetch --version; blastp -version | head -1; RNAfold --version; datasets --version; python3 --version; } \

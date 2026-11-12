@@ -849,7 +849,7 @@ asigna valor q.
 | Contraste | Reprimidos | Inducidos | Total (padj < 0,05) | Flagelares significativos |
 |---|---|---|---|---|
 | 37 °C frente a 25 °C | 283 | 205 | 488 | 31 de 31 |
-| pH 6 frente a pH 8 | 187 | 188 | 375 | 6 de 31 |
+| pH 6,0 frente a pH 8,2 | 187 | 188 | 375 | 6 de 31 |
 
 **Figura 4.** 45 genes: los 31 flagelares y 14 chaperonas. Las chaperonas son la
 categoría "Chaperona" de `scripts/categorias.R` (15 genes, definida por
