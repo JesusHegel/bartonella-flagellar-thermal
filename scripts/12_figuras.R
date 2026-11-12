@@ -128,7 +128,7 @@ f1 <- ggplot() + coord_cartesian(xlim = c(0, 180), ylim = c(0, 122), expand = FA
   caja(col[3], 108, "Proteomas de 7 especies\ny de la cepa USM-LMMB07") +
   caja(col[3],  88, "BLASTp: panel del género\ny ortólogos recíprocos", "06 · 07") +
   caja(col[3],  68, "STRING 12.0\nKEGG, GO y red", "10 · 11") +
-  caja(col[3],  48, "Candidatos publicados\n35 consultas de 5 estudios, BLASTp", "13") +
+  caja(col[3],  48, "Candidatos publicados\n67 consultas de 7 estudios, BLASTp", "13") +
   # ---- flechas con formato
   flecha(col[1], 101.5, col[1], 94.5) + fmt(col[1], 98, "GFF") +
   flecha(col[1],  81.5, col[1], 74.5) + fmt(col[1], 78, "TSV") +

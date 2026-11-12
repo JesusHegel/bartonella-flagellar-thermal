@@ -911,7 +911,10 @@ estudio funcional, y les añade los valores de expresión de este reanálisis.
 Salida en `resultados/candidatos/`. Determinista: dos corridas seguidas dan md5
 idéntico en las tres tablas, con `-num_threads 1`.
 
-**67 consultas de siete estudios** (cerrado el 12 de noviembre de 2026):
+**67 consultas de siete estudios** (cerrado el 12 de noviembre de 2026).
+Siete son los trabajos que aportaron secuencias. Una de ellas se atribuye
+además a Khan et al. 2019, citado por Rivera 2022, de modo que la columna de
+estudio muestra ocho cadenas distintas y no siete:
 5 de Gul et al. 2020, 18 de Rivera-Asencios et al. 2025 (Khan et al. 2020
 propone FlhA, la misma proteína del constructo II de Rivera-Asencios), 7 de
 Jimenez-Vasquez et al. 2023, 4 de Gomes et al. 2016, 22 de Dichter et al. 2021,
