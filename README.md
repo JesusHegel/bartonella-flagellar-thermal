@@ -75,7 +75,12 @@ totalidad de los genes con anotación flagelar.
 | `10_descargar_string.sh` | Descarga STRING para KC583 solo si no está guardado en `datos/string/` |
 | `11_analisis_string.R` | Enriquecimiento con la anotación de STRING y módulo flagelar en la red (`resultados/string/`) |
 | `12_figuras.R` | Las seis figuras del manuscrito (`figuras/`): flujo, muestras, volcanes, flagelares y chaperonas, red STRING y panel del género |
-| `ejecutar_todo.sh` | Corre del 01 al 12 y verifica el resultado |
+| `13_candidatos_publicados.sh` | Ubica por BLASTp en KC583 las proteínas propuestas por otros estudios y cruza su expresión (`resultados/candidatos/`) |
+| `14_exploratorio_sangre.py` | Exploratorio, fuera de la verificación: percentil del conjunto flagelar en las condiciones excluidas (`resultados/exploratorio/`) |
+| `15_seroreactividad.py` | Asociación entre represión a 37 °C y reconocimiento por suero de pacientes (`resultados/candidatos/`) |
+| `16_solido_vs_liquido.R` | Contraste de la matriz de cultivo, pH07 frente a Pl30 (`resultados/condiciones/`) |
+| `17_ialb.py` | Identifica el ialB publicado por secuencia y reporta los seis parálogos de la familia (`resultados/candidatos/`) |
+| `ejecutar_todo.sh` | Corre del 01 al 17 (salvo el 14, exploratorio) y verifica el resultado |
 | `verificar.sh` | Compara cada tabla regenerada con la versión publicada |
 | `replica_nivel_2.sh` | Réplica completa desde el SRA: script 00, análisis en carpetas `_desde_sra` y comparación |
 | `comparar_nivel_2.R` | Compara la réplica desde el SRA con las cifras publicadas |
